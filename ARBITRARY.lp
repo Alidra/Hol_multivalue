@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.ARBITRARY_term_abbrevs;
+private symbol lem4852980 [A] : Prf (= (@ARBITRARY A) (term0 A)) ≔ @ARBITRARY_def A;
+private symbol lem4852981 [A] (_60180 : El (type686 A)) : Prf (= _60180 _60180) ≔ REFL _60180;
+private symbol lem4852982 [A] (_60180 : El (type686 A)) : Prf (= ((@ARBITRARY A) _60180) (term1 A _60180)) ≔ MK_COMB (@lem4852980 A) (@lem4852981 A _60180);
+private symbol lem4852983 [A] (_60180 : El (type686 A)) : Prf (= (term1 A _60180) T) ≔ REFL (term1 A _60180);
+private symbol lem4852984 [A] (_60180 : El (type686 A)) : Prf (= ((@ARBITRARY A) _60180) T) ≔ TRANS (@lem4852982 A _60180) (@lem4852983 A _60180);
+private symbol lem4852985 [A] : Prf (term2 A) ≔ λ _60180 : El (type686 A), (@lem4852984 A _60180);
+private symbol lem4852986 [A] (_60180 : El (type686 A)) : Prf (term3 A _60180) ≔ (@lem4852985 A) _60180;
+private symbol lem4852987 [A] (_60180 : El (type686 A)) : Prf (= (term3 A _60180) (= ((@ARBITRARY A) _60180) T)) ≔ REFL (term3 A _60180);
+private symbol lem4852988 [A] (_60180 : El (type686 A)) : Prf (= ((@ARBITRARY A) _60180) T) ≔ EQ_MP (@lem4852987 A _60180) (@lem4852986 A _60180);
+opaque symbol lem4853018 [A] (s : El (type686 A)) : Prf (= ((@ARBITRARY A) s) T) ≔ (@lem4852988 A s);
+opaque symbol lem4853019 [A] : Prf (term2 A) ≔ λ s : El (type686 A), (@lem4853018 A s);

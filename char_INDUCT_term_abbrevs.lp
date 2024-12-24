@@ -1,0 +1,11 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term0 ≔ (λ y0 : El type1541, (∀ (λ y1 : El (fun char bool), (⇒ (∀ (λ y2 : El bool, (∀ (λ y3 : El bool, (∀ (λ y4 : El bool, (∀ (λ y5 : El bool, (∀ (λ y6 : El bool, (∀ (λ y7 : El bool, (∀ (λ y8 : El bool, (∀ (λ y9 : El bool, (y1 (y0 y2 y3 y4 y5 y6 y7 y8 y9)))))))))))))))))) (∀ (λ y2 : El char, (y1 y2)))))));
+symbol term2 ≔ ((λ y0 : El type1541, (∀ (λ y1 : El (fun char bool), (⇒ (∀ (λ y2 : El bool, (∀ (λ y3 : El bool, (∀ (λ y4 : El bool, (∀ (λ y5 : El bool, (∀ (λ y6 : El bool, (∀ (λ y7 : El bool, (∀ (λ y8 : El bool, (∀ (λ y9 : El bool, (y1 (y0 y2 y3 y4 y5 y6 y7 y8 y9)))))))))))))))))) (∀ (λ y2 : El char, (y1 y2))))))) ASCII);
+symbol term4 ≔ ((@= bool) ((λ y0 : El type1541, (∀ (λ y1 : El (fun char bool), (⇒ (∀ (λ y2 : El bool, (∀ (λ y3 : El bool, (∀ (λ y4 : El bool, (∀ (λ y5 : El bool, (∀ (λ y6 : El bool, (∀ (λ y7 : El bool, (∀ (λ y8 : El bool, (∀ (λ y9 : El bool, (y1 (y0 y2 y3 y4 y5 y6 y7 y8 y9)))))))))))))))))) (∀ (λ y2 : El char, (y1 y2))))))) _22730));
+symbol term1 ≔ ((λ y0 : El type1541, (∀ (λ y1 : El (fun char bool), (⇒ (∀ (λ y2 : El bool, (∀ (λ y3 : El bool, (∀ (λ y4 : El bool, (∀ (λ y5 : El bool, (∀ (λ y6 : El bool, (∀ (λ y7 : El bool, (∀ (λ y8 : El bool, (∀ (λ y9 : El bool, (y1 (y0 y2 y3 y4 y5 y6 y7 y8 y9)))))))))))))))))) (∀ (λ y2 : El char, (y1 y2))))))) _22730);
+symbol term5 ≔ (∀ (λ y0 : El (fun char bool), (⇒ (∀ (λ y1 : El bool, (∀ (λ y2 : El bool, (∀ (λ y3 : El bool, (∀ (λ y4 : El bool, (∀ (λ y5 : El bool, (∀ (λ y6 : El bool, (∀ (λ y7 : El bool, (∀ (λ y8 : El bool, (y0 (_22730 y1 y2 y3 y4 y5 y6 y7 y8)))))))))))))))))) (∀ (λ y1 : El char, (y0 y1))))));
+symbol term3 ≔ (∀ (λ y0 : El (fun char bool), (⇒ (∀ (λ y1 : El bool, (∀ (λ y2 : El bool, (∀ (λ y3 : El bool, (∀ (λ y4 : El bool, (∀ (λ y5 : El bool, (∀ (λ y6 : El bool, (∀ (λ y7 : El bool, (∀ (λ y8 : El bool, (y0 (ASCII y1 y2 y3 y4 y5 y6 y7 y8)))))))))))))))))) (∀ (λ y1 : El char, (y0 y1))))));
+symbol term6 ≔ ((@= bool) (∀ (λ y0 : El (fun char bool), (⇒ (∀ (λ y1 : El bool, (∀ (λ y2 : El bool, (∀ (λ y3 : El bool, (∀ (λ y4 : El bool, (∀ (λ y5 : El bool, (∀ (λ y6 : El bool, (∀ (λ y7 : El bool, (∀ (λ y8 : El bool, (y0 (_22730 y1 y2 y3 y4 y5 y6 y7 y8)))))))))))))))))) (∀ (λ y1 : El char, (y0 y1)))))));

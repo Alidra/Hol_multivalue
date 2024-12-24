@@ -1,0 +1,1 @@
+SUM_PARTIAL_PRE.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo SUM_PARTIAL_PRE_term_abbrevs.lpo ADD_SUB_spec.lpo SUM_PARTIAL_SUC_spec.lpo thm0_spec.lpo thm1809_spec.lpo thm1810_spec.lpo thm1823_spec.lpo

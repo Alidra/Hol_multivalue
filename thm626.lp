@@ -1,0 +1,13 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm626_term_abbrevs;
+private symbol lem619 (p : El bool) (h1 : Prf (∧ p p)) : Prf (∧ p p) ≔ h1;
+private symbol lem620 (p : El bool) (h1 : Prf (∧ p p)) : Prf p ≔ ∧ₑ₂ (@lem619 p h1);
+opaque symbol lem622 (p : El bool) : Prf (term0 p) ≔ λ h0 : Prf (∧ p p), (@lem620 p h0);
+private symbol lem623 (p : El bool) (h1 : Prf p) : Prf p ≔ h1;
+private symbol lem624 (p : El bool) (h1 : Prf p) : Prf (∧ p p) ≔ ∧ᵢ (@lem623 p h1) (@lem623 p h1);
+opaque symbol lem625 (p : El bool) : Prf (term1 p) ≔ λ h0 : Prf p, (@lem624 p h0);
+opaque symbol lem626 (p : El bool) : Prf (term2 p) ≔ ∧ᵢ (@lem622 p) (@lem625 p);

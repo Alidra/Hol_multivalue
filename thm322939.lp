@@ -1,0 +1,15 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm322939_term_abbrevs;
+require open hol-light.thm307612_spec;
+require open hol-light.thm309905_spec;
+private symbol lem322861 [A] (<< : El (type1402 A)) : Prf (= ((@WF A) <<) (term0 A <<)) ≔ EQ_MP (@lem307612 A <<) (@lem309905 A <<);
+private symbol lem322862 [A] (<< : El (type1402 A)) : Prf (= ((@WF A) <<) (term0 A <<)) ≔ (@lem322861 A <<);
+private symbol lem322885 : Prf (= ⇒ ⇒) ≔ REFL ⇒;
+private symbol lem322886 [A] (<< : El (type1402 A)) : Prf (= (term1 A <<) (term2 A <<)) ≔ MK_COMB (@lem322885) (@lem322862 A <<);
+private symbol lem322935 [A B] (<< : El (type1402 A)) : Prf (= (term3 A B <<) (term3 A B <<)) ≔ REFL (term3 A B <<);
+opaque symbol lem322936 [A B] (<< : El (type1402 A)) : Prf (= (term4 A B <<) (term5 A B <<)) ≔ MK_COMB (@lem322886 A <<) (@lem322935 A B <<);
+opaque symbol lem322939 [A B] (<< : El (type1402 A)) : Prf (= (term5 A B <<) (term4 A B <<)) ≔ SYM (@lem322936 A B <<);

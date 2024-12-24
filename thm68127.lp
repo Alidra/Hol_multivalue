@@ -1,0 +1,14 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm1856_spec;
+require open hol-light.thm1862_spec;
+require open hol-light.thm1863_spec;
+private symbol lem68121 (t : El bool) : Prf (= (= t T) t) ≔ ∧ₑ₁ (@lem1856 t);
+private symbol lem68122 [_5989] (x : El _5989) : Prf (= (= (= x x) T) (= x x)) ≔ (@lem68121 (= x x));
+private symbol lem68124 [A] (x : El A) : Prf (= (= x x) T) ≔ EQ_MP (@lem1863 A x) (@lem1862 A x);
+private symbol lem68125 [_5989] (x : El _5989) : Prf (= (= x x) T) ≔ (@lem68124 _5989 x);
+opaque symbol lem68126 [_5989] (x : El _5989) : Prf (= (= (= x x) T) T) ≔ TRANS (@lem68122 _5989 x) (@lem68125 _5989 x);
+opaque symbol lem68127 [_5989] (x : El _5989) : Prf (= T (= (= x x) T)) ≔ SYM (@lem68126 _5989 x);

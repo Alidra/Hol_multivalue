@@ -1,0 +1,10 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm10416_term_abbrevs;
+require open hol-light.thm10187_spec;
+require open hol-light.thm10190_spec;
+opaque symbol lem10415 : Prf term0 ≔ EQ_MP (@lem10190) (@lem10187);
+opaque symbol lem10416 (t : El bool) : Prf (term1 t) ≔ (@lem10415) t;

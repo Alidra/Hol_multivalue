@@ -1,0 +1,10 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm1069766_term_abbrevs;
+require open hol-light.thm1069434_spec;
+require open hol-light.thm1069764_spec;
+opaque symbol lem1069765 [A] (NONE' : El (recspace A)) (h1 : Prf (= NONE' (term0 A))) : Prf (= (term1 A) ((@_mk_option A) NONE')) ≔ SYM (@lem1069434 A NONE' h1);
+opaque symbol lem1069766 [A] (NONE' : El (recspace A)) (h1 : Prf (= NONE' (term0 A))) : Prf (= (@NONE A) ((@_mk_option A) NONE')) ≔ TRANS (@lem1069764 A) (@lem1069765 A NONE' h1);

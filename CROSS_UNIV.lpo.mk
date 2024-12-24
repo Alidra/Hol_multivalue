@@ -1,0 +1,1 @@
+CROSS_UNIV.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo CROSS_UNIV_term_abbrevs.lpo CROSS_spec.lpo EXTENSION_spec.lpo FORALL_PAIR_THM_spec.lpo IN_ELIM_PAIR_THM_spec.lpo IN_UNIV_spec.lpo thm0_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm1842_spec.lpo thm1855_spec.lpo thm7_spec.lpo

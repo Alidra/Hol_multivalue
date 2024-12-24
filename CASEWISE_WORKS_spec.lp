@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem8091832 [A B C P] : Prf (∀ (λ clauses : El (list (prod (fun P A) (fun C (fun P B)))), (∀ (λ c : El C, (⇒ (∀ (λ s : El (fun P A), (∀ (λ t : El (fun C (fun P B)), (∀ (λ s' : El (fun P A), (∀ (λ t' : El (fun C (fun P B)), (∀ (λ x : El P, (∀ (λ y : El P, (⇒ (∧ ((@MEM (prod (fun P A) (fun C (fun P B)))) ((@̦‚ (fun P A) (fun C (fun P B))) s t) clauses) (∧ ((@MEM (prod (fun P A) (fun C (fun P B)))) ((@̦‚ (fun P A) (fun C (fun P B))) s' t') clauses) (= (s x) (s' y)))) (= (t c x) (t' c y))))))))))))))) ((@ALL (prod (fun P A) (fun C (fun P B)))) ((@GABS (fun (prod (fun P A) (fun C (fun P B))) bool)) (λ f : El (fun (prod (fun P A) (fun C (fun P B))) bool), (∀ (λ s : El (fun P A), (∀ (λ t : El (fun C (fun P B)), ((@GEQ bool) (f ((@̦‚ (fun P A) (fun C (fun P B))) s t)) (∀ (λ x : El P, (= ((@CASEWISE B P A C) clauses c (s x)) (t c x))))))))))) clauses))))));

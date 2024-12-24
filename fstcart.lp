@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.fstcart_term_abbrevs;
+private symbol lem7633910 [A M N] : Prf (= (@fstcart A M N) (term0 A M N)) ≔ @fstcart_def A M N;
+private symbol lem7633911 [A M N] (_98368 : El (type2 A M N)) : Prf (= _98368 _98368) ≔ REFL _98368;
+private symbol lem7633912 [A M N] (_98368 : El (type2 A M N)) : Prf (= ((@fstcart A M N) _98368) (term1 A M N _98368)) ≔ MK_COMB (@lem7633910 A M N) (@lem7633911 A M N _98368);
+private symbol lem7633913 [A M N] (_98368 : El (type2 A M N)) : Prf (= (term1 A M N _98368) (term2 A M N _98368)) ≔ REFL (term1 A M N _98368);
+private symbol lem7633914 [A M N] (_98368 : El (type2 A M N)) : Prf (= ((@fstcart A M N) _98368) (term2 A M N _98368)) ≔ TRANS (@lem7633912 A M N _98368) (@lem7633913 A M N _98368);
+private symbol lem7633915 [A M N] : Prf (term3 A M N) ≔ λ _98368 : El (type2 A M N), (@lem7633914 A M N _98368);
+private symbol lem7633916 [A M N] (_98368 : El (type2 A M N)) : Prf (term4 A M N _98368) ≔ (@lem7633915 A M N) _98368;
+private symbol lem7633917 [A M N] (_98368 : El (type2 A M N)) : Prf (= (term4 A M N _98368) (= ((@fstcart A M N) _98368) (term2 A M N _98368))) ≔ REFL (term4 A M N _98368);
+private symbol lem7633918 [A M N] (_98368 : El (type2 A M N)) : Prf (= ((@fstcart A M N) _98368) (term2 A M N _98368)) ≔ EQ_MP (@lem7633917 A M N _98368) (@lem7633916 A M N _98368);
+opaque symbol lem7633948 [A M N] (f : El (type2 A M N)) : Prf (= ((@fstcart A M N) f) (term2 A M N f)) ≔ (@lem7633918 A M N f);
+opaque symbol lem7633949 [A M N] : Prf (term3 A M N) ≔ λ f : El (type2 A M N), (@lem7633948 A M N f);

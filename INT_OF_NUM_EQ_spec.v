@@ -1,0 +1,5 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_terms.
+Axiom lem2307147 : forall m : nat, forall n : nat, ((int_of_num m) = (int_of_num n)) = (m = n).

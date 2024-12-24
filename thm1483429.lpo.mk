@@ -1,0 +1,1 @@
+thm1483429.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo thm1483429_term_abbrevs.lpo NOT_CLAUSES_WEAK_spec.lpo real_ge_spec.lpo real_gt_spec.lpo real_lt_spec.lpo real_min_spec.lpo thm0_spec.lpo thm13473_spec.lpo thm1833_spec.lpo thm1834_spec.lpo thm1842_spec.lpo thm1844_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm7_spec.lpo thm82_spec.lpo

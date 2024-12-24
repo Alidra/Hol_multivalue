@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem8131067 [A B C P] : Prf (∀ (λ << : El (fun A (fun A bool)), (∀ (λ p : El (fun (fun A B) (fun P bool)), (∀ (λ s : El (fun P A), (∀ (λ t : El (fun (fun A B) (fun C (fun P bool))), (⇒ ((@admissible A B A bool (prod C P)) << (λ f : El (fun A B), ((@GABS (fun (prod C P) bool)) (λ f' : El (fun (prod C P) bool), (∀ (λ u : El C, (∀ (λ x : El P, ((@GEQ bool) (f' ((@̦‚ C P) u x)) (p f x))))))))) ((@GABS (fun (prod C P) A)) (λ f : El (fun (prod C P) A), (∀ (λ u : El C, (∀ (λ x : El P, ((@GEQ A) (f ((@̦‚ C P) u x)) (s x)))))))) (λ f : El (fun A B), ((@GABS (fun (prod C P) bool)) (λ f' : El (fun (prod C P) bool), (∀ (λ u : El C, (∀ (λ x : El P, ((@GEQ bool) (f' ((@̦‚ C P) u x)) (t f u x)))))))))) ((@admissible A B A (fun C bool) P) << p s (λ f : El (fun A B), (λ x : El P, (λ u : El C, (t f u x))))))))))))));

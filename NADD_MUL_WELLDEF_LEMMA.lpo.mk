@@ -1,0 +1,1 @@
+NADD_MUL_WELLDEF_LEMMA.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo NADD_MUL_WELLDEF_LEMMA_term_abbrevs.lpo LE_MULT_LCANCEL_spec.lpo LE_TRANS_spec.lpo NADD_DIST_spec.lpo NADD_MUL_spec.lpo nadd_eq_spec.lpo thm0_spec.lpo thm1809_spec.lpo thm1810_spec.lpo thm1832_spec.lpo thm1842_spec.lpo thm7_spec.lpo

@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.ONE_ONE_term_abbrevs;
+private symbol lem68546 [A B] : Prf (= (@ONE_ONE A B) (term0 A B)) ≔ @ONE_ONE_def A B;
+private symbol lem68547 [A B] (_2064 : El (fun A B)) : Prf (= _2064 _2064) ≔ REFL _2064;
+private symbol lem68548 [A B] (_2064 : El (fun A B)) : Prf (= ((@ONE_ONE A B) _2064) (term1 A B _2064)) ≔ MK_COMB (@lem68546 A B) (@lem68547 A B _2064);
+private symbol lem68549 [A B] (_2064 : El (fun A B)) : Prf (= (term1 A B _2064) (term2 A B _2064)) ≔ REFL (term1 A B _2064);
+private symbol lem68550 [A B] (_2064 : El (fun A B)) : Prf (= ((@ONE_ONE A B) _2064) (term2 A B _2064)) ≔ TRANS (@lem68548 A B _2064) (@lem68549 A B _2064);
+private symbol lem68551 [A B] : Prf (term3 A B) ≔ λ _2064 : El (fun A B), (@lem68550 A B _2064);
+private symbol lem68552 [A B] (_2064 : El (fun A B)) : Prf (term4 A B _2064) ≔ (@lem68551 A B) _2064;
+private symbol lem68553 [A B] (_2064 : El (fun A B)) : Prf (= (term4 A B _2064) (= ((@ONE_ONE A B) _2064) (term2 A B _2064))) ≔ REFL (term4 A B _2064);
+private symbol lem68554 [A B] (_2064 : El (fun A B)) : Prf (= ((@ONE_ONE A B) _2064) (term2 A B _2064)) ≔ EQ_MP (@lem68553 A B _2064) (@lem68552 A B _2064);
+opaque symbol lem68584 [A B] (f : El (fun A B)) : Prf (= ((@ONE_ONE A B) f) (term2 A B f)) ≔ (@lem68554 A B f);
+opaque symbol lem68585 [A B] : Prf (term3 A B) ≔ λ f : El (fun A B), (@lem68584 A B f);

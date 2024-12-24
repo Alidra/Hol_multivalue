@@ -1,0 +1,13 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term3 (x0: El real) (x1: El real) ≔ ((λ y0 : El real, (real_mul x0 (real_inv y0))) x1);
+symbol term8 (x0: El real) (x1: El real) ≔ ((λ y0 : El real, (= (real_div x0 y0) (real_mul x0 (real_inv y0)))) x1);
+symbol term6 ≔ (∀ (λ y0 : El real, (∀ (λ y1 : El real, (= (real_div y0 y1) (real_mul y0 (real_inv y1)))))));
+symbol term7 (x0: El real) ≔ ((λ y0 : El real, (∀ (λ y1 : El real, (= (real_div y0 y1) (real_mul y0 (real_inv y1)))))) x0);
+symbol term5 (x0: El real) ≔ (∀ (λ y0 : El real, (= (real_div x0 y0) (real_mul x0 (real_inv y0)))));
+symbol term1 (x0: El real) ≔ ((λ y0 : El real, (λ y1 : El real, (real_mul y0 (real_inv y1)))) x0);
+symbol term4 (x0: El real) (x1: El real) ≔ (real_mul x0 (real_inv x1));
+symbol term0 ≔ (λ y0 : El real, (λ y1 : El real, (real_mul y0 (real_inv y1))));
+symbol term2 (x0: El real) ≔ (λ y0 : El real, (real_mul x0 (real_inv y0)));

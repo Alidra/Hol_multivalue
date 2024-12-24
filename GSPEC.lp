@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.GSPEC_term_abbrevs;
+private symbol lem3182083 [A] : Prf (= (@GSPEC A) (term0 A)) ≔ @GSPEC_def A;
+private symbol lem3182084 [A] (_32695 : El (fun A bool)) : Prf (= _32695 _32695) ≔ REFL _32695;
+private symbol lem3182085 [A] (_32695 : El (fun A bool)) : Prf (= ((@GSPEC A) _32695) (term1 A _32695)) ≔ MK_COMB (@lem3182083 A) (@lem3182084 A _32695);
+private symbol lem3182086 [A] (_32695 : El (fun A bool)) : Prf (= (term1 A _32695) _32695) ≔ REFL (term1 A _32695);
+private symbol lem3182087 [A] (_32695 : El (fun A bool)) : Prf (= ((@GSPEC A) _32695) _32695) ≔ TRANS (@lem3182085 A _32695) (@lem3182086 A _32695);
+private symbol lem3182088 [A] : Prf (term2 A) ≔ λ _32695 : El (fun A bool), (@lem3182087 A _32695);
+private symbol lem3182089 [A] (_32695 : El (fun A bool)) : Prf (term3 A _32695) ≔ (@lem3182088 A) _32695;
+private symbol lem3182090 [A] (_32695 : El (fun A bool)) : Prf (= (term3 A _32695) (= ((@GSPEC A) _32695) _32695)) ≔ REFL (term3 A _32695);
+private symbol lem3182091 [A] (_32695 : El (fun A bool)) : Prf (= ((@GSPEC A) _32695) _32695) ≔ EQ_MP (@lem3182090 A _32695) (@lem3182089 A _32695);
+opaque symbol lem3182121 [A] (p : El (fun A bool)) : Prf (= ((@GSPEC A) p) p) ≔ (@lem3182091 A p);
+opaque symbol lem3182122 [A] : Prf (term2 A) ≔ λ p : El (fun A bool), (@lem3182121 A p);

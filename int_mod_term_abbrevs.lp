@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term11 (x0: El int) (x1: El int) ≔ ((λ y0 : El int, (∀ (λ y1 : El int, (= (int_mod x0 y0 y1) (int_divides x0 (int_sub y0 y1)))))) x1);
+symbol term3 (x0: El int) (x1: El int) ≔ ((λ y0 : El int, (λ y1 : El int, (int_divides x0 (int_sub y0 y1)))) x1);
+symbol term10 (x0: El int) ≔ ((λ y0 : El int, (∀ (λ y1 : El int, (∀ (λ y2 : El int, (= (int_mod y0 y1 y2) (int_divides y0 (int_sub y1 y2)))))))) x0);
+symbol term12 (x0: El int) (x1: El int) (x2: El int) ≔ ((λ y0 : El int, (= (int_mod x0 x1 y0) (int_divides x0 (int_sub x1 y0)))) x2);
+symbol term2 (x0: El int) ≔ (λ y0 : El int, (λ y1 : El int, (int_divides x0 (int_sub y0 y1))));
+symbol term7 (x0: El int) (x1: El int) ≔ (∀ (λ y0 : El int, (= (int_mod x0 x1 y0) (int_divides x0 (int_sub x1 y0)))));
+symbol term9 ≔ (∀ (λ y0 : El int, (∀ (λ y1 : El int, (∀ (λ y2 : El int, (= (int_mod y0 y1 y2) (int_divides y0 (int_sub y1 y2)))))))));
+symbol term8 (x0: El int) ≔ (∀ (λ y0 : El int, (∀ (λ y1 : El int, (= (int_mod x0 y0 y1) (int_divides x0 (int_sub y0 y1)))))));
+symbol term6 (x0: El int) (x1: El int) (x2: El int) ≔ (int_divides x0 (int_sub x1 x2));
+symbol term0 ≔ (λ y0 : El int, (λ y1 : El int, (λ y2 : El int, (int_divides y0 (int_sub y1 y2)))));
+symbol term5 (x0: El int) (x1: El int) (x2: El int) ≔ ((λ y0 : El int, (int_divides x0 (int_sub x1 y0))) x2);
+symbol term1 (x0: El int) ≔ ((λ y0 : El int, (λ y1 : El int, (λ y2 : El int, (int_divides y0 (int_sub y1 y2))))) x0);
+symbol term4 (x0: El int) (x1: El int) ≔ (λ y0 : El int, (int_divides x0 (int_sub x1 y0)));

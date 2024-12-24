@@ -1,0 +1,12 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term3 a0 ≔ ((λ y0 : El (type1399 a0), (λ y1 : El a0, (λ y2 : El (list a0), ((@_mk_list a0) (y0 y1 ((@_dest_list a0) y2)))))) (λ y0 : El a0, (λ y1 : El (recspace a0), ((@CONSTR a0) (SUC (NUMERAL _0)) y0 ((@FCONS (recspace a0)) y1 (λ y2 : El num, (@BOTTOM a0)))))));
+symbol term1 a0 ≔ (λ y0 : El a0, (λ y1 : El (recspace a0), ((@CONSTR a0) (SUC (NUMERAL _0)) y0 ((@FCONS (recspace a0)) y1 (λ y2 : El num, (@BOTTOM a0))))));
+symbol term6 a0 (x0: El (type1399 a0)) ≔ (λ y0 : El a0, (λ y1 : El (list a0), ((@_mk_list a0) (x0 y0 ((@_dest_list a0) y1)))));
+symbol term7 a0 (x0: El (type1399 a0)) ≔ ((@= (fun a0 (fun (list a0) (list a0)))) (λ y0 : El a0, (λ y1 : El (list a0), ((@_mk_list a0) (x0 y0 ((@_dest_list a0) y1))))));
+symbol term0 a0 ≔ (λ y0 : El (type1399 a0), (λ y1 : El a0, (λ y2 : El (list a0), ((@_mk_list a0) (y0 y1 ((@_dest_list a0) y2))))));
+symbol term4 a0 ≔ (λ y0 : El a0, (λ y1 : El (list a0), ((@_mk_list a0) ((λ y2 : El a0, (λ y3 : El (recspace a0), ((@CONSTR a0) (SUC (NUMERAL _0)) y2 ((@FCONS (recspace a0)) y3 (λ y4 : El num, (@BOTTOM a0)))))) y0 ((@_dest_list a0) y1)))));
+symbol term5 a0 (x0: El (type1399 a0)) ≔ ((@= (fun a0 (fun (list a0) (list a0)))) ((λ y0 : El (type1399 a0), (λ y1 : El a0, (λ y2 : El (list a0), ((@_mk_list a0) (y0 y1 ((@_dest_list a0) y2)))))) x0));
+symbol term2 a0 (x0: El (type1399 a0)) ≔ ((λ y0 : El (type1399 a0), (λ y1 : El a0, (λ y2 : El (list a0), ((@_mk_list a0) (y0 y1 ((@_dest_list a0) y2)))))) x0);

@@ -1,0 +1,10 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term2 (x0: El (fun 1 bool)) ≔ (∀ (λ y0 : El 1, (x0 y0)));
+symbol term5 (x0: El (fun 1 bool)) ≔ (∧ (⇒ (∀ (λ y0 : El 1, (x0 y0))) (x0 one)) (⇒ (x0 one) (∀ (λ y0 : El 1, (x0 y0)))));
+symbol term4 (x0: El (fun 1 bool)) ≔ (⇒ (∀ (λ y0 : El 1, (x0 y0))) (x0 one));
+symbol term0 (x0: El (fun 1 bool)) ≔ ((λ y0 : El (fun 1 bool), (⇒ (y0 one) (∀ (λ y1 : El 1, (y0 y1))))) x0);
+symbol term1 (x0: El (fun 1 bool)) ≔ (⇒ (x0 one) (∀ (λ y0 : El 1, (x0 y0))));
+symbol term3 (x0: El (fun 1 bool)) (x1: El 1) ≔ ((λ y0 : El 1, (x0 y0)) x1);

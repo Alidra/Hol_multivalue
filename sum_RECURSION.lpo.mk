@@ -1,0 +1,1 @@
+sum_RECURSION.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo sum_RECURSION_term_abbrevs.lpo CONSTR_REC_spec.lpo FST_spec.lpo SND_spec.lpo thm1066561_spec.lpo thm1066562_spec.lpo thm1066568_spec.lpo thm1066569_spec.lpo thm1066938_spec.lpo thm1066989_spec.lpo thm1066993_spec.lpo thm1067676_spec.lpo thm1067682_spec.lpo thm9102_spec.lpo

@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem2429416 : Prf (∀ (λ b : El int, (∀ (λ a : El int, (= (int_divides a b) (∃ (λ x : El int, (= b (int_mul a x)))))))));

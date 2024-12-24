@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm75543_term_abbrevs;
+private symbol lem75504 : Prf (= NUMERAL term0) ≔ @NUMERAL_def;
+private symbol lem75505 (_2128 : El num) : Prf (= _2128 _2128) ≔ REFL _2128;
+private symbol lem75506 (_2128 : El num) : Prf (= (NUMERAL _2128) (term1 _2128)) ≔ MK_COMB (@lem75504) (@lem75505 _2128);
+private symbol lem75507 (_2128 : El num) : Prf (= (term1 _2128) _2128) ≔ REFL (term1 _2128);
+private symbol lem75508 (_2128 : El num) : Prf (= (NUMERAL _2128) _2128) ≔ TRANS (@lem75506 _2128) (@lem75507 _2128);
+private symbol lem75509 : Prf term2 ≔ λ _2128 : El num, (@lem75508 _2128);
+private symbol lem75510 (_2128 : El num) : Prf (term3 _2128) ≔ (@lem75509) _2128;
+private symbol lem75511 (_2128 : El num) : Prf (= (term3 _2128) (= (NUMERAL _2128) _2128)) ≔ REFL (term3 _2128);
+private symbol lem75512 (_2128 : El num) : Prf (= (NUMERAL _2128) _2128) ≔ EQ_MP (@lem75511 _2128) (@lem75510 _2128);
+opaque symbol lem75542 (n : El num) : Prf (= (NUMERAL n) n) ≔ (@lem75512 n);
+opaque symbol lem75543 : Prf term2 ≔ λ n : El num, (@lem75542 n);

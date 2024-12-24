@@ -1,0 +1,18 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.NOT_SUC_term_abbrevs;
+require open hol-light.thm0_spec;
+require open hol-light.thm72734_spec;
+require open hol-light.thm75559_spec;
+private symbol lem75562 : Prf (= _0 (NUMERAL _0)) ≔ EQ_MP (@lem75559) (@lem0);
+private symbol lem75563 (n : El num) : Prf (= (term0 n) (term0 n)) ≔ REFL (term0 n);
+private symbol lem75564 (n : El num) : Prf (= (= (SUC n) _0) (= (SUC n) (NUMERAL _0))) ≔ MK_COMB (@lem75563 n) (@lem75562);
+private symbol lem75565 : Prf (= ¬ ¬) ≔ REFL ¬;
+private symbol lem75566 (n : El num) : Prf (= (term1 n) (term2 n)) ≔ MK_COMB (@lem75565) (@lem75564 n);
+private symbol lem75567 : Prf (= term3 term4) ≔ fun_ext (λ n : El num, (@lem75566 n));
+private symbol lem75568 : Prf (= (@∀ num) (@∀ num)) ≔ REFL (@∀ num);
+opaque symbol lem75569 : Prf (= term5 term6) ≔ MK_COMB (@lem75568) (@lem75567);
+opaque symbol lem75570 : Prf term6 ≔ EQ_MP (@lem75569) (@lem72734);

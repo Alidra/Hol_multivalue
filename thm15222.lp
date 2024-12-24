@@ -1,0 +1,10 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm15222_term_abbrevs;
+require open hol-light.thm14784_spec;
+require open hol-light.thm15219_spec;
+require open hol-light.thm15220_spec;
+opaque symbol lem15222 [_2963] (g : El bool) (t : El _2963) (e : El _2963) (g' : El bool) (t' : El _2963) (e' : El _2963) : Prf (term0 _2963 g t e g' t' e') ≔ ∨ₑ (@lem14784 g) (λ h0 : Prf (= g T), (@lem15220 _2963 t e g' t' e' g h0)) (λ h0 : Prf (= g F), (@lem15219 _2963 t e g' t' e' g h0));

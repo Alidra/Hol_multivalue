@@ -1,0 +1,11 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm708946_term_abbrevs;
+require open hol-light.ARITH_ADD_spec;
+private symbol lem708883 : Prf term0 ≔ ∧ₑ₂ (@lem514291);
+opaque symbol lem708944 : Prf (= (+ _0 _0) _0) ≔ ∧ₑ₁ (@lem708883);
+opaque symbol lem708945 : Prf (= SUC SUC) ≔ REFL SUC;
+opaque symbol lem708946 : Prf (= term1 (SUC _0)) ≔ MK_COMB (@lem708945) (@lem708944);

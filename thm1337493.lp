@@ -1,0 +1,13 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm1337493_term_abbrevs;
+opaque symbol lem1337485 (r : El type1233) : Prf (= (term0 r) (= (term1 r) r)) ≔ @axiom_24 r;
+private symbol lem1337488 (r : El type1233) : Prf (= (term0 r) (term2 r)) ≔ REFL (term0 r);
+private symbol lem1337489 : Prf (= (@= bool) (@= bool)) ≔ REFL (@= bool);
+private symbol lem1337490 (r : El type1233) : Prf (= (term3 r) (term4 r)) ≔ MK_COMB (@lem1337489) (@lem1337488 r);
+private symbol lem1337491 (r : El type1233) : Prf (= (= (term1 r) r) (= (term1 r) r)) ≔ REFL (= (term1 r) r);
+opaque symbol lem1337492 (r : El type1233) : Prf (= (= (term0 r) (= (term1 r) r)) (= (term2 r) (= (term1 r) r))) ≔ MK_COMB (@lem1337490 r) (@lem1337491 r);
+opaque symbol lem1337493 (r : El type1233) : Prf (= (term2 r) (= (term1 r) r)) ≔ EQ_MP (@lem1337492 r) (@lem1337485 r);

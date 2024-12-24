@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.WF_term_abbrevs;
+private symbol lem303006 [A] : Prf (= (@WF A) (term0 A)) ≔ @WF_def A;
+private symbol lem303007 [A] (_6760 : El (type1402 A)) : Prf (= _6760 _6760) ≔ REFL _6760;
+private symbol lem303008 [A] (_6760 : El (type1402 A)) : Prf (= ((@WF A) _6760) (term1 A _6760)) ≔ MK_COMB (@lem303006 A) (@lem303007 A _6760);
+private symbol lem303009 [A] (_6760 : El (type1402 A)) : Prf (= (term1 A _6760) (term2 A _6760)) ≔ REFL (term1 A _6760);
+private symbol lem303010 [A] (_6760 : El (type1402 A)) : Prf (= ((@WF A) _6760) (term2 A _6760)) ≔ TRANS (@lem303008 A _6760) (@lem303009 A _6760);
+private symbol lem303011 [A] : Prf (term3 A) ≔ λ _6760 : El (type1402 A), (@lem303010 A _6760);
+private symbol lem303012 [A] (_6760 : El (type1402 A)) : Prf (term4 A _6760) ≔ (@lem303011 A) _6760;
+private symbol lem303013 [A] (_6760 : El (type1402 A)) : Prf (= (term4 A _6760) (= ((@WF A) _6760) (term2 A _6760))) ≔ REFL (term4 A _6760);
+private symbol lem303014 [A] (_6760 : El (type1402 A)) : Prf (= ((@WF A) _6760) (term2 A _6760)) ≔ EQ_MP (@lem303013 A _6760) (@lem303012 A _6760);
+opaque symbol lem303044 [A] (<< : El (type1402 A)) : Prf (= ((@WF A) <<) (term2 A <<)) ≔ (@lem303014 A <<);
+opaque symbol lem303045 [A] : Prf (term3 A) ≔ λ << : El (type1402 A), (@lem303044 A <<);

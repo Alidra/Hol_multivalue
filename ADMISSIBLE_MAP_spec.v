@@ -1,0 +1,5 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_terms.
+Axiom lem8233240 : forall {_144947 _144956 _144962 A B P : Type'}, forall lt2 : A -> _144947 -> Prop, forall p : (A -> B) -> P -> Prop, forall s : P -> _144947, forall h : (A -> B) -> P -> _144962 -> _144956, forall l : (A -> B) -> P -> list _144962, ((@admissible _144947 B A (list _144962) P lt2 p s l) /\ (@admissible _144947 B A _144956 (prod _144962 P) lt2 (fun f : A -> B => @GABS ((prod _144962 P) -> Prop) (fun f' : (prod _144962 P) -> Prop => forall y : _144962, forall x : P, @GEQ Prop (f' (@pair _144962 P y x)) ((p f x) /\ (@List.In _144962 y (l f x))))) (@GABS ((prod _144962 P) -> _144947) (fun f : (prod _144962 P) -> _144947 => forall y : _144962, forall x : P, @GEQ _144947 (f (@pair _144962 P y x)) (s x))) (fun f : A -> B => @GABS ((prod _144962 P) -> _144956) (fun f' : (prod _144962 P) -> _144956 => forall y : _144962, forall x : P, @GEQ _144956 (f' (@pair _144962 P y x)) (h f x y))))) -> @admissible _144947 B A (list _144956) P lt2 p s (fun f : A -> B => fun x : P => @List.map _144962 _144956 (h f x) (l f x)).

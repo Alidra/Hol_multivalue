@@ -1,0 +1,5 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_terms.
+Axiom lem8183599 : forall {_144355 _144356 _144403 _144436 _144443 P : Type'}, forall lt2 : _144356 -> _144355 -> Prop, forall p : (_144356 -> _144403) -> P -> Prop, forall s : P -> _144355, forall pat : (_144356 -> _144403) -> P -> _144436, forall e : (_144356 -> _144403) -> P -> _144436, forall t : (_144356 -> _144403) -> P -> _144443, forall y : (_144356 -> _144403) -> P -> _144443, ((@admissible _144355 _144403 _144356 _144436 P lt2 p s pat) /\ ((@admissible _144355 _144403 _144356 _144436 P lt2 p s e) /\ ((@admissible _144355 _144403 _144356 _144443 P lt2 (fun f : _144356 -> _144403 => fun x : P => (p f x) /\ ((pat f x) = (e f x))) s t) /\ (@admissible _144355 _144403 _144356 _144443 P lt2 (fun f : _144356 -> _144403 => fun x : P => (p f x) /\ ((pat f x) = (e f x))) s y)))) -> @admissible _144355 _144403 _144356 Prop P lt2 p s (fun f : _144356 -> _144403 => fun x : P => _UNGUARDED_PATTERN (@GEQ _144436 (pat f x) (e f x)) (@GEQ _144443 (t f x) (y f x))).

@@ -1,0 +1,1 @@
+EXP_ZERO.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo EXP_ZERO_term_abbrevs.lpo EXP_EQ_0_spec.lpo EXP_EQ_1_spec.lpo NOT_CLAUSES_WEAK_spec.lpo thm0_spec.lpo thm13473_spec.lpo thm1832_spec.lpo thm1842_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm82_spec.lpo

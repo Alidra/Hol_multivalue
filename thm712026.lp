@@ -1,0 +1,15 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm712026_term_abbrevs;
+require open hol-light.thm711939_spec;
+require open hol-light.thm711942_spec;
+require open hol-light.thm711943_spec;
+private symbol lem712020 (n : El num) : Prf (= (term0 n) (term1 n)) ≔ EQ_MP (@lem711943 n) (@lem711942 n);
+opaque symbol lem712021 : Prf (= term2 term3) ≔ (@lem712020 _0);
+private symbol lem712023 : Prf (= (SUC _0) (BIT1 _0)) ≔ ∧ₑ₁ (@lem711939);
+private symbol lem712024 : Prf (= BIT0 BIT0) ≔ REFL BIT0;
+opaque symbol lem712025 : Prf (= term3 term4) ≔ MK_COMB (@lem712024) (@lem712023);
+opaque symbol lem712026 : Prf (= term2 term4) ≔ TRANS (@lem712021) (@lem712025);

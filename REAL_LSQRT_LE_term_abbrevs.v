@@ -1,0 +1,197 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_type_abbrevs.
+Require Import hol_terms.
+Definition term123 (x0 : real) := ~ ((real_pow (sqrt x0) (NUMERAL (BIT0 (BIT1 0)))) = x0).
+Definition term47 := forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> (real_pow (sqrt y0) (NUMERAL (BIT0 (BIT1 0)))) = y0.
+Definition term183 (x0 : real) (x1 : real) (x2 : real) (x3 : real) := imp (~ ((~ (x2 = x0)) \/ ((~ (x3 = x1)) \/ (~ (real_le x2 x3))))).
+Definition term92 := fun y0 : nat => forall y1 : real, forall y2 : real, ((~ (real_le (real_of_num (NUMERAL 0)) y1)) \/ (~ (real_le y1 y2))) \/ (real_le (real_pow y1 y0) (real_pow y2 y0)).
+Definition term34 := fun y0 : nat => forall y1 : real, forall y2 : real, ((real_le (real_of_num (NUMERAL 0)) y1) /\ (real_le y1 y2)) -> real_le (real_pow y1 y0) (real_pow y2 y0).
+Definition term56 (x0 : real -> Prop) := ~ (all x0).
+Definition term191 := (~ False) -> False.
+Definition term26 := (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> (real_pow (sqrt y0) (NUMERAL (BIT0 (BIT1 0)))) = y0) -> (forall y0 : real, forall y1 : real, forall y2 : real, ((real_le y0 y1) /\ (real_le y1 y2)) -> real_le y0 y2) -> (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> real_le (real_of_num (NUMERAL 0)) (sqrt y0)) -> ~ (forall y0 : nat, forall y1 : real, forall y2 : real, ((real_le (real_of_num (NUMERAL 0)) y1) /\ (real_le y1 y2)) -> real_le (real_pow y1 y0) (real_pow y2 y0)).
+Definition term21 := imp (forall y0 : real, forall y1 : real, forall y2 : real, ((real_le y0 y1) /\ (real_le y1 y2)) -> real_le y0 y2).
+Definition term172 (x0 : real) (x1 : real) (x2 : real) (x3 : real) := (~ ((~ (x0 = x2)) \/ ((~ (x1 = x3)) \/ (~ (real_le x0 x1))))) -> real_le x2 x3.
+Definition term96 (x0 : nat) := (fun y0 : nat => forall y1 : real, forall y2 : real, ((~ (real_le (real_of_num (NUMERAL 0)) y1)) \/ (~ (real_le y1 y2))) \/ (real_le (real_pow y1 y0) (real_pow y2 y0))) x0.
+Definition term118 (x0 : Prop) := ~ (~ x0).
+Definition term98 (x0 : real) (x1 : nat) (x2 : real) := (fun y0 : real => ((~ (real_le (real_of_num (NUMERAL 0)) x0)) \/ (~ (real_le x0 y0))) \/ (real_le (real_pow x0 x1) (real_pow y0 x1))) x2.
+Definition term11 := (~ (forall y0 : real, forall y1 : real, ((real_le (real_of_num (NUMERAL 0)) y0) /\ (real_le (sqrt y0) y1)) -> real_le y0 (real_pow y1 (NUMERAL (BIT0 (BIT1 0)))))) -> (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> (real_pow (sqrt y0) (NUMERAL (BIT0 (BIT1 0)))) = y0) -> (forall y0 : real, forall y1 : real, forall y2 : real, ((real_le y0 y1) /\ (real_le y1 y2)) -> real_le y0 y2) -> (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> real_le (real_of_num (NUMERAL 0)) (sqrt y0)) -> (forall y0 : nat, forall y1 : real, forall y2 : real, ((real_le (real_of_num (NUMERAL 0)) y1) /\ (real_le y1 y2)) -> real_le (real_pow y1 y0) (real_pow y2 y0)) -> False.
+Definition term141 (x0 : nat) (x1 : real) (x2 : real) := (real_le (real_pow x2 x0) (real_pow x1 x0)) \/ ((~ (real_le x2 x1)) \/ (~ (real_le (real_of_num (NUMERAL 0)) x2))).
+Definition term102 (x0 : real) (x1 : real) := ~ (real_le x0 (real_pow x1 (NUMERAL (BIT0 (BIT1 0))))).
+Definition term99 (x0 : real) (x1 : real) (x2 : nat) := (~ (real_le (real_of_num (NUMERAL 0)) x0)) \/ ((~ (real_le x0 x1)) \/ (real_le (real_pow x0 x2) (real_pow x1 x2))).
+Definition term169 (x0 : real) (x1 : real) (x2 : real) := (~ (x2 = x0)) \/ (~ (real_le x1 x2)).
+Definition term180 (x0 : real) (x1 : real) (x2 : real) := (~ (~ (x2 = x0))) /\ (~ (~ (real_le x1 x2))).
+Definition term154 (x0 : real) (x1 : real) := ~ (~ (real_le x0 x1)).
+Definition term143 (x0 : nat) (x1 : real) (x2 : real) := @eq Prop ((real_le (real_pow x2 x0) (real_pow x1 x0)) \/ ((~ (real_le x2 x1)) \/ (~ (real_le (real_of_num (NUMERAL 0)) x2)))).
+Definition term23 := (forall y0 : real, forall y1 : real, forall y2 : real, ((real_le y0 y1) /\ (real_le y1 y2)) -> real_le y0 y2) -> (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> real_le (real_of_num (NUMERAL 0)) (sqrt y0)) -> ~ (forall y0 : nat, forall y1 : real, forall y2 : real, ((real_le (real_of_num (NUMERAL 0)) y1) /\ (real_le y1 y2)) -> real_le (real_pow y1 y0) (real_pow y2 y0)).
+Definition term46 := fun y0 : real => (real_le (real_of_num (NUMERAL 0)) y0) -> (real_pow (sqrt y0) (NUMERAL (BIT0 (BIT1 0)))) = y0.
+Definition term121 (x0 : real) := imp (real_le (real_of_num (NUMERAL 0)) x0).
+Definition term78 := fun y0 : real => (~ (real_le (real_of_num (NUMERAL 0)) y0)) \/ (real_le (real_of_num (NUMERAL 0)) (sqrt y0)).
+Definition term3 (x0 : Prop) (x1 : Prop) := forall y0 : Prop, (x0 \/ (x1 \/ y0)) = ((x0 \/ x1) \/ y0).
+Definition term19 := (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> real_le (real_of_num (NUMERAL 0)) (sqrt y0)) -> (forall y0 : nat, forall y1 : real, forall y2 : real, ((real_le (real_of_num (NUMERAL 0)) y1) /\ (real_le y1 y2)) -> real_le (real_pow y1 y0) (real_pow y2 y0)) -> False.
+Definition term53 (x0 : real) (x1 : real) := ((real_le (real_of_num (NUMERAL 0)) x0) /\ (real_le (sqrt x0) x1)) /\ (~ (real_le x0 (real_pow x1 (NUMERAL (BIT0 (BIT1 0)))))).
+Definition term7 (x0 : Prop) := (~ x0) -> False.
+Definition term117 (x0 : real) := (~ (~ (real_le (real_of_num (NUMERAL 0)) x0))) -> (real_pow (sqrt x0) (NUMERAL (BIT0 (BIT1 0)))) = x0.
+Definition term155 (x0 : real) (x1 : real) := imp (~ ((~ (real_le (real_of_num (NUMERAL 0)) x0)) \/ (~ (real_le x0 x1)))).
+Definition term60 (x0 : real) (x1 : real) := (fun y0 : real => ((real_le (real_of_num (NUMERAL 0)) x0) /\ (real_le (sqrt x0) y0)) -> real_le x0 (real_pow y0 (NUMERAL (BIT0 (BIT1 0))))) x1.
+Definition term58 (x0 : real) := ~ (forall y0 : real, ((real_le (real_of_num (NUMERAL 0)) x0) /\ (real_le (sqrt x0) y0)) -> real_le x0 (real_pow y0 (NUMERAL (BIT0 (BIT1 0))))).
+Definition term45 (x0 : real) := (real_le (real_of_num (NUMERAL 0)) x0) -> (real_pow (sqrt x0) (NUMERAL (BIT0 (BIT1 0)))) = x0.
+Definition term35 (x0 : real) := (real_le (real_of_num (NUMERAL 0)) x0) -> real_le (real_of_num (NUMERAL 0)) (sqrt x0).
+Definition term61 (x0 : real) (x1 : real) := ~ ((fun y0 : real => ((real_le (real_of_num (NUMERAL 0)) x0) /\ (real_le (sqrt x0) y0)) -> real_le x0 (real_pow y0 (NUMERAL (BIT0 (BIT1 0))))) x1).
+Definition term55 (x0 : real) (x1 : real) := real_le x0 (real_pow x1 (NUMERAL (BIT0 (BIT1 0)))).
+Definition term36 := fun y0 : real => (real_le (real_of_num (NUMERAL 0)) y0) -> real_le (real_of_num (NUMERAL 0)) (sqrt y0).
+Definition term162 (x0 : real) (x1 : real) := (~ (real_le (real_pow (sqrt x0) (NUMERAL (BIT0 (BIT1 0)))) (real_pow x1 (NUMERAL (BIT0 (BIT1 0)))))) -> real_le (real_pow (sqrt x0) (NUMERAL (BIT0 (BIT1 0)))) (real_pow x1 (NUMERAL (BIT0 (BIT1 0)))).
+Definition term116 (x0 : Prop) (x1 : Prop) := (~ x0) -> x1.
+Definition term16 := ~ (forall y0 : nat, forall y1 : real, forall y2 : real, ((real_le (real_of_num (NUMERAL 0)) y1) /\ (real_le y1 y2)) -> real_le (real_pow y1 y0) (real_pow y2 y0)).
+Definition term134 (x0 : real) (x1 : real) := (~ (real_le (sqrt x0) x1)) -> real_le (sqrt x0) x1.
+Definition term81 (x0 : real) (x1 : real) := (~ (real_le (real_of_num (NUMERAL 0)) x0)) \/ (~ (real_le x0 x1)).
+Definition term83 (x0 : real) (x1 : real) := or (~ ((real_le (real_of_num (NUMERAL 0)) x0) /\ (real_le x0 x1))).
+Definition term112 (x0 : Prop) := (~ x0) -> x0.
+Definition term29 (x0 : real) (x1 : real) (x2 : nat) := ((real_le (real_of_num (NUMERAL 0)) x0) /\ (real_le x0 x1)) -> real_le (real_pow x0 x2) (real_pow x1 x2).
+Definition term71 (x0 : real) := (~ (real_le (real_of_num (NUMERAL 0)) x0)) \/ ((real_pow (sqrt x0) (NUMERAL (BIT0 (BIT1 0)))) = x0).
+Definition term158 (x0 : real) (x1 : real) (x2 : nat) := ((real_le (real_of_num (NUMERAL 0)) (sqrt x0)) /\ (real_le (sqrt x0) x1)) -> real_le (real_pow (sqrt x0) x2) (real_pow x1 x2).
+Definition term149 (x0 : Prop) (x1 : Prop) := (~ x0) /\ (~ x1).
+Definition term100 (x0 : real) := ~ (real_le (real_of_num (NUMERAL 0)) x0).
+Definition term137 (x0 : real) (x1 : real) (x2 : nat) := (~ (real_le (real_of_num (NUMERAL 0)) x0)) \/ (real_le (real_pow x0 x2) (real_pow x1 x2)).
+Definition term22 := (forall y0 : real, forall y1 : real, forall y2 : real, ((real_le y0 y1) /\ (real_le y1 y2)) -> real_le y0 y2) -> (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> real_le (real_of_num (NUMERAL 0)) (sqrt y0)) -> (forall y0 : nat, forall y1 : real, forall y2 : real, ((real_le (real_of_num (NUMERAL 0)) y1) /\ (real_le y1 y2)) -> real_le (real_pow y1 y0) (real_pow y2 y0)) -> False.
+Definition term91 (x0 : nat) := forall y0 : real, forall y1 : real, ((~ (real_le (real_of_num (NUMERAL 0)) y0)) \/ (~ (real_le y0 y1))) \/ (real_le (real_pow y0 x0) (real_pow y1 x0)).
+Definition term44 := forall y0 : real, forall y1 : real, forall y2 : real, ((real_le y0 y1) /\ (real_le y1 y2)) -> real_le y0 y2.
+Definition term42 (x0 : real) := forall y0 : real, forall y1 : real, ((real_le x0 y0) /\ (real_le y0 y1)) -> real_le x0 y1.
+Definition term33 (x0 : nat) := forall y0 : real, forall y1 : real, ((real_le (real_of_num (NUMERAL 0)) y0) /\ (real_le y0 y1)) -> real_le (real_pow y0 x0) (real_pow y1 x0).
+Definition term8 := forall y0 : real, forall y1 : real, ((real_le (real_of_num (NUMERAL 0)) y0) /\ (real_le (sqrt y0) y1)) -> real_le y0 (real_pow y1 (NUMERAL (BIT0 (BIT1 0)))).
+Definition term70 := exists y0 : real, exists y1 : real, ((real_le (real_of_num (NUMERAL 0)) y0) /\ (real_le (sqrt y0) y1)) /\ (~ (real_le y0 (real_pow y1 (NUMERAL (BIT0 (BIT1 0)))))).
+Definition term147 (x0 : real) (x1 : real) (x2 : nat) := (~ ((~ (real_le (real_of_num (NUMERAL 0)) x0)) \/ (~ (real_le x0 x1)))) -> real_le (real_pow x0 x2) (real_pow x1 x2).
+Definition term5 (x0 : Prop) (x1 : Prop) (x2 : Prop) := x0 \/ (x1 \/ x2).
+Definition term38 (x0 : real) (x1 : real) (x2 : real) := ((real_le x1 x0) /\ (real_le x0 x2)) -> real_le x1 x2.
+Definition term125 (x0 : real) := (~ ((real_pow x0 (NUMERAL (BIT0 (BIT1 0)))) = (real_pow x0 (NUMERAL (BIT0 (BIT1 0)))))) -> (real_pow x0 (NUMERAL (BIT0 (BIT1 0)))) = (real_pow x0 (NUMERAL (BIT0 (BIT1 0)))).
+Definition term187 (x0 : real) (x1 : real) := ((real_pow (sqrt x0) (NUMERAL (BIT0 (BIT1 0)))) = x0) /\ (((real_pow x1 (NUMERAL (BIT0 (BIT1 0)))) = (real_pow x1 (NUMERAL (BIT0 (BIT1 0))))) /\ (real_le (real_pow (sqrt x0) (NUMERAL (BIT0 (BIT1 0)))) (real_pow x1 (NUMERAL (BIT0 (BIT1 0)))))).
+Definition term144 (x0 : real) (x1 : real) := (~ (real_le x1 x0)) \/ (~ (real_le (real_of_num (NUMERAL 0)) x1)).
+Definition term130 (x0 : real) := (~ (~ (real_le (real_of_num (NUMERAL 0)) x0))) -> real_le (real_of_num (NUMERAL 0)) (sqrt x0).
+Definition term25 := (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> (real_pow (sqrt y0) (NUMERAL (BIT0 (BIT1 0)))) = y0) -> (forall y0 : real, forall y1 : real, forall y2 : real, ((real_le y0 y1) /\ (real_le y1 y2)) -> real_le y0 y2) -> (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> real_le (real_of_num (NUMERAL 0)) (sqrt y0)) -> (forall y0 : nat, forall y1 : real, forall y2 : real, ((real_le (real_of_num (NUMERAL 0)) y1) /\ (real_le y1 y2)) -> real_le (real_pow y1 y0) (real_pow y2 y0)) -> False.
+Definition term111 (x0 : real) := (~ (real_le (real_of_num (NUMERAL 0)) x0)) -> real_le (real_of_num (NUMERAL 0)) x0.
+Definition term31 (x0 : real) (x1 : nat) := forall y0 : real, ((real_le (real_of_num (NUMERAL 0)) x0) /\ (real_le x0 y0)) -> real_le (real_pow x0 x1) (real_pow y0 x1).
+Definition term65 := exists y0 : real, ~ ((fun y1 : real => forall y2 : real, ((real_le (real_of_num (NUMERAL 0)) y1) /\ (real_le (sqrt y1) y2)) -> real_le y1 (real_pow y2 (NUMERAL (BIT0 (BIT1 0))))) y0).
+Definition term59 (x0 : real) := exists y0 : real, ~ ((fun y1 : real => ((real_le (real_of_num (NUMERAL 0)) x0) /\ (real_le (sqrt x0) y1)) -> real_le x0 (real_pow y1 (NUMERAL (BIT0 (BIT1 0))))) y0).
+Definition term114 (x0 : real) := @eq Prop ((~ (real_le (real_of_num (NUMERAL 0)) x0)) \/ ((real_pow (sqrt x0) (NUMERAL (BIT0 (BIT1 0)))) = x0)).
+Definition term76 (x0 : real) := (~ (real_le (real_of_num (NUMERAL 0)) x0)) \/ (real_le (real_of_num (NUMERAL 0)) (sqrt x0)).
+Definition term184 (x0 : real) (x1 : real) (x2 : real) (x3 : real) := imp ((x2 = x0) /\ ((x3 = x1) /\ (real_le x2 x3))).
+Definition term156 (x0 : real) (x1 : real) := imp ((real_le (real_of_num (NUMERAL 0)) x0) /\ (real_le x0 x1)).
+Definition term82 (x0 : real) (x1 : real) (x2 : nat) := real_le (real_pow x0 x2) (real_pow x1 x2).
+Definition term79 := forall y0 : real, (~ (real_le (real_of_num (NUMERAL 0)) y0)) \/ (real_le (real_of_num (NUMERAL 0)) (sqrt y0)).
+Definition term127 (x0 : real) := (real_le (real_of_num (NUMERAL 0)) (sqrt x0)) \/ (~ (real_le (real_of_num (NUMERAL 0)) x0)).
+Definition term68 := fun y0 : real => ~ ((fun y1 : real => forall y2 : real, ((real_le (real_of_num (NUMERAL 0)) y1) /\ (real_le (sqrt y1) y2)) -> real_le y1 (real_pow y2 (NUMERAL (BIT0 (BIT1 0))))) y0).
+Definition term153 (x0 : real) := and (real_le (real_of_num (NUMERAL 0)) x0).
+Definition term131 (x0 : real) := (~ (real_le (real_of_num (NUMERAL 0)) (sqrt x0))) -> real_le (real_of_num (NUMERAL 0)) (sqrt x0).
+Definition term69 := fun y0 : real => exists y1 : real, ((real_le (real_of_num (NUMERAL 0)) y0) /\ (real_le (sqrt y0) y1)) /\ (~ (real_le y0 (real_pow y1 (NUMERAL (BIT0 (BIT1 0)))))).
+Definition term157 (x0 : real) (x1 : real) := (real_le (real_of_num (NUMERAL 0)) (sqrt x0)) /\ (real_le (sqrt x0) x1).
+Definition term90 (x0 : nat) := fun y0 : real => forall y1 : real, ((~ (real_le (real_of_num (NUMERAL 0)) y0)) \/ (~ (real_le y0 y1))) \/ (real_le (real_pow y0 x0) (real_pow y1 x0)).
+Definition term51 := fun y0 : real => forall y1 : real, ((real_le (real_of_num (NUMERAL 0)) y0) /\ (real_le (sqrt y0) y1)) -> real_le y0 (real_pow y1 (NUMERAL (BIT0 (BIT1 0)))).
+Definition term32 (x0 : nat) := fun y0 : real => forall y1 : real, ((real_le (real_of_num (NUMERAL 0)) y0) /\ (real_le y0 y1)) -> real_le (real_pow y0 x0) (real_pow y1 x0).
+Definition term163 (x0 : real) (x1 : real) := ~ (real_le (real_pow (sqrt x0) (NUMERAL (BIT0 (BIT1 0)))) (real_pow x1 (NUMERAL (BIT0 (BIT1 0))))).
+Definition term15 := (forall y0 : nat, forall y1 : real, forall y2 : real, ((real_le (real_of_num (NUMERAL 0)) y1) /\ (real_le y1 y2)) -> real_le (real_pow y1 y0) (real_pow y2 y0)) -> False.
+Definition term109 (x0 : real) (x1 : real) (x2 : real) (x3 : real) := (x2 = x0) -> (~ (x3 = x1)) \/ ((real_le x0 x1) \/ (~ (real_le x2 x3))).
+Definition term94 (x0 : real) := (fun y0 : real => (~ (real_le (real_of_num (NUMERAL 0)) y0)) \/ ((real_pow (sqrt y0) (NUMERAL (BIT0 (BIT1 0)))) = y0)) x0.
+Definition term124 (x0 : real) := real_pow x0 (NUMERAL (BIT0 (BIT1 0))).
+Definition term165 (x0 : real) (x1 : real) := ~ (x0 = x1).
+Definition term167 (x0 : real) (x1 : real) (x2 : real) (x3 : real) := (~ (x2 = x0)) \/ ((real_le x0 x1) \/ ((~ (x3 = x1)) \/ (~ (real_le x2 x3)))).
+Definition term14 := (((~ (forall y0 : real, forall y1 : real, ((real_le (real_of_num (NUMERAL 0)) y0) /\ (real_le (sqrt y0) y1)) -> real_le y0 (real_pow y1 (NUMERAL (BIT0 (BIT1 0)))))) -> (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> (real_pow (sqrt y0) (NUMERAL (BIT0 (BIT1 0)))) = y0) -> (forall y0 : real, forall y1 : real, forall y2 : real, ((real_le y0 y1) /\ (real_le y1 y2)) -> real_le y0 y2) -> (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> real_le (real_of_num (NUMERAL 0)) (sqrt y0)) -> (forall y0 : nat, forall y1 : real, forall y2 : real, ((real_le (real_of_num (NUMERAL 0)) y1) /\ (real_le y1 y2)) -> real_le (real_pow y1 y0) (real_pow y2 y0)) -> False) -> (~ (forall y0 : real, forall y1 : real, ((real_le (real_of_num (NUMERAL 0)) y0) /\ (real_le (sqrt y0) y1)) -> real_le y0 (real_pow y1 (NUMERAL (BIT0 (BIT1 0)))))) -> (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> (real_pow (sqrt y0) (NUMERAL (BIT0 (BIT1 0)))) = y0) -> (forall y0 : real, forall y1 : real, forall y2 : real, ((real_le y0 y1) /\ (real_le y1 y2)) -> real_le y0 y2) -> (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> real_le (real_of_num (NUMERAL 0)) (sqrt y0)) -> (forall y0 : nat, forall y1 : real, forall y2 : real, ((real_le (real_of_num (NUMERAL 0)) y1) /\ (real_le y1 y2)) -> real_le (real_pow y1 y0) (real_pow y2 y0)) -> False) -> ((~ (forall y0 : real, forall y1 : real, ((real_le (real_of_num (NUMERAL 0)) y0) /\ (real_le (sqrt y0) y1)) -> real_le y0 (real_pow y1 (NUMERAL (BIT0 (BIT1 0)))))) -> (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> (real_pow (sqrt y0) (NUMERAL (BIT0 (BIT1 0)))) = y0) -> (forall y0 : real, forall y1 : real, forall y2 : real, ((real_le y0 y1) /\ (real_le y1 y2)) -> real_le y0 y2) -> (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> real_le (real_of_num (NUMERAL 0)) (sqrt y0)) -> (forall y0 : nat, forall y1 : real, forall y2 : real, ((real_le (real_of_num (NUMERAL 0)) y1) /\ (real_le y1 y2)) -> real_le (real_pow y1 y0) (real_pow y2 y0)) -> False) -> (~ (forall y0 : real, forall y1 : real, ((real_le (real_of_num (NUMERAL 0)) y0) /\ (real_le (sqrt y0) y1)) -> real_le y0 (real_pow y1 (NUMERAL (BIT0 (BIT1 0)))))) -> (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> (real_pow (sqrt y0) (NUMERAL (BIT0 (BIT1 0)))) = y0) -> (forall y0 : real, forall y1 : real, forall y2 : real, ((real_le y0 y1) /\ (real_le y1 y2)) -> real_le y0 y2) -> (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> real_le (real_of_num (NUMERAL 0)) (sqrt y0)) -> (forall y0 : nat, forall y1 : real, forall y2 : real, ((real_le (real_of_num (NUMERAL 0)) y1) /\ (real_le y1 y2)) -> real_le (real_pow y1 y0) (real_pow y2 y0)) -> False.
+Definition term10 := ~ (forall y0 : real, forall y1 : real, ((real_le (real_of_num (NUMERAL 0)) y0) /\ (real_le (sqrt y0) y1)) -> real_le y0 (real_pow y1 (NUMERAL (BIT0 (BIT1 0))))).
+Definition term75 := forall y0 : real, (~ (real_le (real_of_num (NUMERAL 0)) y0)) \/ ((real_pow (sqrt y0) (NUMERAL (BIT0 (BIT1 0)))) = y0).
+Definition term77 (x0 : real) := real_le (real_of_num (NUMERAL 0)) (sqrt x0).
+Definition term0 (x0 : Prop) := (fun y0 : Prop => forall y1 : Prop, forall y2 : Prop, (y0 \/ (y1 \/ y2)) = ((y0 \/ y1) \/ y2)) x0.
+Definition term108 (x0 : real) (x1 : real) (x2 : real) (x3 : real) := (~ (x3 = x1)) \/ ((real_le x0 x1) \/ (~ (real_le x2 x3))).
+Definition term132 (x0 : real) := ~ (real_le (real_of_num (NUMERAL 0)) (sqrt x0)).
+Definition term104 (x0 : real) (x1 : real) (x2 : real) (x3 : real) := ((real_le x2 x3) = (real_le x0 x1)) -> (real_le x0 x1) \/ (~ (real_le x2 x3)).
+Definition term171 (x0 : real) (x1 : real) (x2 : real) (x3 : real) := @eq Prop ((real_le x0 x1) \/ ((~ (x2 = x0)) \/ ((~ (x3 = x1)) \/ (~ (real_le x2 x3))))).
+Definition term133 (x0 : real) (x1 : real) := real_le (sqrt x0) x1.
+Definition term164 (x0 : real) (x1 : real) (x2 : real) (x3 : real) := (real_le x0 x1) \/ ((~ (x3 = x1)) \/ (~ (real_le x2 x3))).
+Definition term190 (x0 : real) (x1 : real) := (real_le x0 (real_pow x1 (NUMERAL (BIT0 (BIT1 0))))) -> False.
+Definition term20 := (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> real_le (real_of_num (NUMERAL 0)) (sqrt y0)) -> ~ (forall y0 : nat, forall y1 : real, forall y2 : real, ((real_le (real_of_num (NUMERAL 0)) y1) /\ (real_le y1 y2)) -> real_le (real_pow y1 y0) (real_pow y2 y0)).
+Definition term148 (x0 : Prop) (x1 : Prop) := ~ (x0 \/ x1).
+Definition term93 := forall y0 : nat, forall y1 : real, forall y2 : real, ((~ (real_le (real_of_num (NUMERAL 0)) y1)) \/ (~ (real_le y1 y2))) \/ (real_le (real_pow y1 y0) (real_pow y2 y0)).
+Definition term17 := forall y0 : nat, forall y1 : real, forall y2 : real, ((real_le (real_of_num (NUMERAL 0)) y1) /\ (real_le y1 y2)) -> real_le (real_pow y1 y0) (real_pow y2 y0).
+Definition term140 (x0 : real) (x1 : nat) (x2 : real) := (~ (real_le x2 x0)) \/ ((real_le (real_pow x2 x1) (real_pow x0 x1)) \/ (~ (real_le (real_of_num (NUMERAL 0)) x2))).
+Definition term85 (x0 : real) (x1 : real) (x2 : nat) := (~ ((real_le (real_of_num (NUMERAL 0)) x0) /\ (real_le x0 x1))) \/ (real_le (real_pow x0 x2) (real_pow x1 x2)).
+Definition term67 (x0 : real) := ~ ((fun y0 : real => forall y1 : real, ((real_le (real_of_num (NUMERAL 0)) y0) /\ (real_le (sqrt y0) y1)) -> real_le y0 (real_pow y1 (NUMERAL (BIT0 (BIT1 0))))) x0).
+Definition term142 (x0 : real) (x1 : real) (x2 : nat) := @eq Prop ((~ (real_le (real_of_num (NUMERAL 0)) x0)) \/ ((~ (real_le x0 x1)) \/ (real_le (real_pow x0 x2) (real_pow x1 x2)))).
+Definition term129 (x0 : real) := @eq Prop ((real_le (real_of_num (NUMERAL 0)) (sqrt x0)) \/ (~ (real_le (real_of_num (NUMERAL 0)) x0))).
+Definition term126 (x0 : real) := ~ ((real_pow x0 (NUMERAL (BIT0 (BIT1 0)))) = (real_pow x0 (NUMERAL (BIT0 (BIT1 0))))).
+Definition term13 := (((~ (forall y0 : real, forall y1 : real, ((real_le (real_of_num (NUMERAL 0)) y0) /\ (real_le (sqrt y0) y1)) -> real_le y0 (real_pow y1 (NUMERAL (BIT0 (BIT1 0)))))) -> (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> (real_pow (sqrt y0) (NUMERAL (BIT0 (BIT1 0)))) = y0) -> (forall y0 : real, forall y1 : real, forall y2 : real, ((real_le y0 y1) /\ (real_le y1 y2)) -> real_le y0 y2) -> (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> real_le (real_of_num (NUMERAL 0)) (sqrt y0)) -> (forall y0 : nat, forall y1 : real, forall y2 : real, ((real_le (real_of_num (NUMERAL 0)) y1) /\ (real_le y1 y2)) -> real_le (real_pow y1 y0) (real_pow y2 y0)) -> False) -> (~ (forall y0 : real, forall y1 : real, ((real_le (real_of_num (NUMERAL 0)) y0) /\ (real_le (sqrt y0) y1)) -> real_le y0 (real_pow y1 (NUMERAL (BIT0 (BIT1 0)))))) -> (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> (real_pow (sqrt y0) (NUMERAL (BIT0 (BIT1 0)))) = y0) -> (forall y0 : real, forall y1 : real, forall y2 : real, ((real_le y0 y1) /\ (real_le y1 y2)) -> real_le y0 y2) -> (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> real_le (real_of_num (NUMERAL 0)) (sqrt y0)) -> (forall y0 : nat, forall y1 : real, forall y2 : real, ((real_le (real_of_num (NUMERAL 0)) y1) /\ (real_le y1 y2)) -> real_le (real_pow y1 y0) (real_pow y2 y0)) -> False) -> (~ (forall y0 : real, forall y1 : real, ((real_le (real_of_num (NUMERAL 0)) y0) /\ (real_le (sqrt y0) y1)) -> real_le y0 (real_pow y1 (NUMERAL (BIT0 (BIT1 0)))))) -> (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> (real_pow (sqrt y0) (NUMERAL (BIT0 (BIT1 0)))) = y0) -> (forall y0 : real, forall y1 : real, forall y2 : real, ((real_le y0 y1) /\ (real_le y1 y2)) -> real_le y0 y2) -> (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> real_le (real_of_num (NUMERAL 0)) (sqrt y0)) -> (forall y0 : nat, forall y1 : real, forall y2 : real, ((real_le (real_of_num (NUMERAL 0)) y1) /\ (real_le y1 y2)) -> real_le (real_pow y1 y0) (real_pow y2 y0)) -> False.
+Definition term74 := fun y0 : real => (~ (real_le (real_of_num (NUMERAL 0)) y0)) \/ ((real_pow (sqrt y0) (NUMERAL (BIT0 (BIT1 0)))) = y0).
+Definition term41 (x0 : real) := fun y0 : real => forall y1 : real, ((real_le x0 y0) /\ (real_le y0 y1)) -> real_le x0 y1.
+Definition term160 (x0 : real) (x1 : real) := real_le (real_pow (sqrt x0) (NUMERAL (BIT0 (BIT1 0)))) (real_pow x1 (NUMERAL (BIT0 (BIT1 0)))).
+Definition term57 (x0 : real -> Prop) := exists y0 : real, ~ (x0 y0).
+Definition term6 (x0 : Prop) (x1 : Prop) (x2 : Prop) := (x0 \/ x1) \/ x2.
+Definition term66 (x0 : real) := (fun y0 : real => forall y1 : real, ((real_le (real_of_num (NUMERAL 0)) y0) /\ (real_le (sqrt y0) y1)) -> real_le y0 (real_pow y1 (NUMERAL (BIT0 (BIT1 0))))) x0.
+Definition term30 (x0 : real) (x1 : nat) := fun y0 : real => ((real_le (real_of_num (NUMERAL 0)) x0) /\ (real_le x0 y0)) -> real_le (real_pow x0 x1) (real_pow y0 x1).
+Definition term12 := ((~ (forall y0 : real, forall y1 : real, ((real_le (real_of_num (NUMERAL 0)) y0) /\ (real_le (sqrt y0) y1)) -> real_le y0 (real_pow y1 (NUMERAL (BIT0 (BIT1 0)))))) -> (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> (real_pow (sqrt y0) (NUMERAL (BIT0 (BIT1 0)))) = y0) -> (forall y0 : real, forall y1 : real, forall y2 : real, ((real_le y0 y1) /\ (real_le y1 y2)) -> real_le y0 y2) -> (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> real_le (real_of_num (NUMERAL 0)) (sqrt y0)) -> (forall y0 : nat, forall y1 : real, forall y2 : real, ((real_le (real_of_num (NUMERAL 0)) y1) /\ (real_le y1 y2)) -> real_le (real_pow y1 y0) (real_pow y2 y0)) -> False) -> (~ (forall y0 : real, forall y1 : real, ((real_le (real_of_num (NUMERAL 0)) y0) /\ (real_le (sqrt y0) y1)) -> real_le y0 (real_pow y1 (NUMERAL (BIT0 (BIT1 0)))))) -> (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> (real_pow (sqrt y0) (NUMERAL (BIT0 (BIT1 0)))) = y0) -> (forall y0 : real, forall y1 : real, forall y2 : real, ((real_le y0 y1) /\ (real_le y1 y2)) -> real_le y0 y2) -> (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> real_le (real_of_num (NUMERAL 0)) (sqrt y0)) -> (forall y0 : nat, forall y1 : real, forall y2 : real, ((real_le (real_of_num (NUMERAL 0)) y1) /\ (real_le y1 y2)) -> real_le (real_pow y1 y0) (real_pow y2 y0)) -> False.
+Definition term64 (x0 : real) := exists y0 : real, ((real_le (real_of_num (NUMERAL 0)) x0) /\ (real_le (sqrt x0) y0)) /\ (~ (real_le x0 (real_pow y0 (NUMERAL (BIT0 (BIT1 0)))))).
+Definition term174 (x0 : real) (x1 : real) (x2 : real) (x3 : real) := ~ ((~ (x2 = x0)) \/ ((~ (x3 = x1)) \/ (~ (real_le x2 x3)))).
+Definition term84 (x0 : real) (x1 : real) := or ((~ (real_le (real_of_num (NUMERAL 0)) x0)) \/ (~ (real_le x0 x1))).
+Definition term95 (x0 : real) := (fun y0 : real => (~ (real_le (real_of_num (NUMERAL 0)) y0)) \/ (real_le (real_of_num (NUMERAL 0)) (sqrt y0))) x0.
+Definition term72 (x0 : real) := real_le (real_of_num (NUMERAL 0)) x0.
+Definition term9 := (~ (forall y0 : real, forall y1 : real, ((real_le (real_of_num (NUMERAL 0)) y0) /\ (real_le (sqrt y0) y1)) -> real_le y0 (real_pow y1 (NUMERAL (BIT0 (BIT1 0)))))) -> False.
+Definition term146 (x0 : nat) (x1 : real) (x2 : real) := (real_le (real_pow x1 x0) (real_pow x2 x0)) \/ ((~ (real_le (real_of_num (NUMERAL 0)) x1)) \/ (~ (real_le x1 x2))).
+Definition term138 (x0 : real) (x1 : nat) (x2 : real) := (real_le (real_pow x2 x1) (real_pow x0 x1)) \/ (~ (real_le (real_of_num (NUMERAL 0)) x2)).
+Definition term185 (x0 : real) (x1 : real) (x2 : real) (x3 : real) := ((x0 = x2) /\ ((x1 = x3) /\ (real_le x0 x1))) -> real_le x2 x3.
+Definition term50 (x0 : real) := forall y0 : real, ((real_le (real_of_num (NUMERAL 0)) x0) /\ (real_le (sqrt x0) y0)) -> real_le x0 (real_pow y0 (NUMERAL (BIT0 (BIT1 0)))).
+Definition term139 (x0 : real) (x1 : real) := or (~ (real_le x0 x1)).
+Definition term168 (x0 : real) (x1 : real) (x2 : real) (x3 : real) := (real_le x0 x1) \/ ((~ (x2 = x0)) \/ ((~ (x3 = x1)) \/ (~ (real_le x2 x3)))).
+Definition term181 (x0 : real) (x1 : real) (x2 : real) := (x2 = x0) /\ (real_le x1 x2).
+Definition term152 (x0 : real) := and (~ (~ (real_le (real_of_num (NUMERAL 0)) x0))).
+Definition term1 (x0 : Prop) := forall y0 : Prop, forall y1 : Prop, (x0 \/ (y0 \/ y1)) = ((x0 \/ y0) \/ y1).
+Definition term97 (x0 : nat) (x1 : real) := (fun y0 : real => forall y1 : real, ((~ (real_le (real_of_num (NUMERAL 0)) y0)) \/ (~ (real_le y0 y1))) \/ (real_le (real_pow y0 x0) (real_pow y1 x0))) x1.
+Definition term177 (x0 : real) (x1 : real) := and (~ (~ (x0 = x1))).
+Definition term161 := NUMERAL (BIT0 (BIT1 0)).
+Definition term103 (x0 : Prop) (x1 : Prop) := (x1 = x0) -> x0 \/ (~ x1).
+Definition term122 (x0 : real) := (~ ((real_pow (sqrt x0) (NUMERAL (BIT0 (BIT1 0)))) = x0)) -> (real_pow (sqrt x0) (NUMERAL (BIT0 (BIT1 0)))) = x0.
+Definition term135 (x0 : real) (x1 : real) := ~ (real_le (sqrt x0) x1).
+Definition term88 (x0 : real) (x1 : nat) := fun y0 : real => ((~ (real_le (real_of_num (NUMERAL 0)) x0)) \/ (~ (real_le x0 y0))) \/ (real_le (real_pow x0 x1) (real_pow y0 x1)).
+Definition term52 (x0 : real) (x1 : real) := ~ (((real_le (real_of_num (NUMERAL 0)) x0) /\ (real_le (sqrt x0) x1)) -> real_le x0 (real_pow x1 (NUMERAL (BIT0 (BIT1 0))))).
+Definition term43 := fun y0 : real => forall y1 : real, forall y2 : real, ((real_le y0 y1) /\ (real_le y1 y2)) -> real_le y0 y2.
+Definition term73 (x0 : real) := real_pow (sqrt x0) (NUMERAL (BIT0 (BIT1 0))).
+Definition term48 (x0 : real) (x1 : real) := ((real_le (real_of_num (NUMERAL 0)) x0) /\ (real_le (sqrt x0) x1)) -> real_le x0 (real_pow x1 (NUMERAL (BIT0 (BIT1 0)))).
+Definition term37 := forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> real_le (real_of_num (NUMERAL 0)) (sqrt y0).
+Definition term101 (x0 : real) (x1 : real) := ~ (real_le x0 x1).
+Definition term113 (x0 : real) := ((real_pow (sqrt x0) (NUMERAL (BIT0 (BIT1 0)))) = x0) \/ (~ (real_le (real_of_num (NUMERAL 0)) x0)).
+Definition term145 (x0 : real) (x1 : real) (x2 : nat) := or (real_le (real_pow x0 x2) (real_pow x1 x2)).
+Definition term173 (x0 : real) (x1 : real) (x2 : real) (x3 : real) := (~ (x2 = x0)) \/ ((~ (x3 = x1)) \/ (~ (real_le x2 x3))).
+Definition term49 (x0 : real) := fun y0 : real => ((real_le (real_of_num (NUMERAL 0)) x0) /\ (real_le (sqrt x0) y0)) -> real_le x0 (real_pow y0 (NUMERAL (BIT0 (BIT1 0)))).
+Definition term63 (x0 : real) := fun y0 : real => ((real_le (real_of_num (NUMERAL 0)) x0) /\ (real_le (sqrt x0) y0)) /\ (~ (real_le x0 (real_pow y0 (NUMERAL (BIT0 (BIT1 0)))))).
+Definition term179 (x0 : real) (x1 : real) (x2 : real) := ~ ((~ (x2 = x0)) \/ (~ (real_le x1 x2))).
+Definition term150 (x0 : real) (x1 : real) := ~ ((~ (real_le (real_of_num (NUMERAL 0)) x0)) \/ (~ (real_le x0 x1))).
+Definition term40 (x0 : real) (x1 : real) := forall y0 : real, ((real_le x1 x0) /\ (real_le x0 y0)) -> real_le x1 y0.
+Definition term170 (x0 : real) (x1 : real) (x2 : real) (x3 : real) := @eq Prop ((~ (x2 = x0)) \/ ((~ (x3 = x1)) \/ ((real_le x0 x1) \/ (~ (real_le x2 x3))))).
+Definition term115 (x0 : real) := @eq Prop (((real_pow (sqrt x0) (NUMERAL (BIT0 (BIT1 0)))) = x0) \/ (~ (real_le (real_of_num (NUMERAL 0)) x0))).
+Definition term178 (x0 : real) (x1 : real) := and (x0 = x1).
+Definition term107 (x0 : Prop) (x1 : Prop) := (~ x0) \/ x1.
+Definition term175 (x0 : real) (x1 : real) (x2 : real) (x3 : real) := (~ (~ (x2 = x0))) /\ (~ ((~ (x3 = x1)) \/ (~ (real_le x2 x3)))).
+Definition term86 (x0 : real) (x1 : real) (x2 : nat) := ((~ (real_le (real_of_num (NUMERAL 0)) x0)) \/ (~ (real_le x0 x1))) \/ (real_le (real_pow x0 x2) (real_pow x1 x2)).
+Definition term128 (x0 : real) := @eq Prop ((~ (real_le (real_of_num (NUMERAL 0)) x0)) \/ (real_le (real_of_num (NUMERAL 0)) (sqrt x0))).
+Definition term2 (x0 : Prop) (x1 : Prop) := (fun y0 : Prop => forall y1 : Prop, (x0 \/ (y0 \/ y1)) = ((x0 \/ y0) \/ y1)) x1.
+Definition term24 := imp (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> (real_pow (sqrt y0) (NUMERAL (BIT0 (BIT1 0)))) = y0).
+Definition term18 := imp (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> real_le (real_of_num (NUMERAL 0)) (sqrt y0)).
+Definition term62 (x0 : real) := fun y0 : real => ~ ((fun y1 : real => ((real_le (real_of_num (NUMERAL 0)) x0) /\ (real_le (sqrt x0) y1)) -> real_le x0 (real_pow y1 (NUMERAL (BIT0 (BIT1 0))))) y0).
+Definition term106 (x0 : real) (x1 : real) (x2 : real) (x3 : real) := (x3 = x1) -> (real_le x0 x1) \/ (~ (real_le x2 x3)).
+Definition term182 (x0 : real) (x1 : real) (x2 : real) (x3 : real) := (x2 = x0) /\ ((x3 = x1) /\ (real_le x2 x3)).
+Definition term4 (x0 : Prop) (x1 : Prop) (x2 : Prop) := (fun y0 : Prop => (x0 \/ (x1 \/ y0)) = ((x0 \/ x1) \/ y0)) x2.
+Definition term39 (x0 : real) (x1 : real) := fun y0 : real => ((real_le x1 x0) /\ (real_le x0 y0)) -> real_le x1 y0.
+Definition term89 (x0 : real) (x1 : nat) := forall y0 : real, ((~ (real_le (real_of_num (NUMERAL 0)) x0)) \/ (~ (real_le x0 y0))) \/ (real_le (real_pow x0 x1) (real_pow y0 x1)).
+Definition term159 (x0 : real) (x1 : real) (x2 : nat) := real_le (real_pow (sqrt x0) x2) (real_pow x1 x2).
+Definition term54 (x0 : real) (x1 : real) := (real_le (real_of_num (NUMERAL 0)) x0) /\ (real_le (sqrt x0) x1).
+Definition term28 := (~ (forall y0 : real, forall y1 : real, ((real_le (real_of_num (NUMERAL 0)) y0) /\ (real_le (sqrt y0) y1)) -> real_le y0 (real_pow y1 (NUMERAL (BIT0 (BIT1 0)))))) -> (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> (real_pow (sqrt y0) (NUMERAL (BIT0 (BIT1 0)))) = y0) -> (forall y0 : real, forall y1 : real, forall y2 : real, ((real_le y0 y1) /\ (real_le y1 y2)) -> real_le y0 y2) -> (forall y0 : real, (real_le (real_of_num (NUMERAL 0)) y0) -> real_le (real_of_num (NUMERAL 0)) (sqrt y0)) -> ~ (forall y0 : nat, forall y1 : real, forall y2 : real, ((real_le (real_of_num (NUMERAL 0)) y1) /\ (real_le y1 y2)) -> real_le (real_pow y1 y0) (real_pow y2 y0)).
+Definition term186 (x0 : real) (x1 : real) := ((real_pow x1 (NUMERAL (BIT0 (BIT1 0)))) = (real_pow x1 (NUMERAL (BIT0 (BIT1 0))))) /\ (real_le (real_pow (sqrt x0) (NUMERAL (BIT0 (BIT1 0)))) (real_pow x1 (NUMERAL (BIT0 (BIT1 0))))).
+Definition term189 (x0 : real) (x1 : real) := (~ (real_le x0 (real_pow x1 (NUMERAL (BIT0 (BIT1 0)))))) -> real_le x0 (real_pow x1 (NUMERAL (BIT0 (BIT1 0)))).
+Definition term176 (x0 : real) (x1 : real) := ~ (~ (x0 = x1)).
+Definition term80 (x0 : real) (x1 : real) := ~ ((real_le (real_of_num (NUMERAL 0)) x0) /\ (real_le x0 x1)).
+Definition term166 (x0 : real) (x1 : real) := or (~ (x0 = x1)).
+Definition term188 (x0 : real) (x1 : real) := (((real_pow (sqrt x0) (NUMERAL (BIT0 (BIT1 0)))) = x0) /\ (((real_pow x1 (NUMERAL (BIT0 (BIT1 0)))) = (real_pow x1 (NUMERAL (BIT0 (BIT1 0))))) /\ (real_le (real_pow (sqrt x0) (NUMERAL (BIT0 (BIT1 0)))) (real_pow x1 (NUMERAL (BIT0 (BIT1 0))))))) -> real_le x0 (real_pow x1 (NUMERAL (BIT0 (BIT1 0)))).
+Definition term119 (x0 : real) := ~ (~ (real_le (real_of_num (NUMERAL 0)) x0)).
+Definition term110 (x0 : real) (x1 : real) (x2 : real) (x3 : real) := (~ (x2 = x0)) \/ ((~ (x3 = x1)) \/ ((real_le x0 x1) \/ (~ (real_le x2 x3)))).
+Definition term151 (x0 : real) (x1 : real) := (~ (~ (real_le (real_of_num (NUMERAL 0)) x0))) /\ (~ (~ (real_le x0 x1))).
+Definition term136 (x0 : real) (x1 : real) (x2 : nat) := (~ (real_le x0 x1)) \/ ((~ (real_le (real_of_num (NUMERAL 0)) x0)) \/ (real_le (real_pow x0 x2) (real_pow x1 x2))).
+Definition term87 (x0 : real) (x1 : real) := (real_le (real_of_num (NUMERAL 0)) x0) /\ (real_le x0 x1).
+Definition term27 := imp (~ (forall y0 : real, forall y1 : real, ((real_le (real_of_num (NUMERAL 0)) y0) /\ (real_le (sqrt y0) y1)) -> real_le y0 (real_pow y1 (NUMERAL (BIT0 (BIT1 0)))))).
+Definition term120 (x0 : real) := imp (~ (~ (real_le (real_of_num (NUMERAL 0)) x0))).
+Definition term105 (x0 : real) (x1 : real) (x2 : real) (x3 : real) := (real_le x0 x1) \/ (~ (real_le x2 x3)).

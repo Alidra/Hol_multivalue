@@ -1,0 +1,13 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm12653_term_abbrevs;
+require open hol-light.COND_CLAUSES_spec;
+private symbol lem12648 [A] (t1 : El A) : Prf (term0 A t1) ≔ (@lem12647 A) t1;
+private symbol lem12649 [A] (t1 : El A) : Prf (= (term0 A t1) (term1 A t1)) ≔ REFL (term0 A t1);
+private symbol lem12650 [A] (t1 : El A) : Prf (term1 A t1) ≔ EQ_MP (@lem12649 A t1) (@lem12648 A t1);
+opaque symbol lem12651 [A] (t1 : El A) (t2 : El A) : Prf (term2 A t1 t2) ≔ (@lem12650 A t1) t2;
+opaque symbol lem12652 [A] (t1 : El A) (t2 : El A) : Prf (= (term2 A t1 t2) (term3 A t1 t2)) ≔ REFL (term2 A t1 t2);
+opaque symbol lem12653 [A] (t1 : El A) (t2 : El A) : Prf (term3 A t1 t2) ≔ EQ_MP (@lem12652 A t1 t2) (@lem12651 A t1 t2);

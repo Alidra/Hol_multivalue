@@ -1,0 +1,12 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm3453917_term_abbrevs;
+require open hol-light.thm3453905_spec;
+require open hol-light.thm3453906_spec;
+private symbol lem3453914 [A] (s : El (fun A bool)) (t : El (fun A bool)) : Prf (= (= s t) (term0 A s t)) ≔ EQ_MP (@lem3453906 A s t) (@lem3453905 A s t);
+private symbol lem3453915 [_89578] (s : El (fun _89578 bool)) (t : El (fun _89578 bool)) : Prf (= (= s t) (term0 _89578 s t)) ≔ (@lem3453914 _89578 s t);
+opaque symbol lem3453916 [_89578 _89597 _89598] (P : El (type1470 _89597 _89598)) (f : El (type1517 _89578 _89597 _89598)) : Prf (= (= (term1 _89578 _89597 _89598 P f) (term2 _89578 _89597 _89598 P f)) (term3 _89578 _89597 _89598 P f)) ≔ (@lem3453915 _89578 (term1 _89578 _89597 _89598 P f) (term2 _89578 _89597 _89598 P f));
+opaque symbol lem3453917 [_89578 _89597 _89598] (P : El (type1470 _89597 _89598)) (f : El (type1517 _89578 _89597 _89598)) : Prf (= (term3 _89578 _89597 _89598 P f) (= (term1 _89578 _89597 _89598 P f) (term2 _89578 _89597 _89598 P f))) ≔ SYM (@lem3453916 _89578 _89597 _89598 P f);

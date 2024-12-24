@@ -1,0 +1,14 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm7261440_term_abbrevs;
+require open hol-light.thm7260962_spec;
+require open hol-light.thm7261377_spec;
+private symbol lem7261420 [_137613] (s : El (fun _137613 bool)) (f : El (fun _137613 real)) (g : El (fun _137613 real)) (h1 : Prf (term0 _137613 s f g)) : Prf (= (term0 _137613 s f g) (= (term1 _137613 s f) ((@sum _137613) s g))) ≔ prop_ext (λ h2 : Prf (term0 _137613 s f g), (@lem7261377 _137613 s f g h1)) (λ h2 : Prf (= (term1 _137613 s f) ((@sum _137613) s g)), (@lem7260962 _137613 s f g h1));
+private symbol lem7261421 [_137613] (s : El (fun _137613 bool)) (f : El (fun _137613 real)) (g : El (fun _137613 real)) (h1 : Prf (term0 _137613 s f g)) : Prf (= (term1 _137613 s f) ((@sum _137613) s g)) ≔ EQ_MP (@lem7261420 _137613 s f g h1) (@lem7260962 _137613 s f g h1);
+private symbol lem7261422 [_137613] (f : El (fun _137613 real)) (s : El (fun _137613 bool)) (g : El (fun _137613 real)) : Prf (term2 _137613 f s g) ≔ λ h0 : Prf (term0 _137613 s f g), (@lem7261421 _137613 s f g h0);
+private symbol lem7261427 [_137613] (f : El (fun _137613 real)) (g : El (fun _137613 real)) : Prf (term3 _137613 f g) ≔ λ s : El (fun _137613 bool), (@lem7261422 _137613 f s g);
+opaque symbol lem7261432 [_137613] (f : El (fun _137613 real)) : Prf (term4 _137613 f) ≔ λ g : El (fun _137613 real), (@lem7261427 _137613 f g);
+opaque symbol lem7261440 [_137613] : Prf (term5 _137613) ≔ λ f : El (fun _137613 real), (@lem7261432 _137613 f);

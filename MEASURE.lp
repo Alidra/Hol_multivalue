@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.MEASURE_term_abbrevs;
+private symbol lem365378 [_16406] : Prf (= (@MEASURE _16406) (term0 _16406)) ≔ @MEASURE_def _16406;
+private symbol lem365379 [_16406] (_7931 : El (fun _16406 num)) : Prf (= _7931 _7931) ≔ REFL _7931;
+private symbol lem365380 [_16406] (_7931 : El (fun _16406 num)) : Prf (= ((@MEASURE _16406) _7931) (term1 _16406 _7931)) ≔ MK_COMB (@lem365378 _16406) (@lem365379 _16406 _7931);
+private symbol lem365381 [_16406] (_7931 : El (fun _16406 num)) : Prf (= (term1 _16406 _7931) (term2 _16406 _7931)) ≔ REFL (term1 _16406 _7931);
+private symbol lem365382 [_16406] (_7931 : El (fun _16406 num)) : Prf (= ((@MEASURE _16406) _7931) (term2 _16406 _7931)) ≔ TRANS (@lem365380 _16406 _7931) (@lem365381 _16406 _7931);
+private symbol lem365383 [_16406] : Prf (term3 _16406) ≔ λ _7931 : El (fun _16406 num), (@lem365382 _16406 _7931);
+private symbol lem365384 [_16406] (_7931 : El (fun _16406 num)) : Prf (term4 _16406 _7931) ≔ (@lem365383 _16406) _7931;
+private symbol lem365385 [_16406] (_7931 : El (fun _16406 num)) : Prf (= (term4 _16406 _7931) (= ((@MEASURE _16406) _7931) (term2 _16406 _7931))) ≔ REFL (term4 _16406 _7931);
+private symbol lem365386 [_16406] (_7931 : El (fun _16406 num)) : Prf (= ((@MEASURE _16406) _7931) (term2 _16406 _7931)) ≔ EQ_MP (@lem365385 _16406 _7931) (@lem365384 _16406 _7931);
+opaque symbol lem365416 [_16406] (m : El (fun _16406 num)) : Prf (= ((@MEASURE _16406) m) (term2 _16406 m)) ≔ (@lem365386 _16406 m);
+opaque symbol lem365417 [_16406] : Prf (term3 _16406) ≔ λ m : El (fun _16406 num), (@lem365416 _16406 m);

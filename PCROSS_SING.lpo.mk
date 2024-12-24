@@ -1,0 +1,1 @@
+PCROSS_SING.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo PCROSS_SING_term_abbrevs.lpo EXTENSION_spec.lpo IN_SING_spec.lpo PASTECART_INJ_spec.lpo PASTECART_IN_PCROSS_spec.lpo thm0_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm7660850_spec.lpo thm7662539_spec.lpo

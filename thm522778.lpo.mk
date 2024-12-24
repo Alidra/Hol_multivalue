@@ -1,0 +1,1 @@
+thm522778.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo thm522778_term_abbrevs.lpo SUB_0_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm1842_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm512704_spec.lpo thm512705_spec.lpo thm75543_spec.lpo

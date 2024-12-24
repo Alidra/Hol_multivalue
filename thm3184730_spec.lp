@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem3184730 [_83123 _83152 _83169] : Prf (∧ (∀ (λ P : El (fun (fun bool (fun _83123 bool)) bool), (∀ (λ x : El _83123, (= ((@GSPEC _83123) (λ v : El _83123, (P ((@SETSPEC _83123) v))) x) (P (λ p : El bool, (λ t : El _83123, (∧ p (= x t)))))))))) (∧ (∀ (λ p : El (fun _83152 bool), (∀ (λ x : El _83152, (= ((@GSPEC _83152) (λ v : El _83152, (∃ (λ y : El _83152, ((@SETSPEC _83152) v (p y) y)))) x) (p x)))))) (∀ (λ p : El (fun _83169 bool), (∀ (λ x : El _83169, (= ((@IN _83169) x (λ y : El _83169, (p y))) (p x))))))));

@@ -1,0 +1,1 @@
+SUB_EQ_0.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo SUB_EQ_0_term_abbrevs.lpo LE_0_spec.lpo LE_SUC_spec.lpo SUB_0_spec.lpo SUB_SUC_spec.lpo thm0_spec.lpo thm1855_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm7_spec.lpo thm75622_spec.lpo thm75623_spec.lpo thm89498_spec.lpo

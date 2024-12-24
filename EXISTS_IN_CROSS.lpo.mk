@@ -1,0 +1,1 @@
+EXISTS_IN_CROSS.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo EXISTS_IN_CROSS_term_abbrevs.lpo CONJ_ASSOC_spec.lpo EXISTS_PAIR_THM_spec.lpo IN_CROSS_spec.lpo thm0_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm1862_spec.lpo thm1863_spec.lpo

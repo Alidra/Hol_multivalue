@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem8136186 [_144006 _144007 _144038 _144063 P] : Prf (∀ (λ << : El (fun _144007 (fun _144006 bool)), (∀ (λ p : El (fun (fun _144007 _144038) (fun P bool)), (∀ (λ P' : El (fun (fun _144007 _144038) (fun P bool)), (∀ (λ s : El (fun P _144006), (∀ (λ h : El (fun (fun _144007 _144038) (fun P _144063)), (∀ (λ k : El (fun (fun _144007 _144038) (fun P _144063)), (⇒ (∧ ((@admissible _144006 _144038 _144007 bool P) << p s P') (∧ ((@admissible _144006 _144038 _144007 _144063 P) << (λ f : El (fun _144007 _144038), (λ x : El P, (∧ (p f x) (P' f x)))) s h) ((@admissible _144006 _144038 _144007 _144063 P) << (λ f : El (fun _144007 _144038), (λ x : El P, (∧ (p f x) (¬ (P' f x))))) s k))) ((@admissible _144006 _144038 _144007 _144063 P) << p s (λ f : El (fun _144007 _144038), (λ x : El P, ((@COND _144063) (P' f x) (h f x) (k f x))))))))))))))))));

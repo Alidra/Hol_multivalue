@@ -1,0 +1,18 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term11 ≔ (int_le (int_of_num (NUMERAL _0)) (int_of_num (NUMERAL (BIT1 _0))));
+symbol term2 ≔ (real_of_int (int_of_num (NUMERAL _0)));
+symbol term1 ≔ (real_of_num (NUMERAL _0));
+symbol term12 ≔ (int_of_num (NUMERAL _0));
+symbol term3 ≔ (real_le (real_of_num (NUMERAL _0)));
+symbol term0 (x0: El num) ≔ (real_of_int (int_of_num x0));
+symbol term10 (x0: El int) (x1: El int) ≔ (real_le (real_of_int x0) (real_of_int x1));
+symbol term5 ≔ (real_of_num (NUMERAL (BIT1 _0)));
+symbol term9 ≔ (real_le (real_of_int (int_of_num (NUMERAL _0))) (real_of_int (int_of_num (NUMERAL (BIT1 _0)))));
+symbol term6 ≔ (real_of_int (int_of_num (NUMERAL (BIT1 _0))));
+symbol term8 ≔ (real_le (real_of_num (NUMERAL _0)) (real_of_num (NUMERAL (BIT1 _0))));
+symbol term4 ≔ (real_le (real_of_int (int_of_num (NUMERAL _0))));
+symbol term13 ≔ (int_of_num (NUMERAL (BIT1 _0)));
+symbol term7 ≔ (NUMERAL (BIT1 _0));

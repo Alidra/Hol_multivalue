@@ -1,0 +1,18 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term3 (x0: El num) (x1: El num) ≔ ((λ y0 : El num, (= (real_ge (real_of_num x0) (real_of_num y0)) (>= x0 y0))) x1);
+symbol term13 (x0: El num) ≔ (∀ (λ y0 : El num, (= (int_ge (int_of_num x0) (int_of_num y0)) (>= x0 y0))));
+symbol term2 (x0: El num) ≔ (∀ (λ y0 : El num, (= (real_ge (real_of_num x0) (real_of_num y0)) (>= x0 y0))));
+symbol term11 (x0: El num) (x1: El num) ≔ ((@= bool) (real_ge (real_of_num x0) (real_of_num x1)));
+symbol term10 (x0: El num) (x1: El num) ≔ (int_ge (int_of_num x0) (int_of_num x1));
+symbol term5 (x0: El num) ≔ (real_of_int (int_of_num x0));
+symbol term0 ≔ (∀ (λ y0 : El num, (∀ (λ y1 : El num, (= (real_ge (real_of_num y0) (real_of_num y1)) (>= y0 y1))))));
+symbol term9 (x0: El int) (x1: El int) ≔ (real_ge (real_of_int x0) (real_of_int x1));
+symbol term12 (x0: El num) (x1: El num) ≔ ((@= bool) (int_ge (int_of_num x0) (int_of_num x1)));
+symbol term7 (x0: El num) ≔ (real_ge (real_of_int (int_of_num x0)));
+symbol term1 (x0: El num) ≔ ((λ y0 : El num, (∀ (λ y1 : El num, (= (real_ge (real_of_num y0) (real_of_num y1)) (>= y0 y1))))) x0);
+symbol term6 (x0: El num) ≔ (real_ge (real_of_num x0));
+symbol term4 (x0: El num) (x1: El num) ≔ (real_ge (real_of_num x0) (real_of_num x1));
+symbol term8 (x0: El num) (x1: El num) ≔ (real_ge (real_of_int (int_of_num x0)) (real_of_int (int_of_num x1)));

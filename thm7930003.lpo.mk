@@ -1,0 +1,1 @@
+thm7930003.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo thm7930003_term_abbrevs.lpo CONSTR_REC_spec.lpo thm1066568_spec.lpo thm1066569_spec.lpo thm7928419_spec.lpo thm7928450_spec.lpo thm7928454_spec.lpo thm7929765_spec.lpo thm9102_spec.lpo

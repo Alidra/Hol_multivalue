@@ -1,0 +1,14 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_type_abbrevs.
+Require Import hol_terms.
+Definition term8 (a0 : Type') (a1 : Type') (x0 : a1) (x1 : a0 -> Prop) (x2 : nat) (x3 : a1) (x4 : type1411 a0 a1) := (fun y0 : type1411 a0 a1 => (@FINREC a0 a1 y0 x0 x1 x3 (S x2)) = (exists y1 : a0, exists y2 : a1, (@IN a0 y1 x1) /\ ((@FINREC a0 a1 y0 x0 (@DELETE a0 x1 y1) y2 x2) /\ (x3 = (y0 y1 y2))))) x4.
+Definition term7 (a0 : Type') (a1 : Type') (x0 : a1) (x1 : a0 -> Prop) (x2 : nat) (x3 : a1) := forall y0 : type1411 a0 a1, (@FINREC a0 a1 y0 x0 x1 x3 (S x2)) = (exists y1 : a0, exists y2 : a1, (@IN a0 y1 x1) /\ ((@FINREC a0 a1 y0 x0 (@DELETE a0 x1 y1) y2 x2) /\ (x3 = (y0 y1 y2)))).
+Definition term1 (a0 : Type') (a1 : Type') (x0 : a1) := forall y0 : a0 -> Prop, forall y1 : nat, forall y2 : a1, forall y3 : type1411 a0 a1, (@FINREC a0 a1 y3 x0 y0 y2 (S y1)) = (exists y4 : a0, exists y5 : a1, (@IN a0 y4 y0) /\ ((@FINREC a0 a1 y3 x0 (@DELETE a0 y0 y4) y5 y1) /\ (y2 = (y3 y4 y5)))).
+Definition term0 (a0 : Type') (a1 : Type') (x0 : a1) := (fun y0 : a1 => forall y1 : a0 -> Prop, forall y2 : nat, forall y3 : a1, forall y4 : type1411 a0 a1, (@FINREC a0 a1 y4 y0 y1 y3 (S y2)) = (exists y5 : a0, exists y6 : a1, (@IN a0 y5 y1) /\ ((@FINREC a0 a1 y4 y0 (@DELETE a0 y1 y5) y6 y2) /\ (y3 = (y4 y5 y6))))) x0.
+Definition term2 (a0 : Type') (a1 : Type') (x0 : a1) (x1 : a0 -> Prop) := (fun y0 : a0 -> Prop => forall y1 : nat, forall y2 : a1, forall y3 : type1411 a0 a1, (@FINREC a0 a1 y3 x0 y0 y2 (S y1)) = (exists y4 : a0, exists y5 : a1, (@IN a0 y4 y0) /\ ((@FINREC a0 a1 y3 x0 (@DELETE a0 y0 y4) y5 y1) /\ (y2 = (y3 y4 y5))))) x1.
+Definition term3 (a0 : Type') (a1 : Type') (x0 : a1) (x1 : a0 -> Prop) := forall y0 : nat, forall y1 : a1, forall y2 : type1411 a0 a1, (@FINREC a0 a1 y2 x0 x1 y1 (S y0)) = (exists y3 : a0, exists y4 : a1, (@IN a0 y3 x1) /\ ((@FINREC a0 a1 y2 x0 (@DELETE a0 x1 y3) y4 y0) /\ (y1 = (y2 y3 y4)))).
+Definition term5 (a0 : Type') (a1 : Type') (x0 : a1) (x1 : a0 -> Prop) (x2 : nat) := forall y0 : a1, forall y1 : type1411 a0 a1, (@FINREC a0 a1 y1 x0 x1 y0 (S x2)) = (exists y2 : a0, exists y3 : a1, (@IN a0 y2 x1) /\ ((@FINREC a0 a1 y1 x0 (@DELETE a0 x1 y2) y3 x2) /\ (y0 = (y1 y2 y3)))).
+Definition term6 (a0 : Type') (a1 : Type') (x0 : a1) (x1 : a0 -> Prop) (x2 : nat) (x3 : a1) := (fun y0 : a1 => forall y1 : type1411 a0 a1, (@FINREC a0 a1 y1 x0 x1 y0 (S x2)) = (exists y2 : a0, exists y3 : a1, (@IN a0 y2 x1) /\ ((@FINREC a0 a1 y1 x0 (@DELETE a0 x1 y2) y3 x2) /\ (y0 = (y1 y2 y3))))) x3.
+Definition term4 (a0 : Type') (a1 : Type') (x0 : a1) (x1 : a0 -> Prop) (x2 : nat) := (fun y0 : nat => forall y1 : a1, forall y2 : type1411 a0 a1, (@FINREC a0 a1 y2 x0 x1 y1 (S y0)) = (exists y3 : a0, exists y4 : a1, (@IN a0 y3 x1) /\ ((@FINREC a0 a1 y2 x0 (@DELETE a0 x1 y3) y4 y0) /\ (y1 = (y2 y3 y4))))) x2.

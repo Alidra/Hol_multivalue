@@ -1,0 +1,1 @@
+DISJOINT_CROSS.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo DISJOINT_CROSS_term_abbrevs.lpo CROSS_EQ_EMPTY_spec.lpo DISJOINT_spec.lpo INTER_CROSS_spec.lpo thm0_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm1862_spec.lpo thm1863_spec.lpo

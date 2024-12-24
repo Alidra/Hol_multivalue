@@ -1,0 +1,1 @@
+thm365139.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo thm365139_term_abbrevs.lpo num_WF_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm307612_spec.lpo thm309905_spec.lpo thm7_spec.lpo

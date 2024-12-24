@@ -1,0 +1,1 @@
+thm1978260.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo thm1978260_term_abbrevs.lpo CONTRAPOS_THM_spec.lpo DE_MORGAN_THM_spec.lpo NOT_CLAUSES_WEAK_spec.lpo RAT_LEMMA1_spec.lpo REAL_LT_REFL_spec.lpo thm0_spec.lpo thm10416_spec.lpo thm10417_spec.lpo thm1831_spec.lpo thm1832_spec.lpo thm82_spec.lpo

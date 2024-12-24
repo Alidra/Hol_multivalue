@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem1070983 [A] (r : El (recspace A)) (list' : El (fun (recspace A) bool)) (CONS' : El (fun A (fun (recspace A) (recspace A)))) (NIL' : El (recspace A)) (h1 : Prf (= CONS' (λ a0 : El A, (λ a1 : El (recspace A), ((@CONSTR A) (SUC (NUMERAL _0)) a0 ((@FCONS (recspace A)) a1 (λ n : El num, (@BOTTOM A)))))))) (h2 : Prf (= list' (λ a : El (recspace A), (∀ (λ list'' : El (fun (recspace A) bool), (⇒ (∀ (λ a' : El (recspace A), (⇒ (∨ (= a' NIL') (∃ (λ a0 : El A, (∃ (λ a1 : El (recspace A), (∧ (= a' (CONS' a0 a1)) (list'' a1))))))) (list'' a')))) (list'' a))))))) (h3 : Prf (= NIL' ((@CONSTR A) (NUMERAL _0) ((@ε A) (λ v : El A, T)) (λ n : El num, (@BOTTOM A))))) : Prf (= (list' r) (= ((@_dest_list A) ((@_mk_list A) r)) r));

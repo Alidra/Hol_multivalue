@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm7640394_term_abbrevs;
+require open hol-light.DIMINDEX_HAS_SIZE_FINITE_SUM_spec;
+require open hol-light.HAS_SIZE_spec;
+private symbol lem7640380 [_100044] (s : El (fun _100044 bool)) : Prf (term0 _100044 s) ≔ (@lem3863773 _100044) s;
+private symbol lem7640381 [_100044] (s : El (fun _100044 bool)) : Prf (= (term0 _100044 s) (term1 _100044 s)) ≔ REFL (term0 _100044 s);
+private symbol lem7640382 [_100044] (s : El (fun _100044 bool)) : Prf (term1 _100044 s) ≔ EQ_MP (@lem7640381 _100044 s) (@lem7640380 _100044 s);
+private symbol lem7640383 [_100044] (s : El (fun _100044 bool)) (n : El num) : Prf (term2 _100044 s n) ≔ (@lem7640382 _100044 s) n;
+private symbol lem7640384 [_100044] (s : El (fun _100044 bool)) (n : El num) : Prf (= (term2 _100044 s n) (= ((@HAS_SIZE _100044) s n) (term3 _100044 s n))) ≔ REFL (term2 _100044 s n);
+private symbol lem7640387 [_100044] (s : El (fun _100044 bool)) (n : El num) : Prf (= ((@HAS_SIZE _100044) s n) (term3 _100044 s n)) ≔ EQ_MP (@lem7640384 _100044 s n) (@lem7640383 _100044 s n);
+private symbol lem7640388 [M N] (s : El (type49 M N)) (n : El num) : Prf (= ((@HAS_SIZE (finite_sum M N)) s n) (term4 M N s n)) ≔ (@lem7640387 (finite_sum M N) s n);
+opaque symbol lem7640389 [M N] : Prf (= (term5 M N) (term6 M N)) ≔ (@lem7640388 M N (@UNIV (finite_sum M N)) (term7 M N));
+opaque symbol lem7640394 [M N] : Prf (term6 M N) ≔ EQ_MP (@lem7640389 M N) (@lem7640379 M N);

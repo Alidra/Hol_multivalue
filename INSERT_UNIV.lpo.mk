@@ -1,0 +1,1 @@
+INSERT_UNIV.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo INSERT_UNIV_term_abbrevs.lpo thm0_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm1832_spec.lpo thm1855_spec.lpo thm3211692_spec.lpo thm3211693_spec.lpo thm3211724_spec.lpo thm3211725_spec.lpo thm3211756_spec.lpo thm3211757_spec.lpo

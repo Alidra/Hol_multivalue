@@ -1,0 +1,1 @@
+NSUM_UNIV.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo NSUM_UNIV_term_abbrevs.lpo MONOIDAL_ADD_spec.lpo thm0_spec.lpo thm6017756_spec.lpo thm6920357_spec.lpo thm6920371_spec.lpo thm7_spec.lpo

@@ -1,0 +1,10 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm1067332_term_abbrevs;
+require open hol-light.thm1067008_spec;
+require open hol-light.thm1067330_spec;
+opaque symbol lem1067331 [A B] (INL' : El (type1431 A B)) (h1 : Prf (= INL' (term0 A B))) : Prf (= (term1 A B) (term2 A B INL')) ≔ SYM (@lem1067008 A B INL' h1);
+opaque symbol lem1067332 [A B] (INL' : El (type1431 A B)) (h1 : Prf (= INL' (term0 A B))) : Prf (= (@INL A B) (term2 A B INL')) ≔ TRANS (@lem1067330 A B) (@lem1067331 A B INL' h1);

@@ -1,0 +1,11 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm2299871_term_abbrevs;
+private symbol lem2299867 (b : El bool) (x : El int) (y : El int) (h1 : Prf (= (term0 b x y) (term1 b x y))) : Prf (= (term0 b x y) (term1 b x y)) ≔ h1;
+opaque symbol lem2299868 (b : El bool) (x : El int) (y : El int) (h1 : Prf (= (term0 b x y) (term1 b x y))) : Prf (= (term1 b x y) (term0 b x y)) ≔ SYM (@lem2299867 b x y h1);
+private symbol lem2299869 (b : El bool) (x : El int) (y : El int) (h1 : Prf (= (term1 b x y) (term0 b x y))) : Prf (= (term1 b x y) (term0 b x y)) ≔ h1;
+opaque symbol lem2299870 (b : El bool) (x : El int) (y : El int) (h1 : Prf (= (term1 b x y) (term0 b x y))) : Prf (= (term0 b x y) (term1 b x y)) ≔ SYM (@lem2299869 b x y h1);
+opaque symbol lem2299871 (b : El bool) (x : El int) (y : El int) : Prf (= (= (term0 b x y) (term1 b x y)) (= (term1 b x y) (term0 b x y))) ≔ prop_ext (λ h1 : Prf (= (term0 b x y) (term1 b x y)), (@lem2299868 b x y h1)) (λ h1 : Prf (= (term1 b x y) (term0 b x y)), (@lem2299870 b x y h1));

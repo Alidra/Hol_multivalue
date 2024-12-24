@@ -1,0 +1,11 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.real_pow_term_abbrevs;
+require open hol-light.thm1344312_spec;
+require open hol-light.thm1344313_spec;
+require open hol-light.thm1344314_spec;
+opaque symbol lem1344315 (x : El real) : Prf (term0 x) ≔ EQ_MP (@lem1344314 x) (@lem1344313 x);
+opaque symbol lem1344316 (x : El real) : Prf (term1 x) ≔ ∧ᵢ (@lem1344312 x) (@lem1344315 x);

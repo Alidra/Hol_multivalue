@@ -1,0 +1,11 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm7260972_term_abbrevs;
+require open hol-light.thm7260959_spec;
+require open hol-light.thm7260960_spec;
+private symbol lem7260970 [_132349] (f : El (fun _132349 real)) (s : El (fun _132349 bool)) (g : El (fun _132349 real)) : Prf (term0 _132349 f s g) ≔ EQ_MP (@lem7260960 _132349 f s g) (@lem7260959 _132349 f s g);
+opaque symbol lem7260971 (f : El (fun num real)) (s : El (fun num bool)) (g : El (fun num real)) : Prf (term1 f s g) ≔ (@lem7260970 num f s g);
+opaque symbol lem7260972 (f : El (fun num real)) (a : El num) (b : El num) (g : El (fun num real)) : Prf (term2 f a b g) ≔ (@lem7260971 (term3 f) (… a b) g);

@@ -1,0 +1,11 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm1318035_term_abbrevs;
+private symbol lem1318031 (x : El nadd) (y : El nadd) (h1 : Prf (= (term0 x y) (term1 x y))) : Prf (= (term0 x y) (term1 x y)) ≔ h1;
+opaque symbol lem1318032 (x : El nadd) (y : El nadd) (h1 : Prf (= (term0 x y) (term1 x y))) : Prf (= (term1 x y) (term0 x y)) ≔ SYM (@lem1318031 x y h1);
+private symbol lem1318033 (x : El nadd) (y : El nadd) (h1 : Prf (= (term1 x y) (term0 x y))) : Prf (= (term1 x y) (term0 x y)) ≔ h1;
+opaque symbol lem1318034 (x : El nadd) (y : El nadd) (h1 : Prf (= (term1 x y) (term0 x y))) : Prf (= (term0 x y) (term1 x y)) ≔ SYM (@lem1318033 x y h1);
+opaque symbol lem1318035 (x : El nadd) (y : El nadd) : Prf (= (= (term0 x y) (term1 x y)) (= (term1 x y) (term0 x y))) ≔ prop_ext (λ h1 : Prf (= (term0 x y) (term1 x y)), (@lem1318032 x y h1)) (λ h1 : Prf (= (term1 x y) (term0 x y)), (@lem1318034 x y h1));

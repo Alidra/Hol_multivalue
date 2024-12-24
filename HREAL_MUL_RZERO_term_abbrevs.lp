@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term5 ≔ (hreal_of_num (NUMERAL _0));
+symbol term8 ≔ (λ y0 : El hreal, (= (hreal_mul y0 (hreal_of_num (NUMERAL _0))) (hreal_of_num (NUMERAL _0))));
+symbol term7 (x0: El hreal) ≔ ((@= hreal) (hreal_mul (hreal_of_num (NUMERAL _0)) x0));
+symbol term12 (x0: El hreal) ≔ ((λ y0 : El hreal, (= (hreal_mul (hreal_of_num (NUMERAL _0)) y0) (hreal_of_num (NUMERAL _0)))) x0);
+symbol term6 (x0: El hreal) ≔ ((@= hreal) (hreal_mul x0 (hreal_of_num (NUMERAL _0))));
+symbol term10 ≔ (∀ (λ y0 : El hreal, (= (hreal_mul y0 (hreal_of_num (NUMERAL _0))) (hreal_of_num (NUMERAL _0)))));
+symbol term11 ≔ (∀ (λ y0 : El hreal, (= (hreal_mul (hreal_of_num (NUMERAL _0)) y0) (hreal_of_num (NUMERAL _0)))));
+symbol term9 ≔ (λ y0 : El hreal, (= (hreal_mul (hreal_of_num (NUMERAL _0)) y0) (hreal_of_num (NUMERAL _0))));
+symbol term3 (x0: El hreal) ≔ (hreal_mul x0 (hreal_of_num (NUMERAL _0)));
+symbol term2 (x0: El hreal) (x1: El hreal) ≔ ((λ y0 : El hreal, (= (hreal_mul x0 y0) (hreal_mul y0 x0))) x1);
+symbol term0 (x0: El hreal) ≔ ((λ y0 : El hreal, (∀ (λ y1 : El hreal, (= (hreal_mul y0 y1) (hreal_mul y1 y0))))) x0);
+symbol term4 (x0: El hreal) ≔ (hreal_mul (hreal_of_num (NUMERAL _0)) x0);
+symbol term1 (x0: El hreal) ≔ (∀ (λ y0 : El hreal, (= (hreal_mul x0 y0) (hreal_mul y0 x0))));

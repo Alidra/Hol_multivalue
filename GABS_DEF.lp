@@ -1,0 +1,12 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.GABS_DEF_term_abbrevs;
+private symbol lem44140 [A] : Prf (= (@GABS A) (term0 A)) ≔ @GABS_def A;
+private symbol lem44141 [A] (P : El (fun A bool)) : Prf (= P P) ≔ REFL P;
+private symbol lem44142 [A] (P : El (fun A bool)) : Prf (= ((@GABS A) P) (term1 A P)) ≔ MK_COMB (@lem44140 A) (@lem44141 A P);
+private symbol lem44143 [A] (P : El (fun A bool)) : Prf (= (term1 A P) ((@ε A) P)) ≔ REFL (term1 A P);
+opaque symbol lem44144 [A] (P : El (fun A bool)) : Prf (= ((@GABS A) P) ((@ε A) P)) ≔ TRANS (@lem44142 A P) (@lem44143 A P);
+opaque symbol lem44145 [A] : Prf (term2 A) ≔ λ P : El (fun A bool), (@lem44144 A P);

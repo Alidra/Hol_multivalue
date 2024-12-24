@@ -1,0 +1,1 @@
+ALL_MAP.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo ALL_MAP_term_abbrevs.lpo o_THM_spec.lpo thm0_spec.lpo thm1094346_spec.lpo thm1094347_spec.lpo thm1097797_spec.lpo thm1100834_spec.lpo thm1100835_spec.lpo thm1100843_spec.lpo thm1100844_spec.lpo thm1855_spec.lpo thm1862_spec.lpo thm1863_spec.lpo

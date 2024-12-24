@@ -1,0 +1,1 @@
+IPRODUCT_CLAUSES.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo IPRODUCT_CLAUSES_term_abbrevs.lpo ITERATE_CLAUSES_spec.lpo MONOIDAL_INT_MUL_spec.lpo NEUTRAL_INT_MUL_spec.lpo SWAP_FORALL_THM_spec.lpo thm0_spec.lpo thm6904563_spec.lpo thm6904577_spec.lpo thm7_spec.lpo

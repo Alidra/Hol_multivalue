@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.int_of_num_term_abbrevs;
+private symbol lem2271781 : Prf (= int_of_num term0) ≔ @int_of_num_def;
+private symbol lem2271782 (_28662 : El num) : Prf (= _28662 _28662) ≔ REFL _28662;
+private symbol lem2271783 (_28662 : El num) : Prf (= (int_of_num _28662) (term1 _28662)) ≔ MK_COMB (@lem2271781) (@lem2271782 _28662);
+private symbol lem2271784 (_28662 : El num) : Prf (= (term1 _28662) (term2 _28662)) ≔ REFL (term1 _28662);
+private symbol lem2271785 (_28662 : El num) : Prf (= (int_of_num _28662) (term2 _28662)) ≔ TRANS (@lem2271783 _28662) (@lem2271784 _28662);
+private symbol lem2271786 : Prf term3 ≔ λ _28662 : El num, (@lem2271785 _28662);
+private symbol lem2271787 (_28662 : El num) : Prf (term4 _28662) ≔ (@lem2271786) _28662;
+private symbol lem2271788 (_28662 : El num) : Prf (= (term4 _28662) (= (int_of_num _28662) (term2 _28662))) ≔ REFL (term4 _28662);
+private symbol lem2271789 (_28662 : El num) : Prf (= (int_of_num _28662) (term2 _28662)) ≔ EQ_MP (@lem2271788 _28662) (@lem2271787 _28662);
+opaque symbol lem2271819 (n : El num) : Prf (= (int_of_num n) (term2 n)) ≔ (@lem2271789 n);
+opaque symbol lem2271820 : Prf term3 ≔ λ n : El num, (@lem2271819 n);

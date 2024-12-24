@@ -1,0 +1,6 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term1 (x0: El type1678) ≔ (_dest_char (_mk_char x0));
+symbol term0 (x0: El type1678) ≔ ((λ y0 : El type1678, (∀ (λ y1 : El type1335, (⇒ (∀ (λ y2 : El type1678, (⇒ (∃ (λ y3 : El bool, (∃ (λ y4 : El bool, (∃ (λ y5 : El bool, (∃ (λ y6 : El bool, (∃ (λ y7 : El bool, (∃ (λ y8 : El bool, (∃ (λ y9 : El bool, (∃ (λ y10 : El bool, (= y2 ((λ y11 : El bool, (λ y12 : El bool, (λ y13 : El bool, (λ y14 : El bool, (λ y15 : El bool, (λ y16 : El bool, (λ y17 : El bool, (λ y18 : El bool, ((@CONSTR (prod bool (prod bool (prod bool (prod bool (prod bool (prod bool (prod bool bool)))))))) (NUMERAL _0) ((@̦‚ bool (prod bool (prod bool (prod bool (prod bool (prod bool (prod bool bool))))))) y11 ((@̦‚ bool (prod bool (prod bool (prod bool (prod bool (prod bool bool)))))) y12 ((@̦‚ bool (prod bool (prod bool (prod bool (prod bool bool))))) y13 ((@̦‚ bool (prod bool (prod bool (prod bool bool)))) y14 ((@̦‚ bool (prod bool (prod bool bool))) y15 ((@̦‚ bool (prod bool bool)) y16 ((@̦‚ bool bool) y17 y18))))))) (λ y19 : El num, (@BOTTOM (prod bool (prod bool (prod bool (prod bool (prod bool (prod bool (prod bool bool)))))))))))))))))) y3 y4 y5 y6 y7 y8 y9 y10)))))))))))))))))) (y1 y2)))) (y1 y0))))) x0);

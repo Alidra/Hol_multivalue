@@ -1,0 +1,18 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term10 ≔ (hreal_of_num (NUMERAL _0));
+symbol term3 ≔ (mk_hreal (nadd_eq (nadd_of_num (NUMERAL _0))));
+symbol term2 ≔ (mk_hreal (nadd_eq (nadd_inv (nadd_of_num (NUMERAL _0)))));
+symbol term7 (x0: El nadd) ≔ (hreal_inv (mk_hreal (nadd_eq x0)));
+symbol term6 (x0: El nadd) ≔ (mk_hreal (nadd_eq (nadd_inv x0)));
+symbol term13 ≔ ((@= hreal) (hreal_inv (hreal_of_num (NUMERAL _0))));
+symbol term12 ≔ ((@= hreal) (mk_hreal (nadd_eq (nadd_inv (nadd_of_num (NUMERAL _0))))));
+symbol term8 ≔ (hreal_inv (mk_hreal (nadd_eq (nadd_of_num (NUMERAL _0)))));
+symbol term5 ≔ (nadd_of_num (NUMERAL _0));
+symbol term9 (x0: El num) ≔ (mk_hreal (nadd_eq (nadd_of_num x0)));
+symbol term4 ≔ (nadd_inv (nadd_of_num (NUMERAL _0)));
+symbol term0 (x0: El nadd) ≔ (mk_hreal (nadd_eq x0));
+symbol term1 ≔ (nadd_eq (nadd_inv (nadd_of_num (NUMERAL _0))) (nadd_of_num (NUMERAL _0)));
+symbol term11 ≔ (hreal_inv (hreal_of_num (NUMERAL _0)));

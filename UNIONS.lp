@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.UNIONS_term_abbrevs;
+private symbol lem3189218 [A] : Prf (= (@UNIONS A) (term0 A)) ≔ @UNIONS_def A;
+private symbol lem3189219 [A] (_32763 : El (type686 A)) : Prf (= _32763 _32763) ≔ REFL _32763;
+private symbol lem3189220 [A] (_32763 : El (type686 A)) : Prf (= ((@UNIONS A) _32763) (term1 A _32763)) ≔ MK_COMB (@lem3189218 A) (@lem3189219 A _32763);
+private symbol lem3189221 [A] (_32763 : El (type686 A)) : Prf (= (term1 A _32763) (term2 A _32763)) ≔ REFL (term1 A _32763);
+private symbol lem3189222 [A] (_32763 : El (type686 A)) : Prf (= ((@UNIONS A) _32763) (term2 A _32763)) ≔ TRANS (@lem3189220 A _32763) (@lem3189221 A _32763);
+private symbol lem3189223 [A] : Prf (term3 A) ≔ λ _32763 : El (type686 A), (@lem3189222 A _32763);
+private symbol lem3189224 [A] (_32763 : El (type686 A)) : Prf (term4 A _32763) ≔ (@lem3189223 A) _32763;
+private symbol lem3189225 [A] (_32763 : El (type686 A)) : Prf (= (term4 A _32763) (= ((@UNIONS A) _32763) (term2 A _32763))) ≔ REFL (term4 A _32763);
+private symbol lem3189226 [A] (_32763 : El (type686 A)) : Prf (= ((@UNIONS A) _32763) (term2 A _32763)) ≔ EQ_MP (@lem3189225 A _32763) (@lem3189224 A _32763);
+opaque symbol lem3189256 [A] (s : El (type686 A)) : Prf (= ((@UNIONS A) s) (term2 A s)) ≔ (@lem3189226 A s);
+opaque symbol lem3189257 [A] : Prf (term3 A) ≔ λ s : El (type686 A), (@lem3189256 A s);

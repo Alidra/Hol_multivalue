@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm1032118_term_abbrevs;
+require open hol-light.thm1032097_spec;
+private symbol lem1032099 (p : El num) (y : El num) (z : El num) (x : El num) (q : El num) : Prf (term0 p y z x q) ≔ ∧ₑ₂ (@lem1032097 (@el num) (@el num) (@el num) p y z x q);
+private symbol lem1032101 (p : El num) (y : El num) (z : El num) (x : El num) (q : El num) : Prf (term1 p y z x q) ≔ ∧ₑ₂ (@lem1032099 p y z x q);
+private symbol lem1032103 (p : El num) (y : El num) (z : El num) (x : El num) (q : El num) : Prf (term2 p y z x q) ≔ ∧ₑ₂ (@lem1032101 p y z x q);
+private symbol lem1032105 (p : El num) (y : El num) (z : El num) (x : El num) (q : El num) : Prf (term3 p y z x q) ≔ ∧ₑ₂ (@lem1032103 p y z x q);
+private symbol lem1032107 (p : El num) (y : El num) (z : El num) (x : El num) (q : El num) : Prf (term4 p y z x q) ≔ ∧ₑ₂ (@lem1032105 p y z x q);
+private symbol lem1032109 (p : El num) (y : El num) (z : El num) (x : El num) (q : El num) : Prf (term5 p y z x q) ≔ ∧ₑ₂ (@lem1032107 p y z x q);
+private symbol lem1032111 (y : El num) (z : El num) (x : El num) (q : El num) : Prf (term6 y z x q) ≔ ∧ₑ₂ (@lem1032109 (@el num) y z x q);
+private symbol lem1032113 (y : El num) (z : El num) (x : El num) (q : El num) : Prf (term7 y z x q) ≔ ∧ₑ₂ (@lem1032111 y z x q);
+opaque symbol lem1032115 (y : El num) (z : El num) (x : El num) (q : El num) : Prf (term8 y z x q) ≔ ∧ₑ₂ (@lem1032113 y z x q);
+opaque symbol lem1032118 (y : El num) (x : El num) (z : El num) : Prf (= (term9 x y z) (term10 y x z)) ≔ ∧ₑ₁ (@lem1032115 y z x (@el num));

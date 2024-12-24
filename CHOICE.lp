@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.CHOICE_term_abbrevs;
+private symbol lem3203661 [A] : Prf (= (@CHOICE A) (term0 A)) ≔ @CHOICE_def A;
+private symbol lem3203662 [A] (_32934 : El (fun A bool)) : Prf (= _32934 _32934) ≔ REFL _32934;
+private symbol lem3203663 [A] (_32934 : El (fun A bool)) : Prf (= ((@CHOICE A) _32934) (term1 A _32934)) ≔ MK_COMB (@lem3203661 A) (@lem3203662 A _32934);
+private symbol lem3203664 [A] (_32934 : El (fun A bool)) : Prf (= (term1 A _32934) (term2 A _32934)) ≔ REFL (term1 A _32934);
+private symbol lem3203665 [A] (_32934 : El (fun A bool)) : Prf (= ((@CHOICE A) _32934) (term2 A _32934)) ≔ TRANS (@lem3203663 A _32934) (@lem3203664 A _32934);
+private symbol lem3203666 [A] : Prf (term3 A) ≔ λ _32934 : El (fun A bool), (@lem3203665 A _32934);
+private symbol lem3203667 [A] (_32934 : El (fun A bool)) : Prf (term4 A _32934) ≔ (@lem3203666 A) _32934;
+private symbol lem3203668 [A] (_32934 : El (fun A bool)) : Prf (= (term4 A _32934) (= ((@CHOICE A) _32934) (term2 A _32934))) ≔ REFL (term4 A _32934);
+private symbol lem3203669 [A] (_32934 : El (fun A bool)) : Prf (= ((@CHOICE A) _32934) (term2 A _32934)) ≔ EQ_MP (@lem3203668 A _32934) (@lem3203667 A _32934);
+opaque symbol lem3203699 [A] (s : El (fun A bool)) : Prf (= ((@CHOICE A) s) (term2 A s)) ≔ (@lem3203669 A s);
+opaque symbol lem3203700 [A] : Prf (term3 A) ≔ λ s : El (fun A bool), (@lem3203699 A s);

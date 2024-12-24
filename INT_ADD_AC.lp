@@ -1,0 +1,11 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.INT_ADD_AC_term_abbrevs;
+require open hol-light.thm2301004_spec;
+require open hol-light.thm2301013_spec;
+require open hol-light.thm2301026_spec;
+opaque symbol lem2301027 (n : El int) (m : El int) : Prf (= (int_add m n) (int_add n m)) ≔ EQ_MP (@lem2301026 n m) (@lem2301013 n m);
+opaque symbol lem2301028 (n : El int) (m : El int) (p : El int) : Prf (term0 n m p) ≔ ∧ᵢ (@lem2301027 n m) (@lem2301004 n m p);

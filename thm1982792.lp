@@ -1,0 +1,14 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm1982792_term_abbrevs;
+require open hol-light.REAL_POLY_NEG_CLAUSES_spec;
+private symbol lem1982786 : Prf term0 ≔ ∧ₑ₂ (@lem1384312);
+private symbol lem1982787 (x : El real) : Prf (term1 x) ≔ (@lem1982786) x;
+private symbol lem1982788 (x : El real) : Prf (= (term1 x) (term2 x)) ≔ REFL (term1 x);
+private symbol lem1982789 (x : El real) : Prf (term2 x) ≔ EQ_MP (@lem1982788 x) (@lem1982787 x);
+opaque symbol lem1982790 (x : El real) (y : El real) : Prf (term3 x y) ≔ (@lem1982789 x) y;
+opaque symbol lem1982791 (x : El real) (y : El real) : Prf (= (term3 x y) (= (real_sub x y) (term4 x y))) ≔ REFL (term3 x y);
+opaque symbol lem1982792 (x : El real) (y : El real) : Prf (= (real_sub x y) (term4 x y)) ≔ EQ_MP (@lem1982791 x y) (@lem1982790 x y);

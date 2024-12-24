@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm76570_term_abbrevs;
+private symbol lem76531 : Prf (= BIT1 term0) ≔ @BIT1_def;
+private symbol lem76532 (_2143 : El num) : Prf (= _2143 _2143) ≔ REFL _2143;
+private symbol lem76533 (_2143 : El num) : Prf (= (BIT1 _2143) (term1 _2143)) ≔ MK_COMB (@lem76531) (@lem76532 _2143);
+private symbol lem76534 (_2143 : El num) : Prf (= (term1 _2143) (term2 _2143)) ≔ REFL (term1 _2143);
+private symbol lem76535 (_2143 : El num) : Prf (= (BIT1 _2143) (term2 _2143)) ≔ TRANS (@lem76533 _2143) (@lem76534 _2143);
+private symbol lem76536 : Prf term3 ≔ λ _2143 : El num, (@lem76535 _2143);
+private symbol lem76537 (_2143 : El num) : Prf (term4 _2143) ≔ (@lem76536) _2143;
+private symbol lem76538 (_2143 : El num) : Prf (= (term4 _2143) (= (BIT1 _2143) (term2 _2143))) ≔ REFL (term4 _2143);
+private symbol lem76539 (_2143 : El num) : Prf (= (BIT1 _2143) (term2 _2143)) ≔ EQ_MP (@lem76538 _2143) (@lem76537 _2143);
+opaque symbol lem76569 (n : El num) : Prf (= (BIT1 n) (term2 n)) ≔ (@lem76539 n);
+opaque symbol lem76570 : Prf term3 ≔ λ n : El num, (@lem76569 n);

@@ -1,0 +1,1 @@
+WF_UREC.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo WF_UREC_term_abbrevs.lpo FUN_EQ_THM_spec.lpo thm0_spec.lpo thm1823_spec.lpo thm307612_spec.lpo thm309905_spec.lpo

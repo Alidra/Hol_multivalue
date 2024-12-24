@@ -1,0 +1,15 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm1501_term_abbrevs;
+require open hol-light.thm0_spec;
+require open hol-light.thm69_spec;
+opaque symbol lem1494 : Prf term0 ≔ λ h0 : Prf (¬ F), (@lem0);
+private symbol lem1496 (h1 : Prf F) : Prf F ≔ h1;
+private symbol lem1497 : Prf (⇒ F F) ≔ λ h0 : Prf F, (@lem1496 h0);
+private symbol lem1498 : Prf (= (⇒ F F) (¬ F)) ≔ (@lem69 F);
+private symbol lem1499 : Prf (¬ F) ≔ EQ_MP (@lem1498) (@lem1497);
+opaque symbol lem1500 : Prf term1 ≔ λ h0 : Prf T, (@lem1499);
+opaque symbol lem1501 : Prf term2 ≔ ∧ᵢ (@lem1494) (@lem1500);

@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem6779341 [A K] : Prf (∀ (λ dom : El (fun A bool), (∀ (λ neut : El A, (∀ (λ op : El (fun A (fun A A)), (∀ (λ <<= : El (fun K (fun K bool)), (∀ (λ f : El (fun K A), (∧ (= ((@iterato A K) dom neut op <<= (@EMPTY K) f) neut) (∀ (λ i : El K, (∀ (λ k : El (fun K bool), (⇒ (∧ ((@FINITE K) ((@GSPEC K) (λ GEN_PVAR_273 : El K, (∃ (λ i' : El K, ((@SETSPEC K) GEN_PVAR_273 (∧ ((@IN K) i' k) ((@IN A) (f i') ((@DIFF A) dom ((@INSERT A) neut (@EMPTY A))))) i')))))) (∀ (λ j : El K, (⇒ ((@IN K) j k) (∧ (<<= i j) (¬ (<<= j i))))))) (= ((@iterato A K) dom neut op <<= ((@INSERT K) i k) f) ((@COND A) (⇒ ((@IN A) (f i) dom) (∨ (= (f i) neut) ((@IN K) i k))) ((@iterato A K) dom neut op <<= k f) (op (f i) ((@iterato A K) dom neut op <<= k f))))))))))))))))))));

@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.sqrt_term_abbrevs;
+private symbol lem1868792 : Prf (= sqrt term0) ≔ @sqrt_def;
+private symbol lem1868793 (_27022 : El real) : Prf (= _27022 _27022) ≔ REFL _27022;
+private symbol lem1868794 (_27022 : El real) : Prf (= (sqrt _27022) (term1 _27022)) ≔ MK_COMB (@lem1868792) (@lem1868793 _27022);
+private symbol lem1868795 (_27022 : El real) : Prf (= (term1 _27022) (term2 _27022)) ≔ REFL (term1 _27022);
+private symbol lem1868796 (_27022 : El real) : Prf (= (sqrt _27022) (term2 _27022)) ≔ TRANS (@lem1868794 _27022) (@lem1868795 _27022);
+private symbol lem1868797 : Prf term3 ≔ λ _27022 : El real, (@lem1868796 _27022);
+private symbol lem1868798 (_27022 : El real) : Prf (term4 _27022) ≔ (@lem1868797) _27022;
+private symbol lem1868799 (_27022 : El real) : Prf (= (term4 _27022) (= (sqrt _27022) (term2 _27022))) ≔ REFL (term4 _27022);
+private symbol lem1868800 (_27022 : El real) : Prf (= (sqrt _27022) (term2 _27022)) ≔ EQ_MP (@lem1868799 _27022) (@lem1868798 _27022);
+opaque symbol lem1868830 (x : El real) : Prf (= (sqrt x) (term2 x)) ≔ (@lem1868800 x);
+opaque symbol lem1868831 : Prf term3 ≔ λ x : El real, (@lem1868830 x);

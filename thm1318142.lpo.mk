@@ -1,0 +1,1 @@
+thm1318142.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo thm1318142_term_abbrevs.lpo NADD_EQ_REFL_spec.lpo NADD_LE_WELLDEF_spec.lpo thm1317744_spec.lpo thm23443_spec.lpo thm32_spec.lpo

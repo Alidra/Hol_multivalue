@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem1032093 (b : El num) (a : El num) (c : El num) (d : El num) (p : El num) (y : El num) (z : El num) (x : El num) (q : El num) : Prf (∧ (= (+ (+ a b) c) (+ (+ a c) b)) (∧ (= (+ a c) (+ c a)) (∧ (= (+ a (+ c d)) (+ (+ a c) d)) (∧ (= (* (EXP x p) (EXP x q)) (EXP x (+ p q))) (∧ (= (* x (EXP x q)) (EXP x (SUC q))) (∧ (= (* (EXP x q) x) (EXP x (SUC q))) (∧ (= (* x x) (EXP x (NUMERAL (BIT0 (BIT1 _0))))) (∧ (= (EXP (* x y) q) (* (EXP x q) (EXP y q))) (∧ (= (EXP (EXP x p) q) (EXP x (* p q))) (∧ (= (EXP x (NUMERAL _0)) (NUMERAL (BIT1 _0))) (∧ (= (EXP x (NUMERAL (BIT1 _0))) x) (∧ (= (* x (+ y z)) (+ (* x y) (* x z))) (= (EXP x (SUC q)) (* x (EXP x q)))))))))))))));

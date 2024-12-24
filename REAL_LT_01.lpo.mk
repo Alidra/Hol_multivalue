@@ -1,0 +1,1 @@
+REAL_LT_01.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo REAL_LT_01_term_abbrevs.lpo thm1008952_spec.lpo thm1013352_spec.lpo thm1013364_spec.lpo thm1365105_spec.lpo thm1365990_spec.lpo thm1367247_spec.lpo thm1386578_spec.lpo thm1483448_spec.lpo thm1483519_spec.lpo thm1483531_spec.lpo thm912739_spec.lpo thm940073_spec.lpo

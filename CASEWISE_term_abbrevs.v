@@ -1,0 +1,39 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_type_abbrevs.
+Require Import hol_terms.
+Definition term31 (a0 : Type') (a1 : Type') (a2 : Type') (a3 : Type') (x0 : a3 -> a1) (x1 : type1475 a0 a2 a3) (x2 : type1639 a0 a1 a2 a3) (x3 : a2) (x4 : a1) := @eq a0 (@CASEWISE a0 a3 a1 a2 (@cons (prod (a3 -> a1) (a2 -> a3 -> a0)) (@pair (a3 -> a1) (a2 -> a3 -> a0) x0 x1) x2) x3 x4).
+Definition term29 (a0 : Type') (a1 : Type') (a2 : Type') (a3 : Type') (x0 : type1475 a0 a2 a3) (x1 : a2) (x2 : a3 -> a1) (x3 : a1) := @COND a0 (exists y0 : a3, (x2 y0) = x3) (x0 x1 (@ε a3 (fun y0 : a3 => (x2 y0) = x3))).
+Definition term10 (a0 : Type') (a1 : Type') (x0 : a0) (x1 : a1) := @fst a0 a1 (@pair a0 a1 x0 x1).
+Definition term8 (a0 : Type') (a1 : Type') (a2 : Type') (a3 : Type') (x0 : a3 -> a1) (x1 : type1475 a0 a2 a3) (x2 : type1639 a0 a1 a2 a3) (x3 : a2) (x4 : a1) := @CASEWISE a0 a3 a1 a2 (@cons (prod (a3 -> a1) (a2 -> a3 -> a0)) (@pair (a3 -> a1) (a2 -> a3 -> a0) x0 x1) x2) x3 x4.
+Definition term30 (a0 : Type') (a1 : Type') (a2 : Type') (a3 : Type') (x0 : type1475 a0 a2 a3) (x1 : a3 -> a1) (x2 : type1639 a0 a1 a2 a3) (x3 : a2) (x4 : a1) := @COND a0 (exists y0 : a3, (x1 y0) = x4) (x0 x3 (@ε a3 (fun y0 : a3 => (x1 y0) = x4))) (@CASEWISE a0 a3 a1 a2 x2 x3 x4).
+Definition term5 (a0 : Type') (a1 : Type') (a2 : Type') (a3 : Type') (x0 : type1644 a0 a1 a2 a3) (x1 : type1633 a0 a1 a2 a3) (x2 : a3) (x3 : a2) := @COND a0 (exists y0 : a1, (@fst (a1 -> a2) (a3 -> a1 -> a0) x0 y0) = x3) (@snd (a1 -> a2) (a3 -> a1 -> a0) x0 x2 (@ε a1 (fun y0 : a1 => (@fst (a1 -> a2) (a3 -> a1 -> a0) x0 y0) = x3))) (@CASEWISE a0 a1 a2 a3 x1 x2 x3).
+Definition term0 (a0 : Type') := @ε a0 (fun y0 : a0 => True).
+Definition term19 (a0 : Type') (a1 : Type') (a2 : Type') (a3 : Type') (x0 : a3 -> a1) (x1 : type1475 a0 a2 a3) (x2 : a1) := @COND a0 (exists y0 : a3, (@fst (a3 -> a1) (a2 -> a3 -> a0) (@pair (a3 -> a1) (a2 -> a3 -> a0) x0 x1) y0) = x2).
+Definition term12 (a0 : Type') (a1 : Type') (a2 : Type') (a3 : Type') (x0 : a3 -> a1) (x1 : type1475 a0 a2 a3) (x2 : a3) := @fst (a3 -> a1) (a2 -> a3 -> a0) (@pair (a3 -> a1) (a2 -> a3 -> a0) x0 x1) x2.
+Definition term26 (a0 : Type') (a1 : Type') (a2 : Type') (a3 : Type') (x0 : a2) (x1 : a3 -> a1) (x2 : type1475 a0 a2 a3) (x3 : a1) := @snd (a3 -> a1) (a2 -> a3 -> a0) (@pair (a3 -> a1) (a2 -> a3 -> a0) x1 x2) x0 (@ε a3 (fun y0 : a3 => (@fst (a3 -> a1) (a2 -> a3 -> a0) (@pair (a3 -> a1) (a2 -> a3 -> a0) x1 x2) y0) = x3)).
+Definition term25 (a0 : Type') (a1 : Type') (x0 : a1 -> a0) (x1 : a0) := @ε a1 (fun y0 : a1 => (x0 y0) = x1).
+Definition term4 (a0 : Type') (a1 : Type') (a2 : Type') (a3 : Type') (x0 : type1644 a0 a1 a2 a3) (x1 : type1633 a0 a1 a2 a3) (x2 : a3) (x3 : a2) := @CASEWISE a0 a1 a2 a3 (@cons (prod (a1 -> a2) (a3 -> a1 -> a0)) x0 x1) x2 x3.
+Definition term27 (a0 : Type') (a1 : Type') (a2 : Type') (a3 : Type') (x0 : type1475 a0 a2 a3) (x1 : a2) (x2 : a3 -> a1) (x3 : a1) := x0 x1 (@ε a3 (fun y0 : a3 => (x2 y0) = x3)).
+Definition term23 (a0 : Type') (a1 : Type') (a2 : Type') (a3 : Type') (x0 : a3 -> a1) (x1 : type1475 a0 a2 a3) (x2 : a2) := @snd (a3 -> a1) (a2 -> a3 -> a0) (@pair (a3 -> a1) (a2 -> a3 -> a0) x0 x1) x2.
+Definition term20 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : a2 -> a1) (x1 : a1) := @COND a0 (exists y0 : a2, (x0 y0) = x1).
+Definition term33 (a0 : Type') (a1 : Type') (a2 : Type') (a3 : Type') (a4 : Type') (a5 : Type') (x0 : type1475 a2 a4 a5) (x1 : a5 -> a3) (x2 : type1639 a2 a3 a4 a5) (x3 : a4) (x4 : a3) := ((@CASEWISE a1 a0 a3 a4 (@nil (prod (a0 -> a3) (a4 -> a0 -> a1))) x3 x4) = (@ε a1 (fun y0 : a1 => True))) /\ ((@CASEWISE a2 a5 a3 a4 (@cons (prod (a5 -> a3) (a4 -> a5 -> a2)) (@pair (a5 -> a3) (a4 -> a5 -> a2) x1 x0) x2) x3 x4) = (@COND a2 (exists y0 : a5, (x1 y0) = x4) (x0 x3 (@ε a5 (fun y0 : a5 => (x1 y0) = x4))) (@CASEWISE a2 a5 a3 a4 x2 x3 x4))).
+Definition term17 (a0 : Type') (a1 : Type') (a2 : Type') (a3 : Type') (x0 : a3 -> a1) (x1 : type1475 a0 a2 a3) (x2 : a1) := exists y0 : a3, (@fst (a3 -> a1) (a2 -> a3 -> a0) (@pair (a3 -> a1) (a2 -> a3 -> a0) x0 x1) y0) = x2.
+Definition term7 (a0 : Type') (a1 : Type') (a2 : Type') (a3 : Type') (x0 : type1648 a0 a1 a2 a3) (x1 : type1639 a0 a1 a2 a3) (x2 : a2) (x3 : a1) := @COND a0 (exists y0 : a3, (@fst (a3 -> a1) (a2 -> a3 -> a0) x0 y0) = x3) (@snd (a3 -> a1) (a2 -> a3 -> a0) x0 x2 (@ε a3 (fun y0 : a3 => (@fst (a3 -> a1) (a2 -> a3 -> a0) x0 y0) = x3))) (@CASEWISE a0 a3 a1 a2 x1 x2 x3).
+Definition term18 (a0 : Type') (a1 : Type') (x0 : a1 -> a0) (x1 : a0) := exists y0 : a1, (x0 y0) = x1.
+Definition term3 (a0 : Type') (a1 : Type') (a2 : Type') (a3 : Type') (x0 : a3) (x1 : a2) := and ((@CASEWISE a1 a0 a2 a3 (@nil (prod (a0 -> a2) (a3 -> a0 -> a1))) x0 x1) = (@ε a1 (fun y0 : a1 => True))).
+Definition term2 (a0 : Type') := @eq a0 (@ε a0 (fun y0 : a0 => True)).
+Definition term1 (a0 : Type') (a1 : Type') (a2 : Type') (a3 : Type') (x0 : a3) (x1 : a2) := @eq a1 (@CASEWISE a1 a0 a2 a3 (@nil (prod (a0 -> a2) (a3 -> a0 -> a1))) x0 x1).
+Definition term22 (a0 : Type') (a1 : Type') (a2 : Type') (a3 : Type') (x0 : a3 -> a1) (x1 : type1475 a0 a2 a3) := @snd (a3 -> a1) (a2 -> a3 -> a0) (@pair (a3 -> a1) (a2 -> a3 -> a0) x0 x1).
+Definition term11 (a0 : Type') (a1 : Type') (a2 : Type') (a3 : Type') (x0 : a3 -> a1) (x1 : type1475 a0 a2 a3) := @fst (a3 -> a1) (a2 -> a3 -> a0) (@pair (a3 -> a1) (a2 -> a3 -> a0) x0 x1).
+Definition term21 (a0 : Type') (a1 : Type') (x0 : a0) (x1 : a1) := @snd a0 a1 (@pair a0 a1 x0 x1).
+Definition term6 (a0 : Type') (a1 : Type') (a2 : Type') (a3 : Type') (x0 : type1648 a0 a1 a2 a3) (x1 : type1639 a0 a1 a2 a3) (x2 : a2) (x3 : a1) := @CASEWISE a0 a3 a1 a2 (@cons (prod (a3 -> a1) (a2 -> a3 -> a0)) x0 x1) x2 x3.
+Definition term28 (a0 : Type') (a1 : Type') (a2 : Type') (a3 : Type') (x0 : a2) (x1 : a3 -> a1) (x2 : type1475 a0 a2 a3) (x3 : a1) := @COND a0 (exists y0 : a3, (@fst (a3 -> a1) (a2 -> a3 -> a0) (@pair (a3 -> a1) (a2 -> a3 -> a0) x1 x2) y0) = x3) (@snd (a3 -> a1) (a2 -> a3 -> a0) (@pair (a3 -> a1) (a2 -> a3 -> a0) x1 x2) x0 (@ε a3 (fun y0 : a3 => (@fst (a3 -> a1) (a2 -> a3 -> a0) (@pair (a3 -> a1) (a2 -> a3 -> a0) x1 x2) y0) = x3))).
+Definition term16 (a0 : Type') (a1 : Type') (x0 : a1 -> a0) (x1 : a0) := fun y0 : a1 => (x0 y0) = x1.
+Definition term13 (a0 : Type') (a1 : Type') (a2 : Type') (a3 : Type') (x0 : a3 -> a1) (x1 : type1475 a0 a2 a3) (x2 : a3) := @eq a1 (@fst (a3 -> a1) (a2 -> a3 -> a0) (@pair (a3 -> a1) (a2 -> a3 -> a0) x0 x1) x2).
+Definition term14 (a0 : Type') (a1 : Type') (x0 : a1 -> a0) (x1 : a1) := @eq a0 (x0 x1).
+Definition term24 (a0 : Type') (a1 : Type') (a2 : Type') (a3 : Type') (x0 : a3 -> a1) (x1 : type1475 a0 a2 a3) (x2 : a1) := @ε a3 (fun y0 : a3 => (@fst (a3 -> a1) (a2 -> a3 -> a0) (@pair (a3 -> a1) (a2 -> a3 -> a0) x0 x1) y0) = x2).
+Definition term9 (a0 : Type') (a1 : Type') (a2 : Type') (a3 : Type') (x0 : a3 -> a1) (x1 : type1475 a0 a2 a3) (x2 : type1639 a0 a1 a2 a3) (x3 : a2) (x4 : a1) := @COND a0 (exists y0 : a3, (@fst (a3 -> a1) (a2 -> a3 -> a0) (@pair (a3 -> a1) (a2 -> a3 -> a0) x0 x1) y0) = x4) (@snd (a3 -> a1) (a2 -> a3 -> a0) (@pair (a3 -> a1) (a2 -> a3 -> a0) x0 x1) x3 (@ε a3 (fun y0 : a3 => (@fst (a3 -> a1) (a2 -> a3 -> a0) (@pair (a3 -> a1) (a2 -> a3 -> a0) x0 x1) y0) = x4))) (@CASEWISE a0 a3 a1 a2 x2 x3 x4).
+Definition term32 (a0 : Type') (a1 : Type') (a2 : Type') (a3 : Type') (x0 : type1475 a0 a2 a3) (x1 : a3 -> a1) (x2 : type1639 a0 a1 a2 a3) (x3 : a2) (x4 : a1) := @eq a0 (@COND a0 (exists y0 : a3, (x1 y0) = x4) (x0 x3 (@ε a3 (fun y0 : a3 => (x1 y0) = x4))) (@CASEWISE a0 a3 a1 a2 x2 x3 x4)).
+Definition term15 (a0 : Type') (a1 : Type') (a2 : Type') (a3 : Type') (x0 : a3 -> a1) (x1 : type1475 a0 a2 a3) (x2 : a1) := fun y0 : a3 => (@fst (a3 -> a1) (a2 -> a3 -> a0) (@pair (a3 -> a1) (a2 -> a3 -> a0) x0 x1) y0) = x2.

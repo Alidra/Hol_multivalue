@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm302532_term_abbrevs;
+require open hol-light.thm75543_spec;
+private symbol lem302521 (n : El num) : Prf (term0 n) ≔ (@lem75543) n;
+private symbol lem302522 (n : El num) : Prf (= (term0 n) (= (NUMERAL n) n)) ≔ REFL (term0 n);
+private symbol lem302525 (n : El num) : Prf (= (NUMERAL n) n) ≔ EQ_MP (@lem302522 n) (@lem302521 n);
+opaque symbol lem302526 : Prf (= (NUMERAL _0) _0) ≔ (@lem302525 _0);
+private symbol lem302527 (h1 : Prf (= (NUMERAL _0) _0)) : Prf (= (NUMERAL _0) _0) ≔ h1;
+private symbol lem302528 (h1 : Prf (= (NUMERAL _0) _0)) : Prf (= _0 (NUMERAL _0)) ≔ SYM (@lem302527 h1);
+private symbol lem302529 (h1 : Prf (= _0 (NUMERAL _0))) : Prf (= _0 (NUMERAL _0)) ≔ h1;
+private symbol lem302530 (h1 : Prf (= _0 (NUMERAL _0))) : Prf (= (NUMERAL _0) _0) ≔ SYM (@lem302529 h1);
+opaque symbol lem302531 : Prf (= (= (NUMERAL _0) _0) (= _0 (NUMERAL _0))) ≔ prop_ext (λ h1 : Prf (= (NUMERAL _0) _0), (@lem302528 h1)) (λ h1 : Prf (= _0 (NUMERAL _0)), (@lem302530 h1));
+opaque symbol lem302532 : Prf (= _0 (NUMERAL _0)) ≔ EQ_MP (@lem302531) (@lem302526);

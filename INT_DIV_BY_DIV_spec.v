@@ -1,0 +1,5 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_terms.
+Axiom lem2732856 : forall m : int, forall n : int, ((~ (n = (int_of_num (NUMERAL 0)))) /\ (int_divides m n)) -> (div n (div n m)) = m.

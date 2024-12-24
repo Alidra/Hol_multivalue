@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem2386686 : Prf (= div ((@ε (fun (prod num (prod num num)) (fun int (fun int int)))) (λ q : El (fun (prod num (prod num num)) (fun int (fun int int))), (∀ (λ _29199 : El (prod num (prod num num)), (∃ (λ r : El (fun int (fun int int)), (∀ (λ m : El int, (∀ (λ n : El int, ((@COND bool) (= n (int_of_num (NUMERAL _0))) (∧ (= (q _29199 m n) (int_of_num (NUMERAL _0))) (= (r m n) m)) (∧ (int_le (int_of_num (NUMERAL _0)) (r m n)) (∧ (int_lt (r m n) (int_abs n)) (= m (int_add (int_mul (q _29199 m n) n) (r m n))))))))))))))) ((@̦‚ num (prod num num)) (NUMERAL (BIT0 (BIT0 (BIT1 (BIT0 (BIT0 (BIT1 (BIT1 _0)))))))) ((@̦‚ num num) (NUMERAL (BIT1 (BIT0 (BIT0 (BIT1 (BIT0 (BIT1 (BIT1 _0)))))))) (NUMERAL (BIT0 (BIT1 (BIT1 (BIT0 (BIT1 (BIT1 (BIT1 _0))))))))))));

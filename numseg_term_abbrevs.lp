@@ -1,0 +1,13 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term0 ≔ (λ y0 : El num, (λ y1 : El num, ((@GSPEC num) (λ y2 : El num, (∃ (λ y3 : El num, ((@SETSPEC num) y2 (∧ (<= y0 y3) (<= y3 y1)) y3)))))));
+symbol term6 ≔ (∀ (λ y0 : El num, (∀ (λ y1 : El num, (= (… y0 y1) ((@GSPEC num) (λ y2 : El num, (∃ (λ y3 : El num, ((@SETSPEC num) y2 (∧ (<= y0 y3) (<= y3 y1)) y3))))))))));
+symbol term5 (x0: El num) ≔ (∀ (λ y0 : El num, (= (… x0 y0) ((@GSPEC num) (λ y1 : El num, (∃ (λ y2 : El num, ((@SETSPEC num) y1 (∧ (<= x0 y2) (<= y2 y0)) y2))))))));
+symbol term2 (x0: El num) ≔ (λ y0 : El num, ((@GSPEC num) (λ y1 : El num, (∃ (λ y2 : El num, ((@SETSPEC num) y1 (∧ (<= x0 y2) (<= y2 y0)) y2))))));
+symbol term3 (x0: El num) (x1: El num) ≔ ((λ y0 : El num, ((@GSPEC num) (λ y1 : El num, (∃ (λ y2 : El num, ((@SETSPEC num) y1 (∧ (<= x0 y2) (<= y2 y0)) y2)))))) x1);
+symbol term8 (x0: El num) (x1: El num) ≔ ((λ y0 : El num, (= (… x0 y0) ((@GSPEC num) (λ y1 : El num, (∃ (λ y2 : El num, ((@SETSPEC num) y1 (∧ (<= x0 y2) (<= y2 y0)) y2))))))) x1);
+symbol term7 (x0: El num) ≔ ((λ y0 : El num, (∀ (λ y1 : El num, (= (… y0 y1) ((@GSPEC num) (λ y2 : El num, (∃ (λ y3 : El num, ((@SETSPEC num) y2 (∧ (<= y0 y3) (<= y3 y1)) y3))))))))) x0);
+symbol term1 (x0: El num) ≔ ((λ y0 : El num, (λ y1 : El num, ((@GSPEC num) (λ y2 : El num, (∃ (λ y3 : El num, ((@SETSPEC num) y2 (∧ (<= y0 y3) (<= y3 y1)) y3))))))) x0);
+symbol term4 (x0: El num) (x1: El num) ≔ ((@GSPEC num) (λ y0 : El num, (∃ (λ y1 : El num, ((@SETSPEC num) y0 (∧ (<= x0 y1) (<= y1 x1)) y1)))));

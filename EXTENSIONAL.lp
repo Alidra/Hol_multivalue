@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.EXTENSIONAL_term_abbrevs;
+private symbol lem4382759 [A B] : Prf (= (@EXTENSIONAL A B) (term0 A B)) ≔ @EXTENSIONAL_def A B;
+private symbol lem4382760 [A] (_50046 : El (fun A bool)) : Prf (= _50046 _50046) ≔ REFL _50046;
+private symbol lem4382761 [A B] (_50046 : El (fun A bool)) : Prf (= ((@EXTENSIONAL A B) _50046) (term1 A B _50046)) ≔ MK_COMB (@lem4382759 A B) (@lem4382760 A _50046);
+private symbol lem4382762 [A B] (_50046 : El (fun A bool)) : Prf (= (term1 A B _50046) (term2 A B _50046)) ≔ REFL (term1 A B _50046);
+private symbol lem4382763 [A B] (_50046 : El (fun A bool)) : Prf (= ((@EXTENSIONAL A B) _50046) (term2 A B _50046)) ≔ TRANS (@lem4382761 A B _50046) (@lem4382762 A B _50046);
+private symbol lem4382764 [A B] : Prf (term3 A B) ≔ λ _50046 : El (fun A bool), (@lem4382763 A B _50046);
+private symbol lem4382765 [A B] (_50046 : El (fun A bool)) : Prf (term4 A B _50046) ≔ (@lem4382764 A B) _50046;
+private symbol lem4382766 [A B] (_50046 : El (fun A bool)) : Prf (= (term4 A B _50046) (= ((@EXTENSIONAL A B) _50046) (term2 A B _50046))) ≔ REFL (term4 A B _50046);
+private symbol lem4382767 [A B] (_50046 : El (fun A bool)) : Prf (= ((@EXTENSIONAL A B) _50046) (term2 A B _50046)) ≔ EQ_MP (@lem4382766 A B _50046) (@lem4382765 A B _50046);
+opaque symbol lem4382797 [A B] (s : El (fun A bool)) : Prf (= ((@EXTENSIONAL A B) s) (term2 A B s)) ≔ (@lem4382767 A B s);
+opaque symbol lem4382798 [A B] : Prf (term3 A B) ≔ λ s : El (fun A bool), (@lem4382797 A B s);

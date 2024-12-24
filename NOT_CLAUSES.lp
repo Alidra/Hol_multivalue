@@ -1,0 +1,10 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.NOT_CLAUSES_term_abbrevs;
+require open hol-light.thm10164_spec;
+require open hol-light.thm10186_spec;
+opaque symbol lem10191 : Prf term0 ≔ λ t : El bool, (@lem10164 t);
+opaque symbol lem10192 : Prf term1 ≔ ∧ᵢ (@lem10191) (@lem10186);

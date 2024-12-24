@@ -1,0 +1,1 @@
+thm8004099.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo thm8004099_term_abbrevs.lpo CONJ_ASSOC_spec.lpo EXISTS_IN_GSPEC_spec.lpo PCROSS_spec.lpo thm1862_spec.lpo thm1863_spec.lpo

@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.neutral_term_abbrevs;
+private symbol lem5711535 [_119565] : Prf (= (@neutral _119565) (term0 _119565)) ≔ @neutral_def _119565;
+private symbol lem5711536 [_119565] (_71604 : El (type1400 _119565)) : Prf (= _71604 _71604) ≔ REFL _71604;
+private symbol lem5711537 [_119565] (_71604 : El (type1400 _119565)) : Prf (= ((@neutral _119565) _71604) (term1 _119565 _71604)) ≔ MK_COMB (@lem5711535 _119565) (@lem5711536 _119565 _71604);
+private symbol lem5711538 [_119565] (_71604 : El (type1400 _119565)) : Prf (= (term1 _119565 _71604) (term2 _119565 _71604)) ≔ REFL (term1 _119565 _71604);
+private symbol lem5711539 [_119565] (_71604 : El (type1400 _119565)) : Prf (= ((@neutral _119565) _71604) (term2 _119565 _71604)) ≔ TRANS (@lem5711537 _119565 _71604) (@lem5711538 _119565 _71604);
+private symbol lem5711540 [_119565] : Prf (term3 _119565) ≔ λ _71604 : El (type1400 _119565), (@lem5711539 _119565 _71604);
+private symbol lem5711541 [_119565] (_71604 : El (type1400 _119565)) : Prf (term4 _119565 _71604) ≔ (@lem5711540 _119565) _71604;
+private symbol lem5711542 [_119565] (_71604 : El (type1400 _119565)) : Prf (= (term4 _119565 _71604) (= ((@neutral _119565) _71604) (term2 _119565 _71604))) ≔ REFL (term4 _119565 _71604);
+private symbol lem5711543 [_119565] (_71604 : El (type1400 _119565)) : Prf (= ((@neutral _119565) _71604) (term2 _119565 _71604)) ≔ EQ_MP (@lem5711542 _119565 _71604) (@lem5711541 _119565 _71604);
+opaque symbol lem5711573 [_119565] (op : El (type1400 _119565)) : Prf (= ((@neutral _119565) op) (term2 _119565 op)) ≔ (@lem5711543 _119565 op);
+opaque symbol lem5711574 [_119565] : Prf (term3 _119565) ≔ λ op : El (type1400 _119565), (@lem5711573 _119565 op);

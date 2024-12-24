@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem1032609 [A] : Prf (∀ (λ add : El (fun A (fun A A)), (∀ (λ mul : El (fun A (fun A A)), (∀ (λ n0 : El A, (⇒ (∧ (∀ (λ x : El A, (= (mul n0 x) n0))) (∧ (∀ (λ x : El A, (∀ (λ y : El A, (∀ (λ z : El A, (= (= (add x y) (add x z)) (= y z)))))))) (∀ (λ w : El A, (∀ (λ x : El A, (∀ (λ y : El A, (∀ (λ z : El A, (= (= (add (mul w y) (mul x z)) (add (mul w z) (mul x y))) (∨ (= w x) (= y z))))))))))))) (∧ (∀ (λ a : El A, (∀ (λ b : El A, (∀ (λ c : El A, (∀ (λ d : El A, (= (∧ (¬ (= a b)) (¬ (= c d))) (¬ (= (add (mul a c) (mul b d)) (add (mul a d) (mul b c))))))))))))) (∀ (λ n : El A, (∀ (λ a : El A, (∀ (λ b : El A, (∀ (λ c : El A, (∀ (λ d : El A, (⇒ (¬ (= n n0)) (⇒ (∧ (= a b) (¬ (= c d))) (¬ (= (add a (mul n c)) (add b (mul n d))))))))))))))))))))))));

@@ -1,0 +1,16 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm1070118_term_abbrevs;
+require open hol-light.thm1069778_spec;
+require open hol-light.thm1070110_spec;
+private symbol lem1070111 [A] (SOME' : El (type1432 A)) (h1 : Prf (= SOME' (term0 A))) : Prf (= (term1 A) (term2 A SOME')) ≔ SYM (@lem1069778 A SOME' h1);
+private symbol lem1070112 [A] (SOME' : El (type1432 A)) (h1 : Prf (= SOME' (term0 A))) : Prf (= (@SOME A) (term2 A SOME')) ≔ TRANS (@lem1070110 A) (@lem1070111 A SOME' h1);
+private symbol lem1070113 [A] (a : El A) : Prf (= a a) ≔ REFL a;
+opaque symbol lem1070114 [A] (a : El A) (SOME' : El (type1432 A)) (h1 : Prf (= SOME' (term0 A))) : Prf (= ((@SOME A) a) (term3 A SOME' a)) ≔ MK_COMB (@lem1070112 A SOME' h1) (@lem1070113 A a);
+private symbol lem1070115 [A] (SOME' : El (type1432 A)) (a : El A) : Prf (= (term3 A SOME' a) (term4 A SOME' a)) ≔ REFL (term3 A SOME' a);
+private symbol lem1070116 [A] (a : El A) : Prf (= (term5 A a) (term5 A a)) ≔ REFL (term5 A a);
+opaque symbol lem1070117 [A] (SOME' : El (type1432 A)) (a : El A) : Prf (= (= ((@SOME A) a) (term3 A SOME' a)) (= ((@SOME A) a) (term4 A SOME' a))) ≔ MK_COMB (@lem1070116 A a) (@lem1070115 A SOME' a);
+opaque symbol lem1070118 [A] (a : El A) (SOME' : El (type1432 A)) (h1 : Prf (= SOME' (term0 A))) : Prf (= ((@SOME A) a) (term4 A SOME' a)) ≔ EQ_MP (@lem1070117 A SOME' a) (@lem1070114 A a SOME' h1);

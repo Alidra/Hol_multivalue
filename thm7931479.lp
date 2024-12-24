@@ -1,0 +1,11 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm7931479_term_abbrevs;
+require open hol-light.thm7928129_spec;
+private symbol lem7931476 [A] (a : El (finite_sum A A)) : Prf (term0 A a) ≔ (@lem7928129 A) a;
+private symbol lem7931477 [A] (a : El (finite_sum A A)) : Prf (= (term0 A a) (term1 A a)) ≔ REFL (term0 A a);
+opaque symbol lem7931478 [A] (a : El (finite_sum A A)) : Prf (term1 A a) ≔ EQ_MP (@lem7931477 A a) (@lem7931476 A a);
+opaque symbol lem7931479 [A] (a : El (finite_sum A A)) (a' : El (finite_sum A A)) : Prf (term2 A a a') ≔ (@lem7931478 A a) a';

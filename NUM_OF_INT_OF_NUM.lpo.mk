@@ -1,0 +1,1 @@
+NUM_OF_INT_OF_NUM.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo NUM_OF_INT_OF_NUM_term_abbrevs.lpo INT_OF_NUM_EQ_spec.lpo num_of_int_spec.lpo thm0_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm9523_spec.lpo thm9524_spec.lpo

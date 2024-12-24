@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem38926 [Absty Repty] (R : El (fun Repty (fun Repty bool))) (dest : El (fun Absty (fun Repty bool))) (mk : El (fun (fun Repty bool) Absty)) (h1 : Prf (∧ (∀ (λ x : El Repty, (R x x))) (∧ (∀ (λ x : El Repty, (∀ (λ y : El Repty, (= (R x y) (R y x)))))) (∧ (∀ (λ x : El Repty, (∀ (λ y : El Repty, (∀ (λ z : El Repty, (⇒ (∧ (R x y) (R y z)) (R x z)))))))) (∧ (∀ (λ a : El Absty, (= (mk (dest a)) a))) (∀ (λ r : El (fun Repty bool), (= (∃ (λ x : El Repty, (= r (R x)))) (= (dest (mk r)) r))))))))) : Prf (∧ (∀ (λ x : El Repty, (∀ (λ y : El Repty, (= (R x y) (= (mk (R x)) (mk (R y)))))))) (∧ (∀ (λ P : El (fun Absty bool), (= (∀ (λ x : El Repty, (P (mk (R x))))) (∀ (λ x : El Absty, (P x)))))) (∧ (∀ (λ P : El (fun Absty bool), (= (∃ (λ x : El Repty, (P (mk (R x))))) (∃ (λ x : El Absty, (P x)))))) (∀ (λ x : El Absty, (= (mk (R ((@ε Repty) (dest x)))) x))))));

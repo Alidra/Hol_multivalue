@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.mk_pair_def_term_abbrevs;
+private symbol lem44162 [A B] : Prf (= (@mk_pair A B) (term0 A B)) ≔ @mk_pair_def A B;
+private symbol lem44163 [A] (x : El A) : Prf (= x x) ≔ REFL x;
+private symbol lem44164 [A B] (x : El A) : Prf (= ((@mk_pair A B) x) (term1 A B x)) ≔ MK_COMB (@lem44162 A B) (@lem44163 A x);
+private symbol lem44165 [A B] (x : El A) : Prf (= (term1 A B x) (term2 A B x)) ≔ REFL (term1 A B x);
+private symbol lem44166 [A B] (x : El A) : Prf (= ((@mk_pair A B) x) (term2 A B x)) ≔ TRANS (@lem44164 A B x) (@lem44165 A B x);
+private symbol lem44167 [B] (y : El B) : Prf (= y y) ≔ REFL y;
+private symbol lem44168 [A B] (x : El A) (y : El B) : Prf (= ((@mk_pair A B) x y) (term3 A B x y)) ≔ MK_COMB (@lem44166 A B x) (@lem44167 B y);
+private symbol lem44169 [A B] (x : El A) (y : El B) : Prf (= (term3 A B x y) (term4 A B x y)) ≔ REFL (term3 A B x y);
+private symbol lem44170 [A B] (x : El A) (y : El B) : Prf (= ((@mk_pair A B) x y) (term4 A B x y)) ≔ TRANS (@lem44168 A B x y) (@lem44169 A B x y);
+opaque symbol lem44171 [A B] (x : El A) : Prf (term5 A B x) ≔ λ y : El B, (@lem44170 A B x y);
+opaque symbol lem44172 [A B] : Prf (term6 A B) ≔ λ x : El A, (@lem44171 A B x);

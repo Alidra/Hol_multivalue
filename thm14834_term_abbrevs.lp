@@ -1,0 +1,11 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term2 a0 (x0: El a0) (x1: El a0) (x2: El bool) (x3: El a0) (x4: El a0) ≔ ((λ y0 : El bool, (⇒ (= y0 x2) (⇒ (⇒ x2 (= x0 x3)) (⇒ (⇒ (¬ x2) (= x1 x4)) (= ((@COND a0) y0 x0 x1) ((@COND a0) x2 x3 x4)))))) F);
+symbol term3 a0 (x0: El a0) (x1: El a0) (x2: El bool) (x3: El a0) (x4: El a0) ≔ (⇒ (= F x2) (⇒ (⇒ x2 (= x0 x3)) (⇒ (⇒ (¬ x2) (= x1 x4)) (= ((@COND a0) F x0 x1) ((@COND a0) x2 x3 x4)))));
+symbol term6 a0 (x0: El bool) (x1: El a0) (x2: El a0) (x3: El bool) (x4: El a0) (x5: El a0) ≔ ((@= bool) (⇒ (= x0 x3) (⇒ (⇒ x3 (= x1 x4)) (⇒ (⇒ (¬ x3) (= x2 x5)) (= ((@COND a0) x0 x1 x2) ((@COND a0) x3 x4 x5))))));
+symbol term1 a0 (x0: El a0) (x1: El a0) (x2: El bool) (x3: El a0) (x4: El a0) (x5: El bool) ≔ ((λ y0 : El bool, (⇒ (= y0 x2) (⇒ (⇒ x2 (= x0 x3)) (⇒ (⇒ (¬ x2) (= x1 x4)) (= ((@COND a0) y0 x0 x1) ((@COND a0) x2 x3 x4)))))) x5);
+symbol term4 a0 (x0: El a0) (x1: El a0) (x2: El bool) (x3: El a0) (x4: El a0) (x5: El bool) ≔ ((@= bool) ((λ y0 : El bool, (⇒ (= y0 x2) (⇒ (⇒ x2 (= x0 x3)) (⇒ (⇒ (¬ x2) (= x1 x4)) (= ((@COND a0) y0 x0 x1) ((@COND a0) x2 x3 x4)))))) x5));
+symbol term5 a0 (x0: El bool) (x1: El a0) (x2: El a0) (x3: El bool) (x4: El a0) (x5: El a0) ≔ (⇒ (= x0 x3) (⇒ (⇒ x3 (= x1 x4)) (⇒ (⇒ (¬ x3) (= x2 x5)) (= ((@COND a0) x0 x1 x2) ((@COND a0) x3 x4 x5)))));
+symbol term0 a0 (x0: El a0) (x1: El a0) (x2: El bool) (x3: El a0) (x4: El a0) ≔ (λ y0 : El bool, (⇒ (= y0 x2) (⇒ (⇒ x2 (= x0 x3)) (⇒ (⇒ (¬ x2) (= x1 x4)) (= ((@COND a0) y0 x0 x1) ((@COND a0) x2 x3 x4))))));

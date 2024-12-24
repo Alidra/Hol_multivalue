@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm302608_term_abbrevs;
+require open hol-light.thm302583_spec;
+require open hol-light.thm302584_spec;
+private symbol lem302600 (n : El num) : Prf (= (BIT1 n) (term0 n)) ≔ EQ_MP (@lem302584 n) (@lem302583 n);
+private symbol lem302601 (m : El num) : Prf (= (BIT1 m) (term0 m)) ≔ (@lem302600 m);
+private symbol lem302602 : Prf (= (@= num) (@= num)) ≔ REFL (@= num);
+private symbol lem302603 (m : El num) : Prf (= (term1 m) (term2 m)) ≔ MK_COMB (@lem302602) (@lem302601 m);
+private symbol lem302604 (n : El num) : Prf (= (term3 n) (term3 n)) ≔ REFL (term3 n);
+private symbol lem302605 (m : El num) (n : El num) : Prf (= (= (BIT1 m) (term3 n)) (= (term0 m) (term3 n))) ≔ MK_COMB (@lem302603 m) (@lem302604 n);
+private symbol lem302606 (m : El num) (n : El num) : Prf (= (term4 m n) (term4 m n)) ≔ REFL (term4 m n);
+opaque symbol lem302607 (m : El num) (n : El num) : Prf (= (= (= m n) (= (BIT1 m) (term3 n))) (= (= m n) (= (term0 m) (term3 n)))) ≔ MK_COMB (@lem302606 m n) (@lem302605 m n);
+opaque symbol lem302608 (m : El num) (n : El num) : Prf (= (= (= m n) (= (term0 m) (term3 n))) (= (= m n) (= (BIT1 m) (term3 n)))) ≔ SYM (@lem302607 m n);

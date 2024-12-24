@@ -1,0 +1,14 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm137_term_abbrevs;
+private symbol lem130 (p : El bool) (q : El bool) (r : El bool) (h1 : Prf (term0 p q r)) : Prf (term0 p q r) ≔ h1;
+private symbol lem131 (p : El bool) (q : El bool) (r : El bool) (h1 : Prf (term1 p q r)) : Prf (term1 p q r) ≔ h1;
+private symbol lem132 (p : El bool) (q : El bool) (r : El bool) (h1 : Prf (term1 p q r)) (h2 : Prf (term0 p q r)) : Prf (term2 p q r) ≔ (@lem130 p q r h2) (@lem131 p q r h1);
+private symbol lem133 (p : El bool) (q : El bool) (r : El bool) (h1 : Prf (term1 p q r)) : Prf (term3 p q r) ≔ λ h0 : Prf (term0 p q r), (@lem132 p q r h1 h0);
+private symbol lem134 (p : El bool) (q : El bool) (r : El bool) (h1 : Prf (term0 p q r)) : Prf (term0 p q r) ≔ h1;
+private symbol lem135 (p : El bool) (q : El bool) (r : El bool) (h1 : Prf (term1 p q r)) (h2 : Prf (term0 p q r)) : Prf (term2 p q r) ≔ (@lem133 p q r h1) (@lem134 p q r h2);
+opaque symbol lem136 (p : El bool) (q : El bool) (r : El bool) (h1 : Prf (term0 p q r)) : Prf (term0 p q r) ≔ λ h0 : Prf (term1 p q r), (@lem135 p q r h0 h1);
+opaque symbol lem137 (p : El bool) (q : El bool) (r : El bool) : Prf (term4 p q r) ≔ λ h0 : Prf (term0 p q r), (@lem136 p q r h0);

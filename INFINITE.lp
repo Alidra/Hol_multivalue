@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.INFINITE_term_abbrevs;
+private symbol lem3198504 [A] : Prf (= (@INFINITE A) (term0 A)) ≔ @INFINITE_def A;
+private symbol lem3198505 [A] (_32854 : El (fun A bool)) : Prf (= _32854 _32854) ≔ REFL _32854;
+private symbol lem3198506 [A] (_32854 : El (fun A bool)) : Prf (= ((@INFINITE A) _32854) (term1 A _32854)) ≔ MK_COMB (@lem3198504 A) (@lem3198505 A _32854);
+private symbol lem3198507 [A] (_32854 : El (fun A bool)) : Prf (= (term1 A _32854) (term2 A _32854)) ≔ REFL (term1 A _32854);
+private symbol lem3198508 [A] (_32854 : El (fun A bool)) : Prf (= ((@INFINITE A) _32854) (term2 A _32854)) ≔ TRANS (@lem3198506 A _32854) (@lem3198507 A _32854);
+private symbol lem3198509 [A] : Prf (term3 A) ≔ λ _32854 : El (fun A bool), (@lem3198508 A _32854);
+private symbol lem3198510 [A] (_32854 : El (fun A bool)) : Prf (term4 A _32854) ≔ (@lem3198509 A) _32854;
+private symbol lem3198511 [A] (_32854 : El (fun A bool)) : Prf (= (term4 A _32854) (= ((@INFINITE A) _32854) (term2 A _32854))) ≔ REFL (term4 A _32854);
+private symbol lem3198512 [A] (_32854 : El (fun A bool)) : Prf (= ((@INFINITE A) _32854) (term2 A _32854)) ≔ EQ_MP (@lem3198511 A _32854) (@lem3198510 A _32854);
+opaque symbol lem3198542 [A] (s : El (fun A bool)) : Prf (= ((@INFINITE A) s) (term2 A s)) ≔ (@lem3198512 A s);
+opaque symbol lem3198543 [A] : Prf (term3 A) ≔ λ s : El (fun A bool), (@lem3198542 A s);

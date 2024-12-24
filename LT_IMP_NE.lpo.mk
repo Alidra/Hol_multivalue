@@ -1,0 +1,1 @@
+LT_IMP_NE.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo LT_IMP_NE_term_abbrevs.lpo LT_REFL_spec.lpo thm0_spec.lpo thm10578_spec.lpo thm10597_spec.lpo thm16474_spec.lpo thm16933_spec.lpo thm17362_spec.lpo thm18392_spec.lpo thm21021_spec.lpo thm21114_spec.lpo thm21182_spec.lpo thm69_spec.lpo

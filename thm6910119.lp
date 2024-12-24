@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm6910119_term_abbrevs;
+require open hol-light.neutral_spec;
+private symbol lem6910094 [_119565] (op : El (type1400 _119565)) : Prf (term0 _119565 op) ≔ (@lem5711574 _119565) op;
+private symbol lem6910095 [_119565] (op : El (type1400 _119565)) : Prf (= (term0 _119565 op) (= ((@neutral _119565) op) (term1 _119565 op))) ≔ REFL (term0 _119565 op);
+private symbol lem6910100 [_119565] (op : El (type1400 _119565)) : Prf (= ((@neutral _119565) op) (term1 _119565 op)) ≔ EQ_MP (@lem6910095 _119565 op) (@lem6910094 _119565 op);
+private symbol lem6910101 (op : El type1627) : Prf (= ((@neutral real) op) (term2 op)) ≔ (@lem6910100 real op);
+private symbol lem6910102 : Prf (= ((@neutral real) real_mul) term3) ≔ (@lem6910101 real_mul);
+private symbol lem6910113 : Prf (= (@= real) (@= real)) ≔ REFL (@= real);
+private symbol lem6910114 : Prf (= term4 term5) ≔ MK_COMB (@lem6910113) (@lem6910102);
+private symbol lem6910115 : Prf (= term6 term6) ≔ REFL term6;
+opaque symbol lem6910116 : Prf (= (= ((@neutral real) real_mul) term6) (= term3 term6)) ≔ MK_COMB (@lem6910114) (@lem6910115);
+opaque symbol lem6910119 : Prf (= (= term3 term6) (= ((@neutral real) real_mul) term6)) ≔ SYM (@lem6910116);

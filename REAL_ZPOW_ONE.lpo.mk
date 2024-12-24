@@ -1,0 +1,1 @@
+REAL_ZPOW_ONE.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo REAL_ZPOW_ONE_term_abbrevs.lpo COND_ID_spec.lpo REAL_POW_ONE_spec.lpo real_zpow_spec.lpo thm0_spec.lpo thm1592014_spec.lpo thm1592030_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm1862_spec.lpo thm1863_spec.lpo

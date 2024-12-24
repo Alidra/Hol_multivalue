@@ -1,0 +1,1 @@
+FINITE_SET_OF_LIST.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo FINITE_SET_OF_LIST_term_abbrevs.lpo FINITE_RULES_spec.lpo thm0_spec.lpo thm1094346_spec.lpo thm1094347_spec.lpo thm4785464_spec.lpo thm4785470_spec.lpo thm4785471_spec.lpo thm7_spec.lpo

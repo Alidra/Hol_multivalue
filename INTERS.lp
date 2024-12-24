@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.INTERS_term_abbrevs;
+private symbol lem3191084 [A] : Prf (= (@INTERS A) (term0 A)) ≔ @INTERS_def A;
+private symbol lem3191085 [A] (_32780 : El (type686 A)) : Prf (= _32780 _32780) ≔ REFL _32780;
+private symbol lem3191086 [A] (_32780 : El (type686 A)) : Prf (= ((@INTERS A) _32780) (term1 A _32780)) ≔ MK_COMB (@lem3191084 A) (@lem3191085 A _32780);
+private symbol lem3191087 [A] (_32780 : El (type686 A)) : Prf (= (term1 A _32780) (term2 A _32780)) ≔ REFL (term1 A _32780);
+private symbol lem3191088 [A] (_32780 : El (type686 A)) : Prf (= ((@INTERS A) _32780) (term2 A _32780)) ≔ TRANS (@lem3191086 A _32780) (@lem3191087 A _32780);
+private symbol lem3191089 [A] : Prf (term3 A) ≔ λ _32780 : El (type686 A), (@lem3191088 A _32780);
+private symbol lem3191090 [A] (_32780 : El (type686 A)) : Prf (term4 A _32780) ≔ (@lem3191089 A) _32780;
+private symbol lem3191091 [A] (_32780 : El (type686 A)) : Prf (= (term4 A _32780) (= ((@INTERS A) _32780) (term2 A _32780))) ≔ REFL (term4 A _32780);
+private symbol lem3191092 [A] (_32780 : El (type686 A)) : Prf (= ((@INTERS A) _32780) (term2 A _32780)) ≔ EQ_MP (@lem3191091 A _32780) (@lem3191090 A _32780);
+opaque symbol lem3191122 [A] (s : El (type686 A)) : Prf (= ((@INTERS A) s) (term2 A s)) ≔ (@lem3191092 A s);
+opaque symbol lem3191123 [A] : Prf (term3 A) ≔ λ s : El (type686 A), (@lem3191122 A s);

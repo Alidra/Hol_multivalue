@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.INJN_term_abbrevs;
+private symbol lem1055363 [A] : Prf (= (@INJN A) (term0 A)) ≔ @INJN_def A;
+private symbol lem1055364 (_17374 : El num) : Prf (= _17374 _17374) ≔ REFL _17374;
+private symbol lem1055365 [A] (_17374 : El num) : Prf (= ((@INJN A) _17374) (term1 A _17374)) ≔ MK_COMB (@lem1055363 A) (@lem1055364 _17374);
+private symbol lem1055366 [A] (_17374 : El num) : Prf (= (term1 A _17374) (term2 A _17374)) ≔ REFL (term1 A _17374);
+private symbol lem1055367 [A] (_17374 : El num) : Prf (= ((@INJN A) _17374) (term2 A _17374)) ≔ TRANS (@lem1055365 A _17374) (@lem1055366 A _17374);
+private symbol lem1055368 [A] : Prf (term3 A) ≔ λ _17374 : El num, (@lem1055367 A _17374);
+private symbol lem1055369 [A] (_17374 : El num) : Prf (term4 A _17374) ≔ (@lem1055368 A) _17374;
+private symbol lem1055370 [A] (_17374 : El num) : Prf (= (term4 A _17374) (= ((@INJN A) _17374) (term2 A _17374))) ≔ REFL (term4 A _17374);
+private symbol lem1055371 [A] (_17374 : El num) : Prf (= ((@INJN A) _17374) (term2 A _17374)) ≔ EQ_MP (@lem1055370 A _17374) (@lem1055369 A _17374);
+opaque symbol lem1055401 [A] (m : El num) : Prf (= ((@INJN A) m) (term2 A m)) ≔ (@lem1055371 A m);
+opaque symbol lem1055402 [A] : Prf (term3 A) ≔ λ m : El num, (@lem1055401 A m);

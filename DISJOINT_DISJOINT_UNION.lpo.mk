@@ -1,0 +1,1 @@
+DISJOINT_DISJOINT_UNION.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo DISJOINT_DISJOINT_UNION_term_abbrevs.lpo DISJOINT_spec.lpo DISJOINT_UNION_EQ_EMPTY_spec.lpo INTER_DISJOINT_UNION_spec.lpo thm0_spec.lpo thm1809_spec.lpo thm1810_spec.lpo thm1862_spec.lpo thm1863_spec.lpo

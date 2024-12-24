@@ -1,0 +1,1 @@
+NSUM_SING_NUMSEG.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo NSUM_SING_NUMSEG_term_abbrevs.lpo NSUM_SING_spec.lpo NUMSEG_SING_spec.lpo thm0_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm1862_spec.lpo thm1863_spec.lpo

@@ -1,0 +1,1 @@
+NSUM_REFLECT.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo NSUM_REFLECT_term_abbrevs.lpo ITERATE_REFLECT_spec.lpo MONOIDAL_ADD_spec.lpo thm0_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm6920357_spec.lpo thm6920371_spec.lpo thm6920431_spec.lpo thm6921992_spec.lpo

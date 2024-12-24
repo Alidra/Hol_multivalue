@@ -1,0 +1,68 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_type_abbrevs.
+Require Import hol_terms.
+Definition term37 (x0 : nat -> real) (x1 : nat) := @eq real (x0 x1).
+Definition term5 (x0 : nat) (x1 : nat) (x2 : nat) := @IN nat x0 (dotdot x1 x2).
+Definition term33 (x0 : nat) (x1 : nat) (x2 : nat -> real) (x3 : nat) (x4 : Prop) (x5 : Prop) := ((@IN nat x3 (dotdot x0 x1)) = x4) -> (x4 -> ((x2 x3) = (real_of_num (NUMERAL 0))) = x5) -> ((@IN nat x3 (dotdot x0 x1)) -> (x2 x3) = (real_of_num (NUMERAL 0))) = (x4 -> x5).
+Definition term10 (a0 : Type') (x0 : a0 -> Prop) (x1 : a0 -> real) := (forall y0 : a0, (@IN a0 y0 x0) -> (x1 y0) = (real_of_num (NUMERAL 0))) -> (@sum a0 x0 x1) = (real_of_num (NUMERAL 0)).
+Definition term12 := real_of_num (NUMERAL 0).
+Definition term0 (x0 : nat) := (fun y0 : nat => forall y1 : nat, forall y2 : nat, (@IN nat y2 (dotdot y0 y1)) = ((Peano.le y0 y2) /\ (Peano.le y2 y1))) x0.
+Definition term43 (x0 : nat) (x1 : nat) (x2 : nat -> real) := fun y0 : nat => (@IN nat y0 (dotdot x0 x1)) -> (x2 y0) = (real_of_num (NUMERAL 0)).
+Definition term8 (a0 : Type') (x0 : a0 -> real) := forall y0 : a0 -> Prop, (forall y1 : a0, (@IN a0 y1 y0) -> (x0 y1) = (real_of_num (NUMERAL 0))) -> (@sum a0 y0 x0) = (real_of_num (NUMERAL 0)).
+Definition term47 (a0 : Type') (x0 : Prop) := forall y0 : a0, x0.
+Definition term58 := fun y0 : nat -> real => forall y1 : nat, forall y2 : nat, (forall y3 : nat, ((Peano.le y1 y3) /\ (Peano.le y3 y2)) -> (y0 y3) = (real_of_num (NUMERAL 0))) -> (@sum nat (dotdot y1 y2) y0) = (real_of_num (NUMERAL 0)).
+Definition term34 (x0 : nat -> real) (x1 : nat) (x2 : nat) (x3 : nat) (x4 : Prop) := ((@IN nat x2 (dotdot x1 x3)) = ((Peano.le x1 x2) /\ (Peano.le x2 x3))) -> (((Peano.le x1 x2) /\ (Peano.le x2 x3)) -> ((x0 x2) = (real_of_num (NUMERAL 0))) = x4) -> ((@IN nat x2 (dotdot x1 x3)) -> (x0 x2) = (real_of_num (NUMERAL 0))) = (((Peano.le x1 x2) /\ (Peano.le x2 x3)) -> x4).
+Definition term60 := forall y0 : nat -> real, forall y1 : nat, forall y2 : nat, (forall y3 : nat, ((Peano.le y1 y3) /\ (Peano.le y3 y2)) -> (y0 y3) = (real_of_num (NUMERAL 0))) -> (@sum nat (dotdot y1 y2) y0) = (real_of_num (NUMERAL 0)).
+Definition term25 (x0 : nat) (x1 : nat) (x2 : nat -> real) (x3 : nat) := (fun y0 : nat => ((Peano.le x0 y0) /\ (Peano.le y0 x1)) -> (x2 y0) = (real_of_num (NUMERAL 0))) x3.
+Definition term27 (x0 : nat -> Prop) (x1 : nat -> real) := (forall y0 : nat, (@IN nat y0 x0) -> (x1 y0) = (real_of_num (NUMERAL 0))) -> (@sum nat x0 x1) = (real_of_num (NUMERAL 0)).
+Definition term19 (x0 : nat) (x1 : nat) (x2 : nat -> real) (x3 : Prop) := (fun y0 : Prop => forall y1 : Prop, ((forall y2 : nat, ((Peano.le x0 y2) /\ (Peano.le y2 x1)) -> (x2 y2) = (real_of_num (NUMERAL 0))) = y0) -> (y0 -> ((@sum nat (dotdot x0 x1) x2) = (real_of_num (NUMERAL 0))) = y1) -> ((forall y2 : nat, ((Peano.le x0 y2) /\ (Peano.le y2 x1)) -> (x2 y2) = (real_of_num (NUMERAL 0))) -> (@sum nat (dotdot x0 x1) x2) = (real_of_num (NUMERAL 0))) = (y0 -> y1)) x3.
+Definition term55 (x0 : nat) (x1 : nat -> real) := forall y0 : nat, (forall y1 : nat, ((Peano.le x0 y1) /\ (Peano.le y1 y0)) -> (x1 y1) = (real_of_num (NUMERAL 0))) -> (@sum nat (dotdot x0 y0) x1) = (real_of_num (NUMERAL 0)).
+Definition term2 (x0 : nat) (x1 : nat) := (fun y0 : nat => forall y1 : nat, (@IN nat y1 (dotdot x0 y0)) = ((Peano.le x0 y1) /\ (Peano.le y1 y0))) x1.
+Definition term22 (x0 : nat) (x1 : nat) (x2 : nat -> real) (x3 : Prop) (x4 : Prop) := ((forall y0 : nat, ((Peano.le x0 y0) /\ (Peano.le y0 x1)) -> (x2 y0) = (real_of_num (NUMERAL 0))) = x3) -> (x3 -> ((@sum nat (dotdot x0 x1) x2) = (real_of_num (NUMERAL 0))) = x4) -> ((forall y0 : nat, ((Peano.le x0 y0) /\ (Peano.le y0 x1)) -> (x2 y0) = (real_of_num (NUMERAL 0))) -> (@sum nat (dotdot x0 x1) x2) = (real_of_num (NUMERAL 0))) = (x3 -> x4).
+Definition term13 (x0 : Prop) (x1 : Prop) (x2 : Prop) (x3 : Prop) := (x0 = x2) -> (x2 -> x1 = x3) -> (x0 -> x1) = (x2 -> x3).
+Definition term52 (x0 : nat) (x1 : nat) (x2 : nat -> real) := (forall y0 : nat, ((Peano.le x0 y0) /\ (Peano.le y0 x1)) -> (x2 y0) = (real_of_num (NUMERAL 0))) -> (@sum nat (dotdot x0 x1) x2) = (real_of_num (NUMERAL 0)).
+Definition term28 (x0 : nat) (x1 : nat) (x2 : nat -> real) := (forall y0 : nat, (@IN nat y0 (dotdot x0 x1)) -> (x2 y0) = (real_of_num (NUMERAL 0))) -> (@sum nat (dotdot x0 x1) x2) = (real_of_num (NUMERAL 0)).
+Definition term53 (x0 : nat) (x1 : nat) (x2 : nat -> real) := (forall y0 : nat, ((Peano.le x0 y0) /\ (Peano.le y0 x1)) -> (x2 y0) = (real_of_num (NUMERAL 0))) -> True.
+Definition term38 := @eq real (real_of_num (NUMERAL 0)).
+Definition term61 := forall y0 : nat -> real, True.
+Definition term40 (x0 : nat -> real) (x1 : nat) (x2 : nat) (x3 : nat) := (((Peano.le x1 x2) /\ (Peano.le x2 x3)) -> ((x0 x2) = (real_of_num (NUMERAL 0))) = True) -> ((@IN nat x2 (dotdot x1 x3)) -> (x0 x2) = (real_of_num (NUMERAL 0))) = (((Peano.le x1 x2) /\ (Peano.le x2 x3)) -> True).
+Definition term26 (x0 : nat) (x1 : nat) (x2 : nat -> real) (x3 : nat) := ((Peano.le x0 x3) /\ (Peano.le x3 x1)) -> (x2 x3) = (real_of_num (NUMERAL 0)).
+Definition term57 (x0 : nat -> real) := forall y0 : nat, forall y1 : nat, (forall y2 : nat, ((Peano.le y0 y2) /\ (Peano.le y2 y1)) -> (x0 y2) = (real_of_num (NUMERAL 0))) -> (@sum nat (dotdot y0 y1) x0) = (real_of_num (NUMERAL 0)).
+Definition term1 (x0 : nat) := forall y0 : nat, forall y1 : nat, (@IN nat y1 (dotdot x0 y0)) = ((Peano.le x0 y1) /\ (Peano.le y1 y0)).
+Definition term39 (x0 : nat) (x1 : nat) (x2 : nat -> real) (x3 : nat) := ((Peano.le x0 x3) /\ (Peano.le x3 x1)) -> ((x2 x3) = (real_of_num (NUMERAL 0))) = True.
+Definition term46 := forall y0 : nat, True.
+Definition term7 (a0 : Type') (x0 : a0 -> real) := (fun y0 : a0 -> real => forall y1 : a0 -> Prop, (forall y2 : a0, (@IN a0 y2 y1) -> (y0 y2) = (real_of_num (NUMERAL 0))) -> (@sum a0 y1 y0) = (real_of_num (NUMERAL 0))) x0.
+Definition term44 := fun y0 : nat => True.
+Definition term3 (x0 : nat) (x1 : nat) := forall y0 : nat, (@IN nat y0 (dotdot x0 x1)) = ((Peano.le x0 y0) /\ (Peano.le y0 x1)).
+Definition term35 (x0 : nat -> real) (x1 : nat) (x2 : nat) (x3 : nat) (x4 : Prop) := (((Peano.le x1 x2) /\ (Peano.le x2 x3)) -> ((x0 x2) = (real_of_num (NUMERAL 0))) = x4) -> ((@IN nat x2 (dotdot x1 x3)) -> (x0 x2) = (real_of_num (NUMERAL 0))) = (((Peano.le x1 x2) /\ (Peano.le x2 x3)) -> x4).
+Definition term31 (x0 : nat) (x1 : nat) (x2 : nat -> real) (x3 : nat) (x4 : Prop) := forall y0 : Prop, ((@IN nat x3 (dotdot x0 x1)) = x4) -> (x4 -> ((x2 x3) = (real_of_num (NUMERAL 0))) = y0) -> ((@IN nat x3 (dotdot x0 x1)) -> (x2 x3) = (real_of_num (NUMERAL 0))) = (x4 -> y0).
+Definition term20 (x0 : nat) (x1 : nat) (x2 : nat -> real) (x3 : Prop) := forall y0 : Prop, ((forall y1 : nat, ((Peano.le x0 y1) /\ (Peano.le y1 x1)) -> (x2 y1) = (real_of_num (NUMERAL 0))) = x3) -> (x3 -> ((@sum nat (dotdot x0 x1) x2) = (real_of_num (NUMERAL 0))) = y0) -> ((forall y1 : nat, ((Peano.le x0 y1) /\ (Peano.le y1 x1)) -> (x2 y1) = (real_of_num (NUMERAL 0))) -> (@sum nat (dotdot x0 x1) x2) = (real_of_num (NUMERAL 0))) = (x3 -> y0).
+Definition term14 (x0 : Prop) (x1 : Prop) (x2 : Prop) := forall y0 : Prop, (x0 = x2) -> (x2 -> x1 = y0) -> (x0 -> x1) = (x2 -> y0).
+Definition term29 (x0 : nat) (x1 : nat) (x2 : nat -> real) (x3 : nat) := forall y0 : Prop, forall y1 : Prop, ((@IN nat x3 (dotdot x0 x1)) = y0) -> (y0 -> ((x2 x3) = (real_of_num (NUMERAL 0))) = y1) -> ((@IN nat x3 (dotdot x0 x1)) -> (x2 x3) = (real_of_num (NUMERAL 0))) = (y0 -> y1).
+Definition term16 (x0 : nat) (x1 : nat) (x2 : nat -> real) := forall y0 : Prop, forall y1 : Prop, ((forall y2 : nat, ((Peano.le x0 y2) /\ (Peano.le y2 x1)) -> (x2 y2) = (real_of_num (NUMERAL 0))) = y0) -> (y0 -> ((@sum nat (dotdot x0 x1) x2) = (real_of_num (NUMERAL 0))) = y1) -> ((forall y2 : nat, ((Peano.le x0 y2) /\ (Peano.le y2 x1)) -> (x2 y2) = (real_of_num (NUMERAL 0))) -> (@sum nat (dotdot x0 x1) x2) = (real_of_num (NUMERAL 0))) = (y0 -> y1).
+Definition term15 (x0 : Prop) (x1 : Prop) := forall y0 : Prop, forall y1 : Prop, (x0 = y0) -> (y0 -> x1 = y1) -> (x0 -> x1) = (y0 -> y1).
+Definition term21 (x0 : nat) (x1 : nat) (x2 : nat -> real) (x3 : Prop) (x4 : Prop) := (fun y0 : Prop => ((forall y1 : nat, ((Peano.le x0 y1) /\ (Peano.le y1 x1)) -> (x2 y1) = (real_of_num (NUMERAL 0))) = x3) -> (x3 -> ((@sum nat (dotdot x0 x1) x2) = (real_of_num (NUMERAL 0))) = y0) -> ((forall y1 : nat, ((Peano.le x0 y1) /\ (Peano.le y1 x1)) -> (x2 y1) = (real_of_num (NUMERAL 0))) -> (@sum nat (dotdot x0 x1) x2) = (real_of_num (NUMERAL 0))) = (x3 -> y0)) x4.
+Definition term32 (x0 : nat) (x1 : nat) (x2 : nat -> real) (x3 : nat) (x4 : Prop) (x5 : Prop) := (fun y0 : Prop => ((@IN nat x3 (dotdot x0 x1)) = x4) -> (x4 -> ((x2 x3) = (real_of_num (NUMERAL 0))) = y0) -> ((@IN nat x3 (dotdot x0 x1)) -> (x2 x3) = (real_of_num (NUMERAL 0))) = (x4 -> y0)) x5.
+Definition term18 (x0 : nat) (x1 : nat) (x2 : nat -> real) := @sum nat (dotdot x0 x1) x2.
+Definition term59 := fun y0 : nat -> real => True.
+Definition term50 (x0 : nat) (x1 : nat) (x2 : nat -> real) := (forall y0 : nat, ((Peano.le x0 y0) /\ (Peano.le y0 x1)) -> (x2 y0) = (real_of_num (NUMERAL 0))) -> ((@sum nat (dotdot x0 x1) x2) = (real_of_num (NUMERAL 0))) = True.
+Definition term6 (x0 : nat) (x1 : nat) (x2 : nat) := (Peano.le x0 x1) /\ (Peano.le x1 x2).
+Definition term4 (x0 : nat) (x1 : nat) (x2 : nat) := (fun y0 : nat => (@IN nat y0 (dotdot x0 x1)) = ((Peano.le x0 y0) /\ (Peano.le y0 x1))) x2.
+Definition term62 (x0 : Prop) := forall y0 : nat -> real, x0.
+Definition term54 (x0 : nat) (x1 : nat -> real) := fun y0 : nat => (forall y1 : nat, ((Peano.le x0 y1) /\ (Peano.le y1 y0)) -> (x1 y1) = (real_of_num (NUMERAL 0))) -> (@sum nat (dotdot x0 y0) x1) = (real_of_num (NUMERAL 0)).
+Definition term11 (a0 : Type') (x0 : a0 -> Prop) (x1 : a0 -> real) := forall y0 : a0, (@IN a0 y0 x0) -> (x1 y0) = (real_of_num (NUMERAL 0)).
+Definition term9 (a0 : Type') (x0 : a0 -> real) (x1 : a0 -> Prop) := (fun y0 : a0 -> Prop => (forall y1 : a0, (@IN a0 y1 y0) -> (x0 y1) = (real_of_num (NUMERAL 0))) -> (@sum a0 y0 x0) = (real_of_num (NUMERAL 0))) x1.
+Definition term51 (x0 : nat) (x1 : nat) (x2 : nat -> real) := ((forall y0 : nat, ((Peano.le x0 y0) /\ (Peano.le y0 x1)) -> (x2 y0) = (real_of_num (NUMERAL 0))) -> ((@sum nat (dotdot x0 x1) x2) = (real_of_num (NUMERAL 0))) = True) -> ((forall y0 : nat, ((Peano.le x0 y0) /\ (Peano.le y0 x1)) -> (x2 y0) = (real_of_num (NUMERAL 0))) -> (@sum nat (dotdot x0 x1) x2) = (real_of_num (NUMERAL 0))) = ((forall y0 : nat, ((Peano.le x0 y0) /\ (Peano.le y0 x1)) -> (x2 y0) = (real_of_num (NUMERAL 0))) -> True).
+Definition term48 (x0 : Prop) := forall y0 : nat, x0.
+Definition term49 (x0 : nat) (x1 : nat) (x2 : nat -> real) := @eq real (@sum nat (dotdot x0 x1) x2).
+Definition term42 (x0 : nat) (x1 : nat) (x2 : nat) := ((Peano.le x0 x1) /\ (Peano.le x1 x2)) -> True.
+Definition term41 (x0 : nat) (x1 : nat) (x2 : nat -> real) (x3 : nat) := (@IN nat x3 (dotdot x0 x1)) -> (x2 x3) = (real_of_num (NUMERAL 0)).
+Definition term30 (x0 : nat) (x1 : nat) (x2 : nat -> real) (x3 : nat) (x4 : Prop) := (fun y0 : Prop => forall y1 : Prop, ((@IN nat x3 (dotdot x0 x1)) = y0) -> (y0 -> ((x2 x3) = (real_of_num (NUMERAL 0))) = y1) -> ((@IN nat x3 (dotdot x0 x1)) -> (x2 x3) = (real_of_num (NUMERAL 0))) = (y0 -> y1)) x4.
+Definition term45 (x0 : nat) (x1 : nat) (x2 : nat -> real) := forall y0 : nat, (@IN nat y0 (dotdot x0 x1)) -> (x2 y0) = (real_of_num (NUMERAL 0)).
+Definition term17 (x0 : nat) (x1 : nat) (x2 : nat -> real) := forall y0 : nat, ((Peano.le x0 y0) /\ (Peano.le y0 x1)) -> (x2 y0) = (real_of_num (NUMERAL 0)).
+Definition term56 (x0 : nat -> real) := fun y0 : nat => forall y1 : nat, (forall y2 : nat, ((Peano.le y0 y2) /\ (Peano.le y2 y1)) -> (x0 y2) = (real_of_num (NUMERAL 0))) -> (@sum nat (dotdot y0 y1) x0) = (real_of_num (NUMERAL 0)).
+Definition term23 (x0 : nat) (x1 : nat) (x2 : nat -> real) (x3 : Prop) := ((forall y0 : nat, ((Peano.le x0 y0) /\ (Peano.le y0 x1)) -> (x2 y0) = (real_of_num (NUMERAL 0))) = (forall y0 : nat, ((Peano.le x0 y0) /\ (Peano.le y0 x1)) -> (x2 y0) = (real_of_num (NUMERAL 0)))) -> ((forall y0 : nat, ((Peano.le x0 y0) /\ (Peano.le y0 x1)) -> (x2 y0) = (real_of_num (NUMERAL 0))) -> ((@sum nat (dotdot x0 x1) x2) = (real_of_num (NUMERAL 0))) = x3) -> ((forall y0 : nat, ((Peano.le x0 y0) /\ (Peano.le y0 x1)) -> (x2 y0) = (real_of_num (NUMERAL 0))) -> (@sum nat (dotdot x0 x1) x2) = (real_of_num (NUMERAL 0))) = ((forall y0 : nat, ((Peano.le x0 y0) /\ (Peano.le y0 x1)) -> (x2 y0) = (real_of_num (NUMERAL 0))) -> x3).
+Definition term36 (x0 : nat) (x1 : nat) := and (Peano.le x0 x1).
+Definition term24 (x0 : nat) (x1 : nat) (x2 : nat -> real) (x3 : Prop) := ((forall y0 : nat, ((Peano.le x0 y0) /\ (Peano.le y0 x1)) -> (x2 y0) = (real_of_num (NUMERAL 0))) -> ((@sum nat (dotdot x0 x1) x2) = (real_of_num (NUMERAL 0))) = x3) -> ((forall y0 : nat, ((Peano.le x0 y0) /\ (Peano.le y0 x1)) -> (x2 y0) = (real_of_num (NUMERAL 0))) -> (@sum nat (dotdot x0 x1) x2) = (real_of_num (NUMERAL 0))) = ((forall y0 : nat, ((Peano.le x0 y0) /\ (Peano.le y0 x1)) -> (x2 y0) = (real_of_num (NUMERAL 0))) -> x3).

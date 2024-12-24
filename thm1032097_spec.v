@@ -1,0 +1,5 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_terms.
+Axiom lem1032097 : forall (a : nat) (c : nat) (d : nat) (p : nat) (y : nat) (z : nat) (x : nat) (q : nat), ((Nat.add a (Nat.add c d)) = (Nat.add (Nat.add a c) d)) /\ (((Nat.mul (Nat.pow x p) (Nat.pow x q)) = (Nat.pow x (Nat.add p q))) /\ (((Nat.mul x (Nat.pow x q)) = (Nat.pow x (S q))) /\ (((Nat.mul (Nat.pow x q) x) = (Nat.pow x (S q))) /\ (((Nat.mul x x) = (Nat.pow x (NUMERAL (BIT0 (BIT1 0))))) /\ (((Nat.pow (Nat.mul x y) q) = (Nat.mul (Nat.pow x q) (Nat.pow y q))) /\ (((Nat.pow (Nat.pow x p) q) = (Nat.pow x (Nat.mul p q))) /\ (((Nat.pow x (NUMERAL 0)) = (NUMERAL (BIT1 0))) /\ (((Nat.pow x (NUMERAL (BIT1 0))) = x) /\ (((Nat.mul x (Nat.add y z)) = (Nat.add (Nat.mul x y) (Nat.mul x z))) /\ ((Nat.pow x (S q)) = (Nat.mul x (Nat.pow x q)))))))))))).

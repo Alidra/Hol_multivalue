@@ -1,0 +1,18 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.EXISTS_SIMP_term_abbrevs;
+require open hol-light.thm32_spec;
+private symbol lem1107 [A] (t : El bool) (h1 : Prf (term0 A t)) : Prf (term0 A t) ≔ h1;
+private symbol lem1108 (t : El bool) (h1 : Prf t) : Prf t ≔ h1;
+private symbol lem1109 [A] (t : El bool) (h1 : Prf (term0 A t)) : Prf t ≔ ∃ₑ (@lem1107 A t h1) (λ x : El A, λ h0 : Prf((term1 A t) x), (@lem1108 t h0));
+private symbol lem1110 [A] (t : El bool) : Prf (term2 A t) ≔ λ h0 : Prf (term0 A t), (@lem1109 A t h0);
+private symbol lem1111 (t : El bool) (h1 : Prf t) : Prf t ≔ h1;
+private symbol lem1112 [A] (t : El bool) (h1 : Prf t) : Prf (term0 A t) ≔ ∃ᵢ (term1 A t) (@el A) (@lem1111 t h1);
+private symbol lem1113 [A] (t : El bool) : Prf (term3 A t) ≔ λ h0 : Prf t, (@lem1112 A t h0);
+private symbol lem1114 [A] (t : El bool) : Prf (term4 A t) ≔ ∧ᵢ (@lem1110 A t) (@lem1113 A t);
+private symbol lem1115 [A] (t : El bool) : Prf (= (term4 A t) (= (term0 A t) t)) ≔ (@lem32 (term0 A t) t);
+opaque symbol lem1116 [A] (t : El bool) : Prf (= (term0 A t) t) ≔ EQ_MP (@lem1115 A t) (@lem1114 A t);
+opaque symbol lem1121 [A] : Prf (term5 A) ≔ λ t : El bool, (@lem1116 A t);

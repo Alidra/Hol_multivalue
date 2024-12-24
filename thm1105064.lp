@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm1105064_term_abbrevs;
+require open hol-light.thm1105047_spec;
+private symbol lem1105055 [_25498 _25501 _25508] (h1' : El _25501) : Prf (term0 _25498 _25501 _25508 h1') ≔ (@lem1105047 _25498 _25501 _25508) h1';
+private symbol lem1105056 [_25498 _25501 _25508] (h1' : El _25501) : Prf (= (term0 _25498 _25501 _25508 h1') (term1 _25498 _25501 _25508 h1')) ≔ REFL (term0 _25498 _25501 _25508 h1');
+private symbol lem1105057 [_25498 _25501 _25508] (h1' : El _25501) : Prf (term1 _25498 _25501 _25508 h1') ≔ EQ_MP (@lem1105056 _25498 _25501 _25508 h1') (@lem1105055 _25498 _25501 _25508 h1');
+private symbol lem1105058 [_25498 _25501 _25508] (h1' : El _25501) (f : El (type1475 _25498 _25501 _25508)) : Prf (term2 _25498 _25501 _25508 h1' f) ≔ (@lem1105057 _25498 _25501 _25508 h1') f;
+private symbol lem1105059 [_25498 _25501 _25508] (h1' : El _25501) (f : El (type1475 _25498 _25501 _25508)) : Prf (= (term2 _25498 _25501 _25508 h1' f) (term3 _25498 _25501 _25508 h1' f)) ≔ REFL (term2 _25498 _25501 _25508 h1' f);
+private symbol lem1105060 [_25498 _25501 _25508] (h1' : El _25501) (f : El (type1475 _25498 _25501 _25508)) : Prf (term3 _25498 _25501 _25508 h1' f) ≔ EQ_MP (@lem1105059 _25498 _25501 _25508 h1' f) (@lem1105058 _25498 _25501 _25508 h1' f);
+private symbol lem1105061 [_25498 _25501 _25508] (h1' : El _25501) (f : El (type1475 _25498 _25501 _25508)) (t1 : El (list _25501)) : Prf (term4 _25498 _25501 _25508 h1' f t1) ≔ (@lem1105060 _25498 _25501 _25508 h1' f) t1;
+private symbol lem1105062 [_25498 _25501 _25508] (h1' : El _25501) (f : El (type1475 _25498 _25501 _25508)) (t1 : El (list _25501)) : Prf (= (term4 _25498 _25501 _25508 h1' f t1) (term5 _25498 _25501 _25508 h1' f t1)) ≔ REFL (term4 _25498 _25501 _25508 h1' f t1);
+opaque symbol lem1105063 [_25498 _25501 _25508] (h1' : El _25501) (f : El (type1475 _25498 _25501 _25508)) (t1 : El (list _25501)) : Prf (term5 _25498 _25501 _25508 h1' f t1) ≔ EQ_MP (@lem1105062 _25498 _25501 _25508 h1' f t1) (@lem1105061 _25498 _25501 _25508 h1' f t1);
+opaque symbol lem1105064 [_25498 _25501 _25508] (h1' : El _25501) (f : El (type1475 _25498 _25501 _25508)) (t1 : El (list _25501)) (l : El (list _25508)) : Prf (term6 _25498 _25501 _25508 h1' f t1 l) ≔ (@lem1105063 _25498 _25501 _25508 h1' f t1) l;

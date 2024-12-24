@@ -1,0 +1,1 @@
+LE_SUC_LT.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo LE_SUC_LT_term_abbrevs.lpo NOT_CLAUSES_WEAK_spec.lpo NOT_SUC_spec.lpo SUC_INJ_spec.lpo thm0_spec.lpo thm1857_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm75622_spec.lpo thm75623_spec.lpo thm82_spec.lpo thm89498_spec.lpo thm89994_spec.lpo

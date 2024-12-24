@@ -1,0 +1,10 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm14784_term_abbrevs;
+require open hol-light.BOOL_CASES_AX_spec;
+opaque symbol lem14782 (g : El bool) : Prf (term0 g) ≔ (@lem9851) g;
+opaque symbol lem14783 (g : El bool) : Prf (= (term0 g) (term1 g)) ≔ REFL (term0 g);
+opaque symbol lem14784 (g : El bool) : Prf (term1 g) ≔ EQ_MP (@lem14783 g) (@lem14782 g);

@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.CARD_term_abbrevs;
+private symbol lem3840338 [_99571] : Prf (= (@CARD _99571) (term0 _99571)) ≔ @CARD_def _99571;
+private symbol lem3840339 [_99571] (_44539 : El (fun _99571 bool)) : Prf (= _44539 _44539) ≔ REFL _44539;
+private symbol lem3840340 [_99571] (_44539 : El (fun _99571 bool)) : Prf (= ((@CARD _99571) _44539) (term1 _99571 _44539)) ≔ MK_COMB (@lem3840338 _99571) (@lem3840339 _99571 _44539);
+private symbol lem3840341 [_99571] (_44539 : El (fun _99571 bool)) : Prf (= (term1 _99571 _44539) (term2 _99571 _44539)) ≔ REFL (term1 _99571 _44539);
+private symbol lem3840342 [_99571] (_44539 : El (fun _99571 bool)) : Prf (= ((@CARD _99571) _44539) (term2 _99571 _44539)) ≔ TRANS (@lem3840340 _99571 _44539) (@lem3840341 _99571 _44539);
+private symbol lem3840343 [_99571] : Prf (term3 _99571) ≔ λ _44539 : El (fun _99571 bool), (@lem3840342 _99571 _44539);
+private symbol lem3840344 [_99571] (_44539 : El (fun _99571 bool)) : Prf (term4 _99571 _44539) ≔ (@lem3840343 _99571) _44539;
+private symbol lem3840345 [_99571] (_44539 : El (fun _99571 bool)) : Prf (= (term4 _99571 _44539) (= ((@CARD _99571) _44539) (term2 _99571 _44539))) ≔ REFL (term4 _99571 _44539);
+private symbol lem3840346 [_99571] (_44539 : El (fun _99571 bool)) : Prf (= ((@CARD _99571) _44539) (term2 _99571 _44539)) ≔ EQ_MP (@lem3840345 _99571 _44539) (@lem3840344 _99571 _44539);
+opaque symbol lem3840376 [_99571] (s : El (fun _99571 bool)) : Prf (= ((@CARD _99571) s) (term2 _99571 s)) ≔ (@lem3840346 _99571 s);
+opaque symbol lem3840377 [_99571] : Prf (term3 _99571) ≔ λ s : El (fun _99571 bool), (@lem3840376 _99571 s);

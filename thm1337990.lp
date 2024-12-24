@@ -1,0 +1,11 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm1337990_term_abbrevs;
+private symbol lem1337986 (x1 : El (prod hreal hreal)) (y1 : El (prod hreal hreal)) (h1 : Prf (= (term0 x1 y1) (treal_le x1 y1))) : Prf (= (term0 x1 y1) (treal_le x1 y1)) ≔ h1;
+opaque symbol lem1337987 (x1 : El (prod hreal hreal)) (y1 : El (prod hreal hreal)) (h1 : Prf (= (term0 x1 y1) (treal_le x1 y1))) : Prf (= (treal_le x1 y1) (term0 x1 y1)) ≔ SYM (@lem1337986 x1 y1 h1);
+private symbol lem1337988 (x1 : El (prod hreal hreal)) (y1 : El (prod hreal hreal)) (h1 : Prf (= (treal_le x1 y1) (term0 x1 y1))) : Prf (= (treal_le x1 y1) (term0 x1 y1)) ≔ h1;
+opaque symbol lem1337989 (x1 : El (prod hreal hreal)) (y1 : El (prod hreal hreal)) (h1 : Prf (= (treal_le x1 y1) (term0 x1 y1))) : Prf (= (term0 x1 y1) (treal_le x1 y1)) ≔ SYM (@lem1337988 x1 y1 h1);
+opaque symbol lem1337990 (x1 : El (prod hreal hreal)) (y1 : El (prod hreal hreal)) : Prf (= (= (term0 x1 y1) (treal_le x1 y1)) (= (treal_le x1 y1) (term0 x1 y1))) ≔ prop_ext (λ h1 : Prf (= (term0 x1 y1) (treal_le x1 y1)), (@lem1337987 x1 y1 h1)) (λ h1 : Prf (= (treal_le x1 y1) (term0 x1 y1)), (@lem1337989 x1 y1 h1));

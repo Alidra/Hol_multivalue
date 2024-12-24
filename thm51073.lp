@@ -1,0 +1,13 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm51073_term_abbrevs;
+require open hol-light.thm1809_spec;
+require open hol-light.thm1810_spec;
+private symbol lem51069 [A B] (f : El (fun A B)) (y : El A) : Prf (= (term0 A B f y) (f y)) ≔ EQ_MP (@lem1810 A B f y) (@lem1809 A B f y);
+private symbol lem51070 [_5146 _5153 _5154] (f : El (type1228 _5146 _5153 _5154)) (y : El (prod _5154 _5153)) : Prf (= (term1 _5146 _5153 _5154 f y) (f y)) ≔ (@lem51069 (prod _5154 _5153) _5146 f y);
+opaque symbol lem51071 [_5146 _5153 _5154] (t : El (type1228 _5146 _5153 _5154)) (p1 : El _5154) (p2 : El _5153) : Prf (= (term2 _5146 _5153 _5154 t p1 p2) (term3 _5146 _5153 _5154 t p1 p2)) ≔ (@lem51070 _5146 _5153 _5154 t ((@̦‚ _5154 _5153) p1 p2));
+opaque symbol lem51072 [_5146] : Prf (= (@= _5146) (@= _5146)) ≔ REFL (@= _5146);
+opaque symbol lem51073 [_5146 _5153 _5154] (t : El (type1228 _5146 _5153 _5154)) (p1 : El _5154) (p2 : El _5153) : Prf (= (term4 _5146 _5153 _5154 t p1 p2) (term5 _5146 _5153 _5154 t p1 p2)) ≔ MK_COMB (@lem51072 _5146) (@lem51071 _5146 _5153 _5154 t p1 p2);

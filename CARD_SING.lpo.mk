@@ -1,0 +1,1 @@
+CARD_SING.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo CARD_SING_term_abbrevs.lpo CARD_CLAUSES_spec.lpo FINITE_EMPTY_spec.lpo NOT_IN_EMPTY_spec.lpo thm0_spec.lpo thm12653_spec.lpo thm14781_spec.lpo thm15222_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm513079_spec.lpo thm521920_spec.lpo thm522075_spec.lpo thm7_spec.lpo thm82_spec.lpo

@@ -1,0 +1,1 @@
+ARBITRARY_UNION_OF_UNION.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo ARBITRARY_UNION_OF_UNION_term_abbrevs.lpo ARBITRARY_UNION_OF_UNIONS_spec.lpo FORALL_IN_INSERT_spec.lpo NOT_IN_EMPTY_spec.lpo UNIONS_2_spec.lpo thm0_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm1822_spec.lpo thm1842_spec.lpo thm7_spec.lpo thm82_spec.lpo

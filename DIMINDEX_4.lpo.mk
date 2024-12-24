@@ -1,0 +1,1 @@
+DIMINDEX_4.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo DIMINDEX_4_term_abbrevs.lpo thm7948705_spec.lpo thm7948707_spec.lpo thm7948708_spec.lpo

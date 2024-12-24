@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem1100774 [_25307] : Prf (= (@ALL _25307) ((@ε (fun (prod num (prod num num)) (fun (fun _25307 bool) (fun (list _25307) bool)))) (λ ALL' : El (fun (prod num (prod num num)) (fun (fun _25307 bool) (fun (list _25307) bool))), (∀ (λ _17973 : El (prod num (prod num num)), (∧ (∀ (λ P : El (fun _25307 bool), (= (ALL' _17973 P (@NIL _25307)) T))) (∀ (λ h : El _25307, (∀ (λ P : El (fun _25307 bool), (∀ (λ t : El (list _25307), (= (ALL' _17973 P ((@CONS _25307) h t)) (∧ (P h) (ALL' _17973 P t))))))))))))) ((@̦‚ num (prod num num)) (NUMERAL (BIT1 (BIT0 (BIT0 (BIT0 (BIT0 (BIT0 (BIT1 _0)))))))) ((@̦‚ num num) (NUMERAL (BIT0 (BIT0 (BIT1 (BIT1 (BIT0 (BIT0 (BIT1 _0)))))))) (NUMERAL (BIT0 (BIT0 (BIT1 (BIT1 (BIT0 (BIT0 (BIT1 _0))))))))))));

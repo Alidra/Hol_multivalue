@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem2841622 (x : El int) (y : El int) : Prf (= ((λ y' : El int, (= (= x y') (= (real_of_int x) (real_of_int y')))) y) (= (= x y) (= (real_of_int x) (real_of_int y))));

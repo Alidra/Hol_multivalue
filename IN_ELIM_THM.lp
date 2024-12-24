@@ -1,0 +1,10 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.IN_ELIM_THM_term_abbrevs;
+require open hol-light.thm3184741_spec;
+require open hol-light.thm3184746_spec;
+opaque symbol lem3184751 [_83064] : Prf (term0 _83064) ≔ λ P : El (type919 _83064), (@lem3184746 _83064 P);
+opaque symbol lem3184752 [_83064 _83095 _83123 _83152 _83169] : Prf (term1 _83064 _83095 _83123 _83152 _83169) ≔ ∧ᵢ (@lem3184751 _83064) (@lem3184741 _83095 _83123 _83152 _83169);

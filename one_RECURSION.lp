@@ -1,0 +1,16 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.one_RECURSION_term_abbrevs;
+private symbol lem16019 [A] (e : El A) : Prf (= (term0 A e) e) ≔ REFL (term0 A e);
+private symbol lem16020 [A] : Prf (= (@= A) (@= A)) ≔ REFL (@= A);
+private symbol lem16021 [A] (e : El A) : Prf (= (term1 A e) ((@= A) e)) ≔ MK_COMB (@lem16020 A) (@lem16019 A e);
+private symbol lem16022 [A] (e : El A) : Prf (= e e) ≔ REFL e;
+private symbol lem16023 [A] (e : El A) : Prf (= (= (term0 A e) e) (= e e)) ≔ MK_COMB (@lem16021 A e) (@lem16022 A e);
+private symbol lem16024 [A] (e : El A) : Prf (= (= e e) (= (term0 A e) e)) ≔ SYM (@lem16023 A e);
+private symbol lem16025 [A] (e : El A) : Prf (= e e) ≔ REFL e;
+private symbol lem16026 [A] (e : El A) : Prf (= (term0 A e) e) ≔ EQ_MP (@lem16024 A e) (@lem16025 A e);
+opaque symbol lem16027 [A] (e : El A) : Prf (term2 A e) ≔ ∃ᵢ (term3 A e) (term4 A e) (@lem16026 A e);
+opaque symbol lem16032 [A] : Prf (term5 A) ≔ λ e : El A, (@lem16027 A e);

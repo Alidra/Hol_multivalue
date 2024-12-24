@@ -1,0 +1,1 @@
+EVEN_DOUBLE.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo EVEN_DOUBLE_term_abbrevs.lpo BIT0_THM_spec.lpo BIT1_THM_spec.lpo EVEN_ADD_spec.lpo EVEN_MULT_spec.lpo thm0_spec.lpo thm1862_spec.lpo thm1863_spec.lpo

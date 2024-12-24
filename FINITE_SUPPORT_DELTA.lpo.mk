@@ -1,0 +1,1 @@
+FINITE_SUPPORT_DELTA.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo FINITE_SUPPORT_DELTA_term_abbrevs.lpo FINITE_RULES_spec.lpo FINITE_SUPPORT_spec.lpo SUPPORT_DELTA_spec.lpo thm0_spec.lpo thm13473_spec.lpo thm7_spec.lpo

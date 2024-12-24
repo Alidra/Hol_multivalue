@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.polynomial_function_term_abbrevs;
+private symbol lem7553449 : Prf (= polynomial_function term0) ≔ @polynomial_function_def;
+private symbol lem7553450 (_97553 : El (fun real real)) : Prf (= _97553 _97553) ≔ REFL _97553;
+private symbol lem7553451 (_97553 : El (fun real real)) : Prf (= (polynomial_function _97553) (term1 _97553)) ≔ MK_COMB (@lem7553449) (@lem7553450 _97553);
+private symbol lem7553452 (_97553 : El (fun real real)) : Prf (= (term1 _97553) (term2 _97553)) ≔ REFL (term1 _97553);
+private symbol lem7553453 (_97553 : El (fun real real)) : Prf (= (polynomial_function _97553) (term2 _97553)) ≔ TRANS (@lem7553451 _97553) (@lem7553452 _97553);
+private symbol lem7553454 : Prf term3 ≔ λ _97553 : El (fun real real), (@lem7553453 _97553);
+private symbol lem7553455 (_97553 : El (fun real real)) : Prf (term4 _97553) ≔ (@lem7553454) _97553;
+private symbol lem7553456 (_97553 : El (fun real real)) : Prf (= (term4 _97553) (= (polynomial_function _97553) (term2 _97553))) ≔ REFL (term4 _97553);
+private symbol lem7553457 (_97553 : El (fun real real)) : Prf (= (polynomial_function _97553) (term2 _97553)) ≔ EQ_MP (@lem7553456 _97553) (@lem7553455 _97553);
+opaque symbol lem7553487 (p : El (fun real real)) : Prf (= (polynomial_function p) (term2 p)) ≔ (@lem7553457 p);
+opaque symbol lem7553488 : Prf term3 ≔ λ p : El (fun real real), (@lem7553487 p);

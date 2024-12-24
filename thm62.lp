@@ -1,0 +1,13 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm62_term_abbrevs;
+require open hol-light.NOT_DEF_spec;
+private symbol lem57 (P : El bool) : Prf (= P P) ≔ REFL P;
+opaque symbol lem58 (P : El bool) : Prf (= (¬ P) (term0 P)) ≔ MK_COMB (@lem56) (@lem57 P);
+private symbol lem59 (P : El bool) : Prf (= (term0 P) (⇒ P F)) ≔ REFL (term0 P);
+private symbol lem60 (P : El bool) : Prf (= (term1 P) (term1 P)) ≔ REFL (term1 P);
+opaque symbol lem61 (P : El bool) : Prf (= (= (¬ P) (term0 P)) (= (¬ P) (⇒ P F))) ≔ MK_COMB (@lem60 P) (@lem59 P);
+opaque symbol lem62 (P : El bool) : Prf (= (¬ P) (⇒ P F)) ≔ EQ_MP (@lem61 P) (@lem58 P);

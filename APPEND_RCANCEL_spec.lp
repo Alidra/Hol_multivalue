@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem1188381 [A] : Prf (∀ (λ l1 : El (list A), (∀ (λ l2 : El (list A), (∀ (λ l3 : El (list A), (= (= ((@APPEND A) l1 l3) ((@APPEND A) l2 l3)) (= l1 l2))))))));

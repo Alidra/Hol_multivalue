@@ -1,0 +1,1 @@
+UNIV_PCROSS_UNIV.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo UNIV_PCROSS_UNIV_term_abbrevs.lpo EXTENSION_spec.lpo IN_UNIV_spec.lpo PASTECART_IN_PCROSS_spec.lpo thm0_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm1842_spec.lpo thm1855_spec.lpo thm7_spec.lpo thm7660850_spec.lpo thm7662539_spec.lpo

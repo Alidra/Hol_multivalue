@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem1111467 [A] (s : El (fun num A)) (n : El num) : Prf (= ((λ n' : El num, (= ((@list_of_seq A) s (SUC n')) ((@APPEND A) ((@list_of_seq A) s n') ((@CONS A) (s n') (@NIL A))))) n) (= ((@list_of_seq A) s (SUC n)) ((@APPEND A) ((@list_of_seq A) s n) ((@CONS A) (s n) (@NIL A)))));

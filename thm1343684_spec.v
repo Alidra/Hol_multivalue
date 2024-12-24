@@ -1,0 +1,5 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_terms.
+Axiom lem1343684 : (fun real_pow' : (prod nat (prod nat (prod nat (prod nat (prod nat (prod nat (prod nat nat))))))) -> real -> nat -> real => forall _23958 : prod nat (prod nat (prod nat (prod nat (prod nat (prod nat (prod nat nat)))))), (forall x : real, (real_pow' _23958 x (NUMERAL 0)) = (real_of_num (NUMERAL (BIT1 0)))) /\ (forall x : real, forall n : nat, (real_pow' _23958 x (S n)) = (real_mul x (real_pow' _23958 x n)))) (@ε ((prod nat (prod nat (prod nat (prod nat (prod nat (prod nat (prod nat nat))))))) -> real -> nat -> real) (fun real_pow' : (prod nat (prod nat (prod nat (prod nat (prod nat (prod nat (prod nat nat))))))) -> real -> nat -> real => forall _23958 : prod nat (prod nat (prod nat (prod nat (prod nat (prod nat (prod nat nat)))))), (forall x : real, (real_pow' _23958 x (NUMERAL 0)) = (real_of_num (NUMERAL (BIT1 0)))) /\ (forall x : real, forall n : nat, (real_pow' _23958 x (S n)) = (real_mul x (real_pow' _23958 x n))))).

@@ -1,0 +1,5 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_terms.
+Axiom lem8050938 : forall {_143061 _143062 _143063 : Type'} (f : ((cart _143061 _143062) -> Prop) -> Prop) (t : (cart _143061 _143063) -> Prop), (forall x : cart _143061 _143062, forall y : cart _143061 _143063, ((@IN (cart _143061 _143062) x (@INTERS (cart _143061 _143062) f)) /\ (@IN (cart _143061 _143063) y t)) = (forall s : (cart _143061 _143062) -> Prop, (@IN ((cart _143061 _143062) -> Prop) s f) -> (@IN (cart _143061 _143062) x s) /\ (@IN (cart _143061 _143063) y t))) = ((@PCROSS _143061 _143062 _143063 (@INTERS (cart _143061 _143062) f) t) = (@INTERS (cart _143061 (finite_sum _143062 _143063)) (@GSPEC ((cart _143061 (finite_sum _143062 _143063)) -> Prop) (fun GEN_PVAR_369 : (cart _143061 (finite_sum _143062 _143063)) -> Prop => exists s : (cart _143061 _143062) -> Prop, @SETSPEC ((cart _143061 (finite_sum _143062 _143063)) -> Prop) GEN_PVAR_369 (@IN ((cart _143061 _143062) -> Prop) s f) (@PCROSS _143061 _143062 _143063 s t))))).

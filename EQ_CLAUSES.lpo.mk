@@ -1,0 +1,1 @@
+EQ_CLAUSES.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo EQ_CLAUSES_term_abbrevs.lpo NOT_DEF_spec.lpo thm0_spec.lpo thm32_spec.lpo thm37_spec.lpo thm43_spec.lpo thm69_spec.lpo thm98_spec.lpo

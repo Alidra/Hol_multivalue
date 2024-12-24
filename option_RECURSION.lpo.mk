@@ -1,0 +1,1 @@
+option_RECURSION.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo option_RECURSION_term_abbrevs.lpo CONSTR_REC_spec.lpo thm1066561_spec.lpo thm1066562_spec.lpo thm1066568_spec.lpo thm1066569_spec.lpo thm1069367_spec.lpo thm1069415_spec.lpo thm1069419_spec.lpo thm1069766_spec.lpo thm1070118_spec.lpo thm9102_spec.lpo

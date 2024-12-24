@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm7640410_term_abbrevs;
+require open hol-light.dimindex_spec;
+private symbol lem7640399 [A] (s : El (fun A bool)) : Prf (term0 A s) ≔ (@lem7590231 A) s;
+private symbol lem7640400 [A] (s : El (fun A bool)) : Prf (= (term0 A s) (= ((@dimindex A) s) (term1 A))) ≔ REFL (term0 A s);
+private symbol lem7640403 [A] (s : El (fun A bool)) : Prf (= ((@dimindex A) s) (term1 A)) ≔ EQ_MP (@lem7640400 A s) (@lem7640399 A s);
+private symbol lem7640404 [M N] (s : El (type49 M N)) : Prf (= ((@dimindex (finite_sum M N)) s) (term2 M N)) ≔ (@lem7640403 (finite_sum M N) s);
+private symbol lem7640405 [M N] : Prf (= ((@dimindex (finite_sum M N)) (@UNIV (finite_sum M N))) (term2 M N)) ≔ (@lem7640404 M N (@UNIV (finite_sum M N)));
+private symbol lem7640406 : Prf (= (@= num) (@= num)) ≔ REFL (@= num);
+private symbol lem7640407 [M N] : Prf (= (term3 M N) (term4 M N)) ≔ MK_COMB (@lem7640406) (@lem7640405 M N);
+private symbol lem7640408 [M N] : Prf (= (term5 M N) (term5 M N)) ≔ REFL (term5 M N);
+opaque symbol lem7640409 [M N] : Prf (= (= ((@dimindex (finite_sum M N)) (@UNIV (finite_sum M N))) (term5 M N)) (= (term2 M N) (term5 M N))) ≔ MK_COMB (@lem7640407 M N) (@lem7640408 M N);
+opaque symbol lem7640410 [M N] : Prf (= (= (term2 M N) (term5 M N)) (= ((@dimindex (finite_sum M N)) (@UNIV (finite_sum M N))) (term5 M N))) ≔ SYM (@lem7640409 M N);

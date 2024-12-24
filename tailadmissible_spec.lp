@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem8094644 [A B P] : Prf (∀ (λ << : El (fun A (fun A bool)), (∀ (λ s : El (fun P A), (∀ (λ p : El (fun (fun A B) (fun P bool)), (∀ (λ t : El (fun (fun A B) (fun P B)), (= ((@tailadmissible A B P) << p s t) (∃ (λ P' : El (fun (fun A B) (fun P bool)), (∃ (λ G : El (fun (fun A B) (fun P A)), (∃ (λ H : El (fun (fun A B) (fun P B)), (∧ (∀ (λ f : El (fun A B), (∀ (λ a : El P, (∀ (λ y : El A, (⇒ (∧ (P' f a) (<< y (G f a))) (<< y (s a))))))))) (∧ (∀ (λ f : El (fun A B), (∀ (λ g : El (fun A B), (∀ (λ a : El P, (⇒ (∀ (λ z : El A, (⇒ (<< z (s a)) (= (f z) (g z))))) (∧ (= (P' f a) (P' g a)) (∧ (= (G f a) (G g a)) (= (H f a) (H g a))))))))))) (∀ (λ f : El (fun A B), (∀ (λ a : El P, (⇒ (p f a) (= (t f a) ((@COND B) (P' f a) (f (G f a)) (H f a)))))))))))))))))))))))));

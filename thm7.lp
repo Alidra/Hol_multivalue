@@ -1,0 +1,12 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm0_spec;
+private symbol lem2 (t : El bool) (h1 : Prf t) : Prf t ≔ h1;
+opaque symbol lem3 (t : El bool) (h1 : Prf t) : Prf (= t T) ≔ prop_ext (λ h2 : Prf t, (@lem0)) (λ h2 : Prf T, (@lem2 t h1));
+private symbol lem4 (t : El bool) (h1 : Prf (= t T)) : Prf (= t T) ≔ h1;
+private symbol lem5 (t : El bool) (h1 : Prf (= t T)) : Prf (= T t) ≔ SYM (@lem4 t h1);
+opaque symbol lem6 (t : El bool) (h1 : Prf (= t T)) : Prf t ≔ EQ_MP (@lem5 t h1) (@lem0);
+opaque symbol lem7 (t : El bool) : Prf (= t (= t T)) ≔ prop_ext (λ h1 : Prf t, (@lem3 t h1)) (λ h1 : Prf (= t T), (@lem6 t h1));

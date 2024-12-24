@@ -1,0 +1,1 @@
+LEFT_SUB_DISTRIB.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo LEFT_SUB_DISTRIB_term_abbrevs.lpo ADD_SUB_spec.lpo ADD_SYM_spec.lpo LEFT_ADD_DISTRIB_spec.lpo LE_CASES_spec.lpo LE_EXISTS_spec.lpo LE_MULT_LCANCEL_spec.lpo MULT_CLAUSES_spec.lpo SUB_EQ_0_spec.lpo thm0_spec.lpo thm1832_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm7_spec.lpo

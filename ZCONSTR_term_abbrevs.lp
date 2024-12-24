@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term11 a0 (x0: El num) (x1: El a0) ≔ ((λ y0 : El a0, (∀ (λ y1 : El (type1600 a0), (= ((@ZCONSTR a0) x0 y0 y1) ((@INJP a0) ((@INJN a0) (SUC x0)) ((@INJP a0) ((@INJA a0) y0) ((@INJF a0) y1))))))) x1);
+symbol term6 a0 (x0: El num) (x1: El a0) (x2: El (type1600 a0)) ≔ ((@INJP a0) ((@INJN a0) (SUC x0)) ((@INJP a0) ((@INJA a0) x1) ((@INJF a0) x2)));
+symbol term3 a0 (x0: El num) (x1: El a0) ≔ ((λ y0 : El a0, (λ y1 : El (type1600 a0), ((@INJP a0) ((@INJN a0) (SUC x0)) ((@INJP a0) ((@INJA a0) y0) ((@INJF a0) y1))))) x1);
+symbol term12 a0 (x0: El num) (x1: El a0) (x2: El (type1600 a0)) ≔ ((λ y0 : El (type1600 a0), (= ((@ZCONSTR a0) x0 x1 y0) ((@INJP a0) ((@INJN a0) (SUC x0)) ((@INJP a0) ((@INJA a0) x1) ((@INJF a0) y0))))) x2);
+symbol term1 a0 (x0: El num) ≔ ((λ y0 : El num, (λ y1 : El a0, (λ y2 : El (type1600 a0), ((@INJP a0) ((@INJN a0) (SUC y0)) ((@INJP a0) ((@INJA a0) y1) ((@INJF a0) y2)))))) x0);
+symbol term10 a0 (x0: El num) ≔ ((λ y0 : El num, (∀ (λ y1 : El a0, (∀ (λ y2 : El (type1600 a0), (= ((@ZCONSTR a0) y0 y1 y2) ((@INJP a0) ((@INJN a0) (SUC y0)) ((@INJP a0) ((@INJA a0) y1) ((@INJF a0) y2))))))))) x0);
+symbol term9 a0 ≔ (∀ (λ y0 : El num, (∀ (λ y1 : El a0, (∀ (λ y2 : El (type1600 a0), (= ((@ZCONSTR a0) y0 y1 y2) ((@INJP a0) ((@INJN a0) (SUC y0)) ((@INJP a0) ((@INJA a0) y1) ((@INJF a0) y2))))))))));
+symbol term0 a0 ≔ (λ y0 : El num, (λ y1 : El a0, (λ y2 : El (type1600 a0), ((@INJP a0) ((@INJN a0) (SUC y0)) ((@INJP a0) ((@INJA a0) y1) ((@INJF a0) y2))))));
+symbol term7 a0 (x0: El num) (x1: El a0) ≔ (∀ (λ y0 : El (type1600 a0), (= ((@ZCONSTR a0) x0 x1 y0) ((@INJP a0) ((@INJN a0) (SUC x0)) ((@INJP a0) ((@INJA a0) x1) ((@INJF a0) y0))))));
+symbol term2 a0 (x0: El num) ≔ (λ y0 : El a0, (λ y1 : El (type1600 a0), ((@INJP a0) ((@INJN a0) (SUC x0)) ((@INJP a0) ((@INJA a0) y0) ((@INJF a0) y1)))));
+symbol term4 a0 (x0: El num) (x1: El a0) ≔ (λ y0 : El (type1600 a0), ((@INJP a0) ((@INJN a0) (SUC x0)) ((@INJP a0) ((@INJA a0) x1) ((@INJF a0) y0))));
+symbol term8 a0 (x0: El num) ≔ (∀ (λ y0 : El a0, (∀ (λ y1 : El (type1600 a0), (= ((@ZCONSTR a0) x0 y0 y1) ((@INJP a0) ((@INJN a0) (SUC x0)) ((@INJP a0) ((@INJA a0) y0) ((@INJF a0) y1))))))));
+symbol term5 a0 (x0: El num) (x1: El a0) (x2: El (type1600 a0)) ≔ ((λ y0 : El (type1600 a0), ((@INJP a0) ((@INJN a0) (SUC x0)) ((@INJP a0) ((@INJA a0) x1) ((@INJF a0) y0)))) x2);

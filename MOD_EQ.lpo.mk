@@ -1,0 +1,1 @@
+MOD_EQ.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo MOD_EQ_term_abbrevs.lpo ADD_ASSOC_spec.lpo ADD_CLAUSES_spec.lpo ADD_SYM_spec.lpo DIVISION_spec.lpo EXCLUDED_MIDDLE_spec.lpo MOD_UNIQ_spec.lpo MULT_CLAUSES_spec.lpo RIGHT_ADD_DISTRIB_spec.lpo thm1843_spec.lpo thm7_spec.lpo

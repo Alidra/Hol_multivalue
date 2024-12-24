@@ -1,0 +1,1 @@
+thm8049396.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo thm8049396_term_abbrevs.lpo EXTENSION_spec.lpo PASTECART_IN_PCROSS_spec.lpo thm3184736_spec.lpo thm3184739_spec.lpo thm3464405_spec.lpo thm3464408_spec.lpo thm7660850_spec.lpo thm7662539_spec.lpo

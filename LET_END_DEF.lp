@@ -1,0 +1,12 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.LET_END_DEF_term_abbrevs;
+private symbol lem44134 [A] : Prf (= (@LET_END A) (term0 A)) ≔ @LET_END_def A;
+private symbol lem44135 [A] (t : El A) : Prf (= t t) ≔ REFL t;
+private symbol lem44136 [A] (t : El A) : Prf (= ((@LET_END A) t) (term1 A t)) ≔ MK_COMB (@lem44134 A) (@lem44135 A t);
+private symbol lem44137 [A] (t : El A) : Prf (= (term1 A t) t) ≔ REFL (term1 A t);
+opaque symbol lem44138 [A] (t : El A) : Prf (= ((@LET_END A) t) t) ≔ TRANS (@lem44136 A t) (@lem44137 A t);
+opaque symbol lem44139 [A] : Prf (term2 A) ≔ λ t : El A, (@lem44138 A t);

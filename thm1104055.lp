@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm1104055_term_abbrevs;
+require open hol-light.thm1104038_spec;
+private symbol lem1104046 [_25409 _25416] (h1' : El _25409) : Prf (term0 _25409 _25416 h1') ≔ (@lem1104038 _25409 _25416) h1';
+private symbol lem1104047 [_25409 _25416] (h1' : El _25409) : Prf (= (term0 _25409 _25416 h1') (term1 _25409 _25416 h1')) ≔ REFL (term0 _25409 _25416 h1');
+private symbol lem1104048 [_25409 _25416] (h1' : El _25409) : Prf (term1 _25409 _25416 h1') ≔ EQ_MP (@lem1104047 _25409 _25416 h1') (@lem1104046 _25409 _25416 h1');
+private symbol lem1104049 [_25409 _25416] (h1' : El _25409) (P : El (type1413 _25409 _25416)) : Prf (term2 _25409 _25416 h1' P) ≔ (@lem1104048 _25409 _25416 h1') P;
+private symbol lem1104050 [_25409 _25416] (h1' : El _25409) (P : El (type1413 _25409 _25416)) : Prf (= (term2 _25409 _25416 h1' P) (term3 _25409 _25416 h1' P)) ≔ REFL (term2 _25409 _25416 h1' P);
+private symbol lem1104051 [_25409 _25416] (h1' : El _25409) (P : El (type1413 _25409 _25416)) : Prf (term3 _25409 _25416 h1' P) ≔ EQ_MP (@lem1104050 _25409 _25416 h1' P) (@lem1104049 _25409 _25416 h1' P);
+private symbol lem1104052 [_25409 _25416] (h1' : El _25409) (P : El (type1413 _25409 _25416)) (t1 : El (list _25409)) : Prf (term4 _25409 _25416 h1' P t1) ≔ (@lem1104051 _25409 _25416 h1' P) t1;
+private symbol lem1104053 [_25409 _25416] (h1' : El _25409) (P : El (type1413 _25409 _25416)) (t1 : El (list _25409)) : Prf (= (term4 _25409 _25416 h1' P t1) (term5 _25409 _25416 h1' P t1)) ≔ REFL (term4 _25409 _25416 h1' P t1);
+opaque symbol lem1104054 [_25409 _25416] (h1' : El _25409) (P : El (type1413 _25409 _25416)) (t1 : El (list _25409)) : Prf (term5 _25409 _25416 h1' P t1) ≔ EQ_MP (@lem1104053 _25409 _25416 h1' P t1) (@lem1104052 _25409 _25416 h1' P t1);
+opaque symbol lem1104055 [_25409 _25416] (h1' : El _25409) (P : El (type1413 _25409 _25416)) (t1 : El (list _25409)) (l2 : El (list _25416)) : Prf (term6 _25409 _25416 h1' P t1 l2) ≔ (@lem1104054 _25409 _25416 h1' P t1) l2;

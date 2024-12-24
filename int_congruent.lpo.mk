@@ -1,0 +1,1 @@
+int_congruent.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo int_congruent_term_abbrevs.lpo cong_spec.lpo int_divides_spec.lpo int_mod_spec.lpo thm0_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm1862_spec.lpo thm1863_spec.lpo

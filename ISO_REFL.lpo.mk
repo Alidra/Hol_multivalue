@@ -1,0 +1,1 @@
+ISO_REFL.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo ISO_REFL_term_abbrevs.lpo ISO_spec.lpo thm0_spec.lpo thm1809_spec.lpo thm1810_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm1845_spec.lpo thm1862_spec.lpo thm1863_spec.lpo

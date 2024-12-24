@@ -1,0 +1,1 @@
+LIST_OF_SET_EMPTY.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo LIST_OF_SET_EMPTY_term_abbrevs.lpo CARD_CLAUSES_spec.lpo FINITE_EMPTY_spec.lpo LENGTH_EQ_NIL_spec.lpo LENGTH_LIST_OF_SET_spec.lpo thm0_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm7_spec.lpo

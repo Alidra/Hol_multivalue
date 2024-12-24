@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.real_abs_term_abbrevs;
+private symbol lem1343320 : Prf (= real_abs term0) ≔ @real_abs_def;
+private symbol lem1343321 (_23947 : El real) : Prf (= _23947 _23947) ≔ REFL _23947;
+private symbol lem1343322 (_23947 : El real) : Prf (= (real_abs _23947) (term1 _23947)) ≔ MK_COMB (@lem1343320) (@lem1343321 _23947);
+private symbol lem1343323 (_23947 : El real) : Prf (= (term1 _23947) (term2 _23947)) ≔ REFL (term1 _23947);
+private symbol lem1343324 (_23947 : El real) : Prf (= (real_abs _23947) (term2 _23947)) ≔ TRANS (@lem1343322 _23947) (@lem1343323 _23947);
+private symbol lem1343325 : Prf term3 ≔ λ _23947 : El real, (@lem1343324 _23947);
+private symbol lem1343326 (_23947 : El real) : Prf (term4 _23947) ≔ (@lem1343325) _23947;
+private symbol lem1343327 (_23947 : El real) : Prf (= (term4 _23947) (= (real_abs _23947) (term2 _23947))) ≔ REFL (term4 _23947);
+private symbol lem1343328 (_23947 : El real) : Prf (= (real_abs _23947) (term2 _23947)) ≔ EQ_MP (@lem1343327 _23947) (@lem1343326 _23947);
+opaque symbol lem1343358 (x : El real) : Prf (= (real_abs x) (term2 x)) ≔ (@lem1343328 x);
+opaque symbol lem1343359 : Prf term3 ≔ λ x : El real, (@lem1343358 x);

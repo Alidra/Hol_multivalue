@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem8039091 [_142619 _142620 _142621 _142655 _142656 _142657] : Prf (∧ (∀ (λ s : El (fun (cart _142619 _142620) bool), (∀ (λ t : El (fun (cart _142619 _142621) bool), (∀ (λ u : El (fun (cart _142619 _142621) bool), (= ((@PCROSS _142619 _142620 _142621) s ((@DIFF (cart _142619 _142621)) t u)) ((@DIFF (cart _142619 (finite_sum _142620 _142621))) ((@PCROSS _142619 _142620 _142621) s t) ((@PCROSS _142619 _142620 _142621) s u))))))))) (∀ (λ s : El (fun (cart _142655 _142656) bool), (∀ (λ t : El (fun (cart _142655 _142656) bool), (∀ (λ u : El (fun (cart _142655 _142657) bool), (= ((@PCROSS _142655 _142656 _142657) ((@DIFF (cart _142655 _142656)) s t) u) ((@DIFF (cart _142655 (finite_sum _142656 _142657))) ((@PCROSS _142655 _142656 _142657) s u) ((@PCROSS _142655 _142656 _142657) t u))))))))));

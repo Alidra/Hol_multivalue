@@ -1,0 +1,10 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.INT_OF_NUM_CLAUSES_term_abbrevs;
+require open hol-light.thm2307095_spec;
+require open hol-light.thm2307120_spec;
+opaque symbol lem2307121 : Prf term0 ≔ λ m : El num, (@lem2307120 m);
+opaque symbol lem2307122 : Prf term1 ≔ ∧ᵢ (@lem2307121) (@lem2307095);

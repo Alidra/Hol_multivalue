@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem1054820 : Prf ((λ Y : El (fun (prod num (prod num (prod num (prod num (prod num (prod num (prod num num))))))) (fun num num)), (∀ (λ _17373 : El (prod num (prod num (prod num (prod num (prod num (prod num (prod num num))))))), (∀ (λ x : El bool, (∀ (λ y : El num, (∧ (= (NUMLEFT (NUMSUM x y)) x) (= (Y _17373 (NUMSUM x y)) y))))))))) ((@ε (fun (prod num (prod num (prod num (prod num (prod num (prod num (prod num num))))))) (fun num num))) (λ Y : El (fun (prod num (prod num (prod num (prod num (prod num (prod num (prod num num))))))) (fun num num)), (∀ (λ _17373 : El (prod num (prod num (prod num (prod num (prod num (prod num (prod num num))))))), (∀ (λ x : El bool, (∀ (λ y : El num, (∧ (= (NUMLEFT (NUMSUM x y)) x) (= (Y _17373 (NUMSUM x y)) y)))))))))));

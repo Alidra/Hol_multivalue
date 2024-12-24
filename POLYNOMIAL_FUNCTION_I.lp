@@ -1,0 +1,18 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.POLYNOMIAL_FUNCTION_I_term_abbrevs;
+require open hol-light.POLYNOMIAL_FUNCTION_ID_spec;
+require open hol-light.thm0_spec;
+require open hol-light.thm7_spec;
+private symbol lem7555013 : Prf (= term0 (= term0 T)) ≔ (@lem7 term0);
+private symbol lem7555016 [A] : Prf (= (@I A) (term1 A)) ≔ @I_def A;
+private symbol lem7555017 : Prf (= (@I real) term2) ≔ (@lem7555016 real);
+private symbol lem7555018 : Prf (= polynomial_function polynomial_function) ≔ REFL polynomial_function;
+private symbol lem7555019 : Prf (= (polynomial_function (@I real)) term0) ≔ MK_COMB (@lem7555018) (@lem7555017);
+private symbol lem7555021 : Prf (= term0 T) ≔ EQ_MP (@lem7555013) (@lem7555012);
+private symbol lem7555022 : Prf (= (polynomial_function (@I real)) T) ≔ TRANS (@lem7555019) (@lem7555021);
+opaque symbol lem7555023 : Prf (= T (polynomial_function (@I real))) ≔ SYM (@lem7555022);
+opaque symbol lem7555024 : Prf (polynomial_function (@I real)) ≔ EQ_MP (@lem7555023) (@lem0);

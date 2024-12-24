@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.minimal_term_abbrevs;
+private symbol lem273021 : Prf (= minimal term0) ≔ @minimal_def;
+private symbol lem273022 (_6373 : El (fun num bool)) : Prf (= _6373 _6373) ≔ REFL _6373;
+private symbol lem273023 (_6373 : El (fun num bool)) : Prf (= (minimal _6373) (term1 _6373)) ≔ MK_COMB (@lem273021) (@lem273022 _6373);
+private symbol lem273024 (_6373 : El (fun num bool)) : Prf (= (term1 _6373) (term2 _6373)) ≔ REFL (term1 _6373);
+private symbol lem273025 (_6373 : El (fun num bool)) : Prf (= (minimal _6373) (term2 _6373)) ≔ TRANS (@lem273023 _6373) (@lem273024 _6373);
+private symbol lem273026 : Prf term3 ≔ λ _6373 : El (fun num bool), (@lem273025 _6373);
+private symbol lem273027 (_6373 : El (fun num bool)) : Prf (term4 _6373) ≔ (@lem273026) _6373;
+private symbol lem273028 (_6373 : El (fun num bool)) : Prf (= (term4 _6373) (= (minimal _6373) (term2 _6373))) ≔ REFL (term4 _6373);
+private symbol lem273029 (_6373 : El (fun num bool)) : Prf (= (minimal _6373) (term2 _6373)) ≔ EQ_MP (@lem273028 _6373) (@lem273027 _6373);
+opaque symbol lem273059 (P : El (fun num bool)) : Prf (= (minimal P) (term2 P)) ≔ (@lem273029 P);
+opaque symbol lem273060 : Prf term3 ≔ λ P : El (fun num bool), (@lem273059 P);

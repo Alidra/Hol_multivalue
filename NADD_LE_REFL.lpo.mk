@@ -1,0 +1,1 @@
+NADD_LE_REFL.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo NADD_LE_REFL_term_abbrevs.lpo LE_ADD_spec.lpo nadd_le_spec.lpo thm0_spec.lpo thm1812_spec.lpo thm1813_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm7_spec.lpo

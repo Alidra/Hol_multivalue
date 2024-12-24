@@ -1,0 +1,1 @@
+EMPTY_SUBSET.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo EMPTY_SUBSET_term_abbrevs.lpo thm0_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm1822_spec.lpo thm3211609_spec.lpo thm3211610_spec.lpo thm3211729_spec.lpo thm3211730_spec.lpo thm3211750_spec.lpo thm3211751_spec.lpo

@@ -1,0 +1,1 @@
+thm522075.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo thm522075_term_abbrevs.lpo NOT_CLAUSES_WEAK_spec.lpo thm0_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm1842_spec.lpo thm1843_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm521107_spec.lpo thm521108_spec.lpo thm521115_spec.lpo thm521116_spec.lpo thm521123_spec.lpo thm521124_spec.lpo

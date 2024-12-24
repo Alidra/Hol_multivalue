@@ -1,0 +1,12 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term7 a0 a1 ≔ (+ ((@dimindex a0) (@UNIV a0)) ((@dimindex a1) (@UNIV a1)));
+symbol term2 a0 (x0: El (fun a0 bool)) (x1: El num) ≔ ((λ y0 : El num, (= ((@HAS_SIZE a0) x0 y0) (∧ ((@FINITE a0) x0) (= ((@CARD a0) x0) y0)))) x1);
+symbol term0 a0 (x0: El (fun a0 bool)) ≔ ((λ y0 : El (fun a0 bool), (∀ (λ y1 : El num, (= ((@HAS_SIZE a0) y0 y1) (∧ ((@FINITE a0) y0) (= ((@CARD a0) y0) y1)))))) x0);
+symbol term4 a0 a1 (x0: El (type49 a0 a1)) (x1: El num) ≔ (∧ ((@FINITE (finite_sum a0 a1)) x0) (= ((@CARD (finite_sum a0 a1)) x0) x1));
+symbol term3 a0 (x0: El (fun a0 bool)) (x1: El num) ≔ (∧ ((@FINITE a0) x0) (= ((@CARD a0) x0) x1));
+symbol term6 a0 a1 ≔ (∧ ((@FINITE (finite_sum a0 a1)) (@UNIV (finite_sum a0 a1))) (= ((@CARD (finite_sum a0 a1)) (@UNIV (finite_sum a0 a1))) (+ ((@dimindex a0) (@UNIV a0)) ((@dimindex a1) (@UNIV a1)))));
+symbol term1 a0 (x0: El (fun a0 bool)) ≔ (∀ (λ y0 : El num, (= ((@HAS_SIZE a0) x0 y0) (∧ ((@FINITE a0) x0) (= ((@CARD a0) x0) y0)))));
+symbol term5 a0 a1 ≔ ((@HAS_SIZE (finite_sum a0 a1)) (@UNIV (finite_sum a0 a1)) (+ ((@dimindex a0) (@UNIV a0)) ((@dimindex a1) (@UNIV a1))));

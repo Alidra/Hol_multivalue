@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem8051509 [_142951 _142952 _142953] (f : El (fun (fun (cart _142951 _142952) bool) bool)) (g : El (fun (fun (cart _142951 _142953) bool) bool)) (h1 : Prf (¬ (= f (@EMPTY (fun (cart _142951 _142952) bool))))) (h2 : Prf (= g (@EMPTY (fun (cart _142951 _142953) bool)))) : Prf (∀ (λ x : El (cart _142951 _142952), (∀ (λ y : El (cart _142951 _142953), (= (∧ ((@IN (cart _142951 _142952)) x ((@INTERS (cart _142951 _142952)) f)) ((@IN (cart _142951 _142953)) y ((@INTERS (cart _142951 _142953)) (@EMPTY (fun (cart _142951 _142953) bool))))) (∀ (λ s : El (fun (cart _142951 _142952) bool), (⇒ ((@IN (fun (cart _142951 _142952) bool)) s f) (∧ ((@IN (cart _142951 _142952)) x s) ((@IN (cart _142951 _142953)) y (@UNIV (cart _142951 _142953))))))))))));

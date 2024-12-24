@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.int_sgn_term_abbrevs;
+private symbol lem2288949 : Prf (= int_sgn term0) ≔ @int_sgn_def;
+private symbol lem2288950 (_28751 : El int) : Prf (= _28751 _28751) ≔ REFL _28751;
+private symbol lem2288951 (_28751 : El int) : Prf (= (int_sgn _28751) (term1 _28751)) ≔ MK_COMB (@lem2288949) (@lem2288950 _28751);
+private symbol lem2288952 (_28751 : El int) : Prf (= (term1 _28751) (term2 _28751)) ≔ REFL (term1 _28751);
+private symbol lem2288953 (_28751 : El int) : Prf (= (int_sgn _28751) (term2 _28751)) ≔ TRANS (@lem2288951 _28751) (@lem2288952 _28751);
+private symbol lem2288954 : Prf term3 ≔ λ _28751 : El int, (@lem2288953 _28751);
+private symbol lem2288955 (_28751 : El int) : Prf (term4 _28751) ≔ (@lem2288954) _28751;
+private symbol lem2288956 (_28751 : El int) : Prf (= (term4 _28751) (= (int_sgn _28751) (term2 _28751))) ≔ REFL (term4 _28751);
+private symbol lem2288957 (_28751 : El int) : Prf (= (int_sgn _28751) (term2 _28751)) ≔ EQ_MP (@lem2288956 _28751) (@lem2288955 _28751);
+opaque symbol lem2288987 (x : El int) : Prf (= (int_sgn x) (term2 x)) ≔ (@lem2288957 x);
+opaque symbol lem2288988 : Prf term3 ≔ λ x : El int, (@lem2288987 x);

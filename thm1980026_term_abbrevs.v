@@ -1,0 +1,12 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_type_abbrevs.
+Require Import hol_terms.
+Definition term1 (x0 : Prop) (x1 : Prop) (x2 : Prop) := x0 -> x1 -> x2.
+Definition term0 (x0 : real) (x1 : real) (x2 : real) (x3 : real) := ((real_lt (real_of_num (NUMERAL 0)) x3) /\ (real_lt (real_of_num (NUMERAL 0)) x1)) -> (real_le (real_div x0 x3) (real_div x2 x1)) = (real_le (real_mul x0 x1) (real_mul x2 x3)).
+Definition term6 (x0 : real) (x1 : real) (x2 : real) (x3 : real) := real_le (real_mul x0 x1) (real_mul x2 x3).
+Definition term2 (x0 : Prop) (x1 : Prop) (x2 : Prop) := (x0 /\ x1) -> x2.
+Definition term4 (x0 : real) := real_lt (real_of_num (NUMERAL 0)) x0.
+Definition term5 (x0 : real) (x1 : real) (x2 : real) (x3 : real) := real_le (real_div x0 x1) (real_div x2 x3).
+Definition term3 (x0 : real) (x1 : real) (x2 : real) (x3 : real) := (real_lt (real_of_num (NUMERAL 0)) x3) -> (real_lt (real_of_num (NUMERAL 0)) x1) -> (real_le (real_div x0 x3) (real_div x2 x1)) = (real_le (real_mul x0 x1) (real_mul x2 x3)).

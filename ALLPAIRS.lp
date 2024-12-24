@@ -1,0 +1,11 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.ALLPAIRS_term_abbrevs;
+require open hol-light.thm1109874_spec;
+require open hol-light.thm1109884_spec;
+require open hol-light.thm1109885_spec;
+opaque symbol lem1109886 [_25786 _25787] (h : El _25787) (f : El (type1470 _25786 _25787)) (t : El (list _25787)) (l : El (list _25786)) : Prf (= (term0 _25786 _25787 f h t l) (term1 _25786 _25787 h f t l)) ≔ EQ_MP (@lem1109885 _25786 _25787 h f t l) (@lem1109884 _25786 _25787 h f t l);
+opaque symbol lem1109887 [_25786 _25787] (h : El _25787) (f : El (type1470 _25786 _25787)) (t : El (list _25787)) (l : El (list _25786)) : Prf (term2 _25786 _25787 h f t l) ≔ ∧ᵢ (@lem1109874 _25786 _25787 f l) (@lem1109886 _25786 _25787 h f t l);

@@ -1,0 +1,10 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm7928423_term_abbrevs;
+require open hol-light.thm7928419_spec;
+opaque symbol lem7928421 [A] (a : El (type6 A)) (tybit1' : El (type1329 A)) (_103802' : El (type39 A)) (h1 : Prf (= tybit1' (term0 A _103802'))) : Prf (term1 A tybit1' _103802' a) ≔ (@lem7928419 A tybit1' _103802' h1) a;
+opaque symbol lem7928422 [A] (tybit1' : El (type1329 A)) (_103802' : El (type39 A)) (a : El (type6 A)) : Prf (= (term1 A tybit1' _103802' a) (term2 A tybit1' _103802' a)) ≔ REFL (term1 A tybit1' _103802' a);
+opaque symbol lem7928423 [A] (a : El (type6 A)) (tybit1' : El (type1329 A)) (_103802' : El (type39 A)) (h1 : Prf (= tybit1' (term0 A _103802'))) : Prf (term2 A tybit1' _103802' a) ≔ EQ_MP (@lem7928422 A tybit1' _103802' a) (@lem7928421 A a tybit1' _103802' h1);

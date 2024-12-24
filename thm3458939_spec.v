@@ -1,0 +1,5 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_terms.
+Axiom lem3458939 : forall {_89646 _89670 _89671 _89672 : Type'} (P : _89672 -> _89671 -> _89670 -> Prop) (f : _89672 -> _89671 -> _89670 -> _89646 -> Prop), forall x : _89646, (@IN _89646 x (@UNIONS _89646 (@GSPEC (_89646 -> Prop) (fun GEN_PVAR_53 : _89646 -> Prop => exists x' : _89672, exists y : _89671, exists z : _89670, @SETSPEC (_89646 -> Prop) GEN_PVAR_53 (P x' y z) (f x' y z))))) = (@IN _89646 x (@GSPEC _89646 (fun GEN_PVAR_54 : _89646 => exists a : _89646, @SETSPEC _89646 GEN_PVAR_54 (exists x' : _89672, exists y : _89671, exists z : _89670, (P x' y z) /\ (@IN _89646 a (f x' y z))) a))).

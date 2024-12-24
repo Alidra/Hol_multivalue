@@ -1,0 +1,1 @@
+SUM_DIFFS_ALT.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo SUM_DIFFS_ALT_term_abbrevs.lpo REAL_NEG_SUB_spec.lpo SUM_DIFFS_spec.lpo SUM_NEG_spec.lpo thm0_spec.lpo thm12653_spec.lpo thm13473_spec.lpo thm1361604_spec.lpo thm1362040_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm7_spec.lpo thm82_spec.lpo

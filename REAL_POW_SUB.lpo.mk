@@ -1,0 +1,1 @@
+REAL_POW_SUB.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo REAL_POW_SUB_term_abbrevs.lpo ADD_SUB2_spec.lpo LE_EXISTS_spec.lpo NOT_CLAUSES_WEAK_spec.lpo REAL_POW_ADD_spec.lpo REAL_POW_NZ_spec.lpo real_div_spec.lpo thm0_spec.lpo thm1338712_spec.lpo thm1338912_spec.lpo thm1338986_spec.lpo thm1340174_spec.lpo thm82_spec.lpo

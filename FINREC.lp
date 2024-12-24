@@ -1,0 +1,11 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.FINREC_term_abbrevs;
+require open hol-light.thm3791011_spec;
+require open hol-light.thm3791024_spec;
+require open hol-light.thm3791025_spec;
+opaque symbol lem3791026 [A B] (b : El B) (s : El (fun A bool)) (n : El num) (a : El B) (f : El (type1411 A B)) : Prf (= (term0 A B f b s a n) (term1 A B b s n a f)) ≔ EQ_MP (@lem3791025 A B b s n a f) (@lem3791024 A B b s n a f);
+opaque symbol lem3791027 [A B] (b : El B) (s : El (fun A bool)) (n : El num) (a : El B) (f : El (type1411 A B)) : Prf (term2 A B b s n a f) ≔ ∧ᵢ (@lem3791011 A B f s a b) (@lem3791026 A B b s n a f);

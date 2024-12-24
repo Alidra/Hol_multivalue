@@ -1,0 +1,15 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term10 (x0: El num) ≔ (∧ (= (int_neg (int_of_num (NUMERAL _0))) (int_of_num (NUMERAL _0))) (= (int_neg (int_neg (int_of_num x0))) (int_of_num x0)));
+symbol term3 ≔ (int_of_num (NUMERAL _0));
+symbol term5 ≔ ((@= int) (int_of_num (NUMERAL _0)));
+symbol term1 (x0: El int) ≔ (int_neg (int_neg x0));
+symbol term6 ≔ (∧ (= (int_neg (int_of_num (NUMERAL _0))) (int_of_num (NUMERAL _0))));
+symbol term0 (x0: El int) ≔ ((λ y0 : El int, (= (int_neg (int_neg y0)) y0)) x0);
+symbol term8 (x0: El num) ≔ ((@= int) (int_neg (int_neg (int_of_num x0))));
+symbol term2 ≔ (int_neg (int_of_num (NUMERAL _0)));
+symbol term4 ≔ ((@= int) (int_neg (int_of_num (NUMERAL _0))));
+symbol term7 (x0: El num) ≔ (int_neg (int_neg (int_of_num x0)));
+symbol term9 (x0: El num) ≔ ((@= int) (int_of_num x0));

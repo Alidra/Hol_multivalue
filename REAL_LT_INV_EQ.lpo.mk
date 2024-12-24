@@ -1,0 +1,1 @@
+REAL_LT_INV_EQ.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo REAL_LT_INV_EQ_term_abbrevs.lpo REAL_INV_INV_spec.lpo REAL_LT_INV_spec.lpo thm0_spec.lpo thm32_spec.lpo thm7_spec.lpo

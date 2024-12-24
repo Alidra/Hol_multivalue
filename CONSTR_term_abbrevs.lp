@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term6 a0 (x0: El num) (x1: El a0) (x2: El (type1614 a0)) ≔ ((@_mk_rec a0) ((@ZCONSTR a0) x0 x1 (λ y0 : El num, ((@_dest_rec a0) (x2 y0)))));
+symbol term0 a0 ≔ (λ y0 : El num, (λ y1 : El a0, (λ y2 : El (type1614 a0), ((@_mk_rec a0) ((@ZCONSTR a0) y0 y1 (λ y3 : El num, ((@_dest_rec a0) (y2 y3))))))));
+symbol term1 a0 (x0: El num) ≔ ((λ y0 : El num, (λ y1 : El a0, (λ y2 : El (type1614 a0), ((@_mk_rec a0) ((@ZCONSTR a0) y0 y1 (λ y3 : El num, ((@_dest_rec a0) (y2 y3)))))))) x0);
+symbol term10 a0 (x0: El num) ≔ ((λ y0 : El num, (∀ (λ y1 : El a0, (∀ (λ y2 : El (type1614 a0), (= ((@CONSTR a0) y0 y1 y2) ((@_mk_rec a0) ((@ZCONSTR a0) y0 y1 (λ y3 : El num, ((@_dest_rec a0) (y2 y3))))))))))) x0);
+symbol term3 a0 (x0: El num) (x1: El a0) ≔ ((λ y0 : El a0, (λ y1 : El (type1614 a0), ((@_mk_rec a0) ((@ZCONSTR a0) x0 y0 (λ y2 : El num, ((@_dest_rec a0) (y1 y2))))))) x1);
+symbol term4 a0 (x0: El num) (x1: El a0) ≔ (λ y0 : El (type1614 a0), ((@_mk_rec a0) ((@ZCONSTR a0) x0 x1 (λ y1 : El num, ((@_dest_rec a0) (y0 y1))))));
+symbol term9 a0 ≔ (∀ (λ y0 : El num, (∀ (λ y1 : El a0, (∀ (λ y2 : El (type1614 a0), (= ((@CONSTR a0) y0 y1 y2) ((@_mk_rec a0) ((@ZCONSTR a0) y0 y1 (λ y3 : El num, ((@_dest_rec a0) (y2 y3))))))))))));
+symbol term2 a0 (x0: El num) ≔ (λ y0 : El a0, (λ y1 : El (type1614 a0), ((@_mk_rec a0) ((@ZCONSTR a0) x0 y0 (λ y2 : El num, ((@_dest_rec a0) (y1 y2)))))));
+symbol term5 a0 (x0: El num) (x1: El a0) (x2: El (type1614 a0)) ≔ ((λ y0 : El (type1614 a0), ((@_mk_rec a0) ((@ZCONSTR a0) x0 x1 (λ y1 : El num, ((@_dest_rec a0) (y0 y1)))))) x2);
+symbol term11 a0 (x0: El num) (x1: El a0) ≔ ((λ y0 : El a0, (∀ (λ y1 : El (type1614 a0), (= ((@CONSTR a0) x0 y0 y1) ((@_mk_rec a0) ((@ZCONSTR a0) x0 y0 (λ y2 : El num, ((@_dest_rec a0) (y1 y2))))))))) x1);
+symbol term7 a0 (x0: El num) (x1: El a0) ≔ (∀ (λ y0 : El (type1614 a0), (= ((@CONSTR a0) x0 x1 y0) ((@_mk_rec a0) ((@ZCONSTR a0) x0 x1 (λ y1 : El num, ((@_dest_rec a0) (y0 y1))))))));
+symbol term12 a0 (x0: El num) (x1: El a0) (x2: El (type1614 a0)) ≔ ((λ y0 : El (type1614 a0), (= ((@CONSTR a0) x0 x1 y0) ((@_mk_rec a0) ((@ZCONSTR a0) x0 x1 (λ y1 : El num, ((@_dest_rec a0) (y0 y1))))))) x2);
+symbol term8 a0 (x0: El num) ≔ (∀ (λ y0 : El a0, (∀ (λ y1 : El (type1614 a0), (= ((@CONSTR a0) x0 y0 y1) ((@_mk_rec a0) ((@ZCONSTR a0) x0 y0 (λ y2 : El num, ((@_dest_rec a0) (y1 y2))))))))));

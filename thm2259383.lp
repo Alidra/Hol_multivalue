@@ -1,0 +1,15 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm2259383_term_abbrevs;
+require open hol-light.integer_spec;
+private symbol lem2259354 (x : El real) : Prf (term0 x) ≔ (@lem2259353) x;
+private symbol lem2259355 (x : El real) : Prf (= (term0 x) (= (integer x) (term1 x))) ≔ REFL (term0 x);
+private symbol lem2259360 (x : El real) : Prf (= (integer x) (term1 x)) ≔ EQ_MP (@lem2259355 x) (@lem2259354 x);
+private symbol lem2259367 : Prf (= (@= bool) (@= bool)) ≔ REFL (@= bool);
+private symbol lem2259368 (x : El real) : Prf (= (term2 x) (term3 x)) ≔ MK_COMB (@lem2259367) (@lem2259360 x);
+private symbol lem2259379 (x : El real) : Prf (= (term4 x) (term4 x)) ≔ REFL (term4 x);
+opaque symbol lem2259380 (x : El real) : Prf (= (= (integer x) (term4 x)) (= (term1 x) (term4 x))) ≔ MK_COMB (@lem2259368 x) (@lem2259379 x);
+opaque symbol lem2259383 (x : El real) : Prf (= (= (term1 x) (term4 x)) (= (integer x) (term4 x))) ≔ SYM (@lem2259380 x);

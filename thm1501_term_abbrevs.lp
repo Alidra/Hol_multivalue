@@ -1,0 +1,7 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term2 ≔ (∧ (⇒ (¬ F) T) (⇒ T (¬ F)));
+symbol term1 ≔ (⇒ T (¬ F));
+symbol term0 ≔ (⇒ (¬ F) T);

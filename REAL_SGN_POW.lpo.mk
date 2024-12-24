@@ -1,0 +1,1 @@
+REAL_SGN_POW.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo REAL_SGN_POW_term_abbrevs.lpo REAL_LT_01_spec.lpo REAL_SGN_MUL_spec.lpo real_sgn_spec.lpo thm0_spec.lpo thm12653_spec.lpo thm1344310_spec.lpo thm1344311_spec.lpo thm1344313_spec.lpo thm1344314_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm7_spec.lpo thm75622_spec.lpo thm75623_spec.lpo

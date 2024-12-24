@@ -1,0 +1,1 @@
+NUMSEG_LT_DIMINDEX.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo NUMSEG_LT_DIMINDEX_term_abbrevs.lpo DIMINDEX_NONZERO_spec.lpo NUMSEG_LT_spec.lpo thm0_spec.lpo thm12653_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm82_spec.lpo

@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem6991883 [_128402 _128403] : Prf (∀ (λ R : El (fun _128403 (fun _128402 bool)), (∀ (λ f : El (fun _128403 (fun _128402 num)), (∀ (λ s : El (fun _128403 bool), (∀ (λ t : El (fun _128402 bool), (⇒ (∧ ((@FINITE _128403) s) ((@FINITE _128402) t)) (= ((@nsum _128403) s (λ x : El _128403, ((@nsum _128402) ((@GSPEC _128402) (λ GEN_PVAR_288 : El _128402, (∃ (λ y : El _128402, ((@SETSPEC _128402) GEN_PVAR_288 (∧ ((@IN _128402) y t) (R x y)) y))))) (λ y : El _128402, (f x y))))) ((@nsum _128402) t (λ y : El _128402, ((@nsum _128403) ((@GSPEC _128403) (λ GEN_PVAR_289 : El _128403, (∃ (λ x : El _128403, ((@SETSPEC _128403) GEN_PVAR_289 (∧ ((@IN _128403) x s) (R x y)) x))))) (λ x : El _128403, (f x y)))))))))))))));

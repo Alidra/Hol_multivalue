@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.list_of_set_term_abbrevs;
+private symbol lem4786544 [_110256] : Prf (= (@list_of_set _110256) (term0 _110256)) ≔ @list_of_set_def _110256;
+private symbol lem4786545 [_110256] (_59118 : El (fun _110256 bool)) : Prf (= _59118 _59118) ≔ REFL _59118;
+private symbol lem4786546 [_110256] (_59118 : El (fun _110256 bool)) : Prf (= ((@list_of_set _110256) _59118) (term1 _110256 _59118)) ≔ MK_COMB (@lem4786544 _110256) (@lem4786545 _110256 _59118);
+private symbol lem4786547 [_110256] (_59118 : El (fun _110256 bool)) : Prf (= (term1 _110256 _59118) (term2 _110256 _59118)) ≔ REFL (term1 _110256 _59118);
+private symbol lem4786548 [_110256] (_59118 : El (fun _110256 bool)) : Prf (= ((@list_of_set _110256) _59118) (term2 _110256 _59118)) ≔ TRANS (@lem4786546 _110256 _59118) (@lem4786547 _110256 _59118);
+private symbol lem4786549 [_110256] : Prf (term3 _110256) ≔ λ _59118 : El (fun _110256 bool), (@lem4786548 _110256 _59118);
+private symbol lem4786550 [_110256] (_59118 : El (fun _110256 bool)) : Prf (term4 _110256 _59118) ≔ (@lem4786549 _110256) _59118;
+private symbol lem4786551 [_110256] (_59118 : El (fun _110256 bool)) : Prf (= (term4 _110256 _59118) (= ((@list_of_set _110256) _59118) (term2 _110256 _59118))) ≔ REFL (term4 _110256 _59118);
+private symbol lem4786552 [_110256] (_59118 : El (fun _110256 bool)) : Prf (= ((@list_of_set _110256) _59118) (term2 _110256 _59118)) ≔ EQ_MP (@lem4786551 _110256 _59118) (@lem4786550 _110256 _59118);
+opaque symbol lem4786582 [_110256] (s : El (fun _110256 bool)) : Prf (= ((@list_of_set _110256) s) (term2 _110256 s)) ≔ (@lem4786552 _110256 s);
+opaque symbol lem4786583 [_110256] : Prf (term3 _110256) ≔ λ s : El (fun _110256 bool), (@lem4786582 _110256 s);

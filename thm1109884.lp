@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm1109884_term_abbrevs;
+require open hol-light.thm1109867_spec;
+private symbol lem1109875 [_25786 _25787] (h : El _25787) : Prf (term0 _25786 _25787 h) ≔ (@lem1109867 _25786 _25787) h;
+private symbol lem1109876 [_25786 _25787] (h : El _25787) : Prf (= (term0 _25786 _25787 h) (term1 _25786 _25787 h)) ≔ REFL (term0 _25786 _25787 h);
+private symbol lem1109877 [_25786 _25787] (h : El _25787) : Prf (term1 _25786 _25787 h) ≔ EQ_MP (@lem1109876 _25786 _25787 h) (@lem1109875 _25786 _25787 h);
+private symbol lem1109878 [_25786 _25787] (h : El _25787) (f : El (type1470 _25786 _25787)) : Prf (term2 _25786 _25787 h f) ≔ (@lem1109877 _25786 _25787 h) f;
+private symbol lem1109879 [_25786 _25787] (h : El _25787) (f : El (type1470 _25786 _25787)) : Prf (= (term2 _25786 _25787 h f) (term3 _25786 _25787 h f)) ≔ REFL (term2 _25786 _25787 h f);
+private symbol lem1109880 [_25786 _25787] (h : El _25787) (f : El (type1470 _25786 _25787)) : Prf (term3 _25786 _25787 h f) ≔ EQ_MP (@lem1109879 _25786 _25787 h f) (@lem1109878 _25786 _25787 h f);
+private symbol lem1109881 [_25786 _25787] (h : El _25787) (f : El (type1470 _25786 _25787)) (t : El (list _25787)) : Prf (term4 _25786 _25787 h f t) ≔ (@lem1109880 _25786 _25787 h f) t;
+private symbol lem1109882 [_25786 _25787] (h : El _25787) (f : El (type1470 _25786 _25787)) (t : El (list _25787)) : Prf (= (term4 _25786 _25787 h f t) (term5 _25786 _25787 h f t)) ≔ REFL (term4 _25786 _25787 h f t);
+opaque symbol lem1109883 [_25786 _25787] (h : El _25787) (f : El (type1470 _25786 _25787)) (t : El (list _25787)) : Prf (term5 _25786 _25787 h f t) ≔ EQ_MP (@lem1109882 _25786 _25787 h f t) (@lem1109881 _25786 _25787 h f t);
+opaque symbol lem1109884 [_25786 _25787] (h : El _25787) (f : El (type1470 _25786 _25787)) (t : El (list _25787)) (l : El (list _25786)) : Prf (term6 _25786 _25787 h f t l) ≔ (@lem1109883 _25786 _25787 h f t) l;

@@ -1,0 +1,5 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_terms.
+Axiom lem1384210 : (forall x : real, forall y : real, forall z : real, (real_add x (real_add y z)) = (real_add (real_add x y) z)) /\ ((forall x : real, forall y : real, (real_add x y) = (real_add y x)) /\ ((forall x : real, (real_add (real_of_num (NUMERAL 0)) x) = x) /\ ((forall x : real, forall y : real, forall z : real, (real_mul x (real_mul y z)) = (real_mul (real_mul x y) z)) /\ ((forall x : real, forall y : real, (real_mul x y) = (real_mul y x)) /\ ((forall x : real, (real_mul (real_of_num (NUMERAL (BIT1 0))) x) = x) /\ ((forall x : real, (real_mul (real_of_num (NUMERAL 0)) x) = (real_of_num (NUMERAL 0))) /\ ((forall x : real, forall y : real, forall z : real, (real_mul x (real_add y z)) = (real_add (real_mul x y) (real_mul x z))) /\ ((forall x : real, (real_pow x (NUMERAL 0)) = (real_of_num (NUMERAL (BIT1 0)))) /\ (forall x : real, forall n : nat, (real_pow x (S n)) = (real_mul x (real_pow x n))))))))))).

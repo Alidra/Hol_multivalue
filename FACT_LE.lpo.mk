@@ -1,0 +1,1 @@
+FACT_LE.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo FACT_LE_term_abbrevs.lpo FACT_LT_spec.lpo LE_SUC_LT_spec.lpo thm0_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm7_spec.lpo thm80360_spec.lpo

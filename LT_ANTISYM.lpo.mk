@@ -1,0 +1,1 @@
+LT_ANTISYM.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo LT_ANTISYM_term_abbrevs.lpo LT_SUC_spec.lpo NOT_CLAUSES_WEAK_spec.lpo thm0_spec.lpo thm1844_spec.lpo thm1845_spec.lpo thm75622_spec.lpo thm75623_spec.lpo thm82_spec.lpo thm89994_spec.lpo

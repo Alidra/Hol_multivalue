@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm3453857_term_abbrevs;
+require open hol-light.DISJ_ASSOC_spec;
+private symbol lem3453848 (t1 : El bool) : Prf (term0 t1) ≔ (@lem693) t1;
+private symbol lem3453849 (t1 : El bool) : Prf (= (term0 t1) (term1 t1)) ≔ REFL (term0 t1);
+private symbol lem3453850 (t1 : El bool) : Prf (term1 t1) ≔ EQ_MP (@lem3453849 t1) (@lem3453848 t1);
+private symbol lem3453851 (t1 : El bool) (t2 : El bool) : Prf (term2 t1 t2) ≔ (@lem3453850 t1) t2;
+private symbol lem3453852 (t1 : El bool) (t2 : El bool) : Prf (= (term2 t1 t2) (term3 t1 t2)) ≔ REFL (term2 t1 t2);
+private symbol lem3453853 (t1 : El bool) (t2 : El bool) : Prf (term3 t1 t2) ≔ EQ_MP (@lem3453852 t1 t2) (@lem3453851 t1 t2);
+private symbol lem3453854 (t1 : El bool) (t2 : El bool) (t3 : El bool) : Prf (term4 t1 t2 t3) ≔ (@lem3453853 t1 t2) t3;
+private symbol lem3453855 (t1 : El bool) (t2 : El bool) (t3 : El bool) : Prf (= (term4 t1 t2 t3) (= (term5 t1 t2 t3) (term6 t1 t2 t3))) ≔ REFL (term4 t1 t2 t3);
+opaque symbol lem3453856 (t1 : El bool) (t2 : El bool) (t3 : El bool) : Prf (= (term5 t1 t2 t3) (term6 t1 t2 t3)) ≔ EQ_MP (@lem3453855 t1 t2 t3) (@lem3453854 t1 t2 t3);
+opaque symbol lem3453857 (t1 : El bool) (t2 : El bool) (t3 : El bool) : Prf (= (term6 t1 t2 t3) (term5 t1 t2 t3)) ≔ SYM (@lem3453856 t1 t2 t3);

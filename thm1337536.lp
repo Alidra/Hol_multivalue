@@ -1,0 +1,11 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm1337536_term_abbrevs;
+private symbol lem1337532 (m : El num) (h1 : Prf (= (real_of_num m) (term0 m))) : Prf (= (real_of_num m) (term0 m)) ≔ h1;
+opaque symbol lem1337533 (m : El num) (h1 : Prf (= (real_of_num m) (term0 m))) : Prf (= (term0 m) (real_of_num m)) ≔ SYM (@lem1337532 m h1);
+private symbol lem1337534 (m : El num) (h1 : Prf (= (term0 m) (real_of_num m))) : Prf (= (term0 m) (real_of_num m)) ≔ h1;
+opaque symbol lem1337535 (m : El num) (h1 : Prf (= (term0 m) (real_of_num m))) : Prf (= (real_of_num m) (term0 m)) ≔ SYM (@lem1337534 m h1);
+opaque symbol lem1337536 (m : El num) : Prf (= (= (real_of_num m) (term0 m)) (= (term0 m) (real_of_num m))) ≔ prop_ext (λ h1 : Prf (= (real_of_num m) (term0 m)), (@lem1337533 m h1)) (λ h1 : Prf (= (term0 m) (real_of_num m)), (@lem1337535 m h1));

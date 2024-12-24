@@ -1,0 +1,1 @@
+REAL_LT_REFL.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo REAL_LT_REFL_term_abbrevs.lpo NOT_CLAUSES_WEAK_spec.lpo real_lt_spec.lpo thm0_spec.lpo thm1339240_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm7_spec.lpo

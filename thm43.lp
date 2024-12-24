@@ -1,0 +1,12 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm43_term_abbrevs;
+private symbol lem38 (q : El bool) (h1 : Prf q) : Prf q ≔ h1;
+private symbol lem39 (p : El bool) (q : El bool) (h1 : Prf (= p q)) : Prf (= p q) ≔ h1;
+private symbol lem40 (p : El bool) (q : El bool) (h1 : Prf (= p q)) : Prf (= q p) ≔ SYM (@lem39 p q h1);
+private symbol lem41 (p : El bool) (q : El bool) (h1 : Prf q) (h2 : Prf (= p q)) : Prf p ≔ EQ_MP (@lem40 p q h2) (@lem38 q h1);
+opaque symbol lem42 (p : El bool) (q : El bool) (h1 : Prf (= p q)) : Prf (⇒ q p) ≔ λ h0 : Prf q, (@lem41 p q h0 h1);
+opaque symbol lem43 (q : El bool) (p : El bool) : Prf (term0 q p) ≔ λ h0 : Prf (= p q), (@lem42 p q h0);

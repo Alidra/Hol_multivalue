@@ -1,0 +1,18 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm21021_term_abbrevs;
+require open hol-light.thm1823_spec;
+require open hol-light.thm1862_spec;
+require open hol-light.thm1863_spec;
+private symbol lem21012 (t : El bool) : Prf (= (⇒ t F) (¬ t)) ≔ ∧ₑ₂ (@lem1823 t);
+private symbol lem21013 (p : El bool) : Prf (= (⇒ p F) (¬ p)) ≔ (@lem21012 p);
+private symbol lem21014 (p : El bool) : Prf (= (term0 p) (term0 p)) ≔ REFL (term0 p);
+private symbol lem21015 (p : El bool) : Prf (= (= (¬ p) (⇒ p F)) (= (¬ p) (¬ p))) ≔ MK_COMB (@lem21014 p) (@lem21013 p);
+private symbol lem21017 [A] (x : El A) : Prf (= (= x x) T) ≔ EQ_MP (@lem1863 A x) (@lem1862 A x);
+private symbol lem21018 (x : El bool) : Prf (= (= x x) T) ≔ (@lem21017 bool x);
+private symbol lem21019 (p : El bool) : Prf (= (= (¬ p) (¬ p)) T) ≔ (@lem21018 (¬ p));
+opaque symbol lem21020 (p : El bool) : Prf (= (= (¬ p) (⇒ p F)) T) ≔ TRANS (@lem21015 p) (@lem21019 p);
+opaque symbol lem21021 (p : El bool) : Prf (= T (= (¬ p) (⇒ p F))) ≔ SYM (@lem21020 p);

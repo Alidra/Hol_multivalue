@@ -1,0 +1,1 @@
+thm1241957.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo thm1241957_term_abbrevs.lpo CONSTR_REC_spec.lpo FST_spec.lpo SND_spec.lpo thm1066568_spec.lpo thm1066569_spec.lpo thm1240242_spec.lpo thm1240294_spec.lpo thm1240298_spec.lpo thm1240755_spec.lpo thm9102_spec.lpo

@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.vector_term_abbrevs;
+private symbol lem8001275 [A N] : Prf (= (@vector A N) (term0 A N)) ≔ @vector_def A N;
+private symbol lem8001276 [A] (_105592 : El (list A)) : Prf (= _105592 _105592) ≔ REFL _105592;
+private symbol lem8001277 [A N] (_105592 : El (list A)) : Prf (= ((@vector A N) _105592) (term1 A N _105592)) ≔ MK_COMB (@lem8001275 A N) (@lem8001276 A _105592);
+private symbol lem8001278 [A N] (_105592 : El (list A)) : Prf (= (term1 A N _105592) (term2 A N _105592)) ≔ REFL (term1 A N _105592);
+private symbol lem8001279 [A N] (_105592 : El (list A)) : Prf (= ((@vector A N) _105592) (term2 A N _105592)) ≔ TRANS (@lem8001277 A N _105592) (@lem8001278 A N _105592);
+private symbol lem8001280 [A N] : Prf (term3 A N) ≔ λ _105592 : El (list A), (@lem8001279 A N _105592);
+private symbol lem8001281 [A N] (_105592 : El (list A)) : Prf (term4 A N _105592) ≔ (@lem8001280 A N) _105592;
+private symbol lem8001282 [A N] (_105592 : El (list A)) : Prf (= (term4 A N _105592) (= ((@vector A N) _105592) (term2 A N _105592))) ≔ REFL (term4 A N _105592);
+private symbol lem8001283 [A N] (_105592 : El (list A)) : Prf (= ((@vector A N) _105592) (term2 A N _105592)) ≔ EQ_MP (@lem8001282 A N _105592) (@lem8001281 A N _105592);
+opaque symbol lem8001313 [A N] (l : El (list A)) : Prf (= ((@vector A N) l) (term2 A N l)) ≔ (@lem8001283 A N l);
+opaque symbol lem8001314 [A N] : Prf (term3 A N) ≔ λ l : El (list A), (@lem8001313 A N l);

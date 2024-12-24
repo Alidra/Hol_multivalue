@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem1065718 [A] : Prf ((λ FCONS' : El (fun (prod num (prod num (prod num (prod num num)))) (fun A (fun (fun num A) (fun num A)))), (∀ (λ _17460 : El (prod num (prod num (prod num (prod num num)))), (∧ (∀ (λ a : El A, (∀ (λ f : El (fun num A), (= (FCONS' _17460 a f (NUMERAL _0)) a))))) (∀ (λ a : El A, (∀ (λ f : El (fun num A), (∀ (λ n : El num, (= (FCONS' _17460 a f (SUC n)) (f n)))))))))))) ((@ε (fun (prod num (prod num (prod num (prod num num)))) (fun A (fun (fun num A) (fun num A))))) (λ FCONS' : El (fun (prod num (prod num (prod num (prod num num)))) (fun A (fun (fun num A) (fun num A)))), (∀ (λ _17460 : El (prod num (prod num (prod num (prod num num)))), (∧ (∀ (λ a : El A, (∀ (λ f : El (fun num A), (= (FCONS' _17460 a f (NUMERAL _0)) a))))) (∀ (λ a : El A, (∀ (λ f : El (fun num A), (∀ (λ n : El num, (= (FCONS' _17460 a f (SUC n)) (f n))))))))))))));

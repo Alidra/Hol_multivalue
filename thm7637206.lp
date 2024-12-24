@@ -1,0 +1,15 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm7637206_term_abbrevs;
+require open hol-light.thm7635341_spec;
+require open hol-light.thm7637129_spec;
+private symbol lem7637180 [A B] : Prf (= (@UNIV (finite_sum A B)) (term0 A B)) ≔ EQ_MP (@lem7635341 A B) (@lem7637129 A B);
+private symbol lem7637181 [M N] : Prf (= (@UNIV (finite_sum M N)) (term0 M N)) ≔ (@lem7637180 M N);
+private symbol lem7637186 [M N] : Prf (= (@HAS_SIZE (finite_sum M N)) (@HAS_SIZE (finite_sum M N))) ≔ REFL (@HAS_SIZE (finite_sum M N));
+private symbol lem7637187 [M N] : Prf (= ((@HAS_SIZE (finite_sum M N)) (@UNIV (finite_sum M N))) (term1 M N)) ≔ MK_COMB (@lem7637186 M N) (@lem7637181 M N);
+private symbol lem7637196 [M N] : Prf (= (term2 M N) (term2 M N)) ≔ REFL (term2 M N);
+opaque symbol lem7637197 [M N] : Prf (= (term3 M N) (term4 M N)) ≔ MK_COMB (@lem7637187 M N) (@lem7637196 M N);
+opaque symbol lem7637206 [M N] : Prf (= (term4 M N) (term3 M N)) ≔ SYM (@lem7637197 M N);

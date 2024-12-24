@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem8059078 [_143170 _143178 _143179 _143218 _143219 _143221] (t : El (fun _143219 (fun _143221 _143179))) (s : El (fun _143221 _143218)) (clauses : El (list (prod (fun _143221 _143218) (fun _143219 (fun _143221 _143179))))) (f : El _143219) (x : El _143218) : Prf (∧ (= ((@CASEWISE _143178 _143170 _143218 _143219) (@NIL (prod (fun _143170 _143218) (fun _143219 (fun _143170 _143178)))) f x) ((@ε _143178) (λ y : El _143178, T))) (= ((@CASEWISE _143179 _143221 _143218 _143219) ((@CONS (prod (fun _143221 _143218) (fun _143219 (fun _143221 _143179)))) ((@̦‚ (fun _143221 _143218) (fun _143219 (fun _143221 _143179))) s t) clauses) f x) ((@COND _143179) (∃ (λ y : El _143221, (= (s y) x))) (t f ((@ε _143221) (λ y : El _143221, (= (s y) x)))) ((@CASEWISE _143179 _143221 _143218 _143219) clauses f x))));

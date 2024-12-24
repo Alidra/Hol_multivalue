@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.COUNTABLE_term_abbrevs;
+private symbol lem5132705 [_115106] : Prf (= (@COUNTABLE _115106) (term0 _115106)) ≔ @COUNTABLE_def _115106;
+private symbol lem5132706 [_115106] (_67040 : El (fun _115106 bool)) : Prf (= _67040 _67040) ≔ REFL _67040;
+private symbol lem5132707 [_115106] (_67040 : El (fun _115106 bool)) : Prf (= ((@COUNTABLE _115106) _67040) (term1 _115106 _67040)) ≔ MK_COMB (@lem5132705 _115106) (@lem5132706 _115106 _67040);
+private symbol lem5132708 [_115106] (_67040 : El (fun _115106 bool)) : Prf (= (term1 _115106 _67040) ((@>=_c _115106 num) (@UNIV num) _67040)) ≔ REFL (term1 _115106 _67040);
+private symbol lem5132709 [_115106] (_67040 : El (fun _115106 bool)) : Prf (= ((@COUNTABLE _115106) _67040) ((@>=_c _115106 num) (@UNIV num) _67040)) ≔ TRANS (@lem5132707 _115106 _67040) (@lem5132708 _115106 _67040);
+private symbol lem5132710 [_115106] : Prf (term2 _115106) ≔ λ _67040 : El (fun _115106 bool), (@lem5132709 _115106 _67040);
+private symbol lem5132711 [_115106] (_67040 : El (fun _115106 bool)) : Prf (term3 _115106 _67040) ≔ (@lem5132710 _115106) _67040;
+private symbol lem5132712 [_115106] (_67040 : El (fun _115106 bool)) : Prf (= (term3 _115106 _67040) (= ((@COUNTABLE _115106) _67040) ((@>=_c _115106 num) (@UNIV num) _67040))) ≔ REFL (term3 _115106 _67040);
+private symbol lem5132713 [_115106] (_67040 : El (fun _115106 bool)) : Prf (= ((@COUNTABLE _115106) _67040) ((@>=_c _115106 num) (@UNIV num) _67040)) ≔ EQ_MP (@lem5132712 _115106 _67040) (@lem5132711 _115106 _67040);
+opaque symbol lem5132743 [_115106] (t : El (fun _115106 bool)) : Prf (= ((@COUNTABLE _115106) t) ((@>=_c _115106 num) (@UNIV num) t)) ≔ (@lem5132713 _115106 t);
+opaque symbol lem5132744 [_115106] : Prf (term2 _115106) ≔ λ t : El (fun _115106 bool), (@lem5132743 _115106 t);

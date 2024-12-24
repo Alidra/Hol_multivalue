@@ -1,0 +1,1 @@
+IN_GSPEC.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo IN_GSPEC_term_abbrevs.lpo thm0_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm3211609_spec.lpo thm3211610_spec.lpo thm3211640_spec.lpo thm3211641_spec.lpo thm3211756_spec.lpo thm3211757_spec.lpo

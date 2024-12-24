@@ -1,0 +1,14 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_type_abbrevs.
+Require Import hol_terms.
+Definition term4 (a0 : Type') (x0 : type1540 a0) := (fun y0 : type1541 => exists y1 : Ascii.ascii -> a0, forall y2 : Prop, forall y3 : Prop, forall y4 : Prop, forall y5 : Prop, forall y6 : Prop, forall y7 : Prop, forall y8 : Prop, forall y9 : Prop, (y1 (y0 y2 y3 y4 y5 y6 y7 y8 y9)) = (x0 y2 y3 y4 y5 y6 y7 y8 y9)) ASCII.
+Definition term2 (a0 : Type') (x0 : type1540 a0) := fun y0 : type1541 => exists y1 : Ascii.ascii -> a0, forall y2 : Prop, forall y3 : Prop, forall y4 : Prop, forall y5 : Prop, forall y6 : Prop, forall y7 : Prop, forall y8 : Prop, forall y9 : Prop, (y1 (y0 y2 y3 y4 y5 y6 y7 y8 y9)) = (x0 y2 y3 y4 y5 y6 y7 y8 y9).
+Definition term0 (a0 : Type') (x0 : type1540 a0) := (fun y0 : type1540 a0 => exists y1 : Ascii.ascii -> a0, forall y2 : Prop, forall y3 : Prop, forall y4 : Prop, forall y5 : Prop, forall y6 : Prop, forall y7 : Prop, forall y8 : Prop, forall y9 : Prop, (y1 (_22730 y2 y3 y4 y5 y6 y7 y8 y9)) = (y0 y2 y3 y4 y5 y6 y7 y8 y9)) x0.
+Definition term7 (a0 : Type') (x0 : type1540 a0) := @eq Prop (exists y0 : Ascii.ascii -> a0, forall y1 : Prop, forall y2 : Prop, forall y3 : Prop, forall y4 : Prop, forall y5 : Prop, forall y6 : Prop, forall y7 : Prop, forall y8 : Prop, (y0 (_22730 y1 y2 y3 y4 y5 y6 y7 y8)) = (x0 y1 y2 y3 y4 y5 y6 y7 y8)).
+Definition term8 (a0 : Type') := forall y0 : type1540 a0, exists y1 : Ascii.ascii -> a0, forall y2 : Prop, forall y3 : Prop, forall y4 : Prop, forall y5 : Prop, forall y6 : Prop, forall y7 : Prop, forall y8 : Prop, forall y9 : Prop, (y1 (ASCII y2 y3 y4 y5 y6 y7 y8 y9)) = (y0 y2 y3 y4 y5 y6 y7 y8 y9).
+Definition term6 (a0 : Type') (x0 : type1540 a0) := @eq Prop ((fun y0 : type1541 => exists y1 : Ascii.ascii -> a0, forall y2 : Prop, forall y3 : Prop, forall y4 : Prop, forall y5 : Prop, forall y6 : Prop, forall y7 : Prop, forall y8 : Prop, forall y9 : Prop, (y1 (y0 y2 y3 y4 y5 y6 y7 y8 y9)) = (x0 y2 y3 y4 y5 y6 y7 y8 y9)) _22730).
+Definition term5 (a0 : Type') (x0 : type1540 a0) := exists y0 : Ascii.ascii -> a0, forall y1 : Prop, forall y2 : Prop, forall y3 : Prop, forall y4 : Prop, forall y5 : Prop, forall y6 : Prop, forall y7 : Prop, forall y8 : Prop, (y0 (ASCII y1 y2 y3 y4 y5 y6 y7 y8)) = (x0 y1 y2 y3 y4 y5 y6 y7 y8).
+Definition term1 (a0 : Type') (x0 : type1540 a0) := exists y0 : Ascii.ascii -> a0, forall y1 : Prop, forall y2 : Prop, forall y3 : Prop, forall y4 : Prop, forall y5 : Prop, forall y6 : Prop, forall y7 : Prop, forall y8 : Prop, (y0 (_22730 y1 y2 y3 y4 y5 y6 y7 y8)) = (x0 y1 y2 y3 y4 y5 y6 y7 y8).
+Definition term3 (a0 : Type') (x0 : type1540 a0) := (fun y0 : type1541 => exists y1 : Ascii.ascii -> a0, forall y2 : Prop, forall y3 : Prop, forall y4 : Prop, forall y5 : Prop, forall y6 : Prop, forall y7 : Prop, forall y8 : Prop, forall y9 : Prop, (y1 (y0 y2 y3 y4 y5 y6 y7 y8 y9)) = (x0 y2 y3 y4 y5 y6 y7 y8 y9)) _22730.

@@ -1,0 +1,1 @@
+NADD_EQ_REFL.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo NADD_EQ_REFL_term_abbrevs.lpo DIST_REFL_spec.lpo LE_0_spec.lpo nadd_eq_spec.lpo thm0_spec.lpo thm1812_spec.lpo thm1813_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm7_spec.lpo

@@ -1,0 +1,1 @@
+ZCONSTR_ZBOT.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo ZCONSTR_ZBOT_term_abbrevs.lpo INJN_INJ_spec.lpo INJP_INJ_spec.lpo NOT_CLAUSES_WEAK_spec.lpo NOT_SUC_spec.lpo ZCONSTR_spec.lpo thm0_spec.lpo thm1058213_spec.lpo thm1058227_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm1844_spec.lpo thm82_spec.lpo

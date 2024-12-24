@@ -1,0 +1,12 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm2416509_term_abbrevs;
+require open hol-light.thm1031360_spec;
+require open hol-light.thm2414414_spec;
+private symbol lem2416506 [A] (m : El A) (r0 : El A) (ly : El A) (rx : El A) (lx : El A) (ry : El A) (b : El A) (a : El A) (c : El A) (d : El A) (p : El num) (r1 : El A) (add : El (type1400 A)) (y : El A) (z : El A) (mul : El (type1400 A)) (pwr : El (type1423 A)) (x : El A) (q : El num) : Prf (term0 A m r0 ly rx lx ry b a c d p r1 add y z mul pwr x q) ≔ λ h0 : Prf (term1 A r0 add r1 mul pwr), (@lem1031360 A m ly rx lx ry b a c d p y z x q r0 add r1 mul pwr h0);
+private symbol lem2416507 (m : El int) (r0 : El int) (ly : El int) (rx : El int) (lx : El int) (ry : El int) (b : El int) (a : El int) (c : El int) (d : El int) (p : El num) (r1 : El int) (add : El type1551) (y : El int) (z : El int) (mul : El type1551) (pwr : El type1553) (x : El int) (q : El num) : Prf (term2 m r0 ly rx lx ry b a c d p r1 add y z mul pwr x q) ≔ (@lem2416506 int m r0 ly rx lx ry b a c d p r1 add y z mul pwr x q);
+opaque symbol lem2416508 (m : El int) (ly : El int) (rx : El int) (lx : El int) (ry : El int) (b : El int) (a : El int) (c : El int) (d : El int) (p : El num) (y : El int) (z : El int) (x : El int) (q : El num) : Prf (term3 m ly rx lx ry b a c d p y z x q) ≔ (@lem2416507 m term4 ly rx lx ry b a c d p term5 int_add y z int_mul int_pow x q);
+opaque symbol lem2416509 (m : El int) (ly : El int) (rx : El int) (lx : El int) (ry : El int) (b : El int) (a : El int) (c : El int) (d : El int) (p : El num) (y : El int) (z : El int) (x : El int) (q : El num) : Prf (term6 m ly rx lx ry b a c d p y z x q) ≔ (@lem2416508 m ly rx lx ry b a c d p y z x q) (@lem2414414);

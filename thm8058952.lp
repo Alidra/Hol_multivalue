@@ -1,0 +1,12 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm8058952_term_abbrevs;
+require open hol-light.thm8058946_spec;
+private symbol lem8058948 [_143118 _143154 _143158 _143159] : Prf (term0 _143118 _143154 _143158 _143159) ≔ ∧ₑ₁ (@lem8058946 _143118 _143154 _143158 _143159);
+private symbol lem8058949 [_143118 _143154 _143158 _143159] (f : El _143159) : Prf (term1 _143118 _143154 _143158 _143159 f) ≔ (@lem8058948 _143118 _143154 _143158 _143159) f;
+private symbol lem8058950 [_143118 _143154 _143158 _143159] (f : El _143159) : Prf (= (term1 _143118 _143154 _143158 _143159 f) (term2 _143118 _143154 _143158 _143159 f)) ≔ REFL (term1 _143118 _143154 _143158 _143159 f);
+opaque symbol lem8058951 [_143118 _143154 _143158 _143159] (f : El _143159) : Prf (term2 _143118 _143154 _143158 _143159 f) ≔ EQ_MP (@lem8058950 _143118 _143154 _143158 _143159 f) (@lem8058949 _143118 _143154 _143158 _143159 f);
+opaque symbol lem8058952 [_143118 _143154 _143158 _143159] (f : El _143159) (x : El _143158) : Prf (term3 _143118 _143154 _143158 _143159 f x) ≔ (@lem8058951 _143118 _143154 _143158 _143159 f) x;

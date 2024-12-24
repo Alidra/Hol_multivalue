@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term9 (x0: El int) ≔ ((@= bool) (= (real_neg (real_of_int x0)) (real_of_num (NUMERAL _0))));
+symbol term7 ≔ (real_of_int (int_of_num (NUMERAL _0)));
+symbol term2 ≔ (real_of_num (NUMERAL _0));
+symbol term8 ≔ (int_of_num (NUMERAL _0));
+symbol term10 (x0: El int) ≔ ((@= bool) (= (int_neg x0) (int_of_num (NUMERAL _0))));
+symbol term0 (x0: El int) ≔ ((λ y0 : El real, (= (= (real_neg y0) (real_of_num (NUMERAL _0))) (= y0 (real_of_num (NUMERAL _0))))) (real_of_int x0));
+symbol term6 (x0: El num) ≔ (real_of_int (int_of_num x0));
+symbol term5 (x0: El int) ≔ ((@= real) (real_of_int (int_neg x0)));
+symbol term1 (x0: El int) ≔ (real_neg (real_of_int x0));
+symbol term4 (x0: El int) ≔ ((@= real) (real_neg (real_of_int x0)));
+symbol term12 ≔ (∀ (λ y0 : El int, (= (= (int_neg y0) (int_of_num (NUMERAL _0))) (= y0 (int_of_num (NUMERAL _0))))));
+symbol term3 (x0: El int) ≔ (real_of_int (int_neg x0));
+symbol term11 (x0: El int) ≔ ((@= real) (real_of_int x0));

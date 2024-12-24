@@ -1,0 +1,1 @@
+INF_SING.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo INF_SING_term_abbrevs.lpo FINITE_EMPTY_spec.lpo INF_INSERT_FINITE_spec.lpo thm0_spec.lpo thm15249_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm7_spec.lpo

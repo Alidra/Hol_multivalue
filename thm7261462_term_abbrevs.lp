@@ -1,0 +1,6 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term0 (x0: El (fun num real)) (x1: El num) (x2: El (fun num real)) (x3: El num) ≔ ((λ y0 : El num, (⇒ (∀ (λ y1 : El num, (⇒ (∧ (<= x1 y1) (<= y1 y0)) (= (x0 y1) (x2 y1))))) (= ((@sum num) (… x1 y0) (λ y1 : El num, (x0 y1))) ((@sum num) (… x1 y0) x2)))) x3);
+symbol term1 (x0: El (fun num real)) (x1: El num) (x2: El num) (x3: El (fun num real)) ≔ (⇒ (∀ (λ y0 : El num, (⇒ (∧ (<= x1 y0) (<= y0 x2)) (= (x0 y0) (x3 y0))))) (= ((@sum num) (… x1 x2) (λ y0 : El num, (x0 y0))) ((@sum num) (… x1 x2) x3)));

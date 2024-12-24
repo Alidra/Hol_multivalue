@@ -1,0 +1,1 @@
+HREAL_ADD_AC.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo HREAL_ADD_AC_term_abbrevs.lpo thm1320004_spec.lpo thm1320203_spec.lpo thm1842_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm7_spec.lpo

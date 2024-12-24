@@ -1,0 +1,11 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term5 a0 a1 (x0: El (type686 a1)) (x1: El (fun a0 bool)) ≔ (∧ (⇒ (= x0 (@EMPTY (fun a1 bool))) (= ((@CROSS a1 a0) x1 ((@INTERS a1) x0)) ((@CROSS a1 a0) x1 (@UNIV a1)))) (⇒ (¬ (= x0 (@EMPTY (fun a1 bool)))) (= ((@CROSS a1 a0) x1 ((@INTERS a1) x0)) ((@INTERS (prod a0 a1)) ((@GSPEC (fun (prod a0 a1) bool)) (λ y0 : El (type1210 a0 a1), (∃ (λ y1 : El (fun a1 bool), ((@SETSPEC (fun (prod a0 a1) bool)) y0 ((@IN (fun a1 bool)) y1 x0) ((@CROSS a1 a0) x1 y1))))))))));
+symbol term1 a0 a1 (x0: El (fun a0 bool)) (x1: El (type686 a1)) ≔ ((@CROSS a1 a0) x0 ((@INTERS a1) x1));
+symbol term2 a0 a1 (x0: El (type686 a1)) (x1: El (fun a0 bool)) ≔ ((@INTERS (prod a0 a1)) ((@GSPEC (fun (prod a0 a1) bool)) (λ y0 : El (type1210 a0 a1), (∃ (λ y1 : El (fun a1 bool), ((@SETSPEC (fun (prod a0 a1) bool)) y0 ((@IN (fun a1 bool)) y1 x0) ((@CROSS a1 a0) x1 y1)))))));
+symbol term6 a0 a1 (x0: El (type686 a1)) (x1: El (fun a0 bool)) ≔ ((@COND (fun (prod a0 a1) bool)) (= x0 (@EMPTY (fun a1 bool))) ((@CROSS a1 a0) x1 (@UNIV a1)) ((@INTERS (prod a0 a1)) ((@GSPEC (fun (prod a0 a1) bool)) (λ y0 : El (type1210 a0 a1), (∃ (λ y1 : El (fun a1 bool), ((@SETSPEC (fun (prod a0 a1) bool)) y0 ((@IN (fun a1 bool)) y1 x0) ((@CROSS a1 a0) x1 y1))))))));
+symbol term4 a0 a1 (x0: El (type686 a1)) (x1: El (fun a0 bool)) ≔ (⇒ (= x0 (@EMPTY (fun a1 bool))) (= ((@CROSS a1 a0) x1 ((@INTERS a1) x0)) ((@CROSS a1 a0) x1 (@UNIV a1))));
+symbol term0 a0 (x0: El (type686 a0)) ≔ (¬ (= x0 (@EMPTY (fun a0 bool))));
+symbol term3 a0 a1 (x0: El (type686 a1)) (x1: El (fun a0 bool)) ≔ (⇒ (¬ (= x0 (@EMPTY (fun a1 bool)))) (= ((@CROSS a1 a0) x1 ((@INTERS a1) x0)) ((@INTERS (prod a0 a1)) ((@GSPEC (fun (prod a0 a1) bool)) (λ y0 : El (type1210 a0 a1), (∃ (λ y1 : El (fun a1 bool), ((@SETSPEC (fun (prod a0 a1) bool)) y0 ((@IN (fun a1 bool)) y1 x0) ((@CROSS a1 a0) x1 y1)))))))));

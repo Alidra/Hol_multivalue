@@ -1,0 +1,1 @@
+thm2267725.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo thm2267725_term_abbrevs.lpo EXISTS_OR_THM_spec.lpo EXISTS_REFL_spec.lpo thm0_spec.lpo thm1340231_spec.lpo thm1831_spec.lpo thm2259383_spec.lpo thm2267613_spec.lpo thm7_spec.lpo thm9261_spec.lpo thm9306_spec.lpo

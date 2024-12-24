@@ -1,0 +1,1 @@
+thm1253393.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo thm1253393_term_abbrevs.lpo ADD_AC_spec.lpo EQ_ADD_LCANCEL_spec.lpo thm0_spec.lpo thm272789_spec.lpo thm272790_spec.lpo thm272791_spec.lpo thm272793_spec.lpo

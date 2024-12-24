@@ -1,0 +1,5 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_terms.
+Axiom lem1106843 : forall {_25617 _25623 : Type'}, (fun ASSOC' : (prod nat (prod nat (prod nat (prod nat nat)))) -> _25623 -> (list (prod _25623 _25617)) -> _25617 => forall _18029 : prod nat (prod nat (prod nat (prod nat nat))), forall h : prod _25623 _25617, forall a : _25623, forall t : list (prod _25623 _25617), (ASSOC' _18029 a (@cons (prod _25623 _25617) h t)) = (@COND _25617 ((@fst _25623 _25617 h) = a) (@snd _25623 _25617 h) (ASSOC' _18029 a t))) (@ε ((prod nat (prod nat (prod nat (prod nat nat)))) -> _25623 -> (list (prod _25623 _25617)) -> _25617) (fun ASSOC' : (prod nat (prod nat (prod nat (prod nat nat)))) -> _25623 -> (list (prod _25623 _25617)) -> _25617 => forall _18029 : prod nat (prod nat (prod nat (prod nat nat))), forall h : prod _25623 _25617, forall a : _25623, forall t : list (prod _25623 _25617), (ASSOC' _18029 a (@cons (prod _25623 _25617) h t)) = (@COND _25617 ((@fst _25623 _25617 h) = a) (@snd _25623 _25617 h) (ASSOC' _18029 a t)))).

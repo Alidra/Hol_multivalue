@@ -1,0 +1,18 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term11 a0 a1 ≔ (∨ F (∧ ((@FINITE a0) (@UNIV a0)) ((@FINITE a1) (@UNIV a1))));
+symbol term6 a0 a1 ≔ ((@FINITE (prod a0 a1)) ((@CROSS a1 a0) (@UNIV a0) (@UNIV a1)));
+symbol term4 a0 a1 (x0: El (fun a0 bool)) (x1: El (fun a1 bool)) ≔ ((@FINITE (prod a0 a1)) ((@CROSS a1 a0) x0 x1));
+symbol term10 a0 a1 ≔ (∨ (= (@UNIV a1) (@EMPTY a1)) (∧ ((@FINITE a0) (@UNIV a0)) ((@FINITE a1) (@UNIV a1))));
+symbol term0 a0 ≔ (⇒ (¬ (= (@UNIV a0) (@EMPTY a0))) (= (= (@UNIV a0) (@EMPTY a0)) F));
+symbol term2 a0 a1 (x0: El (fun a0 bool)) ≔ (∀ (λ y0 : El (fun a1 bool), (= ((@FINITE (prod a0 a1)) ((@CROSS a1 a0) x0 y0)) (∨ (= x0 (@EMPTY a0)) (∨ (= y0 (@EMPTY a1)) (∧ ((@FINITE a0) x0) ((@FINITE a1) y0)))))));
+symbol term8 a0 ≔ (∨ (= (@UNIV a0) (@EMPTY a0)));
+symbol term1 a0 a1 (x0: El (fun a0 bool)) ≔ ((λ y0 : El (fun a0 bool), (∀ (λ y1 : El (fun a1 bool), (= ((@FINITE (prod a0 a1)) ((@CROSS a1 a0) y0 y1)) (∨ (= y0 (@EMPTY a0)) (∨ (= y1 (@EMPTY a1)) (∧ ((@FINITE a0) y0) ((@FINITE a1) y1)))))))) x0);
+symbol term9 a0 a1 ≔ (∧ ((@FINITE a0) (@UNIV a0)) ((@FINITE a1) (@UNIV a1)));
+symbol term12 a0 a1 ≔ ((@= bool) ((@FINITE (prod a0 a1)) (@UNIV (prod a0 a1))));
+symbol term3 a0 a1 (x0: El (fun a0 bool)) (x1: El (fun a1 bool)) ≔ ((λ y0 : El (fun a1 bool), (= ((@FINITE (prod a0 a1)) ((@CROSS a1 a0) x0 y0)) (∨ (= x0 (@EMPTY a0)) (∨ (= y0 (@EMPTY a1)) (∧ ((@FINITE a0) x0) ((@FINITE a1) y0)))))) x1);
+symbol term7 a0 a1 ≔ (∨ (= (@UNIV a0) (@EMPTY a0)) (∨ (= (@UNIV a1) (@EMPTY a1)) (∧ ((@FINITE a0) (@UNIV a0)) ((@FINITE a1) (@UNIV a1)))));
+symbol term5 a0 a1 (x0: El (fun a0 bool)) (x1: El (fun a1 bool)) ≔ (∨ (= x0 (@EMPTY a0)) (∨ (= x1 (@EMPTY a1)) (∧ ((@FINITE a0) x0) ((@FINITE a1) x1))));
+symbol term13 a0 a1 ≔ ((@= bool) (∧ ((@FINITE a0) (@UNIV a0)) ((@FINITE a1) (@UNIV a1))));

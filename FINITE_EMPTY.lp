@@ -1,0 +1,14 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.FINITE_RULES_spec;
+require open hol-light.thm0_spec;
+require open hol-light.thm7_spec;
+private symbol lem3596278 [A] : Prf ((@FINITE A) (@EMPTY A)) ≔ ∧ₑ₁ (@lem3197565 A);
+private symbol lem3596279 [A] : Prf (= ((@FINITE A) (@EMPTY A)) (= ((@FINITE A) (@EMPTY A)) T)) ≔ (@lem7 ((@FINITE A) (@EMPTY A)));
+private symbol lem3596282 [A] : Prf (= ((@FINITE A) (@EMPTY A)) T) ≔ EQ_MP (@lem3596279 A) (@lem3596278 A);
+private symbol lem3596283 [_92140] : Prf (= ((@FINITE _92140) (@EMPTY _92140)) T) ≔ (@lem3596282 _92140);
+opaque symbol lem3596284 [_92140] : Prf (= T ((@FINITE _92140) (@EMPTY _92140))) ≔ SYM (@lem3596283 _92140);
+opaque symbol lem3596285 [_92140] : Prf ((@FINITE _92140) (@EMPTY _92140)) ≔ EQ_MP (@lem3596284 _92140) (@lem0);

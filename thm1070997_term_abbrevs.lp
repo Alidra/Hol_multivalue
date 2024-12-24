@@ -1,0 +1,11 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term6 a0 (x0: El (recspace a0)) ≔ ((@= (list a0)) ((@_mk_list a0) x0));
+symbol term4 a0 ≔ ((@_mk_list a0) ((@CONSTR a0) (NUMERAL _0) ((@ε a0) (λ y0 : El a0, T)) (λ y0 : El num, (@BOTTOM a0))));
+symbol term3 a0 ≔ ((λ y0 : El (recspace a0), ((@_mk_list a0) y0)) ((@CONSTR a0) (NUMERAL _0) ((@ε a0) (λ y0 : El a0, T)) (λ y0 : El num, (@BOTTOM a0))));
+symbol term0 a0 ≔ (λ y0 : El (recspace a0), ((@_mk_list a0) y0));
+symbol term5 a0 (x0: El (recspace a0)) ≔ ((@= (list a0)) ((λ y0 : El (recspace a0), ((@_mk_list a0) y0)) x0));
+symbol term2 a0 (x0: El (recspace a0)) ≔ ((λ y0 : El (recspace a0), ((@_mk_list a0) y0)) x0);
+symbol term1 a0 ≔ ((@CONSTR a0) (NUMERAL _0) ((@ε a0) (λ y0 : El a0, T)) (λ y0 : El num, (@BOTTOM a0)));

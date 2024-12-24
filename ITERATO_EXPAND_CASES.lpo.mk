@@ -1,0 +1,1 @@
+ITERATO_EXPAND_CASES.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo ITERATO_EXPAND_CASES_term_abbrevs.lpo ITERATO_SUPPORT_spec.lpo thm0_spec.lpo thm12653_spec.lpo thm13473_spec.lpo thm1844_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm6401305_spec.lpo thm82_spec.lpo

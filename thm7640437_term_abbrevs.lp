@@ -1,0 +1,13 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term7 a0 a1 ≔ ((@= num) ((@COND num) ((@FINITE (finite_sum a0 a1)) (@UNIV (finite_sum a0 a1))) ((@CARD (finite_sum a0 a1)) (@UNIV (finite_sum a0 a1))) (NUMERAL (BIT1 _0))));
+symbol term1 a0 a1 ≔ (+ ((@dimindex a0) (@UNIV a0)) ((@dimindex a1) (@UNIV a1)));
+symbol term5 a0 a1 ≔ ((@COND num) ((@FINITE (finite_sum a0 a1)) (@UNIV (finite_sum a0 a1))) ((@CARD (finite_sum a0 a1)) (@UNIV (finite_sum a0 a1))) (NUMERAL (BIT1 _0)));
+symbol term0 a0 a1 ≔ ((@COND num) ((@FINITE (finite_sum a0 a1)) (@UNIV (finite_sum a0 a1))));
+symbol term6 a0 a1 ≔ ((@COND num) T (+ ((@dimindex a0) (@UNIV a0)) ((@dimindex a1) (@UNIV a1))) (NUMERAL (BIT1 _0)));
+symbol term8 a0 a1 ≔ ((@= num) (+ ((@dimindex a0) (@UNIV a0)) ((@dimindex a1) (@UNIV a1))));
+symbol term3 a0 a1 ≔ ((@COND num) T (+ ((@dimindex a0) (@UNIV a0)) ((@dimindex a1) (@UNIV a1))));
+symbol term2 a0 a1 ≔ ((@COND num) ((@FINITE (finite_sum a0 a1)) (@UNIV (finite_sum a0 a1))) ((@CARD (finite_sum a0 a1)) (@UNIV (finite_sum a0 a1))));
+symbol term4 ≔ (NUMERAL (BIT1 _0));

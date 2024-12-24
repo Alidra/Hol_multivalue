@@ -1,0 +1,15 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm528090_term_abbrevs;
+require open hol-light.thm528004_spec;
+require open hol-light.thm528019_spec;
+private symbol lem528083 : Prf (= (+ _0 _0) _0) ≔ ∧ₑ₁ (@lem528019);
+private symbol lem528084 : Prf (= SUC SUC) ≔ REFL SUC;
+private symbol lem528085 : Prf (= term0 (SUC _0)) ≔ MK_COMB (@lem528084) (@lem528083);
+private symbol lem528087 : Prf (= (SUC _0) (BIT1 _0)) ≔ ∧ₑ₁ (@lem528004);
+opaque symbol lem528088 : Prf (= term0 (BIT1 _0)) ≔ TRANS (@lem528085) (@lem528087);
+opaque symbol lem528089 : Prf (= BIT0 BIT0) ≔ REFL BIT0;
+opaque symbol lem528090 : Prf (= term1 term2) ≔ MK_COMB (@lem528089) (@lem528088);

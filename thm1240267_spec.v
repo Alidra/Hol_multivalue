@@ -1,0 +1,5 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_terms.
+Axiom lem1240267 : forall (a0 : Prop) (a1 : Prop) (a2 : Prop) (a3 : Prop) (a4 : Prop) (a5 : Prop) (a6 : Prop) (a7 : Prop) (char' : (recspace (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop Prop)))))))) -> Prop) (_22730' : Prop -> Prop -> Prop -> Prop -> Prop -> Prop -> Prop -> Prop -> recspace (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop Prop)))))))) (h1 : char' = (fun a : recspace (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop Prop))))))) => forall char'' : (recspace (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop Prop)))))))) -> Prop, (forall a' : recspace (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop Prop))))))), (exists a0' : Prop, exists a1' : Prop, exists a2' : Prop, exists a3' : Prop, exists a4' : Prop, exists a5' : Prop, exists a6' : Prop, exists a7' : Prop, a' = (_22730' a0' a1' a2' a3' a4' a5' a6' a7')) -> char'' a') -> char'' a)), char' (_22730' a0 a1 a2 a3 a4 a5 a6 a7).

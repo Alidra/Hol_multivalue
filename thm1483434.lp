@@ -1,0 +1,12 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm1483434_term_abbrevs;
+require open hol-light.REAL_POLY_CLAUSES_spec;
+require open hol-light.thm1031360_spec;
+private symbol lem1483431 [A] (m : El A) (r0 : El A) (ly : El A) (rx : El A) (lx : El A) (ry : El A) (b : El A) (a : El A) (c : El A) (d : El A) (p : El num) (r1 : El A) (add : El (type1400 A)) (y : El A) (z : El A) (mul : El (type1400 A)) (pwr : El (type1423 A)) (x : El A) (q : El num) : Prf (term0 A m r0 ly rx lx ry b a c d p r1 add y z mul pwr x q) ≔ λ h0 : Prf (term1 A r0 add r1 mul pwr), (@lem1031360 A m ly rx lx ry b a c d p y z x q r0 add r1 mul pwr h0);
+private symbol lem1483432 (m : El real) (r0 : El real) (ly : El real) (rx : El real) (lx : El real) (ry : El real) (b : El real) (a : El real) (c : El real) (d : El real) (p : El num) (r1 : El real) (add : El type1627) (y : El real) (z : El real) (mul : El type1627) (pwr : El type1623) (x : El real) (q : El num) : Prf (term2 m r0 ly rx lx ry b a c d p r1 add y z mul pwr x q) ≔ (@lem1483431 real m r0 ly rx lx ry b a c d p r1 add y z mul pwr x q);
+opaque symbol lem1483433 (m : El real) (ly : El real) (rx : El real) (lx : El real) (ry : El real) (b : El real) (a : El real) (c : El real) (d : El real) (p : El num) (y : El real) (z : El real) (x : El real) (q : El num) : Prf (term3 m ly rx lx ry b a c d p y z x q) ≔ (@lem1483432 m term4 ly rx lx ry b a c d p term5 real_add y z real_mul real_pow x q);
+opaque symbol lem1483434 (m : El real) (ly : El real) (rx : El real) (lx : El real) (ry : El real) (b : El real) (a : El real) (c : El real) (d : El real) (p : El num) (y : El real) (z : El real) (x : El real) (q : El num) : Prf (term6 m ly rx lx ry b a c d p y z x q) ≔ (@lem1483433 m ly rx lx ry b a c d p y z x q) (@lem1384210);

@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem8321059 [A B D P Q] : Prf (∀ (λ << : El (fun A (fun A bool)), (∀ (λ p : El (fun (fun A B) (fun P bool)), (∀ (λ s : El (fun P A), (∀ (λ e : El (fun P D), (∀ (λ pat : El (fun Q D), (∀ (λ arg : El (fun P (fun Q A)), (⇒ (∧ (∀ (λ f : El (fun A B), (∀ (λ a : El P, (∀ (λ t : El Q, (∀ (λ u : El Q, (⇒ (∧ (p f a) (∧ (= (pat t) (e a)) (= (pat u) (e a)))) (= (arg a t) (arg a u))))))))))) (∀ (λ f : El (fun A B), (∀ (λ a : El P, (∀ (λ t : El Q, (⇒ (∧ (p f a) (= (pat t) (e a))) (∀ (λ y : El A, (⇒ (<< y (arg a t)) (<< y (s a))))))))))))) ((@superadmissible A B P) << p s (λ f : El (fun A B), (λ x : El P, ((@_MATCH D B) (e x) (λ u : El D, (λ v : El B, (∃ (λ t : El Q, (_UNGUARDED_PATTERN ((@GEQ D) (pat t) u) ((@GEQ B) (f (arg x t)) v)))))))))))))))))))))));

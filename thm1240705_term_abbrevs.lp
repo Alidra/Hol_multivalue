@@ -1,0 +1,5 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term0 ≔ (λ y0 : El bool, (λ y1 : El bool, (λ y2 : El bool, (λ y3 : El bool, (λ y4 : El bool, (λ y5 : El bool, (λ y6 : El bool, (λ y7 : El bool, (_mk_char ((λ y8 : El bool, (λ y9 : El bool, (λ y10 : El bool, (λ y11 : El bool, (λ y12 : El bool, (λ y13 : El bool, (λ y14 : El bool, (λ y15 : El bool, ((@CONSTR (prod bool (prod bool (prod bool (prod bool (prod bool (prod bool (prod bool bool)))))))) (NUMERAL _0) ((@̦‚ bool (prod bool (prod bool (prod bool (prod bool (prod bool (prod bool bool))))))) y8 ((@̦‚ bool (prod bool (prod bool (prod bool (prod bool (prod bool bool)))))) y9 ((@̦‚ bool (prod bool (prod bool (prod bool (prod bool bool))))) y10 ((@̦‚ bool (prod bool (prod bool (prod bool bool)))) y11 ((@̦‚ bool (prod bool (prod bool bool))) y12 ((@̦‚ bool (prod bool bool)) y13 ((@̦‚ bool bool) y14 y15))))))) (λ y16 : El num, (@BOTTOM (prod bool (prod bool (prod bool (prod bool (prod bool (prod bool (prod bool bool)))))))))))))))))) y0 y1 y2 y3 y4 y5 y6 y7))))))))));

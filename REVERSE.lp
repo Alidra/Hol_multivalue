@@ -1,0 +1,11 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.REVERSE_term_abbrevs;
+require open hol-light.thm1096519_spec;
+require open hol-light.thm1096523_spec;
+require open hol-light.thm1096524_spec;
+opaque symbol lem1096525 [A] (l : El (list A)) (x : El A) : Prf (= (term0 A x l) (term1 A l x)) ≔ EQ_MP (@lem1096524 A l x) (@lem1096523 A l x);
+opaque symbol lem1096526 [A] (l : El (list A)) (x : El A) : Prf (term2 A l x) ≔ ∧ᵢ (@lem1096519 A) (@lem1096525 A l x);

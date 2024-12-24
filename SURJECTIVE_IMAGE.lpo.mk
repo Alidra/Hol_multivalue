@@ -1,0 +1,1 @@
+SURJECTIVE_IMAGE.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo SURJECTIVE_IMAGE_term_abbrevs.lpo IN_UNIV_spec.lpo SUBSET_UNIV_spec.lpo SURJECTIVE_ON_IMAGE_spec.lpo thm0_spec.lpo thm1820_spec.lpo thm1823_spec.lpo thm1842_spec.lpo thm7_spec.lpo

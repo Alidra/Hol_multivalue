@@ -1,0 +1,11 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term5 (x0: El bool) (x1: El bool) (x2: El bool) (x3: El bool) ≔ (⇒ (∧ (⇒ (= x2 F) (= x0 x3)) (⇒ (= x2 T) (= x0 x1))) (= x0 (∨ (∧ x2 x1) (∧ (¬ x2) x3))));
+symbol term2 (x0: El bool) (x1: El bool) (x2: El bool) ≔ ((λ y0 : El bool, (⇒ (∧ (⇒ (= y0 F) (= x0 x2)) (⇒ (= y0 T) (= x0 x1))) (= x0 (∨ (∧ y0 x1) (∧ (¬ y0) x2))))) T);
+symbol term3 (x0: El bool) (x1: El bool) (x2: El bool) ≔ (⇒ (∧ (⇒ (= T F) (= x0 x2)) (⇒ (= T T) (= x0 x1))) (= x0 (∨ (∧ T x1) (∧ (¬ T) x2))));
+symbol term0 (x0: El bool) (x1: El bool) (x2: El bool) ≔ (λ y0 : El bool, (⇒ (∧ (⇒ (= y0 F) (= x0 x2)) (⇒ (= y0 T) (= x0 x1))) (= x0 (∨ (∧ y0 x1) (∧ (¬ y0) x2)))));
+symbol term6 (x0: El bool) (x1: El bool) (x2: El bool) (x3: El bool) ≔ ((@= bool) (⇒ (∧ (⇒ (= x2 F) (= x0 x3)) (⇒ (= x2 T) (= x0 x1))) (= x0 (∨ (∧ x2 x1) (∧ (¬ x2) x3)))));
+symbol term4 (x0: El bool) (x1: El bool) (x2: El bool) (x3: El bool) ≔ ((@= bool) ((λ y0 : El bool, (⇒ (∧ (⇒ (= y0 F) (= x0 x2)) (⇒ (= y0 T) (= x0 x1))) (= x0 (∨ (∧ y0 x1) (∧ (¬ y0) x2))))) x3));
+symbol term1 (x0: El bool) (x1: El bool) (x2: El bool) (x3: El bool) ≔ ((λ y0 : El bool, (⇒ (∧ (⇒ (= y0 F) (= x0 x2)) (⇒ (= y0 T) (= x0 x1))) (= x0 (∨ (∧ y0 x1) (∧ (¬ y0) x2))))) x3);

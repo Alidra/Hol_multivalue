@@ -1,0 +1,1 @@
+thm1982758_spec.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo

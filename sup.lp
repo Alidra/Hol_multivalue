@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.sup_term_abbrevs;
+private symbol lem5133894 : Prf (= sup term0) ≔ @sup_def;
+private symbol lem5133895 (_67045 : El (fun real bool)) : Prf (= _67045 _67045) ≔ REFL _67045;
+private symbol lem5133896 (_67045 : El (fun real bool)) : Prf (= (sup _67045) (term1 _67045)) ≔ MK_COMB (@lem5133894) (@lem5133895 _67045);
+private symbol lem5133897 (_67045 : El (fun real bool)) : Prf (= (term1 _67045) (term2 _67045)) ≔ REFL (term1 _67045);
+private symbol lem5133898 (_67045 : El (fun real bool)) : Prf (= (sup _67045) (term2 _67045)) ≔ TRANS (@lem5133896 _67045) (@lem5133897 _67045);
+private symbol lem5133899 : Prf term3 ≔ λ _67045 : El (fun real bool), (@lem5133898 _67045);
+private symbol lem5133900 (_67045 : El (fun real bool)) : Prf (term4 _67045) ≔ (@lem5133899) _67045;
+private symbol lem5133901 (_67045 : El (fun real bool)) : Prf (= (term4 _67045) (= (sup _67045) (term2 _67045))) ≔ REFL (term4 _67045);
+private symbol lem5133902 (_67045 : El (fun real bool)) : Prf (= (sup _67045) (term2 _67045)) ≔ EQ_MP (@lem5133901 _67045) (@lem5133900 _67045);
+opaque symbol lem5133932 (s : El (fun real bool)) : Prf (= (sup s) (term2 s)) ≔ (@lem5133902 s);
+opaque symbol lem5133933 : Prf term3 ≔ λ s : El (fun real bool), (@lem5133932 s);

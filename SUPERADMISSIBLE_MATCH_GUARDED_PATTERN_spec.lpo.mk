@@ -1,0 +1,1 @@
+SUPERADMISSIBLE_MATCH_GUARDED_PATTERN_spec.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo

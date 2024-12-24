@@ -1,0 +1,16 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term2 (x0: El real) ≔ (real_lt (real_abs x0) (real_of_num (NUMERAL (BIT1 _0))));
+symbol term10 a0 (x0: El bool) ≔ (∀ (λ y0 : El a0, x0));
+symbol term7 ≔ (λ y0 : El real, T);
+symbol term9 ≔ (∀ (λ y0 : El real, T));
+symbol term11 (x0: El bool) ≔ (∀ (λ y0 : El real, x0));
+symbol term6 ≔ (λ y0 : El real, (⇒ (real_lt (real_abs y0) (real_of_num (NUMERAL (BIT1 _0)))) (= (real_div (real_div y0 (real_sub (real_of_num (NUMERAL (BIT1 _0))) (real_abs y0))) (real_add (real_of_num (NUMERAL (BIT1 _0))) (real_abs (real_div y0 (real_sub (real_of_num (NUMERAL (BIT1 _0))) (real_abs y0)))))) y0)));
+symbol term4 (x0: El real) ≔ (⇒ (real_lt (real_abs x0) (real_of_num (NUMERAL (BIT1 _0)))) (= (real_div (real_div x0 (real_sub (real_of_num (NUMERAL (BIT1 _0))) (real_abs x0))) (real_add (real_of_num (NUMERAL (BIT1 _0))) (real_abs (real_div x0 (real_sub (real_of_num (NUMERAL (BIT1 _0))) (real_abs x0)))))) x0));
+symbol term0 (x0: El real) ≔ ((λ y0 : El real, (= (= (real_div (real_div y0 (real_sub (real_of_num (NUMERAL (BIT1 _0))) (real_abs y0))) (real_add (real_of_num (NUMERAL (BIT1 _0))) (real_abs (real_div y0 (real_sub (real_of_num (NUMERAL (BIT1 _0))) (real_abs y0)))))) y0) (real_lt (real_abs y0) (real_of_num (NUMERAL (BIT1 _0)))))) x0);
+symbol term5 (x0: El real) ≔ (⇒ (real_lt (real_abs x0) (real_of_num (NUMERAL (BIT1 _0)))) (real_lt (real_abs x0) (real_of_num (NUMERAL (BIT1 _0)))));
+symbol term8 ≔ (∀ (λ y0 : El real, (⇒ (real_lt (real_abs y0) (real_of_num (NUMERAL (BIT1 _0)))) (= (real_div (real_div y0 (real_sub (real_of_num (NUMERAL (BIT1 _0))) (real_abs y0))) (real_add (real_of_num (NUMERAL (BIT1 _0))) (real_abs (real_div y0 (real_sub (real_of_num (NUMERAL (BIT1 _0))) (real_abs y0)))))) y0))));
+symbol term3 (x0: El real) ≔ (⇒ (real_lt (real_abs x0) (real_of_num (NUMERAL (BIT1 _0)))));
+symbol term1 (x0: El real) ≔ (real_div (real_div x0 (real_sub (real_of_num (NUMERAL (BIT1 _0))) (real_abs x0))) (real_add (real_of_num (NUMERAL (BIT1 _0))) (real_abs (real_div x0 (real_sub (real_of_num (NUMERAL (BIT1 _0))) (real_abs x0))))));

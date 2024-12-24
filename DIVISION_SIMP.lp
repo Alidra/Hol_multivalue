@@ -1,0 +1,10 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.DIVISION_SIMP_term_abbrevs;
+require open hol-light.thm161363_spec;
+require open hol-light.thm161368_spec;
+opaque symbol lem161373 : Prf term0 ≔ λ m : El num, (@lem161368 m);
+opaque symbol lem161374 : Prf term1 ≔ ∧ᵢ (@lem161373) (@lem161363);

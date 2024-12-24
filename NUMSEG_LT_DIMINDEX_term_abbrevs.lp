@@ -1,0 +1,18 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term7 a0 ≔ ((@COND (fun num bool)) (= ((@dimindex a0) (@UNIV a0)) (NUMERAL _0)) (@EMPTY num) (… (NUMERAL _0) (- ((@dimindex a0) (@UNIV a0)) (NUMERAL (BIT1 _0)))));
+symbol term1 a0 (x0: El (fun a0 bool)) ≔ (¬ (= ((@dimindex a0) x0) (NUMERAL _0)));
+symbol term13 a0 ≔ ((@= (fun num bool)) (… (NUMERAL _0) (- ((@dimindex a0) (@UNIV a0)) (NUMERAL (BIT1 _0)))));
+symbol term0 a0 (x0: El (fun a0 bool)) ≔ ((λ y0 : El (fun a0 bool), (¬ (= ((@dimindex a0) y0) (NUMERAL _0)))) x0);
+symbol term12 a0 ≔ ((@= (fun num bool)) ((@GSPEC num) (λ y0 : El num, (∃ (λ y1 : El num, ((@SETSPEC num) y0 (< y1 ((@dimindex a0) (@UNIV a0))) y1))))));
+symbol term9 a0 ≔ ((@COND (fun num bool)) (= ((@dimindex a0) (@UNIV a0)) (NUMERAL _0)) (@EMPTY num));
+symbol term11 a0 ≔ ((@COND (fun num bool)) F (@EMPTY num) (… (NUMERAL _0) (- ((@dimindex a0) (@UNIV a0)) (NUMERAL (BIT1 _0)))));
+symbol term5 (x0: El num) ≔ ((@COND (fun num bool)) (= x0 (NUMERAL _0)) (@EMPTY num) (… (NUMERAL _0) (- x0 (NUMERAL (BIT1 _0)))));
+symbol term8 a0 ≔ ((@COND (fun num bool)) (= ((@dimindex a0) (@UNIV a0)) (NUMERAL _0)));
+symbol term2 a0 (x0: El (fun a0 bool)) ≔ (⇒ (¬ (= ((@dimindex a0) x0) (NUMERAL _0))) (= (= ((@dimindex a0) x0) (NUMERAL _0)) F));
+symbol term10 a0 ≔ (… (NUMERAL _0) (- ((@dimindex a0) (@UNIV a0)) (NUMERAL (BIT1 _0))));
+symbol term3 (x0: El num) ≔ ((λ y0 : El num, (= ((@GSPEC num) (λ y1 : El num, (∃ (λ y2 : El num, ((@SETSPEC num) y1 (< y2 y0) y2))))) ((@COND (fun num bool)) (= y0 (NUMERAL _0)) (@EMPTY num) (… (NUMERAL _0) (- y0 (NUMERAL (BIT1 _0))))))) x0);
+symbol term6 a0 ≔ ((@GSPEC num) (λ y0 : El num, (∃ (λ y1 : El num, ((@SETSPEC num) y0 (< y1 ((@dimindex a0) (@UNIV a0))) y1)))));
+symbol term4 (x0: El num) ≔ ((@GSPEC num) (λ y0 : El num, (∃ (λ y1 : El num, ((@SETSPEC num) y0 (< y1 x0) y1)))));

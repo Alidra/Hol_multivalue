@@ -1,0 +1,5 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term0 a0 ≔ (∧ (= ((@dimindex (tybit0 a0)) (@UNIV (tybit0 a0))) (* (NUMERAL (BIT0 (BIT1 _0))) ((@dimindex a0) (@UNIV a0)))) (= ((@dimindex (tybit1 a0)) (@UNIV (tybit1 a0))) (+ (* (NUMERAL (BIT0 (BIT1 _0))) ((@dimindex a0) (@UNIV a0))) (NUMERAL (BIT1 _0)))));

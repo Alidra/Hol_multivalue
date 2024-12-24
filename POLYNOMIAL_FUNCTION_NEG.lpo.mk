@@ -1,0 +1,1 @@
+POLYNOMIAL_FUNCTION_NEG.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo POLYNOMIAL_FUNCTION_NEG_term_abbrevs.lpo ETA_AX_spec.lpo POLYNOMIAL_FUNCTION_LMUL_spec.lpo REAL_MUL_LNEG_spec.lpo REAL_NEG_NEG_spec.lpo thm0_spec.lpo thm1338986_spec.lpo thm1809_spec.lpo thm1810_spec.lpo thm1823_spec.lpo thm32_spec.lpo

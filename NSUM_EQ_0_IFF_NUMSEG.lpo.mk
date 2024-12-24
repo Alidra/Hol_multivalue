@@ -1,0 +1,1 @@
+NSUM_EQ_0_IFF_NUMSEG.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo NSUM_EQ_0_IFF_NUMSEG_term_abbrevs.lpo FINITE_NUMSEG_spec.lpo IN_NUMSEG_spec.lpo NSUM_EQ_0_IFF_spec.lpo thm0_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm4211_spec.lpo thm7_spec.lpo

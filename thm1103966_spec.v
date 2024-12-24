@@ -1,0 +1,5 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_terms.
+Axiom lem1103966 : forall {_25409 _25416 : Type'}, (@ALL2 _25409 _25416) = (@ε ((prod nat (prod nat (prod nat nat))) -> (_25409 -> _25416 -> Prop) -> (list _25409) -> (list _25416) -> Prop) (fun ALL2' : (prod nat (prod nat (prod nat nat))) -> (_25409 -> _25416 -> Prop) -> (list _25409) -> (list _25416) -> Prop => forall _18003 : prod nat (prod nat (prod nat nat)), (forall P : _25409 -> _25416 -> Prop, forall l2 : list _25416, (ALL2' _18003 P (@nil _25409) l2) = (l2 = (@nil _25416))) /\ (forall h1' : _25409, forall P : _25409 -> _25416 -> Prop, forall t1 : list _25409, forall l2 : list _25416, (ALL2' _18003 P (@cons _25409 h1' t1) l2) = (@COND Prop (l2 = (@nil _25416)) False ((P h1' (@hd _25416 l2)) /\ (ALL2' _18003 P t1 (@tl _25416 l2)))))) (@pair nat (prod nat (prod nat nat)) (NUMERAL (BIT1 (BIT0 (BIT0 (BIT0 (BIT0 (BIT0 (BIT1 0)))))))) (@pair nat (prod nat nat) (NUMERAL (BIT0 (BIT0 (BIT1 (BIT1 (BIT0 (BIT0 (BIT1 0)))))))) (@pair nat nat (NUMERAL (BIT0 (BIT0 (BIT1 (BIT1 (BIT0 (BIT0 (BIT1 0)))))))) (NUMERAL (BIT0 (BIT1 (BIT0 (BIT0 (BIT1 (BIT1 0))))))))))).

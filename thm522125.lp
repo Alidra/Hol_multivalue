@@ -1,0 +1,11 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm522125_term_abbrevs;
+require open hol-light.LE_EXISTS_spec;
+private symbol lem522122 (m : El num) : Prf (term0 m) ≔ (@lem99708) m;
+private symbol lem522123 (m : El num) : Prf (= (term0 m) (term1 m)) ≔ REFL (term0 m);
+opaque symbol lem522124 (m : El num) : Prf (term1 m) ≔ EQ_MP (@lem522123 m) (@lem522122 m);
+opaque symbol lem522125 (m : El num) (n : El num) : Prf (term2 m n) ≔ (@lem522124 m) n;

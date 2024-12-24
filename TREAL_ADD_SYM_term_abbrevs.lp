@@ -1,0 +1,18 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term13 ≔ (∀ (λ y0 : El (prod hreal hreal), (∀ (λ y1 : El (prod hreal hreal), (treal_eq (treal_add y0 y1) (treal_add y1 y0))))));
+symbol term0 ≔ (∀ (λ y0 : El (prod hreal hreal), (∀ (λ y1 : El (prod hreal hreal), (⇒ (= y0 y1) (treal_eq y0 y1))))));
+symbol term6 ≔ (⇒ (∀ (λ y0 : El (prod hreal hreal), (∀ (λ y1 : El (prod hreal hreal), (⇒ (= y0 y1) (treal_eq y0 y1)))))) (∀ (λ y0 : El (prod hreal hreal), (∀ (λ y1 : El (prod hreal hreal), (⇒ (= y0 y1) (treal_eq y0 y1)))))));
+symbol term2 (x0: El (prod hreal hreal)) ≔ (∀ (λ y0 : El (prod hreal hreal), (⇒ (= x0 y0) (treal_eq x0 y0))));
+symbol term9 (x0: El (prod hreal hreal)) ≔ (∀ (λ y0 : El (prod hreal hreal), (= (treal_add x0 y0) (treal_add y0 x0))));
+symbol term4 (x0: El (prod hreal hreal)) (x1: El (prod hreal hreal)) ≔ (⇒ (= x0 x1) (treal_eq x0 x1));
+symbol term3 (x0: El (prod hreal hreal)) (x1: El (prod hreal hreal)) ≔ ((λ y0 : El (prod hreal hreal), (⇒ (= x0 y0) (treal_eq x0 y0))) x1);
+symbol term12 (x0: El (prod hreal hreal)) ≔ (∀ (λ y0 : El (prod hreal hreal), (treal_eq (treal_add x0 y0) (treal_add y0 x0))));
+symbol term7 (x0: El (prod hreal hreal)) (x1: El (prod hreal hreal)) ≔ (⇒ (= (treal_add x1 x0) (treal_add x0 x1)) (treal_eq (treal_add x1 x0) (treal_add x0 x1)));
+symbol term10 (x0: El (prod hreal hreal)) (x1: El (prod hreal hreal)) ≔ ((λ y0 : El (prod hreal hreal), (= (treal_add x0 y0) (treal_add y0 x0))) x1);
+symbol term8 (x0: El (prod hreal hreal)) ≔ ((λ y0 : El (prod hreal hreal), (∀ (λ y1 : El (prod hreal hreal), (= (treal_add y0 y1) (treal_add y1 y0))))) x0);
+symbol term1 (x0: El (prod hreal hreal)) ≔ ((λ y0 : El (prod hreal hreal), (∀ (λ y1 : El (prod hreal hreal), (⇒ (= y0 y1) (treal_eq y0 y1))))) x0);
+symbol term5 (x0: El (prod hreal hreal)) (x1: El (prod hreal hreal)) ≔ (⇒ (∀ (λ y0 : El (prod hreal hreal), (∀ (λ y1 : El (prod hreal hreal), (⇒ (= y0 y1) (treal_eq y0 y1)))))) (treal_eq x0 x1));
+symbol term11 (x0: El (prod hreal hreal)) (x1: El (prod hreal hreal)) ≔ (treal_eq (treal_add x1 x0) (treal_add x0 x1));

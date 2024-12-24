@@ -1,0 +1,1 @@
+thm1367839.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo thm1367839_term_abbrevs.lpo REAL_OF_NUM_POW_spec.lpo REAL_POW_NEG_spec.lpo thm0_spec.lpo thm1842_spec.lpo thm1862_spec.lpo thm1863_spec.lpo

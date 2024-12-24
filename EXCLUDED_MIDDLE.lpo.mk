@@ -1,0 +1,1 @@
+EXCLUDED_MIDDLE.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo EXCLUDED_MIDDLE_term_abbrevs.lpo NOT_CLAUSES_WEAK_spec.lpo thm0_spec.lpo thm1822_spec.lpo thm1832_spec.lpo thm1856_spec.lpo thm1857_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm37_spec.lpo thm43_spec.lpo thm69_spec.lpo thm7_spec.lpo thm9425_spec.lpo

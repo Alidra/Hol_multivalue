@@ -1,0 +1,15 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm1046244_term_abbrevs;
+require open hol-light.thm1013352_spec;
+require open hol-light.thm912739_spec;
+require open hol-light.thm93_spec;
+private symbol lem1046239 : Prf (= term0 (BIT1 _0)) ≔ (@lem912739);
+private symbol lem1046240 (h1 : Prf (= term0 (BIT1 _0))) : Prf (= (= term1 (NUMERAL _0)) F) ≔ (@lem1013352 _0 _0 (BIT1 _0) h1);
+private symbol lem1046241 : Prf (= (= term0 (BIT1 _0)) (= (= term1 (NUMERAL _0)) F)) ≔ prop_ext (λ h1 : Prf (= term0 (BIT1 _0)), (@lem1046240 h1)) (λ h1 : Prf (= (= term1 (NUMERAL _0)) F), (@lem1046239));
+opaque symbol lem1046242 : Prf (= (= term1 (NUMERAL _0)) F) ≔ EQ_MP (@lem1046241) (@lem1046239);
+opaque symbol lem1046243 : Prf term2 ≔ (@lem93 (= term1 (NUMERAL _0)));
+opaque symbol lem1046244 : Prf term3 ≔ (@lem1046243) (@lem1046242);

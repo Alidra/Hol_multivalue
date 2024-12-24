@@ -1,0 +1,7 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_type_abbrevs.
+Require Import hol_terms.
+Definition term1 (a0 : Type') (a1 : Type') (a2 : Type') (a3 : Type') (a4 : Type') (a5 : Type') (a6 : Type') (a7 : Type') (a8 : Type') (a9 : Type') (a10 : Type') (a11 : Type') := (forall y0 : type1228 a0 a1 a2, (@GABS ((prod a2 a1) -> a0) (fun y1 : type1228 a0 a1 a2 => forall y2 : a2, forall y3 : a1, @GEQ a0 (y1 (@pair a2 a1 y2 y3)) (y0 (@pair a2 a1 y2 y3)))) = y0) /\ ((forall y0 : type1219 a3 a4 a5 a6, (@GABS ((prod a4 (prod a6 a5)) -> a3) (fun y1 : type1219 a3 a4 a5 a6 => forall y2 : a4, forall y3 : a6, forall y4 : a5, @GEQ a3 (y1 (@pair a4 (prod a6 a5) y2 (@pair a6 a5 y3 y4))) (y0 (@pair a4 (prod a6 a5) y2 (@pair a6 a5 y3 y4))))) = y0) /\ (forall y0 : type1230 a10 a11 a7 a8 a9, (@GABS ((prod a8 (prod a9 (prod a11 a10))) -> a7) (fun y1 : type1230 a10 a11 a7 a8 a9 => forall y2 : a8, forall y3 : a9, forall y4 : a11, forall y5 : a10, @GEQ a7 (y1 (@pair a8 (prod a9 (prod a11 a10)) y2 (@pair a9 (prod a11 a10) y3 (@pair a11 a10 y4 y5)))) (y0 (@pair a8 (prod a9 (prod a11 a10)) y2 (@pair a9 (prod a11 a10) y3 (@pair a11 a10 y4 y5)))))) = y0)).
+Definition term0 (a0 : Type') (a1 : Type') (a2 : Type') := forall y0 : type1228 a0 a1 a2, (@GABS ((prod a2 a1) -> a0) (fun y1 : type1228 a0 a1 a2 => forall y2 : a2, forall y3 : a1, @GEQ a0 (y1 (@pair a2 a1 y2 y3)) (y0 (@pair a2 a1 y2 y3)))) = y0.

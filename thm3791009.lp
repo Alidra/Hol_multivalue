@@ -1,0 +1,18 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm3791009_term_abbrevs;
+require open hol-light.thm3790997_spec;
+private symbol lem3790999 [A B] : Prf (term0 A B) ≔ ∧ₑ₁ (@lem3790997 A B);
+private symbol lem3791000 [A B] (f : El (type1411 A B)) : Prf (term1 A B f) ≔ (@lem3790999 A B) f;
+private symbol lem3791001 [A B] (f : El (type1411 A B)) : Prf (= (term1 A B f) (term2 A B f)) ≔ REFL (term1 A B f);
+private symbol lem3791002 [A B] (f : El (type1411 A B)) : Prf (term2 A B f) ≔ EQ_MP (@lem3791001 A B f) (@lem3791000 A B f);
+private symbol lem3791003 [A B] (f : El (type1411 A B)) (s : El (fun A bool)) : Prf (term3 A B f s) ≔ (@lem3791002 A B f) s;
+private symbol lem3791004 [A B] (f : El (type1411 A B)) (s : El (fun A bool)) : Prf (= (term3 A B f s) (term4 A B f s)) ≔ REFL (term3 A B f s);
+private symbol lem3791005 [A B] (f : El (type1411 A B)) (s : El (fun A bool)) : Prf (term4 A B f s) ≔ EQ_MP (@lem3791004 A B f s) (@lem3791003 A B f s);
+private symbol lem3791006 [A B] (f : El (type1411 A B)) (s : El (fun A bool)) (a : El B) : Prf (term5 A B f s a) ≔ (@lem3791005 A B f s) a;
+private symbol lem3791007 [A B] (f : El (type1411 A B)) (s : El (fun A bool)) (a : El B) : Prf (= (term5 A B f s a) (term6 A B f s a)) ≔ REFL (term5 A B f s a);
+opaque symbol lem3791008 [A B] (f : El (type1411 A B)) (s : El (fun A bool)) (a : El B) : Prf (term6 A B f s a) ≔ EQ_MP (@lem3791007 A B f s a) (@lem3791006 A B f s a);
+opaque symbol lem3791009 [A B] (f : El (type1411 A B)) (s : El (fun A bool)) (a : El B) (b : El B) : Prf (term7 A B f s a b) ≔ (@lem3791008 A B f s a) b;

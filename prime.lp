@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.prime_term_abbrevs;
+private symbol lem3137958 : Prf (= prime term0) ≔ @prime_def;
+private symbol lem3137959 (_32468 : El num) : Prf (= _32468 _32468) ≔ REFL _32468;
+private symbol lem3137960 (_32468 : El num) : Prf (= (prime _32468) (term1 _32468)) ≔ MK_COMB (@lem3137958) (@lem3137959 _32468);
+private symbol lem3137961 (_32468 : El num) : Prf (= (term1 _32468) (term2 _32468)) ≔ REFL (term1 _32468);
+private symbol lem3137962 (_32468 : El num) : Prf (= (prime _32468) (term2 _32468)) ≔ TRANS (@lem3137960 _32468) (@lem3137961 _32468);
+private symbol lem3137963 : Prf term3 ≔ λ _32468 : El num, (@lem3137962 _32468);
+private symbol lem3137964 (_32468 : El num) : Prf (term4 _32468) ≔ (@lem3137963) _32468;
+private symbol lem3137965 (_32468 : El num) : Prf (= (term4 _32468) (= (prime _32468) (term2 _32468))) ≔ REFL (term4 _32468);
+private symbol lem3137966 (_32468 : El num) : Prf (= (prime _32468) (term2 _32468)) ≔ EQ_MP (@lem3137965 _32468) (@lem3137964 _32468);
+opaque symbol lem3137996 (p : El num) : Prf (= (prime p) (term2 p)) ≔ (@lem3137966 p);
+opaque symbol lem3137997 : Prf term3 ≔ λ p : El num, (@lem3137996 p);

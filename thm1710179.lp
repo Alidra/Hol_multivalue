@@ -1,0 +1,16 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm1710179_term_abbrevs;
+require open hol-light.real_sgn_spec;
+private symbol lem1710165 (x : El real) : Prf (term0 x) ≔ (@lem1710164) x;
+private symbol lem1710166 (x : El real) : Prf (= (term0 x) (= (real_sgn x) (term1 x))) ≔ REFL (term0 x);
+private symbol lem1710171 (x : El real) : Prf (= (real_sgn x) (term1 x)) ≔ EQ_MP (@lem1710166 x) (@lem1710165 x);
+private symbol lem1710172 : Prf (= term2 term3) ≔ (@lem1710171 term4);
+private symbol lem1710173 : Prf (= (@= real) (@= real)) ≔ REFL (@= real);
+private symbol lem1710174 : Prf (= term5 term6) ≔ MK_COMB (@lem1710173) (@lem1710172);
+private symbol lem1710175 : Prf (= term4 term4) ≔ REFL term4;
+opaque symbol lem1710176 : Prf (= (= term2 term4) (= term3 term4)) ≔ MK_COMB (@lem1710174) (@lem1710175);
+opaque symbol lem1710179 : Prf (= (= term3 term4) (= term2 term4)) ≔ SYM (@lem1710176);

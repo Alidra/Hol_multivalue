@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm17976_term_abbrevs;
+require open hol-light.ETA_AX_spec;
+private symbol lem17967 [A B] (t : El (fun A B)) (h1 : Prf (= (term0 A B t) t)) : Prf (= (term0 A B t) t) ≔ h1;
+private symbol lem17968 [A B] (t : El (fun A B)) (h1 : Prf (= (term0 A B t) t)) : Prf (= t (term0 A B t)) ≔ SYM (@lem17967 A B t h1);
+private symbol lem17969 [A B] (t : El (fun A B)) (h1 : Prf (= t (term0 A B t))) : Prf (= t (term0 A B t)) ≔ h1;
+private symbol lem17970 [A B] (t : El (fun A B)) (h1 : Prf (= t (term0 A B t))) : Prf (= (term0 A B t) t) ≔ SYM (@lem17969 A B t h1);
+private symbol lem17971 [A B] (t : El (fun A B)) : Prf (= (= (term0 A B t) t) (= t (term0 A B t))) ≔ prop_ext (λ h1 : Prf (= (term0 A B t) t), (@lem17968 A B t h1)) (λ h1 : Prf (= t (term0 A B t)), (@lem17970 A B t h1));
+private symbol lem17972 [A B] : Prf (= (term1 A B) (term2 A B)) ≔ fun_ext (λ t : El (fun A B), (@lem17971 A B t));
+private symbol lem17973 [A B] : Prf (= (@∀ (fun A B)) (@∀ (fun A B))) ≔ REFL (@∀ (fun A B));
+private symbol lem17974 [A B] : Prf (= (term3 A B) (term4 A B)) ≔ MK_COMB (@lem17973 A B) (@lem17972 A B);
+opaque symbol lem17975 [A B] : Prf (term4 A B) ≔ EQ_MP (@lem17974 A B) (@lem9121 A B);
+opaque symbol lem17976 [A B] (t : El (fun A B)) : Prf (term5 A B t) ≔ (@lem17975 A B) t;

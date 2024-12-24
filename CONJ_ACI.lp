@@ -1,0 +1,11 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.CONJ_ACI_term_abbrevs;
+require open hol-light.thm556_spec;
+require open hol-light.thm587_spec;
+require open hol-light.thm647_spec;
+opaque symbol lem648 (r : El bool) (p : El bool) (q : El bool) : Prf (term0 r p q) ≔ ∧ᵢ (@lem587 p q r) (@lem647 r p q);
+opaque symbol lem649 (r : El bool) (p : El bool) (q : El bool) : Prf (term1 r p q) ≔ ∧ᵢ (@lem556 q p) (@lem648 r p q);

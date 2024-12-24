@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem1483480 (a : El real) (c : El real) (b : El real) (d : El real) : Prf (= (real_add (real_add a b) (real_add c d)) (real_add (real_add a c) (real_add b d)));

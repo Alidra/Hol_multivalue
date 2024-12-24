@@ -1,0 +1,1 @@
+REAL_POW_EQ_ABS.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo REAL_POW_EQ_ABS_term_abbrevs.lpo NOT_CLAUSES_WEAK_spec.lpo REAL_ABS_POS_spec.lpo REAL_ABS_POW_spec.lpo REAL_POW_EQ_spec.lpo thm0_spec.lpo thm1842_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm7_spec.lpo thm82_spec.lpo

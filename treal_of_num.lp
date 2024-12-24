@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.treal_of_num_term_abbrevs;
+private symbol lem1322703 : Prf (= treal_of_num term0) ≔ @treal_of_num_def;
+private symbol lem1322704 (_23594 : El num) : Prf (= _23594 _23594) ≔ REFL _23594;
+private symbol lem1322705 (_23594 : El num) : Prf (= (treal_of_num _23594) (term1 _23594)) ≔ MK_COMB (@lem1322703) (@lem1322704 _23594);
+private symbol lem1322706 (_23594 : El num) : Prf (= (term1 _23594) (term2 _23594)) ≔ REFL (term1 _23594);
+private symbol lem1322707 (_23594 : El num) : Prf (= (treal_of_num _23594) (term2 _23594)) ≔ TRANS (@lem1322705 _23594) (@lem1322706 _23594);
+private symbol lem1322708 : Prf term3 ≔ λ _23594 : El num, (@lem1322707 _23594);
+private symbol lem1322709 (_23594 : El num) : Prf (term4 _23594) ≔ (@lem1322708) _23594;
+private symbol lem1322710 (_23594 : El num) : Prf (= (term4 _23594) (= (treal_of_num _23594) (term2 _23594))) ≔ REFL (term4 _23594);
+private symbol lem1322711 (_23594 : El num) : Prf (= (treal_of_num _23594) (term2 _23594)) ≔ EQ_MP (@lem1322710 _23594) (@lem1322709 _23594);
+opaque symbol lem1322741 (n : El num) : Prf (= (treal_of_num n) (term2 n)) ≔ (@lem1322711 n);
+opaque symbol lem1322742 : Prf term3 ≔ λ n : El num, (@lem1322741 n);

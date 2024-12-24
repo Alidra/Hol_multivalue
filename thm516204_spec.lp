@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem516204 : Prf (∧ (= (EXP _0 _0) (BIT1 _0)) (∧ (∀ (λ m : El num, (= (EXP (BIT0 m) _0) (BIT1 _0)))) (∧ (∀ (λ m : El num, (= (EXP (BIT1 m) _0) (BIT1 _0)))) (∧ (∀ (λ n : El num, (= (EXP _0 (BIT0 n)) (* (EXP _0 n) (EXP _0 n))))) (∧ (∀ (λ m : El num, (∀ (λ n : El num, (= (EXP (BIT0 m) (BIT0 n)) (* (EXP (BIT0 m) n) (EXP (BIT0 m) n))))))) (∧ (∀ (λ m : El num, (∀ (λ n : El num, (= (EXP (BIT1 m) (BIT0 n)) (* (EXP (BIT1 m) n) (EXP (BIT1 m) n))))))) (∧ (∀ (λ n : El num, (= (EXP _0 (BIT1 n)) _0))) (∧ (∀ (λ m : El num, (∀ (λ n : El num, (= (EXP (BIT0 m) (BIT1 n)) (* (BIT0 m) (* (EXP (BIT0 m) n) (EXP (BIT0 m) n)))))))) (∀ (λ m : El num, (∀ (λ n : El num, (= (EXP (BIT1 m) (BIT1 n)) (* (BIT1 m) (* (EXP (BIT1 m) n) (EXP (BIT1 m) n))))))))))))))));

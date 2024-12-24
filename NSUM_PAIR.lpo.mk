@@ -1,0 +1,1 @@
+NSUM_PAIR.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo NSUM_PAIR_term_abbrevs.lpo ITERATE_PAIR_spec.lpo MONOIDAL_ADD_spec.lpo thm0_spec.lpo thm1823_spec.lpo thm6920357_spec.lpo thm6920371_spec.lpo

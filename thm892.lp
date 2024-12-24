@@ -1,0 +1,11 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm892_term_abbrevs;
+private symbol lem888 (p : El bool) (q : El bool) (r : El bool) (h1 : Prf (= (term0 p q r) (term1 p q r))) : Prf (= (term0 p q r) (term1 p q r)) ≔ h1;
+opaque symbol lem889 (p : El bool) (q : El bool) (r : El bool) (h1 : Prf (= (term0 p q r) (term1 p q r))) : Prf (= (term1 p q r) (term0 p q r)) ≔ SYM (@lem888 p q r h1);
+private symbol lem890 (p : El bool) (q : El bool) (r : El bool) (h1 : Prf (= (term1 p q r) (term0 p q r))) : Prf (= (term1 p q r) (term0 p q r)) ≔ h1;
+opaque symbol lem891 (p : El bool) (q : El bool) (r : El bool) (h1 : Prf (= (term1 p q r) (term0 p q r))) : Prf (= (term0 p q r) (term1 p q r)) ≔ SYM (@lem890 p q r h1);
+opaque symbol lem892 (p : El bool) (q : El bool) (r : El bool) : Prf (= (= (term0 p q r) (term1 p q r)) (= (term1 p q r) (term0 p q r))) ≔ prop_ext (λ h1 : Prf (= (term0 p q r) (term1 p q r)), (@lem889 p q r h1)) (λ h1 : Prf (= (term1 p q r) (term0 p q r)), (@lem891 p q r h1));

@@ -1,0 +1,10 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term2 a0 a1 ≔ (λ y0 : El (type1413 a0 a1), (∃ (λ y1 : El a0, (∃ (λ y2 : El a1, (= y0 ((@mk_pair a0 a1) y1 y2)))))));
+symbol term1 a0 a1 ≔ (λ y0 : El (type475 a0 a1), (y0 ((@ε (fun a0 (fun a1 bool))) y0)));
+symbol term0 a0 ≔ (λ y0 : El (fun a0 bool), (y0 ((@ε a0) y0)));
+symbol term3 a0 a1 ≔ (∃ (λ y0 : El (type1413 a0 a1), (∃ (λ y1 : El a0, (∃ (λ y2 : El a1, (= y0 ((@mk_pair a0 a1) y1 y2))))))));
+symbol term4 a0 a1 ≔ ((λ y0 : El (type475 a0 a1), (y0 ((@ε (fun a0 (fun a1 bool))) y0))) (λ y0 : El (type1413 a0 a1), (∃ (λ y1 : El a0, (∃ (λ y2 : El a1, (= y0 ((@mk_pair a0 a1) y1 y2))))))));
+symbol term5 a0 a1 ≔ ((λ y0 : El (type1413 a0 a1), (∃ (λ y1 : El a0, (∃ (λ y2 : El a1, (= y0 ((@mk_pair a0 a1) y1 y2))))))) ((@ε (fun a0 (fun a1 bool))) (λ y0 : El (type1413 a0 a1), (∃ (λ y1 : El a0, (∃ (λ y2 : El a1, (= y0 ((@mk_pair a0 a1) y1 y2)))))))));

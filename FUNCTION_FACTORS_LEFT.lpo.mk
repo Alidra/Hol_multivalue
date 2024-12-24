@@ -1,0 +1,1 @@
+FUNCTION_FACTORS_LEFT.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo FUNCTION_FACTORS_LEFT_term_abbrevs.lpo FUNCTION_FACTORS_LEFT_GEN_spec.lpo FUN_EQ_THM_spec.lpo o_THM_spec.lpo thm0_spec.lpo thm1809_spec.lpo thm1810_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm1820_spec.lpo thm1842_spec.lpo thm1862_spec.lpo thm1863_spec.lpo

@@ -1,0 +1,18 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term2 (x0: El int) ≔ (real_mul (real_of_int x0) (real_of_int x0));
+symbol term9 (x0: El int) (x1: El int) ≔ (real_mul (real_of_int x0) (real_of_int x1));
+symbol term11 (x0: El int) ≔ (real_of_int (int_mul x0 x0));
+symbol term13 ≔ (∀ (λ y0 : El int, (= (int_pow y0 (NUMERAL (BIT0 (BIT1 _0)))) (int_mul y0 y0))));
+symbol term0 (x0: El int) ≔ ((λ y0 : El real, (= (real_pow y0 (NUMERAL (BIT0 (BIT1 _0)))) (real_mul y0 y0))) (real_of_int x0));
+symbol term8 (x0: El int) ≔ ((@= real) (real_of_int (int_pow x0 (NUMERAL (BIT0 (BIT1 _0))))));
+symbol term3 (x0: El int) (x1: El num) ≔ (real_pow (real_of_int x0) x1);
+symbol term6 ≔ (NUMERAL (BIT0 (BIT1 _0)));
+symbol term10 (x0: El int) (x1: El int) ≔ (real_of_int (int_mul x0 x1));
+symbol term12 (x0: El int) ≔ (int_pow x0 (NUMERAL (BIT0 (BIT1 _0))));
+symbol term4 (x0: El int) (x1: El num) ≔ (real_of_int (int_pow x0 x1));
+symbol term1 (x0: El int) ≔ (real_pow (real_of_int x0) (NUMERAL (BIT0 (BIT1 _0))));
+symbol term5 (x0: El int) ≔ (real_of_int (int_pow x0 (NUMERAL (BIT0 (BIT1 _0)))));
+symbol term7 (x0: El int) ≔ ((@= real) (real_pow (real_of_int x0) (NUMERAL (BIT0 (BIT1 _0)))));

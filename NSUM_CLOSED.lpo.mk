@@ -1,0 +1,1 @@
+NSUM_CLOSED.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo NSUM_CLOSED_term_abbrevs.lpo ITERATE_CLOSED_spec.lpo MONOIDAL_ADD_spec.lpo nsum_spec.lpo thm0_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm1820_spec.lpo thm1821_spec.lpo thm1842_spec.lpo thm4211_spec.lpo thm6920431_spec.lpo thm6921992_spec.lpo thm7_spec.lpo

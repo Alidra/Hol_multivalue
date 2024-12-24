@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm0_spec;
+require open hol-light.thm1856_spec;
+require open hol-light.thm1862_spec;
+require open hol-light.thm1863_spec;
+private symbol lem1013354 (t : El bool) : Prf (= (= t T) t) ≔ ∧ₑ₁ (@lem1856 t);
+private symbol lem1013355 (n : El num) : Prf (= (= (= (NUMERAL n) (NUMERAL n)) T) (= (NUMERAL n) (NUMERAL n))) ≔ (@lem1013354 (= (NUMERAL n) (NUMERAL n)));
+private symbol lem1013357 [A] (x : El A) : Prf (= (= x x) T) ≔ EQ_MP (@lem1863 A x) (@lem1862 A x);
+private symbol lem1013358 (x : El num) : Prf (= (= x x) T) ≔ (@lem1013357 num x);
+private symbol lem1013359 (n : El num) : Prf (= (= (NUMERAL n) (NUMERAL n)) T) ≔ (@lem1013358 (NUMERAL n));
+private symbol lem1013360 (n : El num) : Prf (= (= (= (NUMERAL n) (NUMERAL n)) T) T) ≔ TRANS (@lem1013355 n) (@lem1013359 n);
+opaque symbol lem1013361 (n : El num) : Prf (= T (= (= (NUMERAL n) (NUMERAL n)) T)) ≔ SYM (@lem1013360 n);
+opaque symbol lem1013364 (n : El num) : Prf (= (= (NUMERAL n) (NUMERAL n)) T) ≔ EQ_MP (@lem1013361 n) (@lem0);

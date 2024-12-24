@@ -1,0 +1,1 @@
+LT_LE.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo LT_LE_term_abbrevs.lpo LE_LT_spec.lpo LT_REFL_spec.lpo NOT_CLAUSES_WEAK_spec.lpo thm0_spec.lpo thm1822_spec.lpo thm1823_spec.lpo thm1831_spec.lpo thm1842_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm32_spec.lpo thm69_spec.lpo thm7_spec.lpo thm82_spec.lpo

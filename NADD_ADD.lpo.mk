@@ -1,0 +1,1 @@
+NADD_ADD.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo NADD_ADD_term_abbrevs.lpo LEFT_ADD_DISTRIB_spec.lpo LE_ADD2_spec.lpo NADD_CAUCHY_spec.lpo RIGHT_ADD_DISTRIB_spec.lpo is_nadd_spec.lpo nadd_add_spec.lpo thm0_spec.lpo thm1259721_spec.lpo thm1262760_spec.lpo thm1809_spec.lpo thm1810_spec.lpo thm1842_spec.lpo thm272809_spec.lpo thm7_spec.lpo

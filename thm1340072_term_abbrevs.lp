@@ -1,0 +1,18 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term2 ≔ (mk_real (treal_eq (treal_inv (treal_of_num (NUMERAL _0)))));
+symbol term13 ≔ ((@= real) (real_inv (real_of_num (NUMERAL _0))));
+symbol term10 ≔ (real_of_num (NUMERAL _0));
+symbol term12 ≔ ((@= real) (mk_real (treal_eq (treal_inv (treal_of_num (NUMERAL _0))))));
+symbol term11 ≔ (real_inv (real_of_num (NUMERAL _0)));
+symbol term4 ≔ (treal_inv (treal_of_num (NUMERAL _0)));
+symbol term5 ≔ (treal_of_num (NUMERAL _0));
+symbol term7 (x0: El (prod hreal hreal)) ≔ (real_inv (mk_real (treal_eq x0)));
+symbol term1 ≔ (treal_eq (treal_inv (treal_of_num (NUMERAL _0))) (treal_of_num (NUMERAL _0)));
+symbol term9 (x0: El num) ≔ (mk_real (treal_eq (treal_of_num x0)));
+symbol term6 (x0: El (prod hreal hreal)) ≔ (mk_real (treal_eq (treal_inv x0)));
+symbol term0 (x0: El (prod hreal hreal)) ≔ (mk_real (treal_eq x0));
+symbol term8 ≔ (real_inv (mk_real (treal_eq (treal_of_num (NUMERAL _0)))));
+symbol term3 ≔ (mk_real (treal_eq (treal_of_num (NUMERAL _0))));

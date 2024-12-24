@@ -1,0 +1,5 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_terms.
+Axiom lem2309832 : (forall x : int, (int_le (int_of_num (NUMERAL 0)) (int_sgn x)) = (int_le (int_of_num (NUMERAL 0)) x)) /\ ((forall x : int, (int_lt (int_of_num (NUMERAL 0)) (int_sgn x)) = (int_lt (int_of_num (NUMERAL 0)) x)) /\ ((forall x : int, (int_ge (int_of_num (NUMERAL 0)) (int_sgn x)) = (int_ge (int_of_num (NUMERAL 0)) x)) /\ ((forall x : int, (int_gt (int_of_num (NUMERAL 0)) (int_sgn x)) = (int_gt (int_of_num (NUMERAL 0)) x)) /\ ((forall x : int, ((int_of_num (NUMERAL 0)) = (int_sgn x)) = ((int_of_num (NUMERAL 0)) = x)) /\ ((forall x : int, (int_le (int_sgn x) (int_of_num (NUMERAL 0))) = (int_le x (int_of_num (NUMERAL 0)))) /\ ((forall x : int, (int_lt (int_sgn x) (int_of_num (NUMERAL 0))) = (int_lt x (int_of_num (NUMERAL 0)))) /\ ((forall x : int, (int_ge (int_sgn x) (int_of_num (NUMERAL 0))) = (int_ge x (int_of_num (NUMERAL 0)))) /\ ((forall x : int, (int_gt (int_sgn x) (int_of_num (NUMERAL 0))) = (int_gt x (int_of_num (NUMERAL 0)))) /\ (forall x : int, ((int_sgn x) = (int_of_num (NUMERAL 0))) = (x = (int_of_num (NUMERAL 0)))))))))))).

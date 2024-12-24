@@ -1,0 +1,16 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm2301013_term_abbrevs;
+require open hol-light.REAL_ADD_AC_spec;
+private symbol lem2301005 (n : El real) (m : El real) : Prf (= (real_add m n) (real_add n m)) ≔ ∧ₑ₁ (@lem1352530 n m (@el real));
+private symbol lem2301006 (n : El real) : Prf (term0 n) ≔ λ m : El real, (@lem2301005 n m);
+private symbol lem2301007 : Prf term1 ≔ λ n : El real, (@lem2301006 n);
+private symbol lem2301008 (n : El int) : Prf (term2 n) ≔ (@lem2301007) (real_of_int n);
+private symbol lem2301009 (n : El int) : Prf (= (term2 n) (term3 n)) ≔ REFL (term2 n);
+private symbol lem2301010 (n : El int) : Prf (term3 n) ≔ EQ_MP (@lem2301009 n) (@lem2301008 n);
+opaque symbol lem2301011 (n : El int) (m : El int) : Prf (term4 n m) ≔ (@lem2301010 n) (real_of_int m);
+opaque symbol lem2301012 (n : El int) (m : El int) : Prf (= (term4 n m) (= (term5 m n) (term5 n m))) ≔ REFL (term4 n m);
+opaque symbol lem2301013 (n : El int) (m : El int) : Prf (= (term5 m n) (term5 n m)) ≔ EQ_MP (@lem2301012 n m) (@lem2301011 n m);

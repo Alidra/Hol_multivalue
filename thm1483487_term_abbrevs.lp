@@ -1,0 +1,5 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term0 (x0: El real) (x1: El real) (x2: El real) (x3: El num) (x4: El real) (x5: El real) (x6: El real) (x7: El num) ≔ (∧ (= (real_add x0 (real_add x1 x2)) (real_add (real_add x0 x1) x2)) (∧ (= (real_mul (real_pow x6 x3) (real_pow x6 x7)) (real_pow x6 (+ x3 x7))) (∧ (= (real_mul x6 (real_pow x6 x7)) (real_pow x6 (SUC x7))) (∧ (= (real_mul (real_pow x6 x7) x6) (real_pow x6 (SUC x7))) (∧ (= (real_mul x6 x6) (real_pow x6 (NUMERAL (BIT0 (BIT1 _0))))) (∧ (= (real_pow (real_mul x6 x4) x7) (real_mul (real_pow x6 x7) (real_pow x4 x7))) (∧ (= (real_pow (real_pow x6 x3) x7) (real_pow x6 (* x3 x7))) (∧ (= (real_pow x6 (NUMERAL _0)) (real_of_num (NUMERAL (BIT1 _0)))) (∧ (= (real_pow x6 (NUMERAL (BIT1 _0))) x6) (∧ (= (real_mul x6 (real_add x4 x5)) (real_add (real_mul x6 x4) (real_mul x6 x5))) (= (real_pow x6 (SUC x7)) (real_mul x6 (real_pow x6 x7)))))))))))));

@@ -1,0 +1,1 @@
+NADD_ADD_LCANCEL.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo NADD_ADD_LCANCEL_term_abbrevs.lpo DIST_LADD_spec.lpo NADD_ADD_spec.lpo nadd_eq_spec.lpo thm0_spec.lpo thm1809_spec.lpo thm1810_spec.lpo thm1823_spec.lpo

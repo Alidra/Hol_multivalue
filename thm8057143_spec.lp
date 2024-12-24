@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem8057143 [_143061 _143062 _143063] (f : El (fun (fun (cart _143061 _143062) bool) bool)) (t : El (fun (cart _143061 _143063) bool)) : Prf (= ((@PCROSS _143061 _143062 _143063) ((@INTERS (cart _143061 _143062)) f) t) ((@COND (fun (cart _143061 (finite_sum _143062 _143063)) bool)) (= f (@EMPTY (fun (cart _143061 _143062) bool))) ((@PCROSS _143061 _143062 _143063) (@UNIV (cart _143061 _143062)) t) ((@INTERS (cart _143061 (finite_sum _143062 _143063))) ((@GSPEC (fun (cart _143061 (finite_sum _143062 _143063)) bool)) (λ GEN_PVAR_369 : El (fun (cart _143061 (finite_sum _143062 _143063)) bool), (∃ (λ s : El (fun (cart _143061 _143062) bool), ((@SETSPEC (fun (cart _143061 (finite_sum _143062 _143063)) bool)) GEN_PVAR_369 ((@IN (fun (cart _143061 _143062) bool)) s f) ((@PCROSS _143061 _143062 _143063) s t)))))))));

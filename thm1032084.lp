@@ -1,0 +1,7 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm1032081_spec;
+opaque symbol lem1032084 (rx : El num) (lx : El num) : Prf (= (* lx rx) (* rx lx)) ≔ ∧ₑ₁ (@lem1032081 rx lx (@el num) (@el num) (@el num) (@el num) (@el num) (@el num) (@el num) (@el num) (@el num) (@el num));

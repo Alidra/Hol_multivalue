@@ -1,0 +1,13 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term7 (x0: El nadd) ≔ ((λ y0 : El nadd, (∀ (λ y1 : El nadd, (= (nadd_eq y0 y1) (∃ (λ y2 : El num, (∀ (λ y3 : El num, (<= (dist ((@̦‚ num num) (dest_nadd y0 y3) (dest_nadd y1 y3))) y2))))))))) x0);
+symbol term4 (x0: El nadd) (x1: El nadd) ≔ (∃ (λ y0 : El num, (∀ (λ y1 : El num, (<= (dist ((@̦‚ num num) (dest_nadd x0 y1) (dest_nadd x1 y1))) y0)))));
+symbol term6 ≔ (∀ (λ y0 : El nadd, (∀ (λ y1 : El nadd, (= (nadd_eq y0 y1) (∃ (λ y2 : El num, (∀ (λ y3 : El num, (<= (dist ((@̦‚ num num) (dest_nadd y0 y3) (dest_nadd y1 y3))) y2))))))))));
+symbol term0 ≔ (λ y0 : El nadd, (λ y1 : El nadd, (∃ (λ y2 : El num, (∀ (λ y3 : El num, (<= (dist ((@̦‚ num num) (dest_nadd y0 y3) (dest_nadd y1 y3))) y2)))))));
+symbol term3 (x0: El nadd) (x1: El nadd) ≔ ((λ y0 : El nadd, (∃ (λ y1 : El num, (∀ (λ y2 : El num, (<= (dist ((@̦‚ num num) (dest_nadd x0 y2) (dest_nadd y0 y2))) y1)))))) x1);
+symbol term2 (x0: El nadd) ≔ (λ y0 : El nadd, (∃ (λ y1 : El num, (∀ (λ y2 : El num, (<= (dist ((@̦‚ num num) (dest_nadd x0 y2) (dest_nadd y0 y2))) y1))))));
+symbol term8 (x0: El nadd) (x1: El nadd) ≔ ((λ y0 : El nadd, (= (nadd_eq x0 y0) (∃ (λ y1 : El num, (∀ (λ y2 : El num, (<= (dist ((@̦‚ num num) (dest_nadd x0 y2) (dest_nadd y0 y2))) y1))))))) x1);
+symbol term1 (x0: El nadd) ≔ ((λ y0 : El nadd, (λ y1 : El nadd, (∃ (λ y2 : El num, (∀ (λ y3 : El num, (<= (dist ((@̦‚ num num) (dest_nadd y0 y3) (dest_nadd y1 y3))) y2))))))) x0);
+symbol term5 (x0: El nadd) ≔ (∀ (λ y0 : El nadd, (= (nadd_eq x0 y0) (∃ (λ y1 : El num, (∀ (λ y2 : El num, (<= (dist ((@̦‚ num num) (dest_nadd x0 y2) (dest_nadd y0 y2))) y1))))))));

@@ -1,0 +1,1 @@
+EVEN_AND_ODD.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo EVEN_AND_ODD_term_abbrevs.lpo NOT_CLAUSES_WEAK_spec.lpo NOT_DEF_spec.lpo NOT_EVEN_spec.lpo thm0_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm69_spec.lpo thm82_spec.lpo

@@ -1,0 +1,1 @@
+thm1073632.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo thm1073632_term_abbrevs.lpo list_RECURSION_spec.lpo thm1073375_spec.lpo thm1073376_spec.lpo thm32_spec.lpo

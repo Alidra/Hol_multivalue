@@ -1,0 +1,11 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term0 (x0: El real) ≔ ((λ y0 : El real, (= (real_sgn y0) ((@COND real) (real_lt (real_of_num (NUMERAL _0)) y0) (real_of_num (NUMERAL (BIT1 _0))) ((@COND real) (real_lt y0 (real_of_num (NUMERAL _0))) (real_neg (real_of_num (NUMERAL (BIT1 _0)))) (real_of_num (NUMERAL _0)))))) x0);
+symbol term4 ≔ (real_of_num (NUMERAL _0));
+symbol term2 ≔ (real_sgn (real_of_num (NUMERAL _0)));
+symbol term1 (x0: El real) ≔ ((@COND real) (real_lt (real_of_num (NUMERAL _0)) x0) (real_of_num (NUMERAL (BIT1 _0))) ((@COND real) (real_lt x0 (real_of_num (NUMERAL _0))) (real_neg (real_of_num (NUMERAL (BIT1 _0)))) (real_of_num (NUMERAL _0))));
+symbol term3 ≔ ((@COND real) (real_lt (real_of_num (NUMERAL _0)) (real_of_num (NUMERAL _0))) (real_of_num (NUMERAL (BIT1 _0))) ((@COND real) (real_lt (real_of_num (NUMERAL _0)) (real_of_num (NUMERAL _0))) (real_neg (real_of_num (NUMERAL (BIT1 _0)))) (real_of_num (NUMERAL _0))));
+symbol term6 ≔ ((@= real) ((@COND real) (real_lt (real_of_num (NUMERAL _0)) (real_of_num (NUMERAL _0))) (real_of_num (NUMERAL (BIT1 _0))) ((@COND real) (real_lt (real_of_num (NUMERAL _0)) (real_of_num (NUMERAL _0))) (real_neg (real_of_num (NUMERAL (BIT1 _0)))) (real_of_num (NUMERAL _0)))));
+symbol term5 ≔ ((@= real) (real_sgn (real_of_num (NUMERAL _0))));

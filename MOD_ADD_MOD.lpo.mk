@@ -1,0 +1,1 @@
+MOD_ADD_MOD.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo MOD_ADD_MOD_term_abbrevs.lpo ADD_AC_spec.lpo DIVISION_spec.lpo EXCLUDED_MIDDLE_spec.lpo MOD_EQ_spec.lpo MOD_ZERO_spec.lpo NOT_CLAUSES_WEAK_spec.lpo REFL_CLAUSE_spec.lpo RIGHT_ADD_DISTRIB_spec.lpo thm0_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm7_spec.lpo thm82_spec.lpo

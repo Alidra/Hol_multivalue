@@ -1,0 +1,5 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_terms.
+Axiom lem1099092 : forall {_25272 : Type'}, (fun REPLICATE' : (prod nat (prod nat (prod nat (prod nat (prod nat (prod nat (prod nat (prod nat nat)))))))) -> nat -> _25272 -> list _25272 => forall _17962 : prod nat (prod nat (prod nat (prod nat (prod nat (prod nat (prod nat (prod nat nat))))))), (forall x : _25272, (REPLICATE' _17962 (NUMERAL 0) x) = (@nil _25272)) /\ (forall n : nat, forall x : _25272, (REPLICATE' _17962 (S n) x) = (@cons _25272 x (REPLICATE' _17962 n x)))) (@ε ((prod nat (prod nat (prod nat (prod nat (prod nat (prod nat (prod nat (prod nat nat)))))))) -> nat -> _25272 -> list _25272) (fun REPLICATE' : (prod nat (prod nat (prod nat (prod nat (prod nat (prod nat (prod nat (prod nat nat)))))))) -> nat -> _25272 -> list _25272 => forall _17962 : prod nat (prod nat (prod nat (prod nat (prod nat (prod nat (prod nat (prod nat nat))))))), (forall x : _25272, (REPLICATE' _17962 (NUMERAL 0) x) = (@nil _25272)) /\ (forall n : nat, forall x : _25272, (REPLICATE' _17962 (S n) x) = (@cons _25272 x (REPLICATE' _17962 n x))))).

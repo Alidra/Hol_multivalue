@@ -1,0 +1,13 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term0 ≔ (λ y0 : El num, (λ y1 : El num, (int_divides (int_of_num y0) (int_of_num y1))));
+symbol term6 ≔ (∀ (λ y0 : El num, (∀ (λ y1 : El num, (= (num_divides y0 y1) (int_divides (int_of_num y0) (int_of_num y1)))))));
+symbol term1 (x0: El num) ≔ ((λ y0 : El num, (λ y1 : El num, (int_divides (int_of_num y0) (int_of_num y1)))) x0);
+symbol term7 (x0: El num) ≔ ((λ y0 : El num, (∀ (λ y1 : El num, (= (num_divides y0 y1) (int_divides (int_of_num y0) (int_of_num y1)))))) x0);
+symbol term8 (x0: El num) (x1: El num) ≔ ((λ y0 : El num, (= (num_divides x0 y0) (int_divides (int_of_num x0) (int_of_num y0)))) x1);
+symbol term3 (x0: El num) (x1: El num) ≔ ((λ y0 : El num, (int_divides (int_of_num x0) (int_of_num y0))) x1);
+symbol term5 (x0: El num) ≔ (∀ (λ y0 : El num, (= (num_divides x0 y0) (int_divides (int_of_num x0) (int_of_num y0)))));
+symbol term4 (x0: El num) (x1: El num) ≔ (int_divides (int_of_num x0) (int_of_num x1));
+symbol term2 (x0: El num) ≔ (λ y0 : El num, (int_divides (int_of_num x0) (int_of_num y0)));

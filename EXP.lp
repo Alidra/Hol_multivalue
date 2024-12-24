@@ -1,0 +1,10 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.EXP_term_abbrevs;
+require open hol-light.thm86199_spec;
+opaque symbol lem86200 : Prf term0 ≔ ∧ₑ₂ (@lem86199);
+opaque symbol lem86201 : Prf term1 ≔ ∧ₑ₁ (@lem86199);
+opaque symbol lem86202 : Prf term2 ≔ ∧ᵢ (@lem86201) (@lem86200);

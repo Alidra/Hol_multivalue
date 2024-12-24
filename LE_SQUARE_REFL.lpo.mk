@@ -1,0 +1,1 @@
+LE_SQUARE_REFL.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo LE_SQUARE_REFL_term_abbrevs.lpo LE_0_spec.lpo LE_ADDR_spec.lpo MULT_CLAUSES_spec.lpo thm0_spec.lpo thm7_spec.lpo thm75622_spec.lpo thm75623_spec.lpo

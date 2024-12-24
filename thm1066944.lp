@@ -1,0 +1,11 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm1066944_term_abbrevs;
+require open hol-light.thm1066938_spec;
+private symbol lem1066941 [A B] (sum' : El (type1333 A B)) (INL' : El (type1431 A B)) (INR' : El (type1479 A B)) (h1 : Prf (= sum' (term0 A B INL' INR'))) : Prf (term1 A B sum' INL') ≔ ∧ₑ₁ (@lem1066938 A B sum' INL' INR' h1);
+opaque symbol lem1066942 [A B] (a : El A) (sum' : El (type1333 A B)) (INL' : El (type1431 A B)) (INR' : El (type1479 A B)) (h1 : Prf (= sum' (term0 A B INL' INR'))) : Prf (term2 A B sum' INL' a) ≔ (@lem1066941 A B sum' INL' INR' h1) a;
+opaque symbol lem1066943 [A B] (sum' : El (type1333 A B)) (INL' : El (type1431 A B)) (a : El A) : Prf (= (term2 A B sum' INL' a) (term3 A B sum' INL' a)) ≔ REFL (term2 A B sum' INL' a);
+opaque symbol lem1066944 [A B] (a : El A) (sum' : El (type1333 A B)) (INL' : El (type1431 A B)) (INR' : El (type1479 A B)) (h1 : Prf (= sum' (term0 A B INL' INR'))) : Prf (term3 A B sum' INL' a) ≔ EQ_MP (@lem1066943 A B sum' INL' a) (@lem1066942 A B a sum' INL' INR' h1);

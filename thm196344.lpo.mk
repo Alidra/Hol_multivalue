@@ -1,0 +1,1 @@
+thm196344.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo thm196344_term_abbrevs.lpo ADD_CLAUSES_spec.lpo DIVISION_spec.lpo DIV_UNIQ_spec.lpo MULT_CLAUSES_spec.lpo NOT_CLAUSES_WEAK_spec.lpo thm0_spec.lpo thm1842_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm32_spec.lpo thm7_spec.lpo thm82_spec.lpo

@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem1921051 : Prf (∀ (λ x : El real, (∀ (λ y : El real, (⇒ (∧ (= (real_sgn y) (real_sgn x)) (= (real_pow y (NUMERAL (BIT0 (BIT1 _0)))) (real_abs x))) (= (sqrt x) y))))));

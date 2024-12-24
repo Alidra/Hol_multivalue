@@ -1,0 +1,10 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm2841242_term_abbrevs;
+require open hol-light.INT_OF_NUM_MUL_spec;
+opaque symbol lem2841240 (k : El num) : Prf (term0 k) ≔ (@lem2307381) (NUMERAL k);
+opaque symbol lem2841241 (k : El num) : Prf (= (term0 k) (term1 k)) ≔ REFL (term0 k);
+opaque symbol lem2841242 (k : El num) : Prf (term1 k) ≔ EQ_MP (@lem2841241 k) (@lem2841240 k);

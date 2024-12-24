@@ -1,0 +1,13 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm1067676_term_abbrevs;
+require open hol-light.thm1067332_spec;
+private symbol lem1067671 [A] (a : El A) : Prf (= a a) ≔ REFL a;
+opaque symbol lem1067672 [A B] (a : El A) (INL' : El (type1431 A B)) (h1 : Prf (= INL' (term0 A B))) : Prf (= ((@INL A B) a) (term1 A B INL' a)) ≔ MK_COMB (@lem1067332 A B INL' h1) (@lem1067671 A a);
+private symbol lem1067673 [A B] (INL' : El (type1431 A B)) (a : El A) : Prf (= (term1 A B INL' a) (term2 A B INL' a)) ≔ REFL (term1 A B INL' a);
+private symbol lem1067674 [A B] (a : El A) : Prf (= (term3 A B a) (term3 A B a)) ≔ REFL (term3 A B a);
+opaque symbol lem1067675 [A B] (INL' : El (type1431 A B)) (a : El A) : Prf (= (= ((@INL A B) a) (term1 A B INL' a)) (= ((@INL A B) a) (term2 A B INL' a))) ≔ MK_COMB (@lem1067674 A B a) (@lem1067673 A B INL' a);
+opaque symbol lem1067676 [A B] (a : El A) (INL' : El (type1431 A B)) (h1 : Prf (= INL' (term0 A B))) : Prf (= ((@INL A B) a) (term2 A B INL' a)) ≔ EQ_MP (@lem1067675 A B INL' a) (@lem1067672 A B a INL' h1);

@@ -1,0 +1,10 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm21182_term_abbrevs;
+require open hol-light.thm21117_spec;
+require open hol-light.thm21179_spec;
+require open hol-light.thm21180_spec;
+opaque symbol lem21182 (p : El bool) : Prf (= (term0 p) p) ≔ ∨ₑ (@lem21117 p) (λ h0 : Prf (= p T), (@lem21180 p h0)) (λ h0 : Prf (= p F), (@lem21179 p h0));

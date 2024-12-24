@@ -1,0 +1,1 @@
+POW_2_SQRT_ABS.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo POW_2_SQRT_ABS_term_abbrevs.lpo REAL_ABS_MUL_spec.lpo REAL_ABS_POS_spec.lpo REAL_LE_SQUARE_spec.lpo REAL_POW_2_spec.lpo SQRT_UNIQUE_spec.lpo real_abs_spec.lpo thm0_spec.lpo thm12653_spec.lpo thm1842_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm7_spec.lpo

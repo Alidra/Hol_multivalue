@@ -1,0 +1,10 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_terms.
+Require Import hol_axioms.
+Require Import hol_type_abbrevs.
+Require Import thm1070926_term_abbrevs.
+Require Import thm1070925_spec.
+Lemma lem1070926 {A : Type'} (list' : type1338 A) (NIL' : recspace A) (CONS' : type1399 A) (h1 : list' = (term0 A NIL' CONS')) : term1 A NIL' CONS' list'.
+Proof. exact (proj2 (@lem1070925 A list' NIL' CONS' h1)). Qed.

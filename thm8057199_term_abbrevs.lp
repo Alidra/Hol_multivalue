@@ -1,0 +1,6 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term0 a0 a1 a2 (x0: El (type24 a0 a1)) ≔ (∀ (λ y0 : El (type56 a0 a2), (= ((@PCROSS a0 a1 a2) x0 ((@INTERS (cart a0 a2)) y0)) ((@COND (fun (cart a0 (finite_sum a1 a2)) bool)) (= y0 (@EMPTY (fun (cart a0 a2) bool))) ((@PCROSS a0 a1 a2) x0 (@UNIV (cart a0 a2))) ((@INTERS (cart a0 (finite_sum a1 a2))) ((@GSPEC (fun (cart a0 (finite_sum a1 a2)) bool)) (λ y1 : El (type16 a0 a1 a2), (∃ (λ y2 : El (type24 a0 a2), ((@SETSPEC (fun (cart a0 (finite_sum a1 a2)) bool)) y1 ((@IN (fun (cart a0 a2) bool)) y2 y0) ((@PCROSS a0 a1 a2) x0 y2)))))))))));
+symbol term1 a0 a1 a2 ≔ (∀ (λ y0 : El (type24 a0 a1), (∀ (λ y1 : El (type56 a0 a2), (= ((@PCROSS a0 a1 a2) y0 ((@INTERS (cart a0 a2)) y1)) ((@COND (fun (cart a0 (finite_sum a1 a2)) bool)) (= y1 (@EMPTY (fun (cart a0 a2) bool))) ((@PCROSS a0 a1 a2) y0 (@UNIV (cart a0 a2))) ((@INTERS (cart a0 (finite_sum a1 a2))) ((@GSPEC (fun (cart a0 (finite_sum a1 a2)) bool)) (λ y2 : El (type16 a0 a1 a2), (∃ (λ y3 : El (type24 a0 a2), ((@SETSPEC (fun (cart a0 (finite_sum a1 a2)) bool)) y2 ((@IN (fun (cart a0 a2) bool)) y3 y1) ((@PCROSS a0 a1 a2) y0 y3)))))))))))));

@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.nadd_rinv_term_abbrevs;
+private symbol lem1300934 : Prf (= nadd_rinv term0) ≔ @nadd_rinv_def;
+private symbol lem1300935 (_23335 : El nadd) : Prf (= _23335 _23335) ≔ REFL _23335;
+private symbol lem1300936 (_23335 : El nadd) : Prf (= (nadd_rinv _23335) (term1 _23335)) ≔ MK_COMB (@lem1300934) (@lem1300935 _23335);
+private symbol lem1300937 (_23335 : El nadd) : Prf (= (term1 _23335) (term2 _23335)) ≔ REFL (term1 _23335);
+private symbol lem1300938 (_23335 : El nadd) : Prf (= (nadd_rinv _23335) (term2 _23335)) ≔ TRANS (@lem1300936 _23335) (@lem1300937 _23335);
+private symbol lem1300939 : Prf term3 ≔ λ _23335 : El nadd, (@lem1300938 _23335);
+private symbol lem1300940 (_23335 : El nadd) : Prf (term4 _23335) ≔ (@lem1300939) _23335;
+private symbol lem1300941 (_23335 : El nadd) : Prf (= (term4 _23335) (= (nadd_rinv _23335) (term2 _23335))) ≔ REFL (term4 _23335);
+private symbol lem1300942 (_23335 : El nadd) : Prf (= (nadd_rinv _23335) (term2 _23335)) ≔ EQ_MP (@lem1300941 _23335) (@lem1300940 _23335);
+opaque symbol lem1300972 (x : El nadd) : Prf (= (nadd_rinv x) (term2 x)) ≔ (@lem1300942 x);
+opaque symbol lem1300973 : Prf term3 ≔ λ x : El nadd, (@lem1300972 x);

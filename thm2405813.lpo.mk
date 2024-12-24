@@ -1,0 +1,1 @@
+thm2405813.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo thm2405813_term_abbrevs.lpo INT_ADD_LINV_spec.lpo INT_ADD_RINV_spec.lpo thm0_spec.lpo thm1842_spec.lpo thm1862_spec.lpo thm1863_spec.lpo

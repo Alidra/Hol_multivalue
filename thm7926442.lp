@@ -1,0 +1,16 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm7926442_term_abbrevs;
+require open hol-light.thm7925148_spec;
+require open hol-light.thm7926434_spec;
+private symbol lem7926435 [A] (_103783' : El (type45 A)) (h1 : Prf (= _103783' (term0 A))) : Prf (= (term1 A) (term2 A _103783')) ≔ SYM (@lem7925148 A _103783' h1);
+private symbol lem7926436 [A] (_103783' : El (type45 A)) (h1 : Prf (= _103783' (term0 A))) : Prf (= (@_103783 A) (term2 A _103783')) ≔ TRANS (@lem7926434 A) (@lem7926435 A _103783' h1);
+private symbol lem7926437 [A] (a : El (finite_sum A A)) : Prf (= a a) ≔ REFL a;
+opaque symbol lem7926438 [A] (a : El (finite_sum A A)) (_103783' : El (type45 A)) (h1 : Prf (= _103783' (term0 A))) : Prf (= ((@_103783 A) a) (term3 A _103783' a)) ≔ MK_COMB (@lem7926436 A _103783' h1) (@lem7926437 A a);
+private symbol lem7926439 [A] (_103783' : El (type45 A)) (a : El (finite_sum A A)) : Prf (= (term3 A _103783' a) (term4 A _103783' a)) ≔ REFL (term3 A _103783' a);
+private symbol lem7926440 [A] (a : El (finite_sum A A)) : Prf (= (term5 A a) (term5 A a)) ≔ REFL (term5 A a);
+opaque symbol lem7926441 [A] (_103783' : El (type45 A)) (a : El (finite_sum A A)) : Prf (= (= ((@_103783 A) a) (term3 A _103783' a)) (= ((@_103783 A) a) (term4 A _103783' a))) ≔ MK_COMB (@lem7926440 A a) (@lem7926439 A _103783' a);
+opaque symbol lem7926442 [A] (a : El (finite_sum A A)) (_103783' : El (type45 A)) (h1 : Prf (= _103783' (term0 A))) : Prf (= ((@_103783 A) a) (term4 A _103783' a)) ≔ EQ_MP (@lem7926441 A _103783' a) (@lem7926438 A a _103783' h1);

@@ -1,0 +1,5 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term0 (x0: El num) (x1: El num) (x2: El num) (x3: El num) (x4: El num) (x5: El num) (x6: El num) (x7: El num) (x8: El num) (x9: El num) (x10: El num) (x11: El num) ≔ (∧ (= (* x1 (* x0 x2)) (* (* x1 x0) x2)) (∧ (= (* x1 (* x0 x2)) (* x0 (* x1 x2))) (∧ (= (+ (+ x4 x3) (+ x5 x6)) (+ (+ x4 x5) (+ x3 x6))) (∧ (= (+ (+ x4 x3) x5) (+ x4 (+ x3 x5))) (∧ (= (+ x4 (+ x5 x6)) (+ x5 (+ x4 x6))) (∧ (= (+ (+ x4 x3) x5) (+ (+ x4 x5) x3)) (∧ (= (+ x4 x5) (+ x5 x4)) (∧ (= (+ x4 (+ x5 x6)) (+ (+ x4 x5) x6)) (∧ (= (* (EXP x10 x7) (EXP x10 x11)) (EXP x10 (+ x7 x11))) (∧ (= (* x10 (EXP x10 x11)) (EXP x10 (SUC x11))) (∧ (= (* (EXP x10 x11) x10) (EXP x10 (SUC x11))) (∧ (= (* x10 x10) (EXP x10 (NUMERAL (BIT0 (BIT1 _0))))) (∧ (= (EXP (* x10 x8) x11) (* (EXP x10 x11) (EXP x8 x11))) (∧ (= (EXP (EXP x10 x7) x11) (EXP x10 (* x7 x11))) (∧ (= (EXP x10 (NUMERAL _0)) (NUMERAL (BIT1 _0))) (∧ (= (EXP x10 (NUMERAL (BIT1 _0))) x10) (∧ (= (* x10 (+ x8 x9)) (+ (* x10 x8) (* x10 x9))) (= (EXP x10 (SUC x11)) (* x10 (EXP x10 x11))))))))))))))))))));

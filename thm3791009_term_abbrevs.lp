@@ -1,0 +1,12 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term5 a0 a1 (x0: El (type1411 a0 a1)) (x1: El (fun a0 bool)) (x2: El a1) ≔ ((λ y0 : El a1, (∀ (λ y1 : El a1, (= ((@FINREC a0 a1) x0 y1 x1 y0 (NUMERAL _0)) (∧ (= x1 (@EMPTY a0)) (= y0 y1)))))) x2);
+symbol term0 a0 a1 ≔ (∀ (λ y0 : El (type1411 a0 a1), (∀ (λ y1 : El (fun a0 bool), (∀ (λ y2 : El a1, (∀ (λ y3 : El a1, (= ((@FINREC a0 a1) y0 y3 y1 y2 (NUMERAL _0)) (∧ (= y1 (@EMPTY a0)) (= y2 y3)))))))))));
+symbol term3 a0 a1 (x0: El (type1411 a0 a1)) (x1: El (fun a0 bool)) ≔ ((λ y0 : El (fun a0 bool), (∀ (λ y1 : El a1, (∀ (λ y2 : El a1, (= ((@FINREC a0 a1) x0 y2 y0 y1 (NUMERAL _0)) (∧ (= y0 (@EMPTY a0)) (= y1 y2)))))))) x1);
+symbol term1 a0 a1 (x0: El (type1411 a0 a1)) ≔ ((λ y0 : El (type1411 a0 a1), (∀ (λ y1 : El (fun a0 bool), (∀ (λ y2 : El a1, (∀ (λ y3 : El a1, (= ((@FINREC a0 a1) y0 y3 y1 y2 (NUMERAL _0)) (∧ (= y1 (@EMPTY a0)) (= y2 y3)))))))))) x0);
+symbol term7 a0 a1 (x0: El (type1411 a0 a1)) (x1: El (fun a0 bool)) (x2: El a1) (x3: El a1) ≔ ((λ y0 : El a1, (= ((@FINREC a0 a1) x0 y0 x1 x2 (NUMERAL _0)) (∧ (= x1 (@EMPTY a0)) (= x2 y0)))) x3);
+symbol term4 a0 a1 (x0: El (type1411 a0 a1)) (x1: El (fun a0 bool)) ≔ (∀ (λ y0 : El a1, (∀ (λ y1 : El a1, (= ((@FINREC a0 a1) x0 y1 x1 y0 (NUMERAL _0)) (∧ (= x1 (@EMPTY a0)) (= y0 y1)))))));
+symbol term2 a0 a1 (x0: El (type1411 a0 a1)) ≔ (∀ (λ y0 : El (fun a0 bool), (∀ (λ y1 : El a1, (∀ (λ y2 : El a1, (= ((@FINREC a0 a1) x0 y2 y0 y1 (NUMERAL _0)) (∧ (= y0 (@EMPTY a0)) (= y1 y2)))))))));
+symbol term6 a0 a1 (x0: El (type1411 a0 a1)) (x1: El (fun a0 bool)) (x2: El a1) ≔ (∀ (λ y0 : El a1, (= ((@FINREC a0 a1) x0 y0 x1 x2 (NUMERAL _0)) (∧ (= x1 (@EMPTY a0)) (= x2 y0)))));

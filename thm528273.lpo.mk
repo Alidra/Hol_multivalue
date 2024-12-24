@@ -1,0 +1,1 @@
+thm528273.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo thm528273_term_abbrevs.lpo thm528180_spec.lpo thm528183_spec.lpo thm528184_spec.lpo thm528240_spec.lpo thm528241_spec.lpo

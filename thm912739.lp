@@ -1,0 +1,9 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm912739_term_abbrevs;
+require open hol-light.thm708946_spec;
+require open hol-light.thm708948_spec;
+opaque symbol lem912739 : Prf (= term0 (BIT1 _0)) ≔ TRANS (@lem708946) (@lem708948);

@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.monoidal_term_abbrevs;
+private symbol lem5712763 [A] : Prf (= (@monoidal A) (term0 A)) ≔ @monoidal_def A;
+private symbol lem5712764 [A] (_71609 : El (type1400 A)) : Prf (= _71609 _71609) ≔ REFL _71609;
+private symbol lem5712765 [A] (_71609 : El (type1400 A)) : Prf (= ((@monoidal A) _71609) (term1 A _71609)) ≔ MK_COMB (@lem5712763 A) (@lem5712764 A _71609);
+private symbol lem5712766 [A] (_71609 : El (type1400 A)) : Prf (= (term1 A _71609) (term2 A _71609)) ≔ REFL (term1 A _71609);
+private symbol lem5712767 [A] (_71609 : El (type1400 A)) : Prf (= ((@monoidal A) _71609) (term2 A _71609)) ≔ TRANS (@lem5712765 A _71609) (@lem5712766 A _71609);
+private symbol lem5712768 [A] : Prf (term3 A) ≔ λ _71609 : El (type1400 A), (@lem5712767 A _71609);
+private symbol lem5712769 [A] (_71609 : El (type1400 A)) : Prf (term4 A _71609) ≔ (@lem5712768 A) _71609;
+private symbol lem5712770 [A] (_71609 : El (type1400 A)) : Prf (= (term4 A _71609) (= ((@monoidal A) _71609) (term2 A _71609))) ≔ REFL (term4 A _71609);
+private symbol lem5712771 [A] (_71609 : El (type1400 A)) : Prf (= ((@monoidal A) _71609) (term2 A _71609)) ≔ EQ_MP (@lem5712770 A _71609) (@lem5712769 A _71609);
+opaque symbol lem5712801 [A] (op : El (type1400 A)) : Prf (= ((@monoidal A) op) (term2 A op)) ≔ (@lem5712771 A op);
+opaque symbol lem5712802 [A] : Prf (term3 A) ≔ λ op : El (type1400 A), (@lem5712801 A op);

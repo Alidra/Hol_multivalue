@@ -1,0 +1,1 @@
+TREAL_MUL_WELLDEFR.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo TREAL_MUL_WELLDEFR_term_abbrevs.lpo FORALL_PAIR_THM_spec.lpo HREAL_ADD_AC_spec.lpo HREAL_ADD_RDISTRIB_spec.lpo REFL_CLAUSE_spec.lpo thm0_spec.lpo thm1320004_spec.lpo treal_eq_spec.lpo treal_mul_spec.lpo

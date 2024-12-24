@@ -1,0 +1,24 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_type_abbrevs.
+Require Import hol_terms.
+Definition term13 (a0 : Type') (x0 : list a0) := forall y0 : a0, (@hd a0 (@cons a0 y0 x0)) = y0.
+Definition term7 (a0 : Type') (x0 : a0) (x1 : list a0) := @hd a0 (@cons a0 x0 x1).
+Definition term5 (a0 : Type') := @ε ((prod nat nat) -> (list a0) -> a0) (fun y0 : type1321 a0 => forall y1 : prod nat nat, forall y2 : list a0, forall y3 : a0, (y0 y1 (@cons a0 y3 y2)) = y3) (@pair nat nat (NUMERAL (BIT0 (BIT0 (BIT0 (BIT1 (BIT0 (BIT0 (BIT1 0)))))))) (NUMERAL (BIT0 (BIT0 (BIT1 (BIT0 (BIT0 (BIT0 (BIT1 0))))))))).
+Definition term12 (a0 : Type') (x0 : list a0) := forall y0 : a0, (@ε ((prod nat nat) -> (list a0) -> a0) (fun y1 : type1321 a0 => forall y2 : prod nat nat, forall y3 : list a0, forall y4 : a0, (y1 y2 (@cons a0 y4 y3)) = y4) (@pair nat nat (NUMERAL (BIT0 (BIT0 (BIT0 (BIT1 (BIT0 (BIT0 (BIT1 0)))))))) (NUMERAL (BIT0 (BIT0 (BIT1 (BIT0 (BIT0 (BIT0 (BIT1 0))))))))) (@cons a0 y0 x0)) = y0.
+Definition term16 (a0 : Type') := forall y0 : list a0, forall y1 : a0, (@hd a0 (@cons a0 y1 y0)) = y1.
+Definition term4 (a0 : Type') := forall y0 : list a0, forall y1 : a0, (@ε ((prod nat nat) -> (list a0) -> a0) (fun y2 : type1321 a0 => forall y3 : prod nat nat, forall y4 : list a0, forall y5 : a0, (y2 y3 (@cons a0 y5 y4)) = y5) (@pair nat nat (NUMERAL (BIT0 (BIT0 (BIT0 (BIT1 (BIT0 (BIT0 (BIT1 0)))))))) (NUMERAL (BIT0 (BIT0 (BIT1 (BIT0 (BIT0 (BIT0 (BIT1 0))))))))) (@cons a0 y1 y0)) = y1.
+Definition term3 := @pair nat nat (NUMERAL (BIT0 (BIT0 (BIT0 (BIT1 (BIT0 (BIT0 (BIT1 0)))))))) (NUMERAL (BIT0 (BIT0 (BIT1 (BIT0 (BIT0 (BIT0 (BIT1 0)))))))).
+Definition term6 (a0 : Type') (x0 : a0) (x1 : list a0) := @ε ((prod nat nat) -> (list a0) -> a0) (fun y0 : type1321 a0 => forall y1 : prod nat nat, forall y2 : list a0, forall y3 : a0, (y0 y1 (@cons a0 y3 y2)) = y3) (@pair nat nat (NUMERAL (BIT0 (BIT0 (BIT0 (BIT1 (BIT0 (BIT0 (BIT1 0)))))))) (NUMERAL (BIT0 (BIT0 (BIT1 (BIT0 (BIT0 (BIT0 (BIT1 0))))))))) (@cons a0 x0 x1).
+Definition term8 (a0 : Type') (x0 : a0) (x1 : list a0) := @eq a0 (@ε ((prod nat nat) -> (list a0) -> a0) (fun y0 : type1321 a0 => forall y1 : prod nat nat, forall y2 : list a0, forall y3 : a0, (y0 y1 (@cons a0 y3 y2)) = y3) (@pair nat nat (NUMERAL (BIT0 (BIT0 (BIT0 (BIT1 (BIT0 (BIT0 (BIT1 0)))))))) (NUMERAL (BIT0 (BIT0 (BIT1 (BIT0 (BIT0 (BIT0 (BIT1 0))))))))) (@cons a0 x0 x1)).
+Definition term1 (a0 : Type') := forall y0 : prod nat nat, forall y1 : list a0, forall y2 : a0, (@ε ((prod nat nat) -> (list a0) -> a0) (fun y3 : type1321 a0 => forall y4 : prod nat nat, forall y5 : list a0, forall y6 : a0, (y3 y4 (@cons a0 y6 y5)) = y6) y0 (@cons a0 y2 y1)) = y2.
+Definition term0 (a0 : Type') := (fun y0 : type1321 a0 => forall y1 : prod nat nat, forall y2 : list a0, forall y3 : a0, (y0 y1 (@cons a0 y3 y2)) = y3) (@ε ((prod nat nat) -> (list a0) -> a0) (fun y0 : type1321 a0 => forall y1 : prod nat nat, forall y2 : list a0, forall y3 : a0, (y0 y1 (@cons a0 y3 y2)) = y3)).
+Definition term17 (a0 : Type') (x0 : list a0) := (fun y0 : list a0 => forall y1 : a0, (@hd a0 (@cons a0 y1 y0)) = y1) x0.
+Definition term9 (a0 : Type') (x0 : a0) (x1 : list a0) := @eq a0 (@hd a0 (@cons a0 x0 x1)).
+Definition term15 (a0 : Type') := fun y0 : list a0 => forall y1 : a0, (@hd a0 (@cons a0 y1 y0)) = y1.
+Definition term14 (a0 : Type') := fun y0 : list a0 => forall y1 : a0, (@ε ((prod nat nat) -> (list a0) -> a0) (fun y2 : type1321 a0 => forall y3 : prod nat nat, forall y4 : list a0, forall y5 : a0, (y2 y3 (@cons a0 y5 y4)) = y5) (@pair nat nat (NUMERAL (BIT0 (BIT0 (BIT0 (BIT1 (BIT0 (BIT0 (BIT1 0)))))))) (NUMERAL (BIT0 (BIT0 (BIT1 (BIT0 (BIT0 (BIT0 (BIT1 0))))))))) (@cons a0 y1 y0)) = y1.
+Definition term2 (a0 : Type') := (fun y0 : prod nat nat => forall y1 : list a0, forall y2 : a0, (@ε ((prod nat nat) -> (list a0) -> a0) (fun y3 : type1321 a0 => forall y4 : prod nat nat, forall y5 : list a0, forall y6 : a0, (y3 y4 (@cons a0 y6 y5)) = y6) y0 (@cons a0 y2 y1)) = y2) (@pair nat nat (NUMERAL (BIT0 (BIT0 (BIT0 (BIT1 (BIT0 (BIT0 (BIT1 0)))))))) (NUMERAL (BIT0 (BIT0 (BIT1 (BIT0 (BIT0 (BIT0 (BIT1 0))))))))).
+Definition term11 (a0 : Type') (x0 : list a0) := fun y0 : a0 => (@hd a0 (@cons a0 y0 x0)) = y0.
+Definition term18 (a0 : Type') (x0 : list a0) (x1 : a0) := (fun y0 : a0 => (@hd a0 (@cons a0 y0 x0)) = y0) x1.
+Definition term10 (a0 : Type') (x0 : list a0) := fun y0 : a0 => (@ε ((prod nat nat) -> (list a0) -> a0) (fun y1 : type1321 a0 => forall y2 : prod nat nat, forall y3 : list a0, forall y4 : a0, (y1 y2 (@cons a0 y4 y3)) = y4) (@pair nat nat (NUMERAL (BIT0 (BIT0 (BIT0 (BIT1 (BIT0 (BIT0 (BIT1 0)))))))) (NUMERAL (BIT0 (BIT0 (BIT1 (BIT0 (BIT0 (BIT0 (BIT1 0))))))))) (@cons a0 y0 x0)) = y0.

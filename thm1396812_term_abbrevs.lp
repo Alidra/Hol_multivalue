@@ -1,0 +1,18 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term0 (x0: El num) ≔ ((λ y0 : El num, (real_le (real_of_num (NUMERAL _0)) (real_of_num y0))) x0);
+symbol term13 ≔ (real_of_num (NUMERAL _0));
+symbol term12 (x0: El num) ≔ (real_ge (real_of_num x0) (real_of_num (NUMERAL _0)));
+symbol term5 (x0: El real) ≔ (∀ (λ y0 : El real, (= (real_le x0 y0) (real_ge y0 x0))));
+symbol term11 (x0: El real) (x1: El real) ≔ ((λ y0 : El real, (= (real_le x0 y0) (real_ge y0 x0))) x1);
+symbol term4 (x0: El real) ≔ (∀ (λ y0 : El real, (= (real_ge y0 x0) (real_le x0 y0))));
+symbol term9 ≔ (∀ (λ y0 : El real, (∀ (λ y1 : El real, (= (real_le y0 y1) (real_ge y1 y0))))));
+symbol term8 ≔ (∀ (λ y0 : El real, (∀ (λ y1 : El real, (= (real_ge y1 y0) (real_le y0 y1))))));
+symbol term1 (x0: El num) ≔ (real_le (real_of_num (NUMERAL _0)) (real_of_num x0));
+symbol term7 ≔ (λ y0 : El real, (∀ (λ y1 : El real, (= (real_le y0 y1) (real_ge y1 y0)))));
+symbol term6 ≔ (λ y0 : El real, (∀ (λ y1 : El real, (= (real_ge y1 y0) (real_le y0 y1)))));
+symbol term10 (x0: El real) ≔ ((λ y0 : El real, (∀ (λ y1 : El real, (= (real_le y0 y1) (real_ge y1 y0))))) x0);
+symbol term3 (x0: El real) ≔ (λ y0 : El real, (= (real_le x0 y0) (real_ge y0 x0)));
+symbol term2 (x0: El real) ≔ (λ y0 : El real, (= (real_ge y0 x0) (real_le x0 y0)));

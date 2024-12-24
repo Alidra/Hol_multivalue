@@ -1,0 +1,1 @@
+SUM_EQ_SUPERSET_spec.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo

@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm302568_term_abbrevs;
+require open hol-light.MULT_2_spec;
+private symbol lem302559 (n : El num) (h1 : Prf (= (term0 n) (+ n n))) : Prf (= (term0 n) (+ n n)) ≔ h1;
+private symbol lem302560 (n : El num) (h1 : Prf (= (term0 n) (+ n n))) : Prf (= (+ n n) (term0 n)) ≔ SYM (@lem302559 n h1);
+private symbol lem302561 (n : El num) (h1 : Prf (= (+ n n) (term0 n))) : Prf (= (+ n n) (term0 n)) ≔ h1;
+private symbol lem302562 (n : El num) (h1 : Prf (= (+ n n) (term0 n))) : Prf (= (term0 n) (+ n n)) ≔ SYM (@lem302561 n h1);
+private symbol lem302563 (n : El num) : Prf (= (= (term0 n) (+ n n)) (= (+ n n) (term0 n))) ≔ prop_ext (λ h1 : Prf (= (term0 n) (+ n n)), (@lem302560 n h1)) (λ h1 : Prf (= (+ n n) (term0 n)), (@lem302562 n h1));
+private symbol lem302564 : Prf (= term1 term2) ≔ fun_ext (λ n : El num, (@lem302563 n));
+private symbol lem302565 : Prf (= (@∀ num) (@∀ num)) ≔ REFL (@∀ num);
+private symbol lem302566 : Prf (= term3 term4) ≔ MK_COMB (@lem302565) (@lem302564);
+opaque symbol lem302567 : Prf term4 ≔ EQ_MP (@lem302566) (@lem84996);
+opaque symbol lem302568 (n : El num) : Prf (term5 n) ≔ (@lem302567) n;

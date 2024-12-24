@@ -1,0 +1,14 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm3183065_term_abbrevs;
+require open hol-light.SETSPEC_spec;
+private symbol lem3183059 [_83031] (P : El bool) : Prf (term0 _83031 P) ≔ (@lem3183048 _83031) P;
+private symbol lem3183060 [_83031] (P : El bool) : Prf (= (term0 _83031 P) (term1 _83031 P)) ≔ REFL (term0 _83031 P);
+private symbol lem3183061 [_83031] (P : El bool) : Prf (term1 _83031 P) ≔ EQ_MP (@lem3183060 _83031 P) (@lem3183059 _83031 P);
+private symbol lem3183062 [_83031] (P : El bool) (v : El _83031) : Prf (term2 _83031 P v) ≔ (@lem3183061 _83031 P) v;
+private symbol lem3183063 [_83031] (P : El bool) (v : El _83031) : Prf (= (term2 _83031 P v) (term3 _83031 P v)) ≔ REFL (term2 _83031 P v);
+opaque symbol lem3183064 [_83031] (P : El bool) (v : El _83031) : Prf (term3 _83031 P v) ≔ EQ_MP (@lem3183063 _83031 P v) (@lem3183062 _83031 P v);
+opaque symbol lem3183065 [_83031] (P : El bool) (v : El _83031) (t : El _83031) : Prf (term4 _83031 P v t) ≔ (@lem3183064 _83031 P v) t;

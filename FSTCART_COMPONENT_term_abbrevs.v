@@ -1,0 +1,54 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_type_abbrevs.
+Require Import hol_terms.
+Definition term18 (x0 : nat) := Peano.le (NUMERAL (BIT1 0)) x0.
+Definition term17 (a0 : Type') (x0 : nat) := Peano.le x0 (@dimindex a0 (@UNIV a0)).
+Definition term36 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) (x1 : nat) := ((Peano.le (NUMERAL (BIT1 0)) x1) /\ (Peano.le x1 (@dimindex a1 (@UNIV a1)))) -> (@dollar a0 a1 (@fstcart a0 a1 a2 x0) x1) = (@dollar a0 (finite_sum a1 a2) x0 x1).
+Definition term21 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) (x1 : nat) := @dollar a0 a1 (@lambda a0 a1 (fun y0 : nat => @dollar a0 (finite_sum a1 a2) x0 y0)) x1.
+Definition term22 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) (x1 : nat) := ((Peano.le (NUMERAL (BIT1 0)) x1) /\ (Peano.le x1 (@dimindex a1 (@UNIV a1)))) -> (@dollar a0 a1 (@lambda a0 a1 (fun y0 : nat => @dollar a0 (finite_sum a1 a2) x0 y0)) x1) = ((fun y0 : nat => @dollar a0 (finite_sum a1 a2) x0 y0) x1).
+Definition term42 (a0 : Type') (x0 : Prop) := forall y0 : a0, x0.
+Definition term15 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) (x1 : nat) (x2 : Prop) := (((Peano.le (NUMERAL (BIT1 0)) x1) /\ (Peano.le x1 (@dimindex a1 (@UNIV a1)))) = ((Peano.le (NUMERAL (BIT1 0)) x1) /\ (Peano.le x1 (@dimindex a1 (@UNIV a1))))) -> (((Peano.le (NUMERAL (BIT1 0)) x1) /\ (Peano.le x1 (@dimindex a1 (@UNIV a1)))) -> ((@dollar a0 a1 (@fstcart a0 a1 a2 x0) x1) = (@dollar a0 (finite_sum a1 a2) x0 x1)) = x2) -> (((Peano.le (NUMERAL (BIT1 0)) x1) /\ (Peano.le x1 (@dimindex a1 (@UNIV a1)))) -> (@dollar a0 a1 (@fstcart a0 a1 a2 x0) x1) = (@dollar a0 (finite_sum a1 a2) x0 x1)) = (((Peano.le (NUMERAL (BIT1 0)) x1) /\ (Peano.le x1 (@dimindex a1 (@UNIV a1)))) -> x2).
+Definition term44 (a0 : Type') (a1 : Type') (a2 : Type') := fun y0 : type2 a0 a1 a2 => forall y1 : nat, ((Peano.le (NUMERAL (BIT1 0)) y1) /\ (Peano.le y1 (@dimindex a1 (@UNIV a1)))) -> (@dollar a0 a1 (@fstcart a0 a1 a2 y0) y1) = (@dollar a0 (finite_sum a1 a2) y0 y1).
+Definition term0 (a0 : Type') (a1 : Type') (x0 : nat -> a0) (x1 : nat) := (fun y0 : nat => ((Peano.le (NUMERAL (BIT1 0)) y0) /\ (Peano.le y0 (@dimindex a1 (@UNIV a1)))) -> (@dollar a0 a1 (@lambda a0 a1 x0) y0) = (x0 y0)) x1.
+Definition term10 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) (x1 : nat) := @dollar a0 a1 (@fstcart a0 a1 a2 x0) x1.
+Definition term46 (a0 : Type') (a1 : Type') (a2 : Type') := forall y0 : type2 a0 a1 a2, forall y1 : nat, ((Peano.le (NUMERAL (BIT1 0)) y1) /\ (Peano.le y1 (@dimindex a1 (@UNIV a1)))) -> (@dollar a0 a1 (@fstcart a0 a1 a2 y0) y1) = (@dollar a0 (finite_sum a1 a2) y0 y1).
+Definition term45 (a0 : Type') (a1 : Type') (a2 : Type') := fun y0 : type2 a0 a1 a2 => True.
+Definition term6 (x0 : Prop) (x1 : Prop) (x2 : Prop) (x3 : Prop) := (x0 = x2) -> (x2 -> x1 = x3) -> (x0 -> x1) = (x2 -> x3).
+Definition term29 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) := fun y0 : nat => (fun y1 : nat => @dollar a0 (finite_sum a1 a2) x0 y1) y0.
+Definition term48 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : Prop) := forall y0 : type2 a0 a1 a2, x0.
+Definition term32 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) (x1 : nat) := @eq a0 (@dollar a0 a1 (@fstcart a0 a1 a2 x0) x1).
+Definition term26 (a0 : Type') (a1 : Type') (x0 : a0 -> a1) (x1 : a0) := (fun y0 : a0 => x0 y0) x1.
+Definition term35 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) (x1 : nat) := (((Peano.le (NUMERAL (BIT1 0)) x1) /\ (Peano.le x1 (@dimindex a1 (@UNIV a1)))) -> ((@dollar a0 a1 (@fstcart a0 a1 a2 x0) x1) = (@dollar a0 (finite_sum a1 a2) x0 x1)) = True) -> (((Peano.le (NUMERAL (BIT1 0)) x1) /\ (Peano.le x1 (@dimindex a1 (@UNIV a1)))) -> (@dollar a0 a1 (@fstcart a0 a1 a2 x0) x1) = (@dollar a0 (finite_sum a1 a2) x0 x1)) = (((Peano.le (NUMERAL (BIT1 0)) x1) /\ (Peano.le x1 (@dimindex a1 (@UNIV a1)))) -> True).
+Definition term25 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) (x1 : nat) := (fun y0 : nat => @dollar a0 (finite_sum a1 a2) x0 y0) x1.
+Definition term13 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) (x1 : nat) (x2 : Prop) (x3 : Prop) := (fun y0 : Prop => (((Peano.le (NUMERAL (BIT1 0)) x1) /\ (Peano.le x1 (@dimindex a1 (@UNIV a1)))) = x2) -> (x2 -> ((@dollar a0 a1 (@fstcart a0 a1 a2 x0) x1) = (@dollar a0 (finite_sum a1 a2) x0 x1)) = y0) -> (((Peano.le (NUMERAL (BIT1 0)) x1) /\ (Peano.le x1 (@dimindex a1 (@UNIV a1)))) -> (@dollar a0 a1 (@fstcart a0 a1 a2 x0) x1) = (@dollar a0 (finite_sum a1 a2) x0 x1)) = (x2 -> y0)) x3.
+Definition term27 (a0 : Type') (x0 : nat -> a0) (x1 : nat) := (fun y0 : nat => x0 y0) x1.
+Definition term20 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) := @dollar a0 a1 (@lambda a0 a1 (fun y0 : nat => @dollar a0 (finite_sum a1 a2) x0 y0)).
+Definition term4 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) := (fun y0 : type2 a0 a1 a2 => (@fstcart a0 a1 a2 y0) = (@lambda a0 a1 (fun y1 : nat => @dollar a0 (finite_sum a1 a2) y0 y1))) x0.
+Definition term41 := forall y0 : nat, True.
+Definition term47 (a0 : Type') (a1 : Type') (a2 : Type') := forall y0 : type2 a0 a1 a2, True.
+Definition term39 := fun y0 : nat => True.
+Definition term1 (a0 : Type') (a1 : Type') (x0 : nat -> a0) (x1 : nat) := ((Peano.le (NUMERAL (BIT1 0)) x1) /\ (Peano.le x1 (@dimindex a1 (@UNIV a1)))) -> (@dollar a0 a1 (@lambda a0 a1 x0) x1) = (x0 x1).
+Definition term24 (x0 : nat) := and (Peano.le (NUMERAL (BIT1 0)) x0).
+Definition term2 (a0 : Type') (x0 : nat) := (Peano.le (NUMERAL (BIT1 0)) x0) /\ (Peano.le x0 (@dimindex a0 (@UNIV a0))).
+Definition term12 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) (x1 : nat) (x2 : Prop) := forall y0 : Prop, (((Peano.le (NUMERAL (BIT1 0)) x1) /\ (Peano.le x1 (@dimindex a1 (@UNIV a1)))) = x2) -> (x2 -> ((@dollar a0 a1 (@fstcart a0 a1 a2 x0) x1) = (@dollar a0 (finite_sum a1 a2) x0 x1)) = y0) -> (((Peano.le (NUMERAL (BIT1 0)) x1) /\ (Peano.le x1 (@dimindex a1 (@UNIV a1)))) -> (@dollar a0 a1 (@fstcart a0 a1 a2 x0) x1) = (@dollar a0 (finite_sum a1 a2) x0 x1)) = (x2 -> y0).
+Definition term7 (x0 : Prop) (x1 : Prop) (x2 : Prop) := forall y0 : Prop, (x0 = x2) -> (x2 -> x1 = y0) -> (x0 -> x1) = (x2 -> y0).
+Definition term19 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) := @dollar a0 a1 (@fstcart a0 a1 a2 x0).
+Definition term9 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) (x1 : nat) := forall y0 : Prop, forall y1 : Prop, (((Peano.le (NUMERAL (BIT1 0)) x1) /\ (Peano.le x1 (@dimindex a1 (@UNIV a1)))) = y0) -> (y0 -> ((@dollar a0 a1 (@fstcart a0 a1 a2 x0) x1) = (@dollar a0 (finite_sum a1 a2) x0 x1)) = y1) -> (((Peano.le (NUMERAL (BIT1 0)) x1) /\ (Peano.le x1 (@dimindex a1 (@UNIV a1)))) -> (@dollar a0 a1 (@fstcart a0 a1 a2 x0) x1) = (@dollar a0 (finite_sum a1 a2) x0 x1)) = (y0 -> y1).
+Definition term8 (x0 : Prop) (x1 : Prop) := forall y0 : Prop, forall y1 : Prop, (x0 = y0) -> (y0 -> x1 = y1) -> (x0 -> x1) = (y0 -> y1).
+Definition term16 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) (x1 : nat) (x2 : Prop) := (((Peano.le (NUMERAL (BIT1 0)) x1) /\ (Peano.le x1 (@dimindex a1 (@UNIV a1)))) -> ((@dollar a0 a1 (@fstcart a0 a1 a2 x0) x1) = (@dollar a0 (finite_sum a1 a2) x0 x1)) = x2) -> (((Peano.le (NUMERAL (BIT1 0)) x1) /\ (Peano.le x1 (@dimindex a1 (@UNIV a1)))) -> (@dollar a0 a1 (@fstcart a0 a1 a2 x0) x1) = (@dollar a0 (finite_sum a1 a2) x0 x1)) = (((Peano.le (NUMERAL (BIT1 0)) x1) /\ (Peano.le x1 (@dimindex a1 (@UNIV a1)))) -> x2).
+Definition term3 (a0 : Type') (a1 : Type') (x0 : nat -> a0) (x1 : nat) := @dollar a0 a1 (@lambda a0 a1 x0) x1.
+Definition term38 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) := fun y0 : nat => ((Peano.le (NUMERAL (BIT1 0)) y0) /\ (Peano.le y0 (@dimindex a1 (@UNIV a1)))) -> (@dollar a0 a1 (@fstcart a0 a1 a2 x0) y0) = (@dollar a0 (finite_sum a1 a2) x0 y0).
+Definition term34 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) (x1 : nat) := ((Peano.le (NUMERAL (BIT1 0)) x1) /\ (Peano.le x1 (@dimindex a1 (@UNIV a1)))) -> ((@dollar a0 a1 (@fstcart a0 a1 a2 x0) x1) = (@dollar a0 (finite_sum a1 a2) x0 x1)) = True.
+Definition term40 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) := forall y0 : nat, ((Peano.le (NUMERAL (BIT1 0)) y0) /\ (Peano.le y0 (@dimindex a1 (@UNIV a1)))) -> (@dollar a0 a1 (@fstcart a0 a1 a2 x0) y0) = (@dollar a0 (finite_sum a1 a2) x0 y0).
+Definition term14 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) (x1 : nat) (x2 : Prop) (x3 : Prop) := (((Peano.le (NUMERAL (BIT1 0)) x1) /\ (Peano.le x1 (@dimindex a1 (@UNIV a1)))) = x2) -> (x2 -> ((@dollar a0 a1 (@fstcart a0 a1 a2 x0) x1) = (@dollar a0 (finite_sum a1 a2) x0 x1)) = x3) -> (((Peano.le (NUMERAL (BIT1 0)) x1) /\ (Peano.le x1 (@dimindex a1 (@UNIV a1)))) -> (@dollar a0 a1 (@fstcart a0 a1 a2 x0) x1) = (@dollar a0 (finite_sum a1 a2) x0 x1)) = (x2 -> x3).
+Definition term23 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) := fun y0 : nat => @dollar a0 (finite_sum a1 a2) x0 y0.
+Definition term5 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) := @lambda a0 a1 (fun y0 : nat => @dollar a0 (finite_sum a1 a2) x0 y0).
+Definition term43 (x0 : Prop) := forall y0 : nat, x0.
+Definition term30 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) (x1 : nat) := @eq a0 ((fun y0 : nat => (fun y1 : nat => @dollar a0 (finite_sum a1 a2) x0 y1) y0) x1).
+Definition term37 (a0 : Type') (x0 : nat) := ((Peano.le (NUMERAL (BIT1 0)) x0) /\ (Peano.le x0 (@dimindex a0 (@UNIV a0)))) -> True.
+Definition term11 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) (x1 : nat) (x2 : Prop) := (fun y0 : Prop => forall y1 : Prop, (((Peano.le (NUMERAL (BIT1 0)) x1) /\ (Peano.le x1 (@dimindex a1 (@UNIV a1)))) = y0) -> (y0 -> ((@dollar a0 a1 (@fstcart a0 a1 a2 x0) x1) = (@dollar a0 (finite_sum a1 a2) x0 x1)) = y1) -> (((Peano.le (NUMERAL (BIT1 0)) x1) /\ (Peano.le x1 (@dimindex a1 (@UNIV a1)))) -> (@dollar a0 a1 (@fstcart a0 a1 a2 x0) x1) = (@dollar a0 (finite_sum a1 a2) x0 x1)) = (y0 -> y1)) x2.
+Definition term33 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) (x1 : nat) := @eq a0 (@dollar a0 (finite_sum a1 a2) x0 x1).
+Definition term28 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) (x1 : nat) := (fun y0 : nat => (fun y1 : nat => @dollar a0 (finite_sum a1 a2) x0 y1) y0) x1.
+Definition term31 (a0 : Type') (a1 : Type') (a2 : Type') (x0 : type2 a0 a1 a2) (x1 : nat) := @eq a0 ((fun y0 : nat => @dollar a0 (finite_sum a1 a2) x0 y0) x1).

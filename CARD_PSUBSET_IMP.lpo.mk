@@ -1,0 +1,1 @@
+CARD_PSUBSET_IMP.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo CARD_PSUBSET_IMP_term_abbrevs.lpo PSUBSET_spec.lpo thm0_spec.lpo thm10578_spec.lpo thm10597_spec.lpo thm16474_spec.lpo thm16506_spec.lpo thm16507_spec.lpo thm16933_spec.lpo thm17045_spec.lpo thm21021_spec.lpo thm21114_spec.lpo thm21182_spec.lpo thm21386_spec.lpo

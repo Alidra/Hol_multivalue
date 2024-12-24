@@ -1,0 +1,12 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.FST_DEF_term_abbrevs;
+private symbol lem45467 [A B] : Prf (= (@FST A B) (term0 A B)) ≔ @FST_def A B;
+private symbol lem45468 [A B] (p : El (prod A B)) : Prf (= p p) ≔ REFL p;
+private symbol lem45469 [A B] (p : El (prod A B)) : Prf (= ((@FST A B) p) (term1 A B p)) ≔ MK_COMB (@lem45467 A B) (@lem45468 A B p);
+private symbol lem45470 [A B] (p : El (prod A B)) : Prf (= (term1 A B p) (term2 A B p)) ≔ REFL (term1 A B p);
+opaque symbol lem45471 [A B] (p : El (prod A B)) : Prf (= ((@FST A B) p) (term2 A B p)) ≔ TRANS (@lem45469 A B p) (@lem45470 A B p);
+opaque symbol lem45472 [A B] : Prf (term3 A B) ≔ λ p : El (prod A B), (@lem45471 A B p);

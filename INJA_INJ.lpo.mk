@@ -1,0 +1,1 @@
+INJA_INJ.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo INJA_INJ_term_abbrevs.lpo FUN_EQ_THM_spec.lpo INJA_spec.lpo thm0_spec.lpo thm1809_spec.lpo thm1810_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm1823_spec.lpo thm1855_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm32_spec.lpo

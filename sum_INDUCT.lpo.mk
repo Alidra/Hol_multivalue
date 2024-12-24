@@ -1,0 +1,1 @@
+sum_INDUCT.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo sum_INDUCT_term_abbrevs.lpo thm1066938_spec.lpo thm1066939_spec.lpo thm1066989_spec.lpo thm1066993_spec.lpo thm1067676_spec.lpo thm1067682_spec.lpo

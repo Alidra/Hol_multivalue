@@ -1,0 +1,1 @@
+NADD_SUC.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo NADD_SUC_term_abbrevs.lpo ADD1_spec.lpo DIST_LADD_0_spec.lpo LE_ADD2_spec.lpo LE_REFL_spec.lpo NADD_ADDITIVE_spec.lpo thm0_spec.lpo thm1259719_spec.lpo thm1842_spec.lpo thm272809_spec.lpo thm7_spec.lpo

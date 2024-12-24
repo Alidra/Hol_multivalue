@@ -1,0 +1,1 @@
+NOT_IN_EMPTY.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo NOT_IN_EMPTY_term_abbrevs.lpo IN_spec.lpo NOT_CLAUSES_WEAK_spec.lpo thm0_spec.lpo thm1809_spec.lpo thm1810_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm3185606_spec.lpo thm3185620_spec.lpo

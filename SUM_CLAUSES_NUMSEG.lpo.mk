@@ -1,0 +1,1 @@
+SUM_CLAUSES_NUMSEG.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo SUM_CLAUSES_NUMSEG_term_abbrevs.lpo ITERATE_CLAUSES_NUMSEG_spec.lpo MONOIDAL_REAL_ADD_spec.lpo thm0_spec.lpo thm1823_spec.lpo thm7064097_spec.lpo thm7064111_spec.lpo thm7064171_spec.lpo thm7065437_spec.lpo

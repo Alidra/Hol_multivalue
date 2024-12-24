@@ -1,0 +1,5 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_terms.
+Axiom lem8390588 : forall {A B P : Type'}, forall lt2 : A -> A -> Prop, forall clauses : list (prod (P -> A) ((A -> B) -> P -> B)), ((@WF A lt2) /\ (@List.Forall (prod (P -> A) ((A -> B) -> P -> B)) (@GABS ((prod (P -> A) ((A -> B) -> P -> B)) -> Prop) (fun f : (prod (P -> A) ((A -> B) -> P -> B)) -> Prop => forall s : P -> A, forall t : (A -> B) -> P -> B, @GEQ Prop (f (@pair (P -> A) ((A -> B) -> P -> B) s t)) (exists P' : (A -> B) -> P -> Prop, exists G : (A -> B) -> P -> A, exists H : (A -> B) -> P -> B, (forall f' : A -> B, forall a : P, forall y : A, ((P' f' a) /\ (lt2 y (G f' a))) -> lt2 y (s a)) /\ ((forall f' : A -> B, forall g : A -> B, forall a : P, (forall z : A, (lt2 z (s a)) -> (f' z) = (g z)) -> ((P' f' a) = (P' g a)) /\ (((G f' a) = (G g a)) /\ ((H f' a) = (H g a)))) /\ (forall f' : A -> B, forall a : P, (t f' a) = (@COND B (P' f' a) (f' (G f' a)) (H f' a))))))) clauses)) -> exists f : A -> B, forall x : A, (f x) = (@CASEWISE B P A (A -> B) clauses f x).

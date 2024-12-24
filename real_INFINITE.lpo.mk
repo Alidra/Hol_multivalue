@@ -1,0 +1,1 @@
+real_INFINITE.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo real_INFINITE_term_abbrevs.lpo FINITE_REAL_INTERVAL_spec.lpo FINITE_SUBSET_spec.lpo INFINITE_spec.lpo NOT_CLAUSES_WEAK_spec.lpo SUBSET_UNIV_spec.lpo thm0_spec.lpo thm1820_spec.lpo thm1823_spec.lpo thm69_spec.lpo thm7_spec.lpo thm82_spec.lpo thm885_spec.lpo thm886_spec.lpo

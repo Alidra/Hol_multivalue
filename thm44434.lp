@@ -1,0 +1,13 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm44434_term_abbrevs;
+opaque symbol lem44426 [A B] (r : El (type1413 A B)) : Prf (= (term0 A B r) (= (term1 A B r) r)) ≔ @axiom_5 A B r;
+private symbol lem44429 [A B] (r : El (type1413 A B)) : Prf (= (term0 A B r) (term2 A B r)) ≔ REFL (term0 A B r);
+private symbol lem44430 : Prf (= (@= bool) (@= bool)) ≔ REFL (@= bool);
+private symbol lem44431 [A B] (r : El (type1413 A B)) : Prf (= (term3 A B r) (term4 A B r)) ≔ MK_COMB (@lem44430) (@lem44429 A B r);
+private symbol lem44432 [A B] (r : El (type1413 A B)) : Prf (= (= (term1 A B r) r) (= (term1 A B r) r)) ≔ REFL (= (term1 A B r) r);
+opaque symbol lem44433 [A B] (r : El (type1413 A B)) : Prf (= (= (term0 A B r) (= (term1 A B r) r)) (= (term2 A B r) (= (term1 A B r) r))) ≔ MK_COMB (@lem44431 A B r) (@lem44432 A B r);
+opaque symbol lem44434 [A B] (r : El (type1413 A B)) : Prf (= (term2 A B r) (= (term1 A B r) r)) ≔ EQ_MP (@lem44433 A B r) (@lem44426 A B r);

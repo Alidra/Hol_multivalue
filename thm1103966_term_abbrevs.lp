@@ -1,0 +1,5 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term0 a0 a1 ≔ ((@ε (fun (prod num (prod num (prod num num))) (fun (fun a0 (fun a1 bool)) (fun (list a0) (fun (list a1) bool))))) (λ y0 : El (type1285 a0 a1), (∀ (λ y1 : El type1673, (∧ (∀ (λ y2 : El (type1413 a0 a1), (∀ (λ y3 : El (list a1), (= (y0 y1 y2 (@NIL a0) y3) (= y3 (@NIL a1))))))) (∀ (λ y2 : El a0, (∀ (λ y3 : El (type1413 a0 a1), (∀ (λ y4 : El (list a0), (∀ (λ y5 : El (list a1), (= (y0 y1 y3 ((@CONS a0) y2 y4) y5) ((@COND bool) (= y5 (@NIL a1)) F (∧ (y3 y2 ((@HD a1) y5)) (y0 y1 y3 y4 ((@TL a1) y5))))))))))))))))) ((@̦‚ num (prod num (prod num num))) (NUMERAL (BIT1 (BIT0 (BIT0 (BIT0 (BIT0 (BIT0 (BIT1 _0)))))))) ((@̦‚ num (prod num num)) (NUMERAL (BIT0 (BIT0 (BIT1 (BIT1 (BIT0 (BIT0 (BIT1 _0)))))))) ((@̦‚ num num) (NUMERAL (BIT0 (BIT0 (BIT1 (BIT1 (BIT0 (BIT0 (BIT1 _0)))))))) (NUMERAL (BIT0 (BIT1 (BIT0 (BIT0 (BIT1 (BIT1 _0)))))))))));

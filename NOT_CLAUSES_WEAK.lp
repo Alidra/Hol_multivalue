@@ -1,0 +1,11 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.NOT_CLAUSES_WEAK_term_abbrevs;
+require open hol-light.thm1492_spec;
+require open hol-light.thm1501_spec;
+require open hol-light.thm1502_spec;
+opaque symbol lem1503 : Prf (= (¬ F) T) ≔ EQ_MP (@lem1502) (@lem1501);
+opaque symbol lem1504 : Prf term0 ≔ ∧ᵢ (@lem1492) (@lem1503);

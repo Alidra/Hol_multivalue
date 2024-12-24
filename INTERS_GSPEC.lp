@@ -1,0 +1,10 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.INTERS_GSPEC_term_abbrevs;
+require open hol-light.thm3464399_spec;
+require open hol-light.thm3464404_spec;
+opaque symbol lem3464409 [_89711 _89725] : Prf (term0 _89711 _89725) ≔ λ P : El (fun _89725 bool), (@lem3464404 _89711 _89725 P);
+opaque symbol lem3464410 [_89711 _89725 _89769 _89788 _89789 _89837 _89861 _89862 _89863] : Prf (term1 _89711 _89725 _89769 _89788 _89789 _89837 _89861 _89862 _89863) ≔ ∧ᵢ (@lem3464409 _89711 _89725) (@lem3464399 _89769 _89788 _89789 _89837 _89861 _89862 _89863);

@@ -1,0 +1,11 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm3184692_term_abbrevs;
+require open hol-light.thm3183344_spec;
+require open hol-light.thm3183432_spec;
+require open hol-light.thm3183558_spec;
+opaque symbol lem3184691 [_83123] (x : El _83123) : Prf (= ((@SETSPEC _83123) x) (term0 _83123 x)) ≔ EQ_MP (@lem3183432 _83123 x) (@lem3183558 _83123 x);
+opaque symbol lem3184692 [_83123] (P : El (type919 _83123)) (x : El _83123) : Prf (= (term1 _83123 P x) (term2 _83123 P x)) ≔ MK_COMB (@lem3183344 _83123 P) (@lem3184691 _83123 x);

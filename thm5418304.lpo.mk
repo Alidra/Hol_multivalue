@@ -1,0 +1,1 @@
+thm5418304.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo thm5418304_term_abbrevs.lpo thm5400859_spec.lpo thm5400860_spec.lpo thm5400877_spec.lpo thm5400908_spec.lpo thm5400913_spec.lpo thm5418287_spec.lpo thm5418288_spec.lpo

@@ -1,0 +1,10 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm546243_term_abbrevs;
+require open hol-light.thm546214_spec;
+require open hol-light.thm546215_spec;
+opaque symbol lem546242 (m : El num) (n : El num) : Prf (= (term0 m n) (term1 m n)) ≔ EQ_MP (@lem546215 m n) (@lem546214 m n);
+opaque symbol lem546243 : Prf (= term2 term3) ≔ (@lem546242 term4 (BIT1 _0));

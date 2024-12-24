@@ -1,0 +1,1 @@
+DIST_LMUL.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo DIST_LMUL_term_abbrevs.lpo LEFT_ADD_DISTRIB_spec.lpo LEFT_SUB_DISTRIB_spec.lpo dist_spec.lpo thm0_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm1862_spec.lpo thm1863_spec.lpo

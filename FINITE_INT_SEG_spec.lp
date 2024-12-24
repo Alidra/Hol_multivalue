@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem5710351 : Prf (∧ (∀ (λ l : El int, (∀ (λ r : El int, ((@FINITE int) ((@GSPEC int) (λ GEN_PVAR_233 : El int, (∃ (λ x : El int, ((@SETSPEC int) GEN_PVAR_233 (∧ (int_le l x) (int_le x r)) x)))))))))) (∧ (∀ (λ l : El int, (∀ (λ r : El int, ((@FINITE int) ((@GSPEC int) (λ GEN_PVAR_234 : El int, (∃ (λ x : El int, ((@SETSPEC int) GEN_PVAR_234 (∧ (int_le l x) (int_lt x r)) x)))))))))) (∧ (∀ (λ l : El int, (∀ (λ r : El int, ((@FINITE int) ((@GSPEC int) (λ GEN_PVAR_235 : El int, (∃ (λ x : El int, ((@SETSPEC int) GEN_PVAR_235 (∧ (int_lt l x) (int_le x r)) x)))))))))) (∀ (λ l : El int, (∀ (λ r : El int, ((@FINITE int) ((@GSPEC int) (λ GEN_PVAR_236 : El int, (∃ (λ x : El int, ((@SETSPEC int) GEN_PVAR_236 (∧ (int_lt l x) (int_lt x r)) x)))))))))))));

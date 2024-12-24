@@ -1,0 +1,1 @@
+RAT_LEMMA1.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo RAT_LEMMA1_term_abbrevs.lpo NOT_CLAUSES_WEAK_spec.lpo REAL_ADD_RDISTRIB_spec.lpo REAL_EQ_MUL_LCANCEL_spec.lpo REAL_MUL_AC_spec.lpo REAL_MUL_RID_spec.lpo REAL_MUL_RINV_spec.lpo REFL_CLAUSE_spec.lpo real_div_spec.lpo thm0_spec.lpo thm1338912_spec.lpo thm82_spec.lpo

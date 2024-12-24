@@ -1,0 +1,32 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_type_abbrevs.
+Require Import hol_terms.
+Definition term3 (x0 : type1539) (x1 : Prop) := (fun y0 : Prop => fun y1 : Prop => fun y2 : Prop => fun y3 : Prop => fun y4 : Prop => fun y5 : Prop => fun y6 : Prop => fun y7 : Prop => _mk_char (x0 y0 y1 y2 y3 y4 y5 y6 y7)) x1.
+Definition term15 (x0 : type1539) (x1 : Prop) (x2 : Prop) (x3 : Prop) (x4 : Prop) (x5 : Prop) := (fun y0 : Prop => fun y1 : Prop => fun y2 : Prop => fun y3 : Prop => _mk_char (x0 x1 x2 x3 x4 y0 y1 y2 y3)) x5.
+Definition term10 (x0 : type1539) (x1 : Prop) (x2 : Prop) (x3 : Prop) := fun y0 : Prop => fun y1 : Prop => fun y2 : Prop => fun y3 : Prop => fun y4 : Prop => _mk_char (x0 x1 x2 x3 y0 y1 y2 y3 y4).
+Definition term7 (x0 : type1539) (x1 : Prop) (x2 : Prop) := fun y0 : Prop => fun y1 : Prop => fun y2 : Prop => fun y3 : Prop => fun y4 : Prop => fun y5 : Prop => _mk_char (x0 x1 x2 y0 y1 y2 y3 y4 y5).
+Definition term4 (x0 : type1539) (x1 : Prop) := fun y0 : Prop => fun y1 : Prop => fun y2 : Prop => fun y3 : Prop => fun y4 : Prop => fun y5 : Prop => fun y6 : Prop => _mk_char (x0 x1 y0 y1 y2 y3 y4 y5 y6).
+Definition term2 (x0 : type1539) := fun y0 : Prop => fun y1 : Prop => fun y2 : Prop => fun y3 : Prop => fun y4 : Prop => fun y5 : Prop => fun y6 : Prop => fun y7 : Prop => _mk_char (x0 y0 y1 y2 y3 y4 y5 y6 y7).
+Definition term1 := fun y0 : Prop => fun y1 : Prop => fun y2 : Prop => fun y3 : Prop => fun y4 : Prop => fun y5 : Prop => fun y6 : Prop => fun y7 : Prop => _mk_char ((fun y8 : Prop => fun y9 : Prop => fun y10 : Prop => fun y11 : Prop => fun y12 : Prop => fun y13 : Prop => fun y14 : Prop => fun y15 : Prop => @CONSTR (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop Prop))))))) (NUMERAL 0) (@pair Prop (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop Prop)))))) y8 (@pair Prop (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop Prop))))) y9 (@pair Prop (prod Prop (prod Prop (prod Prop (prod Prop Prop)))) y10 (@pair Prop (prod Prop (prod Prop (prod Prop Prop))) y11 (@pair Prop (prod Prop (prod Prop Prop)) y12 (@pair Prop (prod Prop Prop) y13 (@pair Prop Prop y14 y15))))))) (fun y16 : nat => @BOTTOM (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop Prop))))))))) y0 y1 y2 y3 y4 y5 y6 y7).
+Definition term0 := fun y0 : Prop => fun y1 : Prop => fun y2 : Prop => fun y3 : Prop => fun y4 : Prop => fun y5 : Prop => fun y6 : Prop => fun y7 : Prop => @CONSTR (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop Prop))))))) (NUMERAL 0) (@pair Prop (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop Prop)))))) y0 (@pair Prop (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop Prop))))) y1 (@pair Prop (prod Prop (prod Prop (prod Prop (prod Prop Prop)))) y2 (@pair Prop (prod Prop (prod Prop (prod Prop Prop))) y3 (@pair Prop (prod Prop (prod Prop Prop)) y4 (@pair Prop (prod Prop Prop) y5 (@pair Prop Prop y6 y7))))))) (fun y8 : nat => @BOTTOM (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop (prod Prop Prop)))))))).
+Definition term21 (x0 : type1539) (x1 : Prop) (x2 : Prop) (x3 : Prop) (x4 : Prop) (x5 : Prop) (x6 : Prop) (x7 : Prop) := (fun y0 : Prop => fun y1 : Prop => _mk_char (x0 x1 x2 x3 x4 x5 x6 y0 y1)) x7.
+Definition term23 (x0 : Prop) (x1 : Prop) (x2 : Prop) (x3 : Prop) (x4 : Prop) (x5 : Prop) (x6 : Prop) := @eq (Prop -> Ascii.ascii) (_22730 x0 x1 x2 x3 x4 x5 x6).
+Definition term5 (x0 : Prop) := @eq (Prop -> Prop -> Prop -> Prop -> Prop -> Prop -> Prop -> Ascii.ascii) (_22730 x0).
+Definition term8 (x0 : Prop) (x1 : Prop) := @eq (Prop -> Prop -> Prop -> Prop -> Prop -> Prop -> Ascii.ascii) (_22730 x0 x1).
+Definition term24 (x0 : type1539) (x1 : Prop) (x2 : Prop) (x3 : Prop) (x4 : Prop) (x5 : Prop) (x6 : Prop) (x7 : Prop) (x8 : Prop) := (fun y0 : Prop => _mk_char (x0 x1 x2 x3 x4 x5 x6 x7 y0)) x8.
+Definition term12 (x0 : type1539) (x1 : Prop) (x2 : Prop) (x3 : Prop) (x4 : Prop) := (fun y0 : Prop => fun y1 : Prop => fun y2 : Prop => fun y3 : Prop => fun y4 : Prop => _mk_char (x0 x1 x2 x3 y0 y1 y2 y3 y4)) x4.
+Definition term11 (x0 : Prop) (x1 : Prop) (x2 : Prop) := @eq (Prop -> Prop -> Prop -> Prop -> Prop -> Ascii.ascii) (_22730 x0 x1 x2).
+Definition term25 (x0 : type1539) (x1 : Prop) (x2 : Prop) (x3 : Prop) (x4 : Prop) (x5 : Prop) (x6 : Prop) (x7 : Prop) (x8 : Prop) := _mk_char (x0 x1 x2 x3 x4 x5 x6 x7 x8).
+Definition term13 (x0 : type1539) (x1 : Prop) (x2 : Prop) (x3 : Prop) (x4 : Prop) := fun y0 : Prop => fun y1 : Prop => fun y2 : Prop => fun y3 : Prop => _mk_char (x0 x1 x2 x3 x4 y0 y1 y2 y3).
+Definition term14 (x0 : Prop) (x1 : Prop) (x2 : Prop) (x3 : Prop) := @eq (Prop -> Prop -> Prop -> Prop -> Ascii.ascii) (_22730 x0 x1 x2 x3).
+Definition term26 (x0 : Prop) (x1 : Prop) (x2 : Prop) (x3 : Prop) (x4 : Prop) (x5 : Prop) (x6 : Prop) (x7 : Prop) := @eq Ascii.ascii (_22730 x0 x1 x2 x3 x4 x5 x6 x7).
+Definition term9 (x0 : type1539) (x1 : Prop) (x2 : Prop) (x3 : Prop) := (fun y0 : Prop => fun y1 : Prop => fun y2 : Prop => fun y3 : Prop => fun y4 : Prop => fun y5 : Prop => _mk_char (x0 x1 x2 y0 y1 y2 y3 y4 y5)) x3.
+Definition term22 (x0 : type1539) (x1 : Prop) (x2 : Prop) (x3 : Prop) (x4 : Prop) (x5 : Prop) (x6 : Prop) (x7 : Prop) := fun y0 : Prop => _mk_char (x0 x1 x2 x3 x4 x5 x6 x7 y0).
+Definition term6 (x0 : type1539) (x1 : Prop) (x2 : Prop) := (fun y0 : Prop => fun y1 : Prop => fun y2 : Prop => fun y3 : Prop => fun y4 : Prop => fun y5 : Prop => fun y6 : Prop => _mk_char (x0 x1 y0 y1 y2 y3 y4 y5 y6)) x2.
+Definition term19 (x0 : type1539) (x1 : Prop) (x2 : Prop) (x3 : Prop) (x4 : Prop) (x5 : Prop) (x6 : Prop) := fun y0 : Prop => fun y1 : Prop => _mk_char (x0 x1 x2 x3 x4 x5 x6 y0 y1).
+Definition term18 (x0 : type1539) (x1 : Prop) (x2 : Prop) (x3 : Prop) (x4 : Prop) (x5 : Prop) (x6 : Prop) := (fun y0 : Prop => fun y1 : Prop => fun y2 : Prop => _mk_char (x0 x1 x2 x3 x4 x5 y0 y1 y2)) x6.
+Definition term16 (x0 : type1539) (x1 : Prop) (x2 : Prop) (x3 : Prop) (x4 : Prop) (x5 : Prop) := fun y0 : Prop => fun y1 : Prop => fun y2 : Prop => _mk_char (x0 x1 x2 x3 x4 x5 y0 y1 y2).
+Definition term17 (x0 : Prop) (x1 : Prop) (x2 : Prop) (x3 : Prop) (x4 : Prop) := @eq (Prop -> Prop -> Prop -> Ascii.ascii) (_22730 x0 x1 x2 x3 x4).
+Definition term20 (x0 : Prop) (x1 : Prop) (x2 : Prop) (x3 : Prop) (x4 : Prop) (x5 : Prop) := @eq (Prop -> Prop -> Ascii.ascii) (_22730 x0 x1 x2 x3 x4 x5).

@@ -1,0 +1,1 @@
+ISUM_CLAUSES.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo ISUM_CLAUSES_term_abbrevs.lpo ITERATE_CLAUSES_spec.lpo MONOIDAL_INT_ADD_spec.lpo NEUTRAL_INT_ADD_spec.lpo SWAP_FORALL_THM_spec.lpo thm0_spec.lpo thm6914165_spec.lpo thm6914179_spec.lpo thm7_spec.lpo

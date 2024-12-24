@@ -1,0 +1,13 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term3 ≔ ((@= num) (SUC (NUMERAL (BIT1 _0))));
+symbol term5 ≔ (∨ (= (NUMERAL (BIT0 (BIT1 _0))) (NUMERAL _0)));
+symbol term2 ≔ ((@= num) (NUMERAL (BIT0 (BIT1 _0))));
+symbol term7 (x0: El num) (x1: El num) ≔ (∨ F (= x0 x1));
+symbol term1 ≔ (SUC (NUMERAL (BIT1 _0)));
+symbol term0 ≔ (NUMERAL (BIT0 (BIT1 _0)));
+symbol term8 (x0: El num) (x1: El num) ≔ ((@= bool) (= x0 x1));
+symbol term4 ≔ (NUMERAL (BIT1 _0));
+symbol term6 (x0: El num) (x1: El num) ≔ (∨ (= (NUMERAL (BIT0 (BIT1 _0))) (NUMERAL _0)) (= x0 x1));

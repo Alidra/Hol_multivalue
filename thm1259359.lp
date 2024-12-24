@@ -1,0 +1,15 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm1259359_term_abbrevs;
+require open hol-light.thm1249051_spec;
+require open hol-light.thm1249079_spec;
+require open hol-light.thm1259231_spec;
+require open hol-light.thm69_spec;
+private symbol lem1259355 (d''' : El num) (n : El num) (d' : El num) (d : El num) (d'' : El num) (h1 : Prf (= d (term0 d' d'' d'''))) (h2 : Prf (= n (term1 n d' d d''))) : Prf F ≔ (@lem1259231 n d' d''' d'') (@lem1249079 d''' n d' d d'' h1 h2);
+private symbol lem1259356 (n : El num) (d' : El num) (d : El num) (d'' : El num) (h1 : Prf (term2 d d' d'')) (h2 : Prf (= n (term1 n d' d d''))) : Prf F ≔ ∃ₑ (@lem1249051 d d' d'' h1) (λ d''' : El num, λ h0 : Prf((term3 d d' d'') d'''), (@lem1259355 d''' n d' d d'' h0 h2));
+opaque symbol lem1259357 (n : El num) (d' : El num) (d : El num) (d'' : El num) (h1 : Prf (= n (term1 n d' d d''))) : Prf (term4 d d' d'') ≔ λ h0 : Prf (term2 d d' d''), (@lem1259356 n d' d d'' h0 h1);
+opaque symbol lem1259358 (d : El num) (d' : El num) (d'' : El num) : Prf (= (term4 d d' d'') (term5 d d' d'')) ≔ (@lem69 (term2 d d' d''));
+opaque symbol lem1259359 (n : El num) (d' : El num) (d : El num) (d'' : El num) (h1 : Prf (= n (term1 n d' d d''))) : Prf (term5 d d' d'') ≔ EQ_MP (@lem1259358 d d' d'') (@lem1259357 n d' d d'' h1);

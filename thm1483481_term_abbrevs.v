@@ -1,0 +1,6 @@
+Require Import coq.
+Require Import theory_hol.
+Require Import hol_types.
+Require Import hol_type_abbrevs.
+Require Import hol_terms.
+Definition term0 (x0 : real) (x1 : real) (x2 : real) (x3 : real) (x4 : nat) (x5 : real) (x6 : real) (x7 : real) (x8 : nat) := ((real_add x1 (real_add x2 x3)) = (real_add x2 (real_add x1 x3))) /\ (((real_add (real_add x1 x0) x2) = (real_add (real_add x1 x2) x0)) /\ (((real_add x1 x2) = (real_add x2 x1)) /\ (((real_add x1 (real_add x2 x3)) = (real_add (real_add x1 x2) x3)) /\ (((real_mul (real_pow x7 x4) (real_pow x7 x8)) = (real_pow x7 (Nat.add x4 x8))) /\ (((real_mul x7 (real_pow x7 x8)) = (real_pow x7 (S x8))) /\ (((real_mul (real_pow x7 x8) x7) = (real_pow x7 (S x8))) /\ (((real_mul x7 x7) = (real_pow x7 (NUMERAL (BIT0 (BIT1 0))))) /\ (((real_pow (real_mul x7 x5) x8) = (real_mul (real_pow x7 x8) (real_pow x5 x8))) /\ (((real_pow (real_pow x7 x4) x8) = (real_pow x7 (Nat.mul x4 x8))) /\ (((real_pow x7 (NUMERAL 0)) = (real_of_num (NUMERAL (BIT1 0)))) /\ (((real_pow x7 (NUMERAL (BIT1 0))) = x7) /\ (((real_mul x7 (real_add x5 x6)) = (real_add (real_mul x7 x5) (real_mul x7 x6))) /\ ((real_pow x7 (S x8)) = (real_mul x7 (real_pow x7 x8))))))))))))))).

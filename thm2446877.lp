@@ -1,0 +1,11 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm2446877_term_abbrevs;
+require open hol-light.thm10578_spec;
+require open hol-light.thm10597_spec;
+private symbol lem2446875 (p : El bool) : Prf (= p (term0 p)) ≔ EQ_MP (@lem10578 p) (@lem10597 p);
+opaque symbol lem2446876 [_60393] (x : El _60393) (y : El _60393) (p : El bool) : Prf (= (term1 _60393 x y p) (term2 _60393 x y p)) ≔ (@lem2446875 (term1 _60393 x y p));
+opaque symbol lem2446877 [_60393] (x : El _60393) (y : El _60393) (p : El bool) : Prf (= (term2 _60393 x y p) (term1 _60393 x y p)) ≔ SYM (@lem2446876 _60393 x y p);

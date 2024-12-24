@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem12295 [A] : Prf (∀ (λ P : El bool, (∀ (λ Q : El (fun A bool), (= (∃ (λ x : El A, (⇒ P (Q x)))) (⇒ P (∃ (λ x : El A, (Q x)))))))));

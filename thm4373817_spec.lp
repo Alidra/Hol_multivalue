@@ -1,0 +1,4 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+symbol lem4373817 [_104960 _104961] (f : El (fun (fun _104961 bool) bool)) (s : El (fun _104960 bool)) : Prf (= (∀ (λ p1 : El _104960, (∀ (λ p2 : El _104961, (= (∧ ((@IN _104960) p1 s) ((@IN _104961) p2 ((@INTERS _104961) f))) (∀ (λ t : El (fun _104961 bool), (⇒ ((@IN (fun _104961 bool)) t f) (∧ ((@IN _104960) p1 s) ((@IN _104961) p2 t)))))))))) (= ((@CROSS _104961 _104960) s ((@INTERS _104961) f)) ((@INTERS (prod _104960 _104961)) ((@GSPEC (fun (prod _104960 _104961) bool)) (λ GEN_PVAR_137 : El (fun (prod _104960 _104961) bool), (∃ (λ t : El (fun _104961 bool), ((@SETSPEC (fun (prod _104960 _104961) bool)) GEN_PVAR_137 ((@IN (fun _104961 bool)) t f) ((@CROSS _104961 _104960) s t)))))))));

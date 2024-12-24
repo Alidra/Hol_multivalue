@@ -1,0 +1,14 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm1100843_term_abbrevs;
+require open hol-light.thm1100832_spec;
+private symbol lem1100837 [_25307] (h : El _25307) : Prf (term0 _25307 h) ≔ (@lem1100832 _25307) h;
+private symbol lem1100838 [_25307] (h : El _25307) : Prf (= (term0 _25307 h) (term1 _25307 h)) ≔ REFL (term0 _25307 h);
+private symbol lem1100839 [_25307] (h : El _25307) : Prf (term1 _25307 h) ≔ EQ_MP (@lem1100838 _25307 h) (@lem1100837 _25307 h);
+private symbol lem1100840 [_25307] (h : El _25307) (P : El (fun _25307 bool)) : Prf (term2 _25307 h P) ≔ (@lem1100839 _25307 h) P;
+private symbol lem1100841 [_25307] (h : El _25307) (P : El (fun _25307 bool)) : Prf (= (term2 _25307 h P) (term3 _25307 h P)) ≔ REFL (term2 _25307 h P);
+opaque symbol lem1100842 [_25307] (h : El _25307) (P : El (fun _25307 bool)) : Prf (term3 _25307 h P) ≔ EQ_MP (@lem1100841 _25307 h P) (@lem1100840 _25307 h P);
+opaque symbol lem1100843 [_25307] (h : El _25307) (P : El (fun _25307 bool)) (t : El (list _25307)) : Prf (term4 _25307 h P t) ≔ (@lem1100842 _25307 h P) t;

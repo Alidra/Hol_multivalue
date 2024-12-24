@@ -1,0 +1,1 @@
+CROSS_MONO.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo CROSS_MONO_term_abbrevs.lpo SUBSET_CROSS_spec.lpo thm0_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm1821_spec.lpo thm1832_spec.lpo thm1842_spec.lpo thm4211_spec.lpo thm7_spec.lpo

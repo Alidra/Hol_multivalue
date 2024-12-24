@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm10176_term_abbrevs;
+require open hol-light.NOT_CLAUSES_WEAK_spec;
+require open hol-light.thm1857_spec;
+private symbol lem10166 (t : El bool) : Prf (= (= t F) (¬ t)) ≔ ∧ₑ₂ (@lem1857 t);
+private symbol lem10167 : Prf (= (= (¬ T) F) term0) ≔ (@lem10166 (¬ T));
+private symbol lem10169 : Prf (= (¬ T) F) ≔ ∧ₑ₁ (@lem1504);
+private symbol lem10170 : Prf (= ¬ ¬) ≔ REFL ¬;
+private symbol lem10171 : Prf (= term0 (¬ F)) ≔ MK_COMB (@lem10170) (@lem10169);
+private symbol lem10173 : Prf (= (¬ F) T) ≔ ∧ₑ₂ (@lem1504);
+private symbol lem10174 : Prf (= term0 T) ≔ TRANS (@lem10171) (@lem10173);
+opaque symbol lem10175 : Prf (= (= (¬ T) F) T) ≔ TRANS (@lem10167) (@lem10174);
+opaque symbol lem10176 : Prf (= T (= (¬ T) F)) ≔ SYM (@lem10175);

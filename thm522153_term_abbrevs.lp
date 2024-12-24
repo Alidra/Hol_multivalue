@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term3 (x0: El num) ≔ (λ y0 : El num, (= (= (- x0 y0) (NUMERAL _0)) (<= x0 y0)));
+symbol term5 (x0: El num) ≔ (∀ (λ y0 : El num, (= (= (- x0 y0) (NUMERAL _0)) (<= x0 y0))));
+symbol term12 (x0: El num) (x1: El num) ≔ ((λ y0 : El num, (= (= (- x0 y0) _0) (<= x0 y0))) x1);
+symbol term8 ≔ (λ y0 : El num, (∀ (λ y1 : El num, (= (= (- y0 y1) _0) (<= y0 y1)))));
+symbol term7 ≔ (λ y0 : El num, (∀ (λ y1 : El num, (= (= (- y0 y1) (NUMERAL _0)) (<= y0 y1)))));
+symbol term1 (x0: El num) (x1: El num) ≔ ((@= bool) (= (- x0 x1) (NUMERAL _0)));
+symbol term4 (x0: El num) ≔ (λ y0 : El num, (= (= (- x0 y0) _0) (<= x0 y0)));
+symbol term6 (x0: El num) ≔ (∀ (λ y0 : El num, (= (= (- x0 y0) _0) (<= x0 y0))));
+symbol term10 ≔ (∀ (λ y0 : El num, (∀ (λ y1 : El num, (= (= (- y0 y1) _0) (<= y0 y1))))));
+symbol term9 ≔ (∀ (λ y0 : El num, (∀ (λ y1 : El num, (= (= (- y0 y1) (NUMERAL _0)) (<= y0 y1))))));
+symbol term11 (x0: El num) ≔ ((λ y0 : El num, (∀ (λ y1 : El num, (= (= (- y0 y1) _0) (<= y0 y1))))) x0);
+symbol term0 (x0: El num) (x1: El num) ≔ ((@= num) (- x0 x1));
+symbol term2 (x0: El num) (x1: El num) ≔ ((@= bool) (= (- x0 x1) _0));

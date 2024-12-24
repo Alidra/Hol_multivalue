@@ -1,0 +1,1 @@
+INT_POW_LT2_ODD_EQ.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo INT_POW_LT2_ODD_EQ_term_abbrevs.lpo REAL_POW_LT2_ODD_EQ_spec.lpo thm2299876_spec.lpo thm2299877_spec.lpo thm2299936_spec.lpo thm2299937_spec.lpo

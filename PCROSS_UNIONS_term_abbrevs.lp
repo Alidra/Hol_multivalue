@@ -1,0 +1,5 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.hol_terms;
+symbol term0 a0 a1 a2 a3 a4 a5 ≔ (∧ (∀ (λ y0 : El (type24 a0 a1), (∀ (λ y1 : El (type56 a0 a2), (= ((@PCROSS a0 a1 a2) y0 ((@UNIONS (cart a0 a2)) y1)) ((@UNIONS (cart a0 (finite_sum a1 a2))) ((@GSPEC (fun (cart a0 (finite_sum a1 a2)) bool)) (λ y2 : El (type16 a0 a1 a2), (∃ (λ y3 : El (type24 a0 a2), ((@SETSPEC (fun (cart a0 (finite_sum a1 a2)) bool)) y2 ((@IN (fun (cart a0 a2) bool)) y3 y1) ((@PCROSS a0 a1 a2) y0 y3)))))))))))) (∀ (λ y0 : El (type56 a3 a4), (∀ (λ y1 : El (type24 a3 a5), (= ((@PCROSS a3 a4 a5) ((@UNIONS (cart a3 a4)) y0) y1) ((@UNIONS (cart a3 (finite_sum a4 a5))) ((@GSPEC (fun (cart a3 (finite_sum a4 a5)) bool)) (λ y2 : El (type16 a3 a4 a5), (∃ (λ y3 : El (type24 a3 a4), ((@SETSPEC (fun (cart a3 (finite_sum a4 a5)) bool)) y2 ((@IN (fun (cart a3 a4) bool)) y3 y0) ((@PCROSS a3 a4 a5) y3 y1)))))))))))));

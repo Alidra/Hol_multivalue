@@ -1,0 +1,9 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm8058954_term_abbrevs;
+require open hol-light.thm8058952_spec;
+require open hol-light.thm8058953_spec;
+opaque symbol lem8058954 [_143118 _143154 _143158 _143159] (f : El _143159) (x : El _143158) : Prf (= ((@CASEWISE _143118 _143154 _143158 _143159) (@NIL (prod (fun _143154 _143158) (fun _143159 (fun _143154 _143118)))) f x) (term0 _143118)) ≔ EQ_MP (@lem8058953 _143118 _143154 _143158 _143159 f x) (@lem8058952 _143118 _143154 _143158 _143159 f x);

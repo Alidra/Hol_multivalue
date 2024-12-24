@@ -1,0 +1,1 @@
+SUPERADMISSIBLE_CONST.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo SUPERADMISSIBLE_CONST_term_abbrevs.lpo ADMISSIBLE_CONST_spec.lpo ADMISSIBLE_IMP_SUPERADMISSIBLE_spec.lpo thm0_spec.lpo thm7_spec.lpo

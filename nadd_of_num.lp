@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.nadd_of_num_term_abbrevs;
+private symbol lem1268699 : Prf (= nadd_of_num term0) ≔ @nadd_of_num_def;
+private symbol lem1268700 (_23161 : El num) : Prf (= _23161 _23161) ≔ REFL _23161;
+private symbol lem1268701 (_23161 : El num) : Prf (= (nadd_of_num _23161) (term1 _23161)) ≔ MK_COMB (@lem1268699) (@lem1268700 _23161);
+private symbol lem1268702 (_23161 : El num) : Prf (= (term1 _23161) (term2 _23161)) ≔ REFL (term1 _23161);
+private symbol lem1268703 (_23161 : El num) : Prf (= (nadd_of_num _23161) (term2 _23161)) ≔ TRANS (@lem1268701 _23161) (@lem1268702 _23161);
+private symbol lem1268704 : Prf term3 ≔ λ _23161 : El num, (@lem1268703 _23161);
+private symbol lem1268705 (_23161 : El num) : Prf (term4 _23161) ≔ (@lem1268704) _23161;
+private symbol lem1268706 (_23161 : El num) : Prf (= (term4 _23161) (= (nadd_of_num _23161) (term2 _23161))) ≔ REFL (term4 _23161);
+private symbol lem1268707 (_23161 : El num) : Prf (= (nadd_of_num _23161) (term2 _23161)) ≔ EQ_MP (@lem1268706 _23161) (@lem1268705 _23161);
+opaque symbol lem1268737 (k : El num) : Prf (= (nadd_of_num k) (term2 k)) ≔ (@lem1268707 k);
+opaque symbol lem1268738 : Prf term3 ≔ λ k : El num, (@lem1268737 k);

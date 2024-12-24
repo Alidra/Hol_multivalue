@@ -1,0 +1,1 @@
+int_sub_th.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo hol_axioms.lpo hol_type_abbrevs.lpo int_sub_th_term_abbrevs.lpo int_add_th_spec.lpo int_neg_th_spec.lpo int_sub_spec.lpo real_sub_spec.lpo thm0_spec.lpo thm1815_spec.lpo thm1816_spec.lpo thm1862_spec.lpo thm1863_spec.lpo thm2267744_spec.lpo thm2267745_spec.lpo

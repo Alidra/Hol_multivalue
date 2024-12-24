@@ -1,0 +1,16 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.thm2338267_term_abbrevs;
+require open hol-light.INT_FORALL_POS_spec;
+private symbol lem2338259 (P : El (fun int bool)) (h1 : Prf (= (term0 P) (term1 P))) : Prf (= (term0 P) (term1 P)) ≔ h1;
+private symbol lem2338260 (P : El (fun int bool)) (h1 : Prf (= (term0 P) (term1 P))) : Prf (= (term1 P) (term0 P)) ≔ SYM (@lem2338259 P h1);
+private symbol lem2338261 (P : El (fun int bool)) (h1 : Prf (= (term1 P) (term0 P))) : Prf (= (term1 P) (term0 P)) ≔ h1;
+private symbol lem2338262 (P : El (fun int bool)) (h1 : Prf (= (term1 P) (term0 P))) : Prf (= (term0 P) (term1 P)) ≔ SYM (@lem2338261 P h1);
+private symbol lem2338263 (P : El (fun int bool)) : Prf (= (= (term0 P) (term1 P)) (= (term1 P) (term0 P))) ≔ prop_ext (λ h1 : Prf (= (term0 P) (term1 P)), (@lem2338260 P h1)) (λ h1 : Prf (= (term1 P) (term0 P)), (@lem2338262 P h1));
+private symbol lem2338264 : Prf (= term2 term3) ≔ fun_ext (λ P : El (fun int bool), (@lem2338263 P));
+private symbol lem2338265 : Prf (= (@∀ (fun int bool)) (@∀ (fun int bool))) ≔ REFL (@∀ (fun int bool));
+opaque symbol lem2338266 : Prf (= term4 term5) ≔ MK_COMB (@lem2338265) (@lem2338264);
+opaque symbol lem2338267 : Prf term5 ≔ EQ_MP (@lem2338266) (@lem2315380);

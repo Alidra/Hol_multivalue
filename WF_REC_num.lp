@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.WF_REC_num_term_abbrevs;
+require open hol-light.WF_num_spec;
+require open hol-light.thm339314_spec;
+private symbol lem365142 [A B] (<< : El (type1402 A)) : Prf (term0 A B <<) ≔ λ h0 : Prf ((@WF A) <<), (@lem339314 A B << h0);
+private symbol lem365143 [B] (<< : El type1605) : Prf (term1 B <<) ≔ (@lem365142 num B <<);
+private symbol lem365144 [B] : Prf (term2 B) ≔ (@lem365143 B <);
+private symbol lem365145 [B] : Prf (term3 B) ≔ (@lem365144 B) (@lem365140);
+private symbol lem365146 [B] (H : El (type972 B)) : Prf (term4 B H) ≔ (@lem365145 B) H;
+private symbol lem365147 [B] (H : El (type972 B)) : Prf (= (term4 B H) (term5 B H)) ≔ REFL (term4 B H);
+private symbol lem365150 [B] (H : El (type972 B)) : Prf (term5 B H) ≔ EQ_MP (@lem365147 B H) (@lem365146 B H);
+opaque symbol lem365151 [A] (H : El (type972 A)) : Prf (term5 A H) ≔ (@lem365150 A H);
+opaque symbol lem365156 [A] : Prf (term3 A) ≔ λ H : El (type972 A), (@lem365151 A H);

@@ -1,0 +1,17 @@
+require open hol-light.theory_hol;
+require open hol-light.hol_types;
+require open hol-light.hol_terms;
+require open hol-light.hol_axioms;
+require open hol-light.hol_type_abbrevs;
+require open hol-light.dimindex_term_abbrevs;
+private symbol lem7590192 [A] : Prf (= (@dimindex A) (term0 A)) ≔ @dimindex_def A;
+private symbol lem7590193 [A] (_97595 : El (fun A bool)) : Prf (= _97595 _97595) ≔ REFL _97595;
+private symbol lem7590194 [A] (_97595 : El (fun A bool)) : Prf (= ((@dimindex A) _97595) (term1 A _97595)) ≔ MK_COMB (@lem7590192 A) (@lem7590193 A _97595);
+private symbol lem7590195 [A] (_97595 : El (fun A bool)) : Prf (= (term1 A _97595) (term2 A)) ≔ REFL (term1 A _97595);
+private symbol lem7590196 [A] (_97595 : El (fun A bool)) : Prf (= ((@dimindex A) _97595) (term2 A)) ≔ TRANS (@lem7590194 A _97595) (@lem7590195 A _97595);
+private symbol lem7590197 [A] : Prf (term3 A) ≔ λ _97595 : El (fun A bool), (@lem7590196 A _97595);
+private symbol lem7590198 [A] (_97595 : El (fun A bool)) : Prf (term4 A _97595) ≔ (@lem7590197 A) _97595;
+private symbol lem7590199 [A] (_97595 : El (fun A bool)) : Prf (= (term4 A _97595) (= ((@dimindex A) _97595) (term2 A))) ≔ REFL (term4 A _97595);
+private symbol lem7590200 [A] (_97595 : El (fun A bool)) : Prf (= ((@dimindex A) _97595) (term2 A)) ≔ EQ_MP (@lem7590199 A _97595) (@lem7590198 A _97595);
+opaque symbol lem7590230 [A] (s : El (fun A bool)) : Prf (= ((@dimindex A) s) (term2 A)) ≔ (@lem7590200 A s);
+opaque symbol lem7590231 [A] : Prf (term3 A) ≔ λ s : El (fun A bool), (@lem7590230 A s);

@@ -1,0 +1,1 @@
+REAL_POW_LT_1_spec.lpo: theory_hol.lpo hol_types.lpo hol_terms.lpo
